@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Range Picker Example</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daterangepicker@3.1.0/daterangepicker.css" />
+</head>
+<body>
+    <input type="text" name="datetimes" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.29.1/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/daterangepicker@3.1.0/daterangepicker.js"></script>
+    <script>
+        $(function() {
+          var disabledDates = ['2023-01-01'];
+          
+          function isCustomDate(date) {
+            return disabledDates.indexOf(date.format('YYYY-MM-DD')) !== -1;
+          }
+
+          $('input[name="datetimes"]').daterangepicker({
+            timePicker: false,
+            startDate: moment().startOf('hour'),
+            endDate: moment().startOf('hour').add(32, 'hour'),
+            locale: {
+              format: 'M/DD'
+            },
+            isInvalidDate: function(date) {
+              // Disable Fridays (day 5)
+              return date.day() === 0;
+            },
+            isCustomDate: isCustomDate,
+            isCustomTime: function(date) {
+              // Disable time from 1:00 PM to 2:00 PM
+              var hour = date.hours();
+              return (hour >= 13 && hour < 14);
+            }
+          });
+        });
+    </script>
+</body>
+</html>

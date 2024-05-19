@@ -1,0 +1,138 @@
+/*===================================*/ 
+/*timeline Eighteen*/ 
+
+.bwd-timeline-Eighteen{
+    padding: 60px 30px;
+    @include mq(xs){
+        padding: 50px 15px;
+    }
+    .bwd-timeline-item-container{
+          display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .bwd-timeline-item{
+            position: relative;
+            padding: 30px 20px;
+            padding-bottom: 20px;
+            padding-bottom: 20px;
+            background: gainsboro;
+            border-top-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+            width: 270px;
+           
+            
+            margin: 0 10px;
+            margin-bottom: 120px;
+
+            &:nth-child(1){
+                background: linear-gradient(90deg, rgba(227,208,70,1) 0%, rgba(254,199,0,1) 100%);
+                &::before{
+                    background: linear-gradient(90deg, rgba(227,208,70,1) 0%, rgba(254,199,0,1) 100%);
+                }
+                .bwd-year{
+                    background: linear-gradient(90deg, rgba(227,208,70,1) 0%, rgba(254,199,0,1) 100%);
+                }
+            }
+            &:nth-child(2){
+                background: linear-gradient(90deg, rgba(255,172,61,1) 0%, rgba(255,118,0,1) 100%);
+                &::before{
+                    background: linear-gradient(90deg, rgba(255,172,61,1) 0%, rgba(255,118,0,1) 100%);
+                }
+                .bwd-year{
+                    background: linear-gradient(90deg, rgba(255,172,61,1) 0%, rgba(255,118,0,1) 100%);}
+            }
+            &:nth-child(3){
+                background: linear-gradient(90deg, rgba(255,125,154,1) 0%, rgba(255,51,104,1) 100%);
+                &::before{
+                    background: linear-gradient(90deg, rgba(255,125,154,1) 0%, rgba(255,51,104,1) 100%);
+                }
+                .bwd-year{
+                    background: linear-gradient(90deg, rgba(255,125,154,1) 0%, rgba(255,51,104,1) 100%);}
+            }
+            &:nth-child(4){
+                background: linear-gradient(90deg, rgba(68,203,198,1) 0%, rgba(0,182,203,1) 100%);
+                &::before{
+                   background: linear-gradient(90deg, rgba(68,203,198,1) 0%, rgba(0,182,203,1) 100%);
+                }
+                .bwd-year{
+                   background: linear-gradient(90deg, rgba(68,203,198,1) 0%, rgba(0,182,203,1) 100%);}
+            }
+            &:nth-child(5){
+              background: linear-gradient(90deg, rgba(226,229,98,1) 0%, rgba(173,215,42,1) 100%);
+                &::before{
+                  background: linear-gradient(90deg, rgba(226,229,98,1) 0%, rgba(173,215,42,1) 100%);
+                }
+                .bwd-year{
+                    background: linear-gradient(90deg, rgba(226,229,98,1) 0%, rgba(173,215,42,1) 100%);}
+            }
+            &:nth-child(6){
+                background: linear-gradient(90deg, rgba(0,125,198,1) 0%, rgba(0,125,197,1) 100%);
+                &::before{
+                    background: linear-gradient(90deg, rgba(0,125,198,1) 0%, rgba(0,125,197,1) 100%);
+                }
+                .bwd-year{
+                    background: linear-gradient(90deg, rgba(0,125,198,1) 0%, rgba(0,125,197,1) 100%);}
+            }
+            .bwd-year{
+                font-size: 25px;
+                font-weight: 600;
+                text-align: center;
+                height: 85px;
+                width: 85px;
+                border-radius: 50%;
+               
+                line-height: 80px;
+                position: absolute;
+                top: -42px;
+                left: 50%;
+                transform: translateX(-50%);
+                color: #333;
+                border: 7px solid #fff;
+                box-shadow: 0 0 9px #bbb;
+            }
+            .bwd-timeline-content{
+                .bwd-timeline-title {
+                    font-size: 22px;
+                    text-transform: capitalize;
+                    margin-top: 25px;
+                    margin-bottom: 7px;
+                }
+                .bwd-timeline-desc{
+                    line-height: 24px;
+                    color: #333;
+                }
+            }
+
+            &::before{
+                content: "";
+                position: absolute;
+               
+                height: 50px;
+                width: 50px;
+                bottom: 0;
+                left: 50%;
+                transform: translate(-50%,25px) rotate(45deg);
+                z-index: -1;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                height: 10px;
+                background: #a0a0a0;
+                left: 50%;
+                right: 50%;
+                bottom: -50px;
+                border-radius: 5px;
+                transition: .4s;
+              }
+              &:hover{
+                  &::after{
+                      left: 0;
+                      right: 0;
+                  }
+              }
+        }
+    }
+}
+/*timeline Eighteen*/ 

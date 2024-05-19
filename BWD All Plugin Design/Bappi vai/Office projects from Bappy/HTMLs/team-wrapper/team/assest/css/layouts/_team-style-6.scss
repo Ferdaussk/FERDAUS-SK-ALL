@@ -1,0 +1,91 @@
+.mtt-team-iteam-area {
+    .mtt-team-iteam {
+        text-align: center;
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 50px;
+        border-radius: 5px;
+       .mtt-pic {
+            img{
+                transition: .4s linear;
+                width: 100%;
+            }
+        }
+        &:hover {
+            .mtt-pic {
+                img {
+                    transform: scale(1.2);
+                }
+            }
+        }
+        .mtt-social{
+            list-style: none;
+            padding: 30px 15px;
+            margin: 0;
+            background: #0facf3;
+            border-bottom-right-radius: 50px;
+            position: absolute;
+            top: 0;
+            left: -50%;
+            transition: all 0.4s ease-in-out 0s;
+            @include mq(xs){
+                padding: 20px 15px;
+            }
+            @include mq(sm){
+                padding: 15px;
+            }
+            a{
+                display: block;
+                width: 35px;
+                height: 35px;
+                line-height: 35px;
+                border-radius: 50%;
+                background: #fff;
+                font-size: 20px;
+                color: #0facf3;
+                transition: all 0.3s ease 0s;
+                margin-bottom: 18px;
+                @include mq(xs){
+                    margin-bottom: 14px;
+                }
+                @include mq(sm){
+                    margin-bottom: 14px;
+                }
+                &:hover{
+                    background: linear-gradient(to bottom,#0facf3, rgba(0, 2, 139, 0.39));
+                    box-shadow: 0 0 0 5px rgba(255,255,255,0.3);
+                    color: #fff;
+                }
+            }
+        }
+        &:hover {
+            .mtt-social {
+                left: 0; 
+            }
+        }
+        .mtt-team-content{
+            width: 100%;
+            padding: 15px 10px;
+            background: rgba(0, 0, 0, 0.6);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            @include mq(xs){
+                bottom: -10px;
+            }
+            .mtt-title{
+                font-size: 22px;
+                font-weight: bold;
+                letter-spacing: 1px;
+                color: #fff;
+                margin: 0 0 5px 0;
+            }
+            .mtt-post{
+                display: block;
+                font-size: 14px;
+                color: #0facf3;
+            }
+        }
+    }
+}
+

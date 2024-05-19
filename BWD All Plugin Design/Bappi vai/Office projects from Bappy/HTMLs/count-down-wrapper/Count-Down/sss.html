@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .bwdcd-count-down-common {
+            display: flex;
+            justify-content: space-around;
+            font-family: 'Arial', sans-serif;
+            font-size: 24px;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #333;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .bwdcd-count-down-item {
+            flex: 1;
+        }
+
+        .bwdcd-count-down-title {
+            font-size: 16px;
+            color: #ddd;
+        }
+
+        .bwdcd-count-down-num {
+            display: block;
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #555;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <!-- count down 1 start -->
+    <div class="bwdcd-count-down-1 bwdcd-count-down-common">
+      <div class="bwdcd-count-down-item">
+        <div class="bwdcd-count-down-title">days</div>
+        <div class="bwdcd-count-down-num bwdcd-day bwdcd-shape-common" id="countdown_days">100</div>
+      </div>
+      <div class="bwdcd-count-down-item">
+        <div class="bwdcd-count-down-title">Hours</div>
+        <div class="bwdcd-count-down-num bwdcd-hour bwdcd-shape-common" id="countdown_hours">20</div>
+      </div>
+      <div class="bwdcd-count-down-item">
+        <div class="bwdcd-count-down-title">Minutes</div>
+        <div class="bwdcd-count-down-num bwdcd-min bwdcd-shape-common" id="countdown_minutes">55</div>
+      </div>
+      <div class="bwdcd-count-down-item">
+        <div class="bwdcd-count-down-title">Seconds</div>
+        <div class="bwdcd-count-down-num bwdcd-sec bwdcd-shape-common" id="countdown_seconds">22</div>
+      </div>
+    </div>
+	
+	
+    <div class="bwdcd-count-down-1 bwdcd-count-down-common">
+      <div class="bwdcd-count-down-item">
+        <div class="bwdcd-count-down-title">days</div>
+        <div class="bwdcd-count-down-num bwdcd-day bwdcd-shape-common" id="countdown_days">100</div>
+      </div>
+      <div class="bwdcd-count-down-item">
+        <div class="bwdcd-count-down-title">Hours</div>
+        <div class="bwdcd-count-down-num bwdcd-hour bwdcd-shape-common" id="countdown_hours">20</div>
+      </div>
+      <div class="bwdcd-count-down-item">
+        <div class="bwdcd-count-down-title">Minutes</div>
+        <div class="bwdcd-count-down-num bwdcd-min bwdcd-shape-common" id="countdown_minutes">55</div>
+      </div>
+      <div class="bwdcd-count-down-item">
+        <div class="bwdcd-count-down-title">Seconds</div>
+        <div class="bwdcd-count-down-num bwdcd-sec bwdcd-shape-common" id="countdown_seconds">22</div>
+      </div>
+    </div>
+
+    <!-- Countdown script -->
+    <script>
+        var sscdn_Dates = '2023-11-27';
+        var sscdn_discount_time = '2:00 AM';
+
+        // Set the expiration date and time
+        var countDownDate = new Date(sscdn_Dates + ' ' + sscdn_discount_time).getTime();
+
+        function updateCountdown() {
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
+
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Display the updated values
+            document.getElementById("countdown_days").textContent = days;
+            document.getElementById("countdown_hours").textContent = hours;
+            document.getElementById("countdown_minutes").textContent = minutes;
+            document.getElementById("countdown_seconds").textContent = seconds;
+        }
+
+        // Update countdown every second (1000 milliseconds)
+        setInterval(updateCountdown, 1000);
+    </script>
+</body>
+</html>

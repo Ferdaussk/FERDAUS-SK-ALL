@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX Grid Filter</title>
+    <style>
+        .filter {
+            margin-bottom: 10px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+        }
+
+        .item {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="filter">
+        <label for="category">Category:</label>
+        <select id="category">
+            <option value="all">All</option>
+            <option value="fruit">Fruit</option>
+            <option value="vegetable">Vegetable</option>
+            <option value="grain">Grain</option>
+        </select>
+    </div>
+    <div class="grid" id="grid">
+        <!-- This is where the grid items will be loaded -->
+    </div>
+
+    <script>
+        const data = [
+            { name: 'Apple', category: 'fruit' },
+            { name: 'Banana', category: 'fruit' },
+            { name: 'Carrot', category: 'vegetable' },
+            { name: 'Rice', category: 'grain' },
+            { name: 'Wheat', category: 'grain' },
+            { name: 'Broccoli', category: 'vegetable' },
+        ];
+
+        function renderItems(items) {
+            const grid = document.getElementById('grid');
+            grid.innerHTML = '';
+
+            items.forEach(item => {
+                const itemElement = document.createElement('div');
+                itemElement.classList.add('item');
+                itemElement.innerText = item.name;
+                grid.appendChild(itemElement);
+            });
+        }
+
+        function filterItems(category) {
+            if (category === 'all') {
+                renderItems(data);
+            } else {
+                const filteredItems = data.filter(item => item.category === category);
+                renderItems(filteredItems);
+            }
+        }
+
+        document.getElementById('category').addEventListener('change', function() {
+            const selectedCategory = this.value;
+            filterItems(selectedCategory);
+        });
+
+        // Initial render
+        renderItems(data);
+    </script>
+</body>
+</html>

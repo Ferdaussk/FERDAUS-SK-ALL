@@ -1,0 +1,74 @@
+// count down 2 start
+.bwd-count-down-2{
+    padding: 30px;
+    margin: 30px auto;
+    background-color: #004471;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        .bwd-count-down-item {
+            margin: 15px 0;
+            text-align: center;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #eaeaea;
+            .bwd-count-down-title{
+                font-size: 20px;
+                margin-top: 30px;
+                color: #fff;
+                line-height: 1.2;
+                @include mq(md){
+                    font-size: 18px;
+                }
+                @include mq(xs){
+                    font-size: 14px;
+                    margin-top: 15px;
+                }
+                
+            }
+            .bwd-count-down-num {
+                position: relative;
+                font-size: 45px;
+                border-radius: 10px;
+                height: 95px;
+                width: 95px;
+                text-align: center;
+                line-height: 95px;
+                color: #004471;
+                z-index: 1;
+                margin: 20px 15px;
+                @include mq(md){
+                    font-size: 40px;
+                    height: 85px;
+                    width: 85px;
+                    line-height: 85px;
+                    margin: 20px 10px;
+                }
+                @include mq(xs){
+                    font-size: 30px;
+                    height: 60px;
+                    width: 60px;
+                    line-height: 65px;
+                    margin: 20px 4px;
+                }
+
+                &::before
+                {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: #fff;
+                    border-radius: 15px;
+                    transform: rotate(45deg);
+                    z-index: -1;
+                    box-shadow: 10px 10px 25px #011019;
+                }
+
+            }
+        }
+}
+// count down 2 end
+

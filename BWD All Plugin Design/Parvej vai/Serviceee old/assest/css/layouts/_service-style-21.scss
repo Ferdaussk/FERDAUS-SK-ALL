@@ -1,0 +1,194 @@
+.bwd-service-style-21 {
+    .bwd-service-box {
+        background: #f4f4f4;
+        padding: 60px 15px 53px;
+        position: relative;
+        box-shadow: 10px 12px 10px rgba(0, 0, 0, 0.226);
+        text-align: center;
+        border-radius: 15px;
+        margin-bottom: 130px;
+        &::after {
+            position: absolute;
+            content: "";
+            bottom: -28%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #f4f4f4;
+            width: 150px;
+            height: 80px;
+            border-radius: 0 0 80px 80px;
+            box-shadow: 10px 12px 10px rgba(0, 0, 0, 0.226);
+        }
+        &.gray {
+            .bwd-top-title {
+                background: #29424f;
+                &::before {
+                    border-color: transparent transparent #29424f transparent;
+                }
+                &::after {
+                    border-color: transparent transparent transparent #29424f;
+                }
+            }
+            .bwd-service-content {
+               .title {
+                color: #29424f;
+               }
+            }
+            .bwd-service-icon { 
+                background: #29424f;
+                color: #29424f;
+                &::before {
+                    color: #29424f;
+                }
+            }
+        }
+        &.green {
+            .bwd-top-title {
+                background: #59bd61;
+                &::before {
+                    border-color: transparent transparent #59bd61 transparent;
+                }
+                &::after {
+                    border-color: transparent transparent transparent #59bd61;
+                }
+            }
+            .bwd-service-content {
+               .title {
+                color: #59bd61;
+               }
+            }
+            .bwd-service-icon { 
+                background: #59bd61;
+                color: #59bd61;
+                &::before {
+                    color: #59bd61;
+                }
+            }
+        }
+        &.pink {
+            .bwd-top-title {
+                background: #e53b66;
+                &::before {
+                    border-color: transparent transparent #e53b66 transparent;
+                }
+                &::after {
+                    border-color: transparent transparent transparent #e53b66;
+                }
+            }
+            .bwd-service-content {
+               .title {
+                color: #e53b66;
+               }
+            }
+            .bwd-service-icon { 
+                background: #e53b66;
+                color: #e53b66;
+                &::before {
+                    color: #e53b66;
+                }
+            }
+        }
+        .bwd-top-title {
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 65%;
+            line-height: 50px;
+            background: linear-gradient(to right, #396afc, #2948ff);
+            color: #fff;
+            text-align: center;
+            padding: 0 10px;
+            display: block;
+            text-transform: uppercase;
+            font-size: 17px;
+            padding: 0 5px;
+            font-weight: 500;
+            transition: .3s linear;
+            &::before {
+                content: "";
+                position: absolute;
+                left: -19.7px;
+                top: 0px;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 0 0 20px 20px;
+                border-color: transparent transparent #325bfd transparent;
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                left: auto;
+                right: -19.7px;
+                top: 0px;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 20px 0 0 20px;
+                border-color: transparent transparent transparent #325bfd;
+            }
+        }
+        &:hover {
+            .bwd-top-title {
+                letter-spacing: 3px;
+            }
+        }
+        .bwd-service-content {
+            position: relative;
+            .title {
+                font-size: 20px;
+                line-height: 40px;
+                color: #2d50ff;
+                text-transform: uppercase;
+                margin-bottom: 10px;
+                letter-spacing: 1px;
+            }
+            p {
+                font-size: 14px;
+                color: #2d2d2d;
+                line-height: 24px;
+            }
+        }
+        .bwd-service-icon {
+            background: #2d50ff;
+            font-size: 35px;
+            line-height: 110px;
+            width: 110px;
+            height: 110px;
+            margin: 0 auto;
+            border-radius: 100px;
+            position: absolute;
+            z-index: 1;
+            color: #2d50ff;
+            bottom: -60px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+            left: 50%;
+            transform: translateX(-50%) rotate(0deg);
+            text-align: center;
+            transition: .3s linear;
+            &::before {
+                color: #2d50ff;
+                content: "";
+                background: #f4f4f4;
+                width: 90px;
+                display: inline-block;
+                height: 90px;
+                text-align: center;
+                line-height: 90px;
+                border-radius: 50%;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                z-index: -1;
+                transform: translate(-50%, -50%);
+                box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.32);
+            }
+        }
+        &:hover {
+            .bwd-service-icon {
+                transform: translateX(-50%) rotate(360deg);;
+            }
+        }
+    }
+}

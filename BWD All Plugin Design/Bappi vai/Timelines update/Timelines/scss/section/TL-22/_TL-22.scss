@@ -1,0 +1,143 @@
+/*==========================*/
+/*timeline 22*/
+
+.bwd-timeline-twenty-two{
+    padding: 60px 30px;
+    @include mq(xs){
+        padding: 50px 0;
+    }
+    .bwd-timeline-item-container{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        .bwd-timeline-item {
+            width: 250px;
+            margin: 20px 15px;
+          
+            position: relative;
+            @include mq(xs){
+                margin: 20px 10px;
+            }
+
+            .bwd-timeline-content{
+                position: relative;
+                padding: 20px;
+                background: #0C8AF9;
+                margin-bottom: 30px;
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;
+                text-align: center;
+
+                &::before{
+                    content: "";
+                    position: absolute;
+                    top: 100%;
+                    border-top: 50px solid #0C8AF9;
+                    border-left: 125px solid transparent;
+                    border-right: 125px solid transparent;
+                    left: 0;
+                }
+                .bwd-timeline-title {
+                font-size: 25px;
+                text-transform: capitalize;
+                color: #fff;
+                margin-bottom: 10px;
+                line-height: 30px;
+                }
+
+                .bwd-timeline-dsc {
+                    line-height: 22px;
+                    color: #eee;
+                }
+            }
+
+            .bwd-year {
+                height: 70px;
+                width: 70px;
+                margin: 68px auto 0 auto;
+                text-align: center;
+                line-height: 70px;
+                font-size: 25px;
+                font-weight: 600;
+                color: #0C8AF9;
+                position: relative;
+                background: #fff;
+                transform-origin: top;
+                
+                animation-duration: 1.5s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+                transform: rotate(0deg);
+
+               
+                &::before{
+                    content: "";
+                    position: absolute;
+                    height: 70px;
+                    width: 70px;
+                    transform-origin: center;
+                    border: 5px solid #0C8AF9;
+                    left: -5px;
+                    top: -5px;
+                    transform: rotate(45deg);
+                    border-bottom-left-radius: 30px;
+                    border-top-right-radius: 30px;
+                    border-bottom-right-radius: 10px;
+                }
+
+                &::after{
+                    content: "";
+                    position: absolute;
+                    height: 10px;
+                    width: 6px;
+                    background: #0C8AF9;
+                    bottom: 85px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    z-index: -1;
+                }
+            }
+
+            &:hover{
+                .bwd-year{animation-name: rotate-year;}
+                
+            }
+
+            &:nth-child(even){
+                .bwd-timeline-content{
+                    background-color: #08697E;
+
+                    &::before{
+                        border-top: 50px solid #08697E;
+                        
+                    }
+                }
+                .bwd-year{
+                       color: #08697E;
+                         &::before{
+                            border: 5px solid #08697E;
+                    }
+                    &::after{
+                        background-color: #08697E;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes rotate-year {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(15deg);
+    }
+    100%{
+        transform: rotate(-15deg);
+    }
+ 
+
+   
+}
+/*timeline 22*/

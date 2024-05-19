@@ -1,0 +1,148 @@
+/*===================================*/ 
+/*timeline Nineteen*/ 
+.bwd-timeline-nineteen{
+    padding: 60px 30px;
+    @include mq(xs){
+        padding: 50px 0;
+    }
+    .bwd-timeline-item-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        .bwd-timeline-item {
+            position: relative;
+            width: 270px;
+            padding: 15px 0;
+            border-radius: 60px 15px;
+
+            margin: 40px 10px;
+            .bwd-timeline-item-inner {
+                padding:40px 30px;
+                text-align: right;
+             
+                border-radius: 74% 7% 75% 6% / 29% 10% 27% 9%;
+                .bwd-year {
+                    font-size: 22px;
+                    font-weight: 700;
+                    color: #fff;
+                    padding: 0 15px;
+                    line-height: 40px;
+                    border-radius: 30px;
+                    display: inline-block;
+                    margin-bottom: 5px;
+                }
+                .bwd-timeline-content{
+                    .bwd-timeline-title {
+                        font-size: 22px;
+                        text-transform: capitalize;
+                        line-height: 25px;
+                        margin: 10px 0;
+                    }
+                    .bwd-timeline-desc {
+                        line-height: 21px;
+                        color: #333;
+                        
+                    }
+                }
+            }
+
+            &::before{
+                content: "";
+                position: absolute;
+                height: 150px;
+                width: 7px;
+                bottom: -50px;
+                
+                left: 50%;
+                z-index: -1;
+                border-radius: 5px;
+                transform: translateX(-50%);
+            }
+
+            &::after{
+                content: "";
+                width: 70%;
+                height: 20px;
+               
+                bottom: -50px;
+                position: absolute;
+                border-radius: 15px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            &:nth-child(1){
+                background: linear-gradient(180deg, #fdff84 0%, #ed6a07 100%);
+                border: 3px solid #F6B217;
+                .bwd-timeline-item-inner{
+                    background: #F6B217;
+                    .bwd-year{
+                        background: #EE740F;
+                    }
+                }
+
+                &::before{
+                    background: #F6B217;
+                }
+                &::after{
+                    background: #ed6a07;
+                }
+            }
+            &:nth-child(2){
+                background: linear-gradient(175deg, rgba(255,254,213,1) 0%, rgba(31,125,9,1) 100%);
+                border: 3px solid #7FCD4A;
+                .bwd-timeline-item-inner{
+                    background: #7FCD4A;
+                    .bwd-year{
+                        background: rgba(31,125,9,1);
+                    }
+                }
+
+                &::before{
+                    background: #7FCD4A
+                }
+                &::after{
+                    background: rgba(31,125,9,1);
+                }
+            }
+           
+             &:nth-child(3){
+                background: linear-gradient(175deg, rgba(253,154,226,1) 0%, rgba(230,13,80,1) 100%);
+                border: 3px solid #F14B9A;
+                .bwd-timeline-item-inner{
+                    background: #F14B9A;
+                    .bwd-year{
+                        background: rgba(253,154,226,1);
+                    }
+                }
+
+                &::before{
+                    background: rgba(253,154,226,1);
+                }
+                &::after{
+                    background: #F14B9A;
+                }
+            }
+
+            &:nth-child(4){
+                background: linear-gradient(175deg, rgba(183,243,249,1) 0%, rgba(5,86,227,1) 100%);
+                border: 3px solid #48B4F6;
+                .bwd-timeline-item-inner{
+                    background: #48B4F6;
+                    .bwd-year{
+                        background: #1464E5;
+                    }
+                }
+
+                &::before{
+                    background: rgba(183,243,249,1);
+                }
+                &::after{
+                    background: #48B4F6;
+                }
+            }
+        }
+    }
+}
+/*timeline Nineteen*/ 

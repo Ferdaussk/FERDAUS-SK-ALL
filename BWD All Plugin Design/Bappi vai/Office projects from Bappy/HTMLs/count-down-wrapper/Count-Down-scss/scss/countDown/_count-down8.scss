@@ -1,0 +1,93 @@
+/** count down 8 start**/
+.bwd-count-down-8{
+    padding: 30px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .bwd-count-down-wrapper{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 30px;
+        padding: 0 10px;
+        position: relative;
+
+        .bwd-count-down-item {
+            margin: 15px 0;
+            text-align: center;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #2c4a56;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+                .bwd-count-down-title{
+                    font-size: 15px;
+                    color: inherit;
+                    line-height: 1.2;
+                    background: #283941;
+                    padding: 8px 15px;
+                    border-radius: 10px;
+                    position: absolute;
+                    bottom: -18px;
+                    color: #fff;
+                    left: 2%;
+                    z-index: 1;
+                    transform: skewX(-10deg);
+                    
+                    @include mq(md){
+                        font-size: 12px;
+                        padding: 8px 10px;
+                    }
+                    @include mq(xs){
+                        font-size: 12px;
+                        padding: 5px 4px;
+                    }
+                }
+                .bwd-count-down-num {
+                    position: relative;
+                    font-size: 45px;
+                    text-align: center;
+                    line-height: 2;
+                    z-index: 1;
+                    margin: 0 5px;
+                    border-radius: 10px;
+                    padding: 0 25px;
+                    color: #fff;
+
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        z-index: -1;
+                        box-shadow: 20px 40px 20px #33333336, 0 3px 50px #3333330f inset;
+                        border-radius: 20px;
+                        transform: skewX(-10deg);
+                        background: #F9194C;
+                        border: 10px solid;
+                    }
+
+                    @include mq(md){
+                        font-size: 34px;
+                        margin: 0 5px;
+                        padding: 0 25px;
+                    }
+                    @include mq(xs){
+                        font-size: 30px;
+                        margin: 0 1px;
+                        padding: 0 14px;
+                    }
+                }
+        }
+    }
+}
+/** count down 8 end*/
+

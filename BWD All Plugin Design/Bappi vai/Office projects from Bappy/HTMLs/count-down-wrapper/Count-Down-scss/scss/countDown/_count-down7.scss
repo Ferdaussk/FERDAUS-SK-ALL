@@ -1,0 +1,100 @@
+/** count down 7 start**/
+.bwd-count-down-7{
+    padding: 30px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2E569C;
+
+    .bwd-count-down-wrapper{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        border: 3px solid #A1D3E6;
+        border-radius: 30px;
+        padding-right: 2px;
+        position: relative;
+
+        .bwd-count-down-item {
+            margin: 15px 0px;
+            text-align: center;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #2c4a56;
+            padding: 8px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+                .bwd-count-down-title{
+                    font-size: 16px;
+                    color: inherit;
+                    line-height: 1.2;
+                    background: #A3D6EB;
+                    padding: 10px;
+                    border-radius: 10px;
+                    position: absolute;
+                    top: 100%;
+                    transform: translateY(-50%);
+                    @include mq(md){
+                        font-size: 14px;
+                        padding: 7px;
+                    }
+                    @include mq(xs){
+                        font-size: 12px;
+                        padding: 3px;
+                    }
+                }
+                .bwd-count-down-num {
+                    position: relative;
+                    font-size: 45px;
+                    text-align: center;
+                    line-height: 2;
+                    color: inherit;
+                    z-index: 1;
+                    margin: 0 5px;
+                    border-radius: 10px;
+                    background: linear-gradient(184deg, #f5fafd 0%, #a4e0f8 100%);
+                    padding: 0 20px;
+                    @include mq(md){
+                        font-size: 35px;
+                        margin: 0 1px;
+                        padding: 0 15px;
+                    }
+                    @include mq(xs){
+                        font-size: 30px;
+                        padding: 0 6px;
+                    }
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        height: 30%;
+                        background: inherit;
+                        right: -10px;
+                        top: 50%;
+                        left: -7px;
+                        transform: translateY(-50%);
+                        z-index: -2;
+                        border-radius: 5px;
+                    }
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 13px;
+                        background: inherit;
+                        z-index: -1;
+                        box-shadow: 0 5px 16px #33333326, 0 3px 50px #3333330f inset;
+                        border-radius: 20px;
+                    }
+                }
+        }
+    
+    }
+}
+/** count down 7 end*/
+

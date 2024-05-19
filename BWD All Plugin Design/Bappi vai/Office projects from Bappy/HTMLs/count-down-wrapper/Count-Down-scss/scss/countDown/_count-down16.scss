@@ -1,0 +1,96 @@
+/** count down 16 start**/
+.bwd-count-down-16{
+    padding: 30px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        .bwd-count-down-item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            margin: 15px 5px;
+            text-align: center;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #7512EE;
+            padding: 10px;
+            @include mq(md){
+                margin: 15px 1px;
+            }
+            @include mq(xs){
+                padding: 4px;
+            }
+          
+            .bwd-count-down-num {
+                position: relative;
+                font-size: 50px;
+                line-height: 1;
+                margin-bottom: 10px;
+                text-shadow: 0px 7px 9px #1f1f1f7a;
+                background: #15161bf5;
+                padding: 25px 15px;
+                color: #F6A602;
+                border-radius: 5px;
+                @include mq(md){
+                    font-size: 45px;
+                }
+                @include mq(xs){
+                    position: relative;
+                    font-size: 30px;
+                    padding: 15px 10px;
+                }
+                &::before{
+                    content: "";
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 5px;
+                    top: -10px;
+                    left: -10px;
+                    background: #F6A602;
+                    z-index: -1;
+                }
+            }
+            .bwd-count-down-title{
+                font-size: 20px;
+                line-height: 1;
+                color: #333;
+                @include mq(md){
+                    font-size: 17px;
+                }
+                @include mq(xs){
+                    font-size: 12px;
+                }
+            }
+            &:nth-child(2){
+                .bwd-count-down-num{
+                    color: #02FD6C;
+                    &::before{
+                        background-color:#02FD6C ;
+                    }
+                }
+            }
+
+            &:nth-child(3){
+                .bwd-count-down-num{
+                    color: #00FEFE;
+                    &::before{
+                        background-color:#00FEFE ;
+                    }
+                }
+            }
+
+            &:nth-child(4){
+                .bwd-count-down-num{
+                    color: #FE4085;
+                    &::before{
+                        background-color:#FE4085 ;
+                    }
+                }
+            }
+        }
+}
+/** count down 16 end*/

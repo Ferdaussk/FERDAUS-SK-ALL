@@ -1,0 +1,460 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+  margin-left: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.pt-10 {
+  padding-top: 10px;
+}
+
+.pb-10 {
+  padding-bottom: 10px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.pt-20 {
+  padding-top: 20px;
+}
+
+.pb-20 {
+  padding-bottom: 20px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.pt-30 {
+  padding-top: 30px;
+}
+
+.pb-30 {
+  padding-bottom: 30px;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.pt-40 {
+  padding-top: 40px;
+}
+
+.pb-40 {
+  padding-bottom: 40px;
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.pt-50 {
+  padding-top: 50px;
+}
+
+.pb-50 {
+  padding-bottom: 50px;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+.pt-60 {
+  padding-top: 60px;
+}
+
+.pb-60 {
+  padding-bottom: 60px;
+}
+
+.mt-60 {
+  margin-top: 60px;
+}
+
+.mb-60 {
+  margin-bottom: 60px;
+}
+
+.pt-70 {
+  padding-top: 70px;
+}
+
+.pb-70 {
+  padding-bottom: 70px;
+}
+
+.mt-70 {
+  margin-top: 70px;
+}
+
+.mb-70 {
+  margin-bottom: 70px;
+}
+
+.pt-80 {
+  padding-top: 80px;
+}
+
+.pb-80 {
+  padding-bottom: 80px;
+}
+
+.mt-80 {
+  margin-top: 80px;
+}
+
+.mb-80 {
+  margin-bottom: 80px;
+}
+
+.pt-90 {
+  padding-top: 90px;
+}
+
+.pb-90 {
+  padding-bottom: 90px;
+}
+
+.mt-90 {
+  margin-top: 90px;
+}
+
+.mb-90 {
+  margin-bottom: 90px;
+}
+
+.pt-100 {
+  padding-top: 100px;
+}
+
+.pb-100 {
+  padding-bottom: 100px;
+}
+
+.mt-100 {
+  margin-top: 100px;
+}
+
+.mb-100 {
+  margin-bottom: 100px;
+}
+
+body {
+  font-family: 'Oswald', sans-serif;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+  font-family: 'Oswald', sans-serif;
+}
+
+h4, h5, h6 {
+  font-family: 'Oswald', sans-serif;
+}
+
+p {
+  font-family: 'Oswald', sans-serif;
+}
+
+span {
+  font-family: 'Oswald', sans-serif;
+}
+
+
+.grip-area .container-fluid {
+  padding: 0;
+  overflow: hidden;
+}
+
+.grip-area .container-fluid .row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.grip-area .container-fluid .row .grip-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .grip-area .container-fluid .row .grip-item {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+@media (max-width: 767px) {
+  .grip-area .container-fluid .row .grip-item {
+    padding: 60px 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .grip-area .container-fluid .row .grip-item {
+    padding-left: 20px;
+  }
+}
+
+.grip-area .container-fluid .row .grip-item .grid-title h2 {
+  font-size: 50px;
+  letter-spacing: 3px;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .grip-area .container-fluid .row .grip-item .grid-title h2 {
+    font-size: 45px;
+  }
+}
+
+@media (max-width: 767px) {
+  .grip-area .container-fluid .row .grip-item .grid-title h2 {
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .grip-area .container-fluid .row .grip-item .grip-decs {
+    text-align: center;
+  }
+}
+
+.grip-area .container-fluid .row .grip-item .grip-decs p {
+  margin-bottom: 40px;
+  font-size: 20px;
+}
+
+@media (max-width: 767px) {
+  .grip-area .container-fluid .row .grip-item .grip-decs p {
+    font-size: 17px;
+  }
+}
+
+.grip-area .container-fluid .row .grip-item .grip-btn {
+  margin-top: 30px;
+  display: inline-block;
+}
+
+.grip-area .container-fluid .row .grip-item .grip-btn a {
+  background: #000;
+  padding: 15px 40px;
+  color: #fff;
+  font-size: 22px;
+  border-radius: 10px;
+}
+
+.grip-area .container-fluid .row .grip-img {
+  /* background: url(../img/scroll-img/sticy1.jpg) no-repeat center/cover; */
+  height: 100vh;
+  width: 100%;
+}
+
+.grip-area .container-fluid .row .grip-img2 {
+  background: url(../img/scroll-img/sticy2.jpg) no-repeat center/cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.grip-area .container-fluid .row .grip-img3 {
+  background: url(../img/scroll-img/sticy3.jpg) no-repeat center/cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.grip-area .container-fluid .row .grip-img4 {
+  background: url(../img/scroll-img/sticy4.jpg) no-repeat center/cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.grip-area .container-fluid .row .grip-img5 {
+  background: url(../img/scroll-img/sticy5.jpg) no-repeat center/cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.grip-area .container-fluid .row .grip-img6 {
+  background: url(../img/scroll-img/sticy6.jpg) no-repeat center/cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.grip-area .container-fluid .row .grip-img7 {
+  background: url(../img/scroll-img/sticy7.jpg) no-repeat center/cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.grip-area .container-fluid .row .grip-img8 {
+  background: url(../img/scroll-img/sticy8.jpg) no-repeat center/cover;
+  height: 100vh;
+}
+
+.grip-area .container-fluid .row .grip-img9 {
+  background: url(../img/scroll-img/sticy9.jpg) no-repeat center/cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.grip-area .container-fluid .row .grip-img10 {
+  background: url(../img/scroll-img/sticy10.jpg) no-repeat center/cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.grip-items .grip-area .container-fluid {
+  padding: 0;
+  overflow: hidden;
+}
+
+.grip-items .grip-area .container-fluid .row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.grip-items .grip-area .container-fluid .row .grip-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .grip-items .grip-area .container-fluid .row .grip-item {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+@media (max-width: 767px) {
+  .grip-items .grip-area .container-fluid .row .grip-item {
+    padding: 60px 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .grip-items .grip-area .container-fluid .row .grip-item {
+    padding-left: 20px;
+  }
+}
+
+.grip-items .grip-area .container-fluid .row .grip-item .grid-title h2 {
+  font-size: 50px;
+  letter-spacing: 3px;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .grip-items .grip-area .container-fluid .row .grip-item .grid-title h2 {
+    font-size: 45px;
+  }
+}
+
+@media (max-width: 767px) {
+  .grip-items .grip-area .container-fluid .row .grip-item .grid-title h2 {
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .grip-items .grip-area .container-fluid .row .grip-item .grip-decs {
+    text-align: center;
+  }
+}
+
+.grip-items .grip-area .container-fluid .row .grip-item .grip-decs p {
+  margin-bottom: 40px;
+  font-size: 20px;
+}
+
+@media (max-width: 767px) {
+  .grip-items .grip-area .container-fluid .row .grip-item .grip-decs p {
+    font-size: 17px;
+  }
+}
+
+.grip-items .grip-area .container-fluid .row .grip-item .grip-btn {
+  margin-top: 30px;
+  display: inline-block;
+}
+
+.grip-items .grip-area .container-fluid .row .grip-item .grip-btn a {
+  background: #000;
+  padding: 15px 40px;
+  color: #fff;
+  font-size: 22px;
+  border-radius: 10px;
+}
+
+.grip-items .grip-area .container-fluid .row .grip-images img {
+  height: 100vh;
+  width: 100%;
+}
+/*# sourceMappingURL=style.css.map */

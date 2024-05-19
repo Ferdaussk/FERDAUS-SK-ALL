@@ -1,0 +1,102 @@
+.mtt-team-area {
+    .mtt-team {
+        padding: 30px 25px 40px;
+        background: #f7f5ec;
+        text-align: center;
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 30px;
+        border-radius: 5px;
+        .mtt-pic{
+            display: inline-block;
+            width: 130px;
+            height: 130px;
+            margin-bottom: 50px;
+            z-index: 1;
+            position: relative;
+            border: 10px solid transparent;
+            border-radius: 50%;
+            transition: .4s linear;
+            &::before{
+                content: "";
+                width: 100%;
+                height: 0;
+                border-radius: 50%;
+                background: #ee4266;
+                position: absolute;
+                bottom: 135%;
+                right: 0;
+                left: 0;
+                opacity: 0.2;
+                transform: scale(3);
+                transition: all 0.3s linear 0s;
+            }
+            img{
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                transform: scale(1);
+                transition: all 0.9s ease 0s;
+                object-fit: cover;
+            }
+        }
+        &:hover {
+            .mtt-pic {
+                border-color: #ee4266;
+                &::before {
+                    height: 100%;
+                }
+                img {
+                    box-shadow: 0 0 0 14px #f7f5ec;
+                    transform: scale(0.7);
+                }
+            }
+        }
+        .mtt-team-content{ 
+            margin-bottom: 30px; 
+            .mtt-title{
+                font-size: 22px;
+                font-weight: 700;
+                color: #4e5052;
+                letter-spacing: 1px;
+                text-transform: capitalize;
+                margin-bottom: 5px;
+            }
+            .mtt-post{
+                display: block;
+                font-size: 15px;
+                color: #4e5052;
+                text-transform:capitalize;
+            }
+        }
+        .mtt-social{
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            background: #eb1768;
+            position: absolute;
+            bottom: -100px;
+            left: 0;
+            transition: all 0.5s ease 0s;
+            display: flex;
+            justify-content: center;
+            a {
+                display: block;
+                padding: 10px;
+                font-size: 17px;
+                color: #fff;
+                transition: all 0.3s ease 0s;
+                &:hover {
+                    color: #eb1768;
+                    background: #f7f5ec;
+                }
+            }
+        }
+        &:hover {
+            .mtt-social {
+                bottom: 0;
+            }
+        }
+    }
+}
+

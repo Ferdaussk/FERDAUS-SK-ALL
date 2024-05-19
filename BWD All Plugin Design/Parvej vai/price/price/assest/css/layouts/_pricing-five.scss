@@ -1,0 +1,96 @@
+.bwd-grid-container-five {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 20rem));
+    justify-content: center;
+    gap: 2rem;
+    background: #1b2035;
+    color: #fff;
+    .bwd-pricing-card {
+        text-align: center;
+        background: linear-gradient(135deg, #cb70ba, #6297d7);
+        color: #fff;
+        padding: 40px 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(233, 33, 243, 0.295);
+        .bwd-price {
+            position: relative;
+            background: linear-gradient(45deg, #f79f1f, #ee5a24);
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            text-align: center;
+            margin:  0 auto 60px;
+            .bwd-amount {
+                line-height: 148px;
+                font-weight: 900;
+                font-size: 30px;
+            }
+            .bwd-circle {
+                position: absolute;
+                top: 55%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                .bwd-span-circle {
+                    position: relative;
+                    display: block;
+                    background: transparent;
+                    width: 200px;
+                    height: 200px;
+                    border: 5px solid #e17055;
+                    border-radius: 50%;
+                    animation: span 15s linear infinite;
+                    @keyframes span {
+                        form {
+                            transform: rotate(0deg);
+                        }
+                        to {
+                            transform: rotate(360deg);
+                        }
+                    }
+                    &:after,
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        background: linear-gradient(135deg, #4b0452, #8f70dd);
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 50%;
+                        box-shadow: 0 0 20px 0 rgba(46, 44, 44, 0.705);
+                    }
+                    &::after {
+                        top:-19px;
+                    }
+                    &::before {
+                        width: 30px;
+                        height: 30px;
+                        bottom: -20px;
+                    }
+                }
+            }
+        }
+        .bwd-pricing-card-content {
+            .bwd-title {
+                font-size: 30px;
+                margin-bottom: 25px;
+                font-weight: 600;
+                text-transform: capitalize;
+                color: #f79f1f;
+            }
+            span {
+                display: block;
+                padding: 10px;
+                font-size: 16px;
+                font-style: italic;
+                i {
+                    background: #f79f1f;
+                    border-radius: 50%;
+                }
+            }
+            .bwd-pricing-signup {
+                @include btn-two;
+                background: linear-gradient(45deg, #f79f1f, #ee5a24);
+                margin-top: 20px;
+            }
+        }
+    }
+}

@@ -1,0 +1,103 @@
+.bwd-service-style-17 {
+    .bwd-service-box{
+        background: #fff;
+        text-align: center;
+        padding: 30px 30px;
+        border: 10px solid #ddd;
+        border-top-color: #21BCB8;
+        border-bottom-color: #21BCB8;
+        border-radius: 30px;
+        box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+        position: relative;
+        transition: .3s linear;
+        overflow: hidden;
+        margin-bottom: 40px;
+        @include mq (md) {
+            padding: 30px 18px;
+        }
+        @include mq (xs) {
+            padding: 30px 20px;
+        }
+        &:hover {
+            border-left-color: #21BCB8;
+            border-right-color: #21BCB8;
+        }
+        &.red {
+            border-top-color: #ED5543;
+            border-bottom-color: #ED5543;
+            .bwd-content {
+                .bwd-service-icon {
+                    color: #ED5543;
+                }
+            }
+            &:hover {
+                border-left-color: #ED5543;
+                border-right-color: #ED5543;
+            }
+        }
+        &.purple {
+            border-top-color: #924963;
+            border-bottom-color: #924963;
+            .bwd-content {
+                .bwd-service-icon {
+                    color: #924963;
+                }
+            }
+            &:hover {
+                border-left-color: #924963;
+                border-right-color: #924963;
+            }
+        }
+        &.yellow {
+            border-top-color: #ffa708;
+            border-bottom-color: #ffa708;
+            .bwd-content {
+                .bwd-service-icon {
+                    color: #ffa708;
+                }
+            }
+            &:hover {
+                border-left-color: #ffa708;
+                border-right-color: #ffa708;
+            }
+        }
+        &::before {
+            content: '';
+            border: 3px dashed #ddd;
+            border-radius: 20px;
+            position: absolute;
+            top: 8px;
+            bottom: 8px;
+            left: 8px;
+            right: 8px;
+        }
+        .bwd-content {
+            position: relative;
+            z-index: 9;
+            .bwd-service-icon {
+                color: #21BCB8;
+                font-size: 50px;
+                line-height: 50px;
+                margin: 0 0 15px;
+            }
+            .bwd-service-content {
+                .title {
+                    color: #333;
+                    font-size: 20px;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    margin: 0 0 7px;
+                }
+                p {
+                    color: #999;
+                    font-size: 14px;
+                    line-height: 24px;
+                    margin: 0;
+                    @include mq (md) {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+}

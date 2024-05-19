@@ -1,0 +1,597 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: BWD webinar Info\n"
+"POT-Creation-Date: 2022-09-25 17:26+0600\n"
+"PO-Revision-Date: 2022-09-25 17:26+0600\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: bwdwi-webinar-info.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: bwdwi-boots.php:54 bwdwi-webinar-info.php:68 bwdwi-webinar-info.php:83
+#: widgets/bwdwi-webinar-info.php:17
+msgid "BWD Webinar Info"
+msgstr ""
+
+#: bwdwi-webinar-info.php:67 bwdwi-webinar-info.php:82
+#, php-format
+msgid "\"%1$s\" requires \"%2$s\" version %3$s or greater."
+msgstr ""
+
+#: bwdwi-webinar-info.php:69
+msgid "Elementor"
+msgstr ""
+
+#: bwdwi-webinar-info.php:73 bwdwi-webinar-info.php:88
+#, php-format
+msgid "%1$s"
+msgstr ""
+
+#: bwdwi-webinar-info.php:84
+msgid "PHP"
+msgstr ""
+
+#: page-settings/bwdwi-webinar-info-manager.php:21
+msgid "New Webinar Info"
+msgstr ""
+
+#: page-settings/bwdwi-webinar-info-manager.php:32
+msgid "Settings"
+msgstr ""
+
+#: page-settings/bwdwi-webinar-info-manager.php:40
+#: page-settings/bwdwi-webinar-info-manager.php:42
+#: widgets/bwdwi-webinar-info.php:121
+msgid "Title"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:41 widgets/bwdwi-webinar-info.php:49
+msgid "Choose Style"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:53 widgets/bwdwi-webinar-info.php:86
+msgid "Style 1"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:54 widgets/bwdwi-webinar-info.php:87
+msgid "Style 2"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:55 widgets/bwdwi-webinar-info.php:88
+msgid "Style 3"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:56 widgets/bwdwi-webinar-info.php:89
+msgid "Style 4"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:57 widgets/bwdwi-webinar-info.php:90
+msgid "Style 5"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:58 widgets/bwdwi-webinar-info.php:91
+msgid "Style 6"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:59
+msgid "Style 7"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:60
+msgid "Style 8"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:61
+msgid "Style 9"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:62
+msgid "Style 10"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:63
+msgid "Style 11"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:64
+msgid "Style 12"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:65
+msgid "Style 13"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:66
+msgid "Style 14"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:67
+msgid "Style 15"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:68
+msgid "Style 16"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:69
+msgid "Style 17"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:70
+msgid "Style 18"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:71
+msgid "Style 19"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:72
+msgid "Style 20"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:73
+msgid "Style 21"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:82
+msgid "Count-Down Styles"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:102
+msgid "WebInar Content"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:110
+msgid "Choose Background Image"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:123
+msgid "Lorem ipsum dolor sit amet."
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:124 widgets/bwdwi-webinar-info.php:137
+#: widgets/bwdwi-webinar-info.php:161 widgets/bwdwi-webinar-info.php:199
+#: widgets/bwdwi-webinar-info.php:243 widgets/bwdwi-webinar-info.php:364
+msgid "Type your title here"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:134 widgets/bwdwi-webinar-info.php:577
+msgid "Description"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:136
+msgid ""
+"Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, odio."
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:147
+msgid "Choose Image One"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:158 widgets/bwdwi-webinar-info.php:196
+#: widgets/bwdwi-webinar-info.php:240 widgets/bwdwi-webinar-info.php:762
+msgid "Name"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:160 widgets/bwdwi-webinar-info.php:198
+#: widgets/bwdwi-webinar-info.php:242
+msgid "Wlliamson due"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:170 widgets/bwdwi-webinar-info.php:211
+#: widgets/bwdwi-webinar-info.php:255 widgets/bwdwi-webinar-info.php:815
+msgid "Designation"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:172 widgets/bwdwi-webinar-info.php:213
+#: widgets/bwdwi-webinar-info.php:257
+msgid "Marketing Expert "
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:173 widgets/bwdwi-webinar-info.php:214
+#: widgets/bwdwi-webinar-info.php:258
+msgid "Type your Designation here"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:182
+msgid "Choose Image Two"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:226
+msgid "Choose Image Three"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:271 widgets/bwdwi-webinar-info.php:299
+msgid "Date"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:287 widgets/bwdwi-webinar-info.php:350
+msgid "Icons"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:313
+msgid "Select GMT"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:317
+msgid "GMT+0"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:318
+msgid "GMT+1"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:319
+msgid "GMT+2"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:320
+msgid "GMT+3"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:321
+msgid "GMT+4"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:322
+msgid "GMT+5"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:323
+msgid "GMT+6"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:324
+msgid "GMT+7"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:325
+msgid "GMT+8"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:326
+msgid "GMT+9"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:327
+msgid "GMT+10"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:328
+msgid "GMT+11"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:329
+msgid "GMT+12"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:330
+msgid "GMT-1"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:331
+msgid "GMT-2"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:332
+msgid "GMT-3"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:333
+msgid "GMT-4"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:334
+msgid "GMT-5"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:335
+msgid "GMT-6"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:336
+msgid "GMT-7"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:337
+msgid "GMT-8"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:338
+msgid "GMT-9"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:339
+msgid "GMT-10"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:340
+msgid "GMT-11"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:341
+msgid "GMT-12"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:361
+msgid "Button Title"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:363
+msgid "Registration Now"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:371
+msgid "Link"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:373
+msgid "Write icon link here"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:388
+msgid "Count Down Content"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:396
+msgid "Expired Date"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:398
+msgid "2023-01-01 11:15"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:406
+msgid "Flip Time Unit Direction"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:408
+msgid "on"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:409
+msgid "off"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:418
+msgid "Unit Titles"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:426 widgets/bwdwi-webinar-info.php:429
+msgid "Day"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:438 widgets/bwdwi-webinar-info.php:441
+msgid "Hour"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:450 widgets/bwdwi-webinar-info.php:453
+msgid "Minutes"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:462 widgets/bwdwi-webinar-info.php:465
+msgid "Seconds"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:475
+msgid "Actions After Expire"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:481
+msgid "Redirect"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:482
+msgid "Hide"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:483
+msgid "Show Message"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:492
+msgid "Redirect Url"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:507
+msgid "Message"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:525
+msgid "Heading"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:532 widgets/bwdwi-webinar-info.php:584
+msgid "Alignment"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:536 widgets/bwdwi-webinar-info.php:588
+msgid "Left"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:540 widgets/bwdwi-webinar-info.php:592
+msgid "Center"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:544 widgets/bwdwi-webinar-info.php:596
+msgid "Right"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:557 widgets/bwdwi-webinar-info.php:609
+#: widgets/bwdwi-webinar-info.php:769 widgets/bwdwi-webinar-info.php:822
+#: widgets/bwdwi-webinar-info.php:861 widgets/bwdwi-webinar-info.php:936
+#: widgets/bwdwi-webinar-info.php:1005
+msgid "Color"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:629
+msgid "Image"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:636 widgets/bwdwi-webinar-info.php:680
+msgid "Image Width"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:658
+msgid "Second Image Width"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:701
+msgid "Image Height"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:723 widgets/bwdwi-webinar-info.php:779
+#: widgets/bwdwi-webinar-info.php:832 widgets/bwdwi-webinar-info.php:1175
+msgid "Background"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:736 widgets/bwdwi-webinar-info.php:878
+#: widgets/bwdwi-webinar-info.php:974 widgets/bwdwi-webinar-info.php:1080
+#: widgets/bwdwi-webinar-info.php:1283
+msgid "Padding"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:747 widgets/bwdwi-webinar-info.php:986
+#: widgets/bwdwi-webinar-info.php:1033 widgets/bwdwi-webinar-info.php:1112
+msgid "Border radius"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:793 widgets/bwdwi-webinar-info.php:1185
+msgid "Border Color"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:854
+msgid "Date and Time"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:889
+msgid "Icon Color"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:899
+msgid "Icon Font Size"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:920
+msgid "Button"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:930
+msgid "Normal"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:946
+msgid "Backgroud Color"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:967 widgets/bwdwi-webinar-info.php:1026
+#: widgets/bwdwi-webinar-info.php:1105
+msgid "Border"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:999
+msgid "Hover"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:1015 widgets/bwdwi-webinar-info.php:1056
+msgid "Backgroud color"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:1049
+msgid "Content Box"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:1066
+msgid "Bg Shape color"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:1092 widgets/bwdwi-webinar-info.php:1297
+msgid "Margin"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:1125
+msgid "Box Shadow"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:1134
+msgid "Count Down Style"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:1142
+msgid "Time Units"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:1159 widgets/bwdwi-webinar-info.php:1367
+msgid "Text Color"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:1199
+msgid "Top Line Color"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:1217
+msgid "Bottom Line Color"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:1231
+msgid "Width"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:1256
+msgid "Height"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:1310
+msgid "Unit BG Shape Color"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:1322
+msgid "Shape One Color"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:1336
+msgid "Shape Two Color"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:1350
+msgid "Unit Title"
+msgstr ""
+
+#: widgets/bwdwi-webinar-info.php:1378
+msgid "BG Color"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "BWD webinar Info"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://bestwpdeveloper.com/webinar-info-addon-for-elementor"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"BWD webinar info is an Elementor plugin that has been enriched with 20+ "
+"unique ready-made designs. More designs will come very soon stay tuned"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Best WP Developer"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://wppluginzone.com/"
+msgstr ""

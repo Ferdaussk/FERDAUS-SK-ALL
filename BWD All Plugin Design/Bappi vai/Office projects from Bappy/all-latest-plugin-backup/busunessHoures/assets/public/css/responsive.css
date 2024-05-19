@@ -1,0 +1,282 @@
+
+
+/* xxl devices */
+@media (min-width: 1400px) and (max-width: 1700px) {
+
+       
+}
+
+/* xl devices */
+@media (min-width: 1200px) and (max-width: 1399px){
+    .bwdbh_business_our_13 .bwdbh_main-title {
+        font-size: 42px;
+    }
+}
+
+/* lg devices */
+@media (min-width: 992px) and (max-width: 1199px){
+    
+    .bwdbh_business_our_13 .bwdbh_main-title {
+        font-size: 35px;
+    }
+    .bwdbh_business_our_9 .bwdbh_content-box {
+        margin-bottom: 50px!important;
+    }
+    
+}
+
+/* md devices */
+@media (min-width: 768px) and (max-width: 991px){
+
+    .bwdbh_business_our_8 .bwdbh_timing-box {
+        margin-bottom: 50px!important;
+    }
+
+    .bwdbh_business_our_9 .bwdbh_content-box {
+        margin-bottom: 50px!important;
+    }
+
+    .bwdbh_business_our_12 .bwdbh_timing-box {
+        max-width: 85%;
+        margin: auto;
+        transform: translateY(-150px);
+    }
+}
+
+/* xs devices */
+@media (max-width: 767px){
+
+.bwdbh_business_our_1 .bwdbh_timing-box,
+.bwdbh_business_our_2 .bwdbh_timing-box {
+    padding: 35px 25px;
+}
+.bwdbh_business_our_1 .bwdbh_main-title {
+    font-size: 30px;
+}
+.bwdbh_business_our_3 .bwdbh_timing-box {
+    padding: 50px 0;
+}
+.bwdbh_business_our_3 .bwdbh_week_time {
+    padding: 0 25px;
+}
+.bwdbh_business_our_4 .bwdbh_single-item {
+    padding: 30px 25px;
+}
+
+.bwdbh_business_our_8 .bwdbh_timing-box {
+    margin-bottom: 50px!important;
+}
+.bwdbh_business_our_8 .bwdbh_single-item {
+    padding: 15px;
+    margin-bottom: 20px!important;
+}
+
+.bwdbh_business_our_9 .bwdbh_content-box {
+    margin-bottom: 50px!important;
+}
+.bwdbh_business_our_9 {
+    padding: 50px 0;
+}
+
+.bwdbh_business_our_10 .bwdbh_timing-box {
+    padding: 80px 10px 20px;
+}
+.bwdbh_business_our_10 .bwdbh_business_BG {
+    padding: 50px 0;
+}
+
+.bwdbh_business_our_12 .bwdbh_timing-box {
+    padding: 20px;
+    max-width: 90%;
+    margin: auto;
+    transform: translateY(-100px);
+}
+.bwdbh_business_our_12 .bwdbh_single-item {
+    padding: 8px 0;
+}
+
+
+.bwdbh_business_our_13 .bwdbh_timing-box {
+    padding: 50px 15px;
+}
+.bwdbh_business_our_13 .bwdbh_main-title {
+    font-size: 25px;
+}
+
+
+.bwdbh_business_our_14 .bwdbh_timing-box {
+    padding: 30px 20px;
+}
+.bwdbh_business_our_14 .bwdbh_main-title {
+    font-size: 24px;
+}
+
+.bwdbh_business_our_15 .bwdbh_all-item {
+    padding: 20px 5px;
+}
+.bwdbh_business_our_15 .bwdbh_timing-box {
+    padding: 20px 20px;
+}
+
+.bwdbh_business_our_16 .bwdbh_timing-box {
+    padding: 20px 15px;
+}
+.bwdbh_business_our_16 .bwdbh_week-date_item {
+    padding: 15px 10px;
+}
+.bwdbh_business_our_16 .bwdbh_main-title {
+    font-size: 28px;
+    margin-bottom: 20px!important;
+}
+.bwdbh_business_our_16 .bwdbh_sub-title {
+    font-size: 16px;
+    bottom: -22px;
+}
+.bwdbh_business_our_16 .bwdbh_sub-title {
+    padding: 5px 10px;
+}
+
+.bwdbh_business_our_18 .bwdbh_all-item {
+    padding: 20px;
+}
+.bwdbh_business_our_19 .bwdbh_timing-box {
+    padding: 20px;
+}
+.bwdbh_business_our_20 .bwdbh_timing-box {
+    padding: 20px;
+}
+.bwdbh_business_our_20 .bwdbh_single-item {
+    padding: 10px;
+}
+.bwdbh_business_our_20 .bwdbh_business-day,
+.bwdbh_business_our_20 .bwdbh_business-time {
+    font-size: 16px;
+}
+.bwdbh_business_our_21 .bwdbh_timing-box {
+    padding: 25px;
+}
+.bwdbh_business_our_21 .bwdbh_business-day,
+.bwdbh_business_our_21 .bwdbh_business-time {
+    font-size: 16px;
+}
+
+.bwdbh_business_our_22 .bwdbh_main-title::after {
+    font-size: 38px;
+}
+.bwdbh_business_our_22 .bwdbh_main-title {
+    font-size: 26px;
+}
+.bwdbh_business_our_22 .bwdbh_timing-box {
+    margin-top: 30px;
+}
+.bwdbh_business_our_22 .bwdbh_business-day,
+.bwdbh_business_our_22 .bwdbh_business-time {
+    font-size: 16px;
+}
+.bwdbh_business_our_22 .bwdbh_single-item {
+    padding: 15px 0;
+}
+
+.bwdbh_business_our_23 .bwdbh_main-title {
+    font-size: 35px;
+}
+.bwdbh_business_our_23 .bwdbh_single-item {
+    padding: 15px;
+}
+.bwdbh_business_our_23 .bwdbh_business-day,
+.bwdbh_business_our_23 .bwdbh_business-time {
+    font-size: 16px;
+}
+
+.bwdbh_business_our_24 .bwdbh_timing-box {
+    padding: 20px;
+}
+.bwdbh_business_our_24 .bwdbh_business-day,
+.bwdbh_business_our_24 .bwdbh_business-time {
+    font-size: 16px;
+}
+
+.bwdbh_business_our_25  .bwdbh_main-title {
+    font-size: 40px;
+}
+.bwdbh_business_our_25 .bwdbh_business-day,
+.bwdbh_business_our_25 .bwdbh_business-time {
+    font-size: 16px;
+}
+.bwdbh_business_our_25 .bwdbh_single-item {
+    padding: 15px;
+}
+.bwdbh_business_our_26 .bwdbh_business-day,
+.bwdbh_business_our_26 .bwdbh_business-time {
+    font-size: 16px;
+}
+.bwdbh_business_our_26 .bwdbh_single-item {
+    padding: 15px;
+}
+
+.bwdbh_business_our_27 .bwdbh_main-title {
+    font-size: 32px;
+    padding: 15px 20px;
+}
+.bwdbh_business_our_27 .bwdbh_business-day,
+.bwdbh_business_our_27 .bwdbh_business-time {
+    font-size: 16px;
+}
+
+.bwdbh_business_our_28 .bwdbh_business-day,
+.bwdbh_business_our_28 .bwdbh_business-time {
+    font-size: 16px;
+}
+
+.bwdbh_business_our_29 .bwdbh_main-title {
+    padding: 20px 25px;
+}
+.bwdbh_business_our_29 .bwdbh_business-day,
+.bwdbh_business_our_29 .bwdbh_business-time {
+    font-size: 16px;
+}
+.bwdbh_business_our_29 .bwdbh_single-item {
+    padding: 20px 25px;
+}
+
+.bwdbh_business_our_30 .bwdbh_business-day,
+.bwdbh_business_our_30 .bwdbh_business-time {
+    font-size: 16px;
+}
+.bwdbh_business_our_30 .bwdbh_single-item {
+    padding: 15px;
+}
+
+.bwdbh_business_our_31 .bwdbh_main-title {
+    font-size: 25px;
+    padding: 18px;
+}
+.bwdbh_business_our_31 .bwdbh_business-day,
+.bwdbh_business_our_31 .bwdbh_business-time {
+    font-size: 16px;
+}
+.bwdbh_business_our_31 .bwdbh_timing-box {
+    padding: 60px 20px 20px;
+}
+
+
+}
+
+/* sm devices */
+@media only screen and (min-width: 576px) and (max-width: 767px){
+
+
+
+    .bwdbh_business_our_13 .bwdbh_timeing-box {
+        padding: 50px;
+    }
+
+}
+
+
+/* @media only screen and (min-width: 2000px) and (max-width: 5000px){
+    .container-fluid{
+        max-width: 1700px;
+    }
+} */
+

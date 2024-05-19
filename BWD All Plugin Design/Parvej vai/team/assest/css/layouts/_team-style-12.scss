@@ -1,0 +1,147 @@
+.mtt-team-style-12-area {
+    .mtt-team-style-box{
+        text-align: center;
+        box-shadow: 0 0 15px 5px rgba(0,0,0,.07);
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 40px;
+        &:before{
+            content: "";
+            width: 50%;
+            height: 75%;
+            border-top: 208px solid rgba(7,0,2,.3);
+            border-left: 140px solid rgba(240,74,126,.6);
+            border-bottom: 188px solid transparent;
+            border-right: 160px solid transparent;
+            position: absolute;
+            top: 0;
+            left: -260px;
+            z-index: 1;
+            transition: all .4s ease-in-out;
+
+            @include mq(xs){
+                height: 205%;
+            }
+            @include mq(sm){
+                height: 70%;
+            }
+        }
+        &:hover {
+            &:before{
+                border-top: 360px solid rgba(240,74,126,.8);
+                border-left: 422px solid rgba(240,74,126,.8);
+                border-bottom: 218px solid transparent;
+                border-right: 160px solid transparent;
+                transform: rotate3d(0,0,1,52deg) scale3d(1,1,1);
+                top: 103px;
+                left: -350px;
+                @include mq(md){ 
+                    border-top: 240px solid rgba(240,74,126,.8);
+                    border-left: 500px solid rgba(240,74,126,.8);
+                    border-bottom: 400px solid transparent;
+                    border-right: 130px solid transparent;
+                    top: 135px;
+                    left: -400px;
+                }
+                @include mq(xs){ 
+                    border-top: 156px solid rgba(240,74,126,.8);
+                    border-left: 600px solid rgba(240,74,126,.8);
+                    border-bottom: 485px solid transparent;
+                    border-right: 260px solid transparent;
+                    top: 300px;
+                    left: -185%;
+                }
+                @include mq(sm){ 
+                    border-top: 240px solid rgba(240,74,126,.8);
+                    border-left: 500px solid rgba(240,74,126,.8);
+                    border-bottom: 400px solid transparent;
+                    border-right: 130px solid transparent;
+                    top: 135px;
+                    left: -400px;
+                }
+            }
+        }
+        .mtt-pic {
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+        .mtt-team-content{
+            color: #fff;
+            background-color: rgba(240,74,126,.8);
+            width: 60%;
+            padding: 10px 10px;
+            transform: scale(0);
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            transition: all .5s ease-in-out;
+            border-radius: 5px;
+            .mtt-title{
+                font-size: 20px;
+                font-weight: 700;
+                letter-spacing: 0.5px;
+                text-transform: uppercase;
+                margin: 0;
+            }
+            .mtt-post{
+                font-size: 15px;
+                font-weight: 500;
+                font-style: italic;
+                text-transform: capitalize;
+                display: block;
+            }
+        }
+        &:hover {
+            .mtt-team-content {
+                transform: scale(1);
+            }
+        }
+        .mtt-social {
+            position: absolute;
+            left: 50%;
+            bottom: 10px;
+            transform: translateX(-50%);
+            z-index: 1;
+            transition: all .5s ease-in-out;
+            display: flex;
+            opacity: 0;
+            @include mq(xs){ 
+                left: 5%;
+                transform: translateX(0);
+            }
+            @include mq(sm){ 
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            a{
+                color: #f04a7e99;
+                background-color: #fff;
+                font-size: 16px;
+                line-height: 28px;
+                height: 30px;
+                width: 30px;
+                border: 2px dotted transparent;
+                border-radius: 50%;
+                display: block;
+                transform: rotate(0);
+                transition: all 0.3s;
+                margin: 0 4px;
+                &:hover{
+                    color: #f44178;
+                    background:#fff;
+                    border-color: #f44178;
+                    transform: rotate(360deg);
+                }
+            }
+        }
+        &:hover {
+            .mtt-social {
+                opacity: 1;
+               
+            }
+        }
+    }
+}
+

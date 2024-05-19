@@ -1,0 +1,151 @@
+.bwd-counter-26 {
+  padding: 30px 0;
+
+  .bwd-counter {
+    padding: 70px 20px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 75px;
+    margin-top: 15px;
+    color: #fff;
+    z-index: 1;
+    position: relative;
+    max-width: 280px;
+    @include mq(xs){
+      margin-bottom: 65px;
+    }
+
+    &::before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      background: #f740c0;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -1;
+      -webkit-clip-path: polygon(
+        0% 15%,
+        15% 15%,
+        15% 0%,
+        85% 0%,
+        85% 15%,
+        100% 15%,
+        100% 85%,
+        85% 85%,
+        85% 100%,
+        15% 100%,
+        15% 85%,
+        0% 85%
+      );
+      clip-path: polygon(
+        0% 15%,
+        15% 15%,
+        15% 0%,
+        85% 0%,
+        85% 15%,
+        100% 15%,
+        100% 85%,
+        85% 85%,
+        85% 100%,
+        15% 100%,
+        15% 85%,
+        0% 85%
+      );
+      transition: .4s;
+    }
+
+    .bwd-counter-value {
+      display: block;
+      font-size: 40px;
+      font-weight: 700;
+      margin: 0 0 5px;
+      line-height: 1;
+      @include mq(lg){
+        font-size: 35px;
+      }
+    }
+
+    .bwd-counter-heading {
+      font-size: 20px;
+      font-weight: 600;
+      text-transform: uppercase;
+      line-height: 1.2;
+      padding: 10px 0;
+      @include mq(lg) {
+        font-size: 19px;
+      }
+    }
+
+    .bwd-counter-icon {
+      width: 100px;
+      height: 100px;
+      line-height: 100px;
+      border-radius: 50%;
+      background: #fff;
+      margin: 0 auto;
+      font-size: 50px;
+      color: #f740c0;
+      border-bottom: 2px solid#f740c0;
+      position: absolute;
+      bottom: -60px;
+      left: 0;
+      right: 0;
+      @include mq(lg) {
+        width: 90px;
+        height: 90px;
+        line-height: 90px;
+        font-size: 45px;
+        position: absolute;
+        bottom: -45px;
+      }
+    }
+
+    &:hover{
+      &::before{
+        clip-path: polygon(0% 0%, 15% 0%, 15% 0%, 85% 0%, 85% 0%, 100% 0%, 100% 85%, 100% 85%, 100% 100%, 0% 100%, 0% 85%, 0% 85%);
+      }
+    }
+  }
+
+  .row > * {
+    &:nth-child(2) {
+      .bwd-counter {
+        &::before {
+          background-color: #f38d19;
+        }
+
+        .bwd-counter-icon {
+          color: #f38d19;
+          border-bottom: 2px solid #f38d19;
+        }
+      }
+    }
+
+    &:nth-child(3) {
+      .bwd-counter {
+        &::before {
+          background-color: #19a3f3;
+        }
+
+        .bwd-counter-icon {
+          color: #19a3f3;
+          border-bottom: 2px solid #19a3f3;
+        }
+      }
+    }
+
+    &:nth-child(4) {
+      .bwd-counter {
+        &::before {
+          background-color: #3ac969;
+        }
+
+        .bwd-counter-icon {
+          color: #3ac969;
+          border-bottom: 2px solid #3ac969;
+        }
+      }
+    }
+  }
+}

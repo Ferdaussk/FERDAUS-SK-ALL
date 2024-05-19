@@ -1,0 +1,82 @@
+.mtt-team-style-20-area {
+    .mtt-team-style-20-team {
+        text-align: center;
+        position: relative;
+        margin-bottom: 40px;
+        .mtt-pic {
+            width: 190px;
+            height: 190px;
+            border-radius: 50%;
+            border: 8px solid #B33771;
+            margin: 0 auto;
+            overflow: hidden;
+            transform: rotateY(0);
+            transition: .6s linear;
+            img {
+                width: 100%;
+            }
+        }
+        &:hover {
+            .mtt-pic {
+                transform: rotateY(360deg);
+            }
+        }
+        .mtt-social {
+            position: absolute;
+            top: 50px;
+            left: -8px;
+            transition: .4s linear;
+            a {
+                display: block;
+                width: 30px;
+                height: 30px;
+                line-height: 30px;
+                border-radius: 50%;
+                background: #f28a31;
+                font-size: 14px;
+                color: #fff;
+                text-align: center;
+                margin-bottom: 10px;
+                transform: scale(0);
+                opacity: 0;
+                transition: .3s linear;
+                &:hover {
+                    background-color: #B33771;
+                    box-shadow: 0 0 0 5px rgba(44, 44, 44, 0.3);
+                }
+            }     
+        }
+        &:hover {
+            .mtt-social {
+                a {
+                    transform: scale(1);
+                    opacity: 1;
+                }
+            }
+        }
+        .mtt-team-content {
+            padding: 15px 35px 20px;
+            background: #B33771;
+            border-radius: 40px 10px;
+            margin-top: -10px;
+            color: #fff;
+            transition: .3s linear;
+            .mtt-title {
+                font-size: 26px;
+                font-weight: bold;
+                margin: 10px 0 5px 0;
+            }
+            .mtt-post {
+                display: block;
+                text-transform: capitalize;
+                font-weight: normal;
+                font-size: 13px;
+            }
+        }
+        &:hover {
+            .mtt-team-content {
+                border-radius: 0;
+            }
+        }
+    }
+}

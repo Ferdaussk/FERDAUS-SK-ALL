@@ -1,0 +1,32 @@
+* tasks // user youtube theke je link ai dok seta video play koraite hobe
+
+
+youtube link can be this kinds
+
+form address bar
+1.https://www.youtube.com/watch?v=BfGOYh9Fdwg&list=PL_XxuZqN0xVD0op-QDEgyXFA4fRPChvkl&index=22
+
+https://www.youtube.com/watch?v=kEFIdXzQXYw&t=1s
+
+copy link address on video right click
+2.https://www.youtube.com/watch?v=BfGOYh9Fdwg&list=PL_XxuZqN0xVD0op-QDEgyXFA4fRPChvkl&index=14
+
+share
+3.https://youtu.be/BfGOYh9Fdwg
+
+copy video url
+4.https://youtu.be/BfGOYh9Fdwg?list=PL_XxuZqN0xVD0op-QDEgyXFA4fRPChvkl
+
+
+
+
+solution//
+
+1. the link should be to show in popup
+   https://www.youtube.com/embed/BfGOYh9Fdwg
+
+2. essentials methods 
+    a. text.includes("welcome")
+    b. text.indexOf("welcome") return the index of prev node index of the text
+
+<iframe width="1424" height="531" src="https://www.youtube.com/embed/BfGOYh9Fdwg?list=PL_XxuZqN0xVD0op-QDEgyXFA4fRPChvkl" title="Lecture 13 - Create Models, Write Pseudo Code and Adda | Full-stack Army" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

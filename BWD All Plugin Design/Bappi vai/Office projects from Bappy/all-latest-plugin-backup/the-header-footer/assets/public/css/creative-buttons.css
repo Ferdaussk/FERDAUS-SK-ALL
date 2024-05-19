@@ -1,0 +1,1368 @@
+
+/* Ferdaussk */
+.thf-all-button-left{
+    text-align: left;
+}
+.thf-all-button-center{
+    text-align: center;
+}
+.thf-all-button-right{
+    text-align: right;
+}
+.thf-title {
+    z-index: 2;
+}
+/* Ferdaussk */
+.thf-title {
+    text-decoration: none !important;
+}
+
+/*---- btn-one ----*/
+.style1 .thf-title {
+    display: inline-block;
+    color: #2C3E50;
+    background-color: rgba(0,0,0,0.08);
+    font-size: 16px;
+    padding: 1em 2.32em;
+    font-weight: 700;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    border: 1px solid #2C3E50;
+    border-radius: 0;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    transition: .6s linear;
+}
+.style1 .thf-title:hover {
+    color: #fff;
+    background: transparent;
+    border-color: transparent;
+}
+.style1 .thf-title::before {
+    content: "";
+    background: linear-gradient(#2C3E50,#4CA1AF);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;         
+    left: 50%;
+    top: -50%;
+    z-index: -1;
+    transition: top .5s ease-in .5s, width .5s ease-out, height .5s ease-out;
+}
+.style1 .thf-title:hover::before{
+    width: 500px;
+    height: 500px;
+    top: 50%;
+    transition: top .5s ease-in, width .5s ease-out .5s, height .5s ease-out .5s;
+}
+
+    /*---- btn-two ----*/
+.style2 a {
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+}
+.style2 .thf-title {
+    background: #ff7f50;
+    border-radius: 4px;
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    padding: 1em 2.32em;
+    text-align: center;
+    text-transform: capitalize;
+    touch-action: manipulation;
+    transition: .9s;
+    vertical-align: middle;
+    position: relative;
+    z-index: 1;   
+}
+.style2 a:hover .thf-title {
+	background: transparent;
+}
+.style2 .thf-title:hover {
+    color: #403e3eed;
+}
+.style2 a span {
+    background: #17c0eb;
+    border-radius: 50%;
+    display: inline-block;
+    height: 0;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    transition: width 1.3s ease 0s, height 1.3s ease 0s;
+    width: 0;
+    z-index: 1;
+}
+.style2 a:hover > span {
+    height: 562.5px;
+    width: 562.5px;
+	z-index: -1;
+}
+
+/*---- btn-three ----*/
+.style3 .thf-title {
+    background: #f04336;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    line-height: 2;
+    margin-bottom: 0;
+    padding: 1em 2.32em;
+    text-align: center;
+    text-transform: capitalize;
+    transition: all 0.3s ease 0s;
+    vertical-align: middle;
+    white-space: nowrap;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.style3 .thf-title::before {
+    content: "";
+    position: absolute;
+    transition-duration: 800ms;
+    width: 200%;
+    height: 200%;
+    top: 110%;
+    left: 50%;
+    background: #0a303a;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    z-index: -1;
+}
+.style3 .thf-title:hover:before {
+    top: -40%;
+}
+.style3 .thf-title:hover {
+	color: #fff;
+}
+
+/*---- btn-twenty-six ----*/
+.style4 .thf-title{
+    display: inline-block;
+    color: red;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 3px 30px;
+    line-height: 3;
+    border: none;
+    border-radius: 0;
+    perspective: 500px;
+    transform-style: preserve-3d;
+    position: relative;
+    z-index: 1;
+    transition: all 0.5s;
+}
+.style4 .thf-title:hover { 
+    color: red; 
+}
+.style4 .thf-title:before,
+.style4 .thf-title:after{
+    content: attr(data-hover);
+    color: #227093;
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+    padding: 0 15px;
+    border: 2px solid #227093;
+    transform: translateZ(0px);
+    transform-origin: 50% 50% -25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.2s ease;
+	z-index: -1;
+}
+.style4 .thf-title:after {
+    color: #fff;
+    background-color: #227093;
+    transform: rotateX(90deg);
+    transform-origin: 50% 50% -25px;
+    visibility: hidden;
+    transition: all 0.2s ease 0.05s;
+}
+.style4 .thf-title:hover:before { 
+    transform: translateZ(-200px); 
+}
+.style4 .thf-title:hover:after {
+    visibility: visible;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    transform: rotateX(0deg);
+}
+
+/*------- btn-fourty-one -------*/
+.style5 .thf-title {
+    display: inline-block;
+    outline: none;
+    border: none;
+    user-select: none;
+    background: transparent;
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding: 1em 2.65em;
+    border-radius: 40px;
+    background-color: #32557f;
+    background-image: linear-gradient(90deg, #32557f, #7eb4e2 53%, #32557f);
+    transition: all 200ms ease;
+    color: #fff;
+    background-size: 200%;
+}
+.style5 .thf-title:hover {
+    transform: scale(1.03);
+    background-position: 100%;
+}
+
+/*------- btn-fifty -------*/
+.style6 .thf-title {
+    display: inline-block;
+    text-decoration: none;
+    vertical-align: middle;
+    background-color: #605ded;
+    color: #fff !important;
+    border: 1px solid #605ded;
+    overflow: hidden;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: .9em 2.75em;
+    height: auto;
+    text-transform: capitalize;
+    text-align: center;
+    transition: .3s linear;
+    position: relative;
+    z-index: 1;
+}
+.style6 .thf-title:hover {
+    background-color: #211eb5;
+    border-color: #211eaf;
+}
+.style6 .thf-title::after {
+    content: "";
+    height: 300px;
+    width: 300px;
+    background-color: #211eb5;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%) scale(0);
+    transition: 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    z-index: -1;
+}
+.style6 .thf-title:hover::after {
+    transform: translateY(-50%) translateX(-50%) scale(1);
+}
+
+/*------- btn-fifty-nine -------*/
+.style7 .thf-title {
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 0;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    padding: .9em 2.32em !important;
+    color: #273c75;
+    vertical-align: middle;
+    position: relative;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    transition: all 0.50s ease 0s;
+    border: 1px solid #273c75;
+}
+.style7 .thf-title:hover {
+    letter-spacing: 4px;
+    border-color: transparent;
+}
+.style7 .thf-title::before {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top: 2px solid #273c75;
+    border-bottom: 2px solid #273c75;
+    transform: scale( 0, 1);
+    transition: all 0.3s ease 0s;
+}
+.style7 .thf-title:hover:before{
+    transform: scale(1);
+}
+
+
+
+/* ferdaussk */
+/*------- btn-sixty-two -------*/
+.style8 .thf-title {
+    display: inline-block;
+    border: none;
+    font-size: 16px;
+    padding: 1em 2.65em;
+    outline: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 1px;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    background: none;
+    text-shadow: 3px 3px 10px rgba(0,0,0,.45);
+}    
+.style8 .thf-title::before,
+.style8 .thf-title::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 30px;
+    transform: translateX(-50%) translateY(-50%);
+    width: 105%;
+    height: 105%;
+    z-index: -2;
+    background: linear-gradient(to right, #ff8c00, #40e0d0,  #ff0080);
+}
+.style8 .thf-title::before{
+    filter: blur(7px);
+    transition: .2s linear;
+} 
+.style8 .thf-title::after {
+    filter: blur(0.3px);
+} 
+.style8 .thf-title:hover::before {
+    width: 115%;
+    height: 115%;
+}
+
+/*------- btn-sixty-seven -------*/
+.style9 .thf-title {
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.9);
+    border-radius: 50px;
+    background: linear-gradient(-45deg, #ffa63d, #ff3d77, #338aff, #3cf0c5);
+    background-size: 600%;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 1em 2.65em;
+    border: none;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    transition: .3s linear;
+    animation: anime 16s linear infinite;
+}
+@-webkit-keyframes anime {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes anime {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+/*------- btn-eighty-seven -------*/
+.style10  .thf-title {
+    position: relative;
+    text-decoration: none;
+    color: #009688;
+    padding: .6em 2em;
+    border-radius: 30px;
+    border: 2px solid #009688;
+    font-size: 16px;
+    display: inline-block;
+    overflow: hidden;
+    background: transparent;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    font-weight: 700;
+    transition: .3s linear;
+}
+.style10  .thf-title:hover {
+    color: #fff;
+}
+.style10  .thf-title::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    left: 0;
+    background: #009688;
+    z-index: -1;
+    transition: .3s linear;
+}
+.style10  .thf-title::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    left: 0;
+    background: #009688;
+    opacity: .5;
+    z-index: -1;
+    transition: .5s linear;
+    transition-delay: .2s;
+}
+.style10  .thf-title:hover:before {
+    top: 0;
+}
+.style10  .thf-title:hover:after {
+    top: 0;
+}
+
+
+/*------- btn-eighty-eight -------*/
+.style11 .thf-title {
+    position: relative;
+    text-decoration: none;
+    color: #009688;
+    padding: 0.8em 2em;
+    font-size: 16px;
+    display: inline-block;
+    background: transparent;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    font-weight: 700;
+    transition: .3s linear;
+    border-radius: 0;
+    border: 3px solid #59ecd9;
+}
+.style11 .thf-title:hover {
+    color: #fff64c;
+    background: transparent;
+    border-color: transparent;
+}
+.style11 .thf-title::before,
+.style11 .thf-title::after {
+    content: '';
+    border: 0 solid transparent;
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+.style11 .thf-title::before {
+    border-bottom-width: 4px;
+    border-left-width: 4px;
+    transition-delay: 0s, 0s, 0.25s;
+}
+.style11 .thf-title::after {
+    border-top-width: 4px;
+    border-right-width: 4px;
+    transition-delay: 0s, 0.25s, 0s;
+}
+.style11 .thf-title:hover::before,
+.style11 .thf-title:hover::after {
+    width: 100%;
+    height: 100%;
+    border-color: #fff64c;
+    transition: border-color 0s, width 0.25s, height 0.25s;
+}
+.style11 .thf-title:hover::before {
+    transition-delay: 0s, 0s, 0.25s;
+}
+.style11 .thf-title:hover::after {
+    transition-delay: 0s, 0.25s, 0s;
+}
+
+  
+/*------- btn-eighty-nine -------*/
+.style12 .thf-title {
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    padding: 0.8em 2em;
+    font-size: 16px;
+    display: inline-block;
+    background: #27022d;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    font-weight: 700;
+    transition: .3s linear;
+    border-radius: 0;
+    overflow: hidden;
+}
+.style12 .thf-title:hover {
+    background: #9b59b6;
+}
+.style12 .thf-title::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg,transparent,#f1f1f1,transparent);
+    transition: .3s linear;
+}
+.style12 .thf-title:hover::before {
+    left: 100%;
+}
+
+/*---- btn-ninety-two ----*/
+.style13 .thf-title {
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    background: #ec2040;
+    padding: .8em 2.42em;
+    font-size: 16px;
+    display: inline-block;
+    overflow: hidden;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin-left: 10px;
+	 z-index: 1;
+}
+.style13 .thf-title:hover:after {
+    animation: mask-play 0.7s steps(70) forwards;
+    width: 100%;
+}
+.style13 .thf-title:after {
+    position: absolute;
+    content: attr(data-text);
+    right: 0px;
+    top: 0px;
+    width: 0;
+	height: 100%;
+    padding: .8em 0;
+    text-align: center;
+    color: #ec2040;
+    background: #000;
+    box-shadow: inset 0 0 0 1px #ec2040;
+    -webkit-mask: url(../img/natureSmaller.png);
+    mask: url(../img/natureSmaller.png);
+    mask-size: 7100% 100%;
+    -webkit-mask-size: 7100% 100%;
+    animation: mask-play-reverse 0.7s steps(70) forwards;
+	 z-index: -1;
+}
+@keyframes mask-play {
+    from {
+        -webkit-mask-position: 0 0;
+    }
+ 
+    to {
+        -webkit-mask-position: 100% 0;
+    }
+} 
+@keyframes mask-play-reverse {
+    from {
+        -webkit-mask-position: 100% 0;
+    }
+ 
+    to {
+        -webkit-mask-position: 0% 0;
+    }
+}
+
+
+/*------- btn-ninety-three -------*/
+.thf-btn-ninety-three .thf-title {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    padding: 1em 2.32em;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 800;
+    letter-spacing: 2px;
+    transition: .3s linear;
+    position: relative;
+	 z-index: 1;
+}
+.thf-btn-ninety-three .thf-title span {
+    position: relative;
+    z-index: 1;
+}
+.thf-btn-ninety-three .thf-title:before{
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/3.png);
+    background-size: cover;
+    transform-origin: right;
+    transition: .5s linear;
+	 z-index: -1;
+}
+.thf-btn-ninety-three .thf-title:hover::before {
+    background: url(../img/4.png);
+    background-position: center;
+    background-size: cover;
+}
+
+
+/*------- btn-ninety-four -------*/
+.thf-btn-ninety-four .thf-title {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    padding: 1em 2.32em;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 800;
+    letter-spacing: 2px;
+    transition: .3s linear;
+    position: relative;
+	 z-index: 1;
+}
+.thf-btn-ninety-four .thf-title:hover {
+    background: #333;
+}
+.thf-btn-ninety-four .thf-title span {
+    position: relative;
+    z-index: 1;
+}
+.thf-btn-ninety-four .thf-title:before{
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/4.png);
+    background-size: cover;
+    transform-origin: right;
+    transition: .3s linear;
+    transform: scale(1, 1);
+	 z-index: -1;
+}
+.thf-btn-ninety-four .thf-title:hover::before{
+    transform: scale(1, 0);
+}
+
+
+/*------- btn-ninety-five -------*/
+.thf-btn-ninety-five .thf-title {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    padding: 1em 2.32em;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 800;
+    letter-spacing: 2px;
+    transition: .3s linear;
+    position: relative;
+	 z-index: 1;
+}
+.thf-btn-ninety-five .thf-title:hover {
+    background: #333;
+}
+.thf-btn-ninety-five .thf-title span {
+    position: relative;
+    z-index: 1;
+}
+.thf-btn-ninety-five .thf-title::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/5.png);
+    background-size: cover;
+    transform-origin: right;
+    transition: .3s linear;
+    transform: scale(1, 1);
+	 z-index: -1;
+}
+.thf-btn-ninety-five .thf-title:hover::before {
+    transform: scale(0, 1);
+}
+
+
+/*------- btn-ninety-six -------*/
+.thf-btn-ninety-six .thf-title {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    padding: 1em 3.4em;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 800;
+    letter-spacing: 2px;
+    overflow: hidden;
+    transition: .4s linear;
+    position: relative;
+	 z-index: 1;
+}
+.thf-btn-ninety-six .thf-title:hover {
+    background: #333;
+}
+.thf-btn-ninety-six .thf-title span {
+    position: relative;
+    z-index: 1;
+}
+.thf-btn-ninety-six .thf-title::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/6.png);
+    background-size: cover;
+    transform-origin: right;
+    transition: .4s linear;
+    transform: scale(1.0);
+	 z-index: -1;
+}
+.thf-btn-ninety-six .thf-title:hover::before {
+    transform: scale(0.0);
+    background-position: top;
+}
+
+
+/*------- btn-ninety-seven -------*/
+.thf-btn-ninety-seven .thf-title {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    padding: 1em 3em;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 800;
+    letter-spacing: 2px;
+    overflow: hidden;
+    transition: .4s linear;
+    position: relative;
+	 z-index: 1;
+}
+.thf-btn-ninety-seven .thf-title span {
+    position: relative;
+    z-index: 1;
+}
+.thf-btn-ninety-seven .thf-title::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/7.png);
+    background-size: cover;
+    transform-origin: right;
+    transition: .5s linear;
+    transform: scale(1.1);
+	 z-index: -1;
+}
+.thf-btn-ninety-seven .thf-title:hover::before {
+    transform: scale(1.4);
+}
+
+
+/*------- btn-ninety-eight -------*/
+.thf-btn-ninety-eight .thf-title {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    padding: 1em 3.62em;
+    color: #fff;
+    background: #333;
+    text-transform: capitalize;
+    font-weight: 800;
+    letter-spacing: 2px;
+    overflow: hidden;
+    transition: .4s linear;
+    position: relative;
+	 z-index: 1;
+}
+.thf-btn-ninety-eight .thf-title:hover {
+    background: transparent;
+}
+.thf-btn-ninety-eight .thf-title span {
+    position: relative;
+    z-index: 1;
+}
+.thf-btn-ninety-eight .thf-title::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/8.png) center / cover;
+    transition: .5s linear;
+    transform: scale(0.1);
+    opacity: 0;
+	 z-index: -1;
+}
+.thf-btn-ninety-eight .thf-title:hover::before {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+
+/*------- btn-ninety-nine -------*/
+.thf-btn-ninety-nine .thf-title {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    padding: 1em 4em;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 800;
+    letter-spacing: 2px;
+    overflow: hidden;
+    transition: .4s linear;
+    position: relative;
+	 z-index: 1;
+}
+.thf-btn-ninety-nine .thf-title span {
+    position: relative;
+    z-index: 1;
+}
+.thf-btn-ninety-nine .thf-title::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/9.png) center / cover;
+    transform-origin: right;
+    transition: .5s linear;
+    transform: rotate(0deg);
+	 z-index: -1;
+}
+.thf-btn-ninety-nine .thf-title:hover {
+    padding: 1em 5em;
+}
+.thf-btn-ninety-nine .thf-title:hover::before {
+    transform: rotate(-360deg);
+    background: url(../img/10.png) center / cover;
+}
+
+
+/*------- btn-one-hundred -------*/
+.thf-btn-one-hundred .thf-title {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    padding: 1em 5em;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 800;
+    letter-spacing: 2px;
+    overflow: hidden;
+    transition: .4s linear;
+    position: relative;
+	 z-index: 1;
+}
+.thf-btn-one-hundred .thf-title:hover {
+    background: #333;
+}
+.thf-btn-one-hundred .thf-title span {
+    position: relative;
+    z-index: 1;
+}
+.thf-btn-one-hundred .thf-title::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/10.png) center / cover;
+    transition: .4s linear;
+    transform: rotateX(0);
+	 z-index: -1;
+}
+.thf-btn-one-hundred .thf-title:hover::before {
+    transform: rotateX(60deg);
+}
+
+
+/*------- btn-one-hundred-one -------*/
+.thf-btn-one-hundred-one .thf-title {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    padding: 1em 3em;
+    background: transparent;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 800;
+    letter-spacing: 2px;
+    overflow: hidden;
+    transition: .4s linear;
+    position: relative;
+	 z-index: 1;
+}
+.thf-btn-one-hundred-one .thf-title span {
+    position: relative;
+    z-index: 1;
+}
+.thf-btn-one-hundred-one .thf-title::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/11.png) center / cover;
+    transition: .4s linear;
+    transform: scaleX(1.5);
+	 z-index: -1;
+}
+.thf-btn-one-hundred-one .thf-title:hover::before {
+    transform: scaleX(-1.5);
+}
+
+
+/*------- btn-one-hundred-two -------*/
+.thf-btn-one-hundred-two .thf-title {
+    color: #fff;
+}
+.thf-btn-one-hundred-two .thf-title {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    padding: 1em 3.82em;
+    background: transparent;
+    text-transform: capitalize;
+    font-weight: 600;
+    letter-spacing: 2px;
+    overflow: hidden;
+    transition: .4s linear;
+    position: relative;
+	 z-index: 1;
+}
+.thf-btn-one-hundred-two .thf-title span {
+    position: relative;
+    z-index: 1;
+}
+.thf-btn-one-hundred-two .thf-title::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/12.png) center / cover;
+    transition: .4s linear;
+    transform: scaleY(1.1);
+	 z-index: -1;
+}
+.thf-btn-one-hundred-two .thf-title:hover::before {
+    transform: scaleY(-1.5);
+}
+
+
+/*------- btn-one-hundred-three -------*/
+.thf-btn-one-hundred-three .thf-title {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    padding: 1em 3.82em;
+    background: transparent;
+    background-color: transparent;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 600;
+    letter-spacing: 3px;
+    overflow: hidden;
+    transition: .4s linear;
+    position: relative;
+	 z-index: 1;
+}
+.thf-btn-one-hundred-three .thf-title span {
+    position: relative;
+    z-index: 1;
+}
+.thf-btn-one-hundred-three .thf-title::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/13.png) center / cover;
+    transition: .6s linear;
+    transform: scaleY(1);
+	 z-index: -1;
+}
+.thf-btn-one-hundred-three .thf-title::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    transition: .6s linear;
+	 z-index: -1;
+}
+.thf-btn-one-hundred-three .thf-title:hover::after {
+    background: url(../img/14.png) center / cover;
+}
+.thf-btn-one-hundred-three .thf-title:hover::before {
+    transform: scaleY(0);
+}
+
+
+/*------- btn-one-hundred-four -------*/
+.thf-btn-one-hundred-four .thf-title {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    padding: 1em 4em;
+    background: transparent;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 600;
+    letter-spacing: 2px;
+    overflow: hidden;
+    transition: .4s linear;
+    position: relative;
+	 z-index: 1;
+}
+.thf-btn-one-hundred-four .thf-title span {
+    position: relative;
+    z-index: 1;
+}
+.thf-btn-one-hundred-four .thf-title::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/14.png) center / cover;
+    transition: .4s linear;
+	 z-index: -1;
+}
+.thf-btn-one-hundred-four .thf-title:hover::before {
+    background: url(../img/16.png) center / cover;
+    transform: scale(1.3);
+}
+
+
+/*------- btn-one-hundred-five -------*/
+.thf-btn-one-hundred-five .thf-title {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    padding: 1em 3.32em;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 600;
+    letter-spacing: 2px;
+    overflow: hidden;
+    transition: .4s linear;
+    position: relative;
+	 z-index: 1;
+}
+.thf-btn-one-hundred-five .thf-title:hover {
+    padding: 1em 2.32em;
+}
+.thf-btn-one-hundred-five .thf-title span {
+    position: relative;
+    z-index: 1;
+}
+.thf-btn-one-hundred-five .thf-title::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/15.png) center / cover;
+    transition: .3s linear;
+	 z-index: -1;
+}
+.thf-btn-one-hundred-five .thf-title:hover::before {
+    background: url(../img/17.png) center / contain;
+    background-repeat: no-repeat;
+}
+
+
+/*------- btn-one-hundred-six -------*/
+.thf-btn-one-hundred-six .thf-title {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    padding: 1em 3.5em;
+    color: #fff;
+    background: #333;
+    text-transform: capitalize;
+    font-weight: 600;
+    letter-spacing: 2px;
+    overflow: hidden;
+    transition: .4s linear;
+    position: relative;
+	 z-index: 1;
+}
+.thf-btn-one-hundred-six .thf-title:hover {
+    background: transparent;
+}
+.thf-btn-one-hundred-six .thf-title span {
+    position: relative;
+    z-index: 1;
+}
+.thf-btn-one-hundred-six .thf-title::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/16.png) center / cover;
+    transition: .5s linear;
+    transform: scale(0);
+    transform-origin: bottom;
+	 z-index: -1;
+}
+.thf-btn-one-hundred-six .thf-title:hover::before {
+    transform: scale(1);
+}
+
+
+/*------- btn-one-hundred-seven -------*/
+.thf-btn-one-hundred-seven .thf-title {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    padding: 1em 3em;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 600;
+    letter-spacing: 2px;
+    overflow: hidden;
+    transition: .4s linear;
+    position: relative;
+	 z-index: 1;
+}
+.thf-btn-one-hundred-seven .thf-title:hover {
+    background: #333;
+}
+.thf-btn-one-hundred-seven .thf-title span {
+    position: relative;
+    z-index: 1;
+}
+.thf-btn-one-hundred-seven .thf-title::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/17.png) center / cover;
+    transition: .5s linear;
+    transform: scale(1);
+    transform-origin: top;
+	 z-index: -1;
+}
+.thf-btn-one-hundred-seven .thf-title:hover::before {
+    transform: scale(0);
+}
+
+
+/*------- btn-one-hundred-eight -------*/
+.thf-btn-one-hundred-eight .thf-title {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    padding: 1em 3em;
+    background: transparent;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 600;
+    letter-spacing: 2px;
+    overflow: hidden;
+    transition: .4s linear;
+    position: relative;
+	 z-index: 1;
+}
+.thf-btn-one-hundred-eight .thf-title span {
+    position: relative;
+    z-index: 1;
+}
+.thf-btn-one-hundred-eight .thf-title::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/18.png) center / cover;
+    transition: .5s linear;
+    transform: scale(1);
+    transform-origin: top;
+	 z-index: -1;
+}
+.thf-btn-one-hundred-eight .thf-title:hover::before {
+    transform: scale(1.3) rotate(3deg);
+}
+
+
+/*------- btn-one-hundred-nine -------*/
+.thf-btn-one-hundred-nine .thf-title {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    padding: 1em 3em;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 600;
+    letter-spacing: 2px;
+    overflow: hidden;
+    transition: .4s linear;
+    position: relative;
+	 z-index: 1;
+}
+.thf-btn-one-hundred-nine .thf-title span {
+    position: relative;
+    z-index: 1;
+}
+.thf-btn-one-hundred-nine .thf-title::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/19.png) center / cover;
+    transition: .5s linear;
+	 z-index: -1;
+}
+.thf-btn-one-hundred-nine .thf-title:hover::before {
+    background: url(../img/16.png) center / cover;
+}
+
+
+/*------- btn-one-hundred-ten -------*/
+.thf-btn-one-hundred-ten .thf-title {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    padding: 1em 3em;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 600;
+    letter-spacing: 2px;
+    overflow: hidden;
+    transition: .4s linear;
+    position: relative;
+	 z-index: 1;
+}
+.thf-btn-one-hundred-ten .thf-title span {
+    position: relative;
+    z-index: 1;
+}
+.thf-btn-one-hundred-ten .thf-title::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/20.png) center / cover;
+    transition: .5s linear;
+	 z-index: -1;
+}
+.thf-btn-one-hundred-ten .thf-title:hover::before {
+    background: url(../img/19.png) center / cover;
+}
+
+
+/*------- btn-one-hundred-eleven -------*/
+.thf-btn-one-hundred-eleven .thf-title {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    padding: 1em 3em;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 600;
+    letter-spacing: 2px;
+    overflow: hidden;
+    transition: .4s linear;
+    position: relative;
+	 z-index: 1;
+}
+.thf-btn-one-hundred-eleven .thf-title span {
+    position: relative;
+    z-index: 1;
+}
+.thf-btn-one-hundred-eleven .thf-title::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/1.png) center / cover;
+	 z-index: -1;
+}

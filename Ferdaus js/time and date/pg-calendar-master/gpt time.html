@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Date and Time Range Picker Example</title>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker@3.1.0/daterangepicker.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/daterangepicker@3.1.0/moment.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/daterangepicker@3.1.0/daterangepicker.js"></script>
+</head>
+<body>
+
+<input type="text" name="datetimefilter" value="" placeholder="10/26/2023 2:00 PM - 10/30/2023 3:00 PM"/>
+
+<script type="text/javascript">
+$(function() {
+  function isInvalidDate(date) {
+    // Disable Fridays
+    if (date.day() === 0) { // 5 corresponds to Friday
+      return true;
+    }
+
+    // Disable specific dates
+    var disabledDates = ['2023-10-28', '2023-11-01']; // Add your specific dates here
+    return disabledDates.includes(date.format('YYYY-MM-DD'));
+  }
+
+  $('input[name="datetimefilter"]').daterangepicker({
+    autoUpdateInput: false,
+    timePicker: true,
+    timePickerIncrement: 30,
+    timePicker24Hour: false,
+    timePickerSeconds: false,
+    isInvalidDate: isInvalidDate, // Apply the isInvalidDate function
+    locale: {
+      format: 'MM/DD/YYYY h:mm A',
+      cancelLabel: 'Clear'
+    }
+  });
+
+  $('input[name="datetimefilter"]').on('apply.daterangepicker', function(ev, picker) {
+    $(this).val(picker.startDate.format('MM/DD/YYYY h:mm A') + ' - ' + picker.endDate.format('MM/DD/YYYY h:mm A'));
+  });
+
+  $('input[name="datetimefilter"]').on('cancel.daterangepicker', function(ev, picker) {
+    $(this).val('');
+  });
+});
+</script>
+
+</body>
+</html>

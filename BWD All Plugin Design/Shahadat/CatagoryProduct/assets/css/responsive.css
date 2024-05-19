@@ -1,0 +1,27 @@
+
+
+    /* xxl devices */
+    @media (min-width: 1400px) and (max-width: 1700px) {}
+
+    /* xl devices */
+    @media (min-width: 1200px) and (max-width: 1399px){}
+
+
+    /* lg devices */
+    @media (min-width: 992px) and (max-width: 1199px) {}
+
+    /* md devices */
+    @media (min-width: 768px) and (max-width: 991px){
+
+
+    }
+
+    /* xs devices */
+    @media (max-width: 767px){}
+
+    /* sm devices */
+    @media only screen and (min-width: 576px) and (max-width: 767px){}
+
+
+    @media only screen and (min-width: 2000px) and (max-width: 5000px){}
+

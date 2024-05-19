@@ -1,0 +1,219 @@
+/** count down 14 start**/
+.bwd-count-down-14{
+    padding: 30px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .bwd-count-down-wrapper{
+        display: flex;
+        color: #192a56;
+        border: 3px solid;
+        padding: 10px;
+        border-radius: 20px;
+        box-shadow: 0 10px, 0 30px 50px #192a5647;
+        background: transparent;
+        @include mq(md){
+            padding: 5px;
+        }
+        @include mq(md){
+            padding: 2px;
+        }
+        .bwd-count-down-item {
+            position: relative;
+            margin: 10px;
+            @include mq(md){
+                margin: 10px 6px;
+            }
+            .bwd-count-num{
+                display: flex;
+                position: relative;
+                &::before,
+                &::after{
+                    content: "";
+                    position: absolute;
+                    height: 8px;
+                    width: 8px;
+                    background: transparent;
+                    border: 4px solid;
+                    z-index: 2;
+                    right: -14px;
+                    top: 23px;
+                    border-radius: 50%;
+                    @include mq(md){
+                        height: 6px;
+                        width: 6px;
+                        border: 3px solid;
+                        z-index: 2;
+                        right: -12px;
+                        top: 18px;
+                    }
+                    @include mq(xs){
+                        height: 4px;
+                        width: 4px;
+                        border: 2px solid;
+                        z-index: 2;
+                        right: -8px;
+                        top: 10px;
+                    }
+                }
+                &::after{
+                    top: auto;
+                    bottom: 23px;
+                    @include mq(md){
+                        bottom: 18px;
+                    }
+                    @include mq(xs){
+                        bottom: 10px;
+                    }
+                }
+                .bwd-num-shape {
+                    display: flex;
+                    flex-direction: column;
+                    margin: 0 3px;
+                    .bwd-num-shape-top,
+                    .bwd-num-shape-bottom {
+                        height: 35px;
+                        width: 35px;
+                        border: 5px dashed;
+                        @include mq(md){
+                            height: 30px;
+                            width: 30px;
+                            border: 4px dashed;
+                        }
+                        @include mq(xs){
+                            height: 17px;
+                            width: 17px;
+                            border: 2px dashed;
+                        }
+                    }
+                    .bwd-num-shape-top{
+                        border-bottom: 0;
+                    }
+                    .bwd-num-shape-bottom{
+                        border-top: 5px dashed;
+                        @include mq(md){
+                            border-top: 4px dashed;
+                        }
+                        @include mq(xs){
+                            border-top: 2px dashed;
+                        }
+                    }
+                }
+            }
+            .bwd-count-down-title{
+                font-size: 20px;
+                font-weight: 600;
+                text-transform: uppercase;
+                text-align: center;
+                margin-top: 10px;
+                color: #001160;
+                @include mq(md){
+                    font-size: 15px;
+                }
+                @include mq(xs){
+                    font-size: 13px;
+                }
+            }
+
+            &:nth-last-child(1){
+                .bwd-count-num{
+                    &::before,
+                    &::after{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    /*common class for number*/
+    #bwd-num-1{
+        .bwd-num-shape-top,
+        .bwd-num-shape-bottom{
+            border-top: 0 !important;
+            border-left: 0 !important;
+            border-bottom:0 !important;
+            transform: translateX(-50%) !important;
+        }
+    }
+    #bwd-num-2{
+        .bwd-num-shape-top{
+            border-left: 0 !important;
+        }
+        .bwd-num-shape-bottom{
+            border-right: 0 !important;
+        }
+    }
+    #bwd-num-3{
+        .bwd-num-shape-top,
+        .bwd-num-shape-bottom{
+            border-left: 0 !important;
+        }
+    }
+    #bwd-num-4{
+         .bwd-num-shape-top{
+            border-top: 0 !important;
+         }
+        .bwd-num-shape-bottom{
+            border-left: 0 !important;
+            border-bottom: 0 !important;
+        }
+    }
+
+    #bwd-num-5{
+        .bwd-num-shape-top{
+            border-right: 0 !important;
+        }
+        .bwd-num-shape-bottom{
+            border-left: 0 !important;
+        }
+    }
+
+    #bwd-num-6{
+        .bwd-num-shape-top{
+            border-right: 0 !important;
+        }
+    }
+
+    #bwd-num-7{
+        .bwd-num-shape-top{
+            border-left: 0 !important;
+        }
+        .bwd-num-shape-bottom{
+            border-top: 0 !important;
+            border-left: 0 !important;
+            border-bottom: 0 !important;
+        }
+    }
+
+    #bwd-num-8{
+        .bwd-num-shape-top,
+        .bwd-num-shape-bottom{
+            border: 5px dashed;
+            @include mq(md){
+                border: 4px dashed;
+            }
+            @include mq(xs){
+                border: 2px dashed;
+            }
+        }
+        .bwd-num-shape-top{
+            border-bottom: 0;
+        }
+    }
+
+    #bwd-num-9{
+        .bwd-num-shape-bottom{
+            border-left: 0 !important;
+        }
+    }
+
+    #bwd-num-0{
+        .bwd-num-shape-bottom{
+            border-top: 0 !important;
+        }
+    }
+}
+/** count down 14 end*/
+

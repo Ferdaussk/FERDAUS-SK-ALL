@@ -1,0 +1,114 @@
+.bwd-counter-31{
+    padding: 30px 0;
+    .bwd-counter{
+        color: #EC6296;
+        background: #EC6296;
+        text-align: center;
+        width: 100%;
+        padding: 25px 22px;
+        margin: 15px auto;
+        border-radius: 0 50px;
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+        min-height: 280px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 5px 5px 10px inset #3333333d;
+        max-width: 280px;
+    
+    &::after{
+        content: '';
+        background: #EC6296;
+        width: 100px;
+        height: 100px;
+        box-shadow: inset 0 0 15px rgba(0,0,0,0.6);
+        transform: rotate(45deg);
+        position: absolute;
+        top: auto;
+        bottom: -50px;
+        right: -50px;
+    }
+
+    &::before{
+      content: "";
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      bottom: 0;
+      background: #f1f1f1;
+      z-index: -1;
+      border-bottom-left-radius: 60px;
+      border-top-right-radius: 60px;
+      right: 0;
+    }
+
+    .bwd-counter-icon{
+      font-size: 55px;
+      line-height: 1;
+      @include mq(lg){
+        font-size: 50px;
+      }
+    }
+    .bwd-counter-heading{
+      font-size: 22px;
+      font-weight: 600;
+      text-transform: capitalize;
+      letter-spacing: 0.5px;
+      margin: 12px 0;
+      line-height: 1.2;
+      @include mq(lg){
+        font-size: 20px;
+      }
+    }
+     .bwd-counter-value{
+      font-size: 45px;
+      font-weight: 600;
+      line-height: .8;
+      @include mq(lg){
+        font-size: 40px;
+      }
+    }
+
+    .counter.blue{ --main-color: #05687D; }
+    .counter.green{ --main-color: #16986C; }
+    .counter.red{ --main-color: #EA3A4F; }
+ 
+    }
+
+
+    .row > * {
+        &:nth-child(2) {
+          .bwd-counter {
+            color: #05687D;
+            background-color: #05687D;
+            &::after{
+              background-color: #05687D;
+            }
+          }
+        }
+
+         &:nth-child(3) {
+          .bwd-counter {
+            color: #16986C;
+            background-color: #16986C;
+            &::after{
+              background-color: #16986C;
+            }
+          }
+        }
+
+        &:nth-child(4) {
+          .bwd-counter {
+            color: #EA3A4F;
+            background-color: #EA3A4F;
+            &::after{
+              background-color: #EA3A4F;
+            }
+          }
+        }
+
+      }
+}

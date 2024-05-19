@@ -1,0 +1,124 @@
+.mtt-team-style-30-area {
+    .mtt-team-style-30-team {
+        text-align: center;
+        padding: 20px 15px;
+        background: #fff;
+        border-radius: 15px;
+        border: 2px solid transparent;
+        transition: .6s linear;
+        margin-bottom: 35px;
+        overflow: hidden;
+        &:hover {
+            border-color: #17bebb;
+        }
+        .mtt-pic {
+            position: relative;
+            transition: .3s linear;
+            top: -30px;
+            left: 0;
+            height: 290px;
+            width: 100%;
+            -webkit-mask-image: url(/assest/img/team/2.svg);
+            mask-image: url(/assest/img/team/2.svg);
+            -webkit-mask-size: contain;
+            mask-size: contain;
+            -webkit-mask-repeat: no-repeat;
+            mask-repeat: no-repeat; 
+            -webkit-mask-position: center;
+            mask-position: center;
+            @include mq (xs) {
+                height: 300px;
+            }
+            @include mq (sm) {
+                height: 290px;
+            }
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+        .mtt-team-content {
+            margin-top: -25px;
+            @include mq (xs) {
+                margin-top: -15px;
+            }
+            @include mq (sm) {
+                margin-top: -25px;
+            }
+            .mtt-title {
+                color: #17bebb;
+                font-size: 22px;
+                text-transform: capitalize;
+                font-weight: 600;
+                margin-bottom: 5px;
+                letter-spacing: 1px;
+                position: relative;
+                transform: translateX(100px);
+                opacity: 0;
+                visibility: hidden;
+                transition-delay: .5s;
+                transition: .6s linear;
+            }
+            .mtt-post {
+                color: #333;
+                font-size: 16px;
+                font-weight: 500;
+                text-transform: capitalize;
+                display: block;
+                position: relative;
+                transform: translateX(-100px);
+                opacity: 0;
+                visibility: hidden;
+                transition-delay: .6s;
+                transition: .7s linear;
+            }
+        }
+        .mtt-social {
+            transform: translateY(50px);
+            transition: .4s linear;
+            transition-delay: .9s ease .4s;
+            padding: 20px 10px;
+            visibility: hidden;
+            a {
+                display: inline-block;
+                color: #333;
+                background: #17bebb;
+                font-size: 16px;
+                line-height: 30px;
+                height: 30px;
+                width: 30px;
+                font-weight: 700;
+                border-radius: 50px/20px;
+                box-shadow: 5px 5px 0 rgba(0,0,0,0.1);
+                margin: 0 5px;
+                transition: .3s linear;
+                transform: translateY(0);
+                &:hover {
+                    color: #fff;
+                    background-color: #333;
+                    transform: translateY(-5px);
+                }
+            }
+        }
+        &:hover {
+            .mtt-team-content {
+                .mtt-title {
+                    opacity: 1;
+                    transform: translateX(0);
+                    visibility: visible;
+                }
+                .mtt-post {
+                    opacity: 1;
+                    transform: translateX(0);
+                    visibility: visible;
+                }
+            }
+            .mtt-social {
+                opacity: 1;
+                transform: translateY(0);
+                visibility: visible;
+            }
+        }
+    }
+}

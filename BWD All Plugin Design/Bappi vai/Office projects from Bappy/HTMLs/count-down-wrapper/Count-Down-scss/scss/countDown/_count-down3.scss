@@ -1,0 +1,80 @@
+// count down 3 start
+.bwd-count-down-3{
+    padding: 30px;
+    margin: 30px auto;
+    background-color: #0c2461;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+        .bwd-count-down-item {
+            margin: 15px 3px;
+            text-align: center;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #eaeaea;
+            .bwd-count-down-title{
+                font-size: 20px;
+                margin-top: 30px;
+                color: #fff;
+                line-height: 1.2;
+                @include mq(lg){
+                    font-size: 18px;
+                    margin-top: 30px;
+                }
+                @include mq(xs){
+                    font-size: 14px;
+                    margin-top: 15px;
+                }
+            }
+            .bwd-count-down-num {
+                position: relative;
+                font-size: 45px;
+                border-radius: 50%;
+                height: 95px;
+                width: 95px;
+                text-align: center;
+                line-height: 95px;
+                color: #fff;
+                z-index: 1;
+                margin: 15px;
+                box-shadow: 0px 0px 20px 5px #a7a7a79c inset;
+                @include mq(md){
+                    font-size: 35px;
+                    height: 85px;
+                    width: 85px;
+                    line-height: 85px;
+                    margin: 15px;
+                }
+                @include mq(xs){
+                    font-size: 30px;
+                    height: 60px;
+                    width: 60px;
+                    line-height: 60px;
+                    margin: 15px 3px;
+                }
+                &::before
+                {
+                    content: "";
+                    position: absolute;
+                    top: -15px;
+                    left: -15px;
+                    right: -15px;
+                    bottom: -15px;
+                    background: transparent;
+                    border-radius: 50%;
+                    z-index: -1;
+                    box-shadow: 10px 10px 25px #011019;
+                    border: 3px solid #fff;
+                    @include mq(xs){
+                        top: -5px;
+                        left: -5px;
+                        right: -5px;
+                        bottom: -5px;
+                    }
+                }
+            }
+        }
+}
+// count down 3 end
+

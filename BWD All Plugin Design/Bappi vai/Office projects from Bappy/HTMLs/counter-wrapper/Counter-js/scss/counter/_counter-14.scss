@@ -1,0 +1,115 @@
+.bwd-counter-14{
+    padding: 30px 0;
+    .bwd-counter{
+        color: #fff;
+        background: #fff;
+        text-align: center;
+        width: 100%;
+        padding: 25px 15px 10px;
+        margin: 15px auto;
+        border-radius: 30px 0 ;
+        box-shadow: 10px 10px 0 rgba(0,0,0,0.05), 0 0 10px #e4defa;
+        position: relative;
+        z-index: 1;
+        max-width: 290px;
+        
+        &::before{
+            content: "";
+            background: #51d658;
+            border-radius: 15px 0 30px 0;
+            box-shadow: inset 0 4px 8px rgba(0,0,0,0.15);
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            right: 12px;
+            bottom: 27px;
+            z-index: -1;
+            transition: .5s;
+        }
+
+        .bwd-counter-icon{
+            font-size: 55px;
+            margin: 25px 0 15px;
+            transform: rotateX(0deg);
+            transition: all 0.3s ease 0s;
+            line-height: 65px;
+            @include mq(lg){
+                font: 50px;
+            }
+        }
+
+        .bwd-counter-heading{
+            font-size: 20px;
+            font-weight: 500;
+            text-transform: uppercase;
+            margin: 0 0 25px;
+            line-height: 1.2;
+
+            @include mq(lg){
+                font-size: 18px;
+            }
+
+        }
+
+        .bwd-counter-value{
+            color: #666;
+            background: #fff;
+            font-size: 45px;
+            font-weight: 600;
+            text-align: right;
+            line-height: 70px;
+            width: 90%;
+            height: 70px;
+            padding: 0 20px;
+            margin: 0 0 0 -20px;
+            display: block;
+            transition: .5s;
+
+            @include mq(lg){
+                font-size: 40px;
+                line-height: 65px;
+                height: 65px;
+            }
+        }
+        &:hover{
+            &::before{
+                border-radius: 15px 0 15px 0;
+            }
+
+            .bwd-counter-value{
+                border-top-right-radius: 35px;
+            }
+        }
+    }
+
+
+    .row > * {
+        &:nth-child(2) {
+            .bwd-counter{
+            
+                &::before{
+                    background-color: #FF5D94;
+                }
+            }
+        }
+
+         &:nth-child(3) {
+            .bwd-counter{
+            
+                &::before{
+                    background-color: #FC8720;
+                }
+            }
+        }
+
+        &:nth-child(4) {
+            .bwd-counter{
+            
+                &::before{
+                    background-color: #BF5DFE;
+                }
+            }
+        }
+      }
+ 
+}

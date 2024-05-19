@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice</title>
+    <style>
+    </style>
+    <script src="https://rawgit.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
+</head>
+<body>
+<div id="Container" class="container">
+    <div class="content">
+        <div class="invoice">
+        <div class="header">
+            <img src="your_logo.png" alt="Logo">
+            <div class="brand-name">Your Brand Name</div>
+        </div>
+
+        <div class="invoice-info" id="invoice-info">
+            <div>Invoice Number: INV-001</div>
+            <div>Issue Date: 2023-11-30</div>
+            
+            <div>
+                <strong style="background:red;">Bill To:</strong><br>
+                Customer Name<br>
+                Customer Address<br>
+                City, Country<br>
+                Email: customer@example.com<br>
+                Phone: +123456789
+            </div>
+
+            <div style="margin-top: 20px;">
+                <strong>From:</strong><br>
+                Your Brand Name<br>
+                Your Brand Address<br>
+                City, Country<br>
+                Email: info@yourbrand.com<br>
+                Phone: +987654321
+            </div>
+        </div>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Invoice No</th>
+                    <th>Name</th>
+                    <th>Quantity</th>
+                    <th>Unit Price</th>
+                    <th>Total Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>001</td>
+                    <td>Product A</td>
+                    <td>2</td>
+                    <td>$50.00</td>
+                    <td>$100.00</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="total">
+            <strong>Total Amount: $100.00</strong>
+        </div>
+
+        <div class="signature">
+            <div class="left">
+                Customer's Signature
+            </div>
+            <div class="right">
+                Authorized Signature
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+<button id="printButton" onclick="printInvoice()">Print</button>
+<script>
+function printInvoice() {
+    var element = document.getElementById("invoice-info");
+
+    // Temporarily hide other elements before printing
+    var otherElements = document.querySelectorAll('.container > .content > .invoice > :not(#invoice-info)');
+    otherElements.forEach(function(el) {
+        el.style.display = 'none';
+    });
+
+    // Print the invoice-info section
+    window.print();
+
+    // Restore visibility of other elements after printing
+    otherElements.forEach(function(el) {
+        el.style.display = '';
+    });
+}
+</script>
+</body>
+</html>

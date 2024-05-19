@@ -1,0 +1,89 @@
+#contentToPrint {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+        }
+		.ferdaus-sk{
+			color: red;
+			background:green;
+			-webkit-print-color-adjust:exact;
+		}
+		
+		/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.invoice {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.bill-to {
+    margin-bottom: 20px;
+}
+
+.items {
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+			-webkit-print-color-adjust:exact;
+}
+
+.total {
+    text-align: right;
+}
+
+h1, h2 {
+    color: #333;
+}
+.invoice {
+    border: none; /* Remove border for print */
+    box-shadow: none; /* Remove box shadow for print */
+    margin: 0; /* Remove margin for print */
+    padding: 0; /* Remove padding for print */
+}
+
+/* Add any other print-specific styles as needed */
+.ferdaus-sk {
+    color: red !important;
+    background: green !important;
+}
+@media print {
+    body {
+        font-size: 12pt; /* Adjust font size for print */
+    }
+
+    .invoice {
+        border: none; /* Remove border for print */
+        box-shadow: none; /* Remove box shadow for print */
+        margin: 0; /* Remove margin for print */
+        padding: 0; /* Remove padding for print */
+    }
+
+    /* Add any other print-specific styles as needed */
+}

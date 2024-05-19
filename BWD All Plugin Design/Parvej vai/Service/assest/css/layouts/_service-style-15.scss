@@ -1,0 +1,163 @@
+.bwd-service-style-15 {
+    .bwd-service-box {
+        background: #f4f4f4;
+        padding: 60px 25px 80px;
+        position: relative;
+        text-align: center;
+        border-radius: 15px;
+        outline: 3px solid #325bfd;
+        outline-offset: -15px;
+        transition: .3s linear;
+        margin-bottom: 80px;
+        &:hover {
+            box-shadow: 10px 12px 10px rgba(0, 0, 0, 0.26);
+        }
+        @include mq (md) {
+            padding: 60px 20px 70px;
+        }
+        &.orange {
+            outline: 3px solid #b43072;
+            .bwd-top-title {
+                background: linear-gradient(to right, #F27121, #E94057, #8A2387);
+                &:before{
+                    border-color: transparent transparent #f0652f transparent;
+                }
+                &:after {
+                    border-color: transparent transparent transparent #912584;
+                }
+            }
+            .bwd-service-content {
+                .title {
+                    color: #b43072;
+                }
+            }
+            .bwd-service-icon {
+                color: #b43072;
+            }
+        }
+        &.sunrise {
+            outline: 3px solid #f77524;
+            .bwd-top-title {
+                background: linear-gradient(to right, #F09819, #FF512F);
+                &:before{
+                    border-color: transparent transparent #f1921a transparent;
+                }
+                &:after {
+                    border-color: transparent transparent transparent #fe552e;
+                }
+            }
+            .bwd-service-content {
+                .title {
+                    color: #f77524;
+                }
+            }
+            .bwd-service-icon {
+                color: #f77524;
+            }
+        }
+        &.purple {
+            outline: 3px solid #c300ff;
+            .bwd-top-title {
+                background: linear-gradient(to right, #E100FF, #7F00FF);
+                &:before{
+                    border-color: transparent transparent #dc00ff transparent;
+                }
+                &:after {
+                    border-color: transparent transparent transparent #8300ff;
+                }
+            }
+            .bwd-service-content {
+                .title {
+                    color: #c300ff;
+                }
+            }
+            .bwd-service-icon {
+                color: #c300ff;
+            }
+        }
+        .bwd-top-title {
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 65%;
+            line-height: 50px;
+            background: linear-gradient(to right, #396afc, #2948ff);
+            color: #ffff;
+            text-align: center;
+            display: block;
+            text-transform: uppercase;
+            font-size: 22px;
+            letter-spacing: 1px;
+            font-weight: 500;
+            padding: 0 5px;
+            @include mq (md) {
+                font-size: 15px;
+            }
+            @include mq (xs) {
+                font-size: 15px;
+            }
+            &::before {
+                content: "";
+                position: absolute;
+                left: -20px;
+                top: 0px;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 0 0 20px 20px;
+                border-color: transparent transparent #325bfd transparent;
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                left: auto;
+                right: -20px;
+                top: 0px;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 20px 0 0 20px;
+                border-color: transparent transparent transparent #325bfd;
+            }
+        }
+        .bwd-service-content {
+            .title {
+                font-size: 25px;
+                margin-bottom: 10px;
+                line-height: 32px;
+                text-transform: capitalize;
+                font-weight: 600;
+                color: #325bfd;
+            }
+            p {
+                line-height: 28px;
+                @include mq (md) { 
+                    font-size: 14px;
+                    line-height: 22px;
+                }
+            }
+        }
+        .bwd-service-icon {
+            position: absolute;
+            bottom: -36px;
+            left: 50%;
+            transform: translateX(-50%) rotate(0deg);
+            width: 90px;
+            height: 90px;
+            line-height: 80px;
+            border-radius: 50%;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+            color: #2949fe;
+            background: #f4f4f4;
+            border: 5px solid;
+            font-size: 35px;
+            transition: .3s linear;
+        }
+        &:hover {
+            .bwd-service-icon {
+                transform: translateX(-50%) rotate(360deg);
+            }
+        }
+    }
+}

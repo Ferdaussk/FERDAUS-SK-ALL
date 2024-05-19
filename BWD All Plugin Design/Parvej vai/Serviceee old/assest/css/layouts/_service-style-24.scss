@@ -1,0 +1,177 @@
+.bwd-service-style-24 {
+    .bwd-service-box {
+        color: #999;
+        text-align: center;
+        padding: 60px 45px 35px;
+        position: relative;
+        box-shadow: 10px 12px 25px rgba(0, 0, 0, 0.253);
+        border-radius: 30px;
+        margin-bottom: 40px;
+        @include mq (md) {
+            padding: 60px 20px 60px;
+        }
+        @include mq (xs) {
+            padding: 60px 20px 50px;
+        }
+        @include mq (sm) {
+            padding: 60px 20px 60px;
+        }
+        &.purple {
+            &::before {
+                background: #aa319b;
+            }
+            &::after {
+                background: #aa319b;
+            }
+            &:hover {
+                &::before {
+                    background: #ecd2e9;
+                }
+            }
+            &:hover {
+                &::after {
+                    background: #ecd2e9;
+                }
+            }
+            .bwd-service-icon {
+                color: #aa319b;
+            }
+            .bwd-service-content {
+                .title {
+                    color: #aa319b;
+                }
+            }
+        }
+        &.skyblue {
+            &::before {
+                background: #129ea9;
+            }
+            &::after {
+                background: #129ea9;
+            }
+            &:hover {
+                &::before {
+                    background: #d2edef;
+                }
+            }
+            &:hover {
+                &::after {
+                    background: #d2edef;
+                }
+            }
+            .bwd-service-icon {
+                color: #129ea9;
+            }
+            .bwd-service-content {
+                .title {
+                    color: #129ea9;
+                }
+            }
+        }
+        &.red {
+            &::before {
+                background: #b30000;
+            }
+            &::after {
+                background: #b30000;
+            }
+            &:hover {
+                &::before {
+                    background: #f6e0e0;
+                }
+            }
+            &:hover {
+                &::after {
+                    background: #f6e0e0;
+                }
+            }
+            .bwd-service-icon {
+                color: #b30000;
+            }
+            .bwd-service-content {
+                .title {
+                    color: #b30000;
+                }
+            }
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background: #f47f11;
+            clip-path: circle(109px at 115% -11%);
+            border-radius: 30px;
+            transition: .3s linear;
+            @include mq (xs) {
+                clip-path: circle(125px at 115% -11%);
+            }
+            @include mq (sm) {
+                clip-path: circle(110px at 115% -11%);
+            }
+        }
+        &:hover {
+            &::before {
+                background: #fbe5d0;
+                clip-path: circle(570px at 115% -11%);
+            }
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            background: #f47f11;
+            clip-path: circle(100px at -10% 108%);
+            border-radius: 30px;
+            transition: .3s linear;
+        }
+        &:hover {
+            &::after {
+                background: #fbe5d0;
+                clip-path: circle(560px at -10% 108%);
+            }
+        }
+        .bwd-service-icon {
+            color: #f47f11;
+            background: #f4fff4;
+            font-size: 45px;
+            line-height: 100px;
+            text-align: center;
+            width: 100px;
+            margin: 0 auto 40px;
+            display: block;
+            height: 100px;
+            border-radius: 50%;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.219);
+            position: relative;
+            z-index: 1;
+        }
+        .bwd-service-content {
+            position: relative;
+            z-index: 1;
+            .title {
+                color: #f47f11;
+                font-size: 22px;
+                letter-spacing: 1px;
+                font-weight: 600;
+                text-transform: uppercase;
+                margin-bottom: 10px;
+            }
+            p {
+                color: #444;
+                font-size: 14px;
+                line-height: 24px;
+                @include mq (md) {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+    
+}
+

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .invoice {
+            border: 1px solid #ccc;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            text-align: center;
+        }
+
+        .header img {
+            max-width: 150px;
+            margin-bottom: 10px;
+        }
+
+        .brand-name {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .invoice-info {
+            margin-top: 20px;
+        }
+
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .table th, .table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        .table th {
+            background-color: #f2f2f2;
+        }
+
+        .total {
+            margin-top: 20px;
+            text-align: right;
+        }
+
+        .signature {
+            margin-top: 40px;
+        }
+
+        .signature .left, .signature .right {
+            width: 40%;
+            display: inline-block;
+            text-align: center;
+            border-top: 1px solid #ddd;
+            padding-top: 10px;
+        }
+    </style>
+    <title>Invoice</title>
+</head>
+<body>
+
+    <div class="invoice">
+        <div class="header">
+            <img src="your_logo.png" alt="Logo">
+            <div class="brand-name">Your Brand Name</div>
+        </div>
+
+        <div class="invoice-info">
+            <div>Invoice Number: INV-001</div>
+            <div>Issue Date: 2023-11-30</div>
+            
+            <!-- Customer Information (Replace with actual customer information) -->
+            <div>
+                <strong>Bill To:</strong><br>
+                Customer Name<br>
+                Customer Address<br>
+                City, Country<br>
+                Email: customer@example.com<br>
+                Phone: +123456789
+            </div>
+
+            <!-- Brand Information (Replace with actual brand information) -->
+            <div style="margin-top: 20px;">
+                <strong>From:</strong><br>
+                Your Brand Name<br>
+                Your Brand Address<br>
+                City, Country<br>
+                Email: info@yourbrand.com<br>
+                Phone: +987654321
+            </div>
+        </div>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Invoice No</th>
+                    <th>Name</th>
+                    <th>Quantity</th>
+                    <th>Unit Price</th>
+                    <th>Total Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Add your invoice items here -->
+                <tr>
+                    <td>001</td>
+                    <td>Product A</td>
+                    <td>2</td>
+                    <td>$50.00</td>
+                    <td>$100.00</td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+
+        <div class="total">
+            <strong>Total Amount: $100.00</strong>
+        </div>
+
+        <div class="signature">
+            <div class="left">
+                Customer's Signature
+            </div>
+            <div class="right">
+                Authorized Signature
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

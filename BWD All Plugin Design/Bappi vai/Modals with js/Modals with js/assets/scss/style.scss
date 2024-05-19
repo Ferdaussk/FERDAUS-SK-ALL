@@ -1,0 +1,29 @@
+/*
+------------- Table of content ----------------
+
+Template Name: Google domain
+Template URI: 
+Description: 
+Author:
+Author URI: 
+Version: 1.0
+
+---------------------- Css index ----------
+#.body reset content
+#.header area
+#.footer
+#.hero-banner-area
+#.button
+
+*/
+
+// google fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+// variable
+@import "variable/_variable.scss";
+// mixin
+@import "mixin/_mixin.scss";
+// body reset content
+@import "reset/_predefine.scss";
+// component content
+@import "section/modal/modal";

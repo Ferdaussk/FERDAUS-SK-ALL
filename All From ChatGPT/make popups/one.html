@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Popup Example</title>
+    <style>
+        /* Style for the popup container */
+        .popup-container {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        /* Style for the overlay background */
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 900;
+        }
+
+        /* Style for the close button */
+        .popup-container .close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Button to trigger the popup -->
+    <button onclick="openPopup()">Open Popup</button>
+
+    <!-- Popup container and content -->
+    <div id="popup" class="popup-container">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <h2>Popup Content</h2>
+        <p>This is some content inside the popup.
+		If your theme or yourself is using WooCommerce checkout Gutenberg Block, the hook woocommerce_before_checkout_form won't work. Also it may not work in some themes customizing WooCommerce checkout templates… – 
+LoicTheAztec
+ yesterday 
+
+try return 'hellos'; instead of echo "hellos"; – 
+admcfajn
+ yesterday
+i's not working. If you know give me the correct solution. – 
+FERDAUSSK 01
+ just now   Edit   
+Add a comment
+Related questions
+		</p>
+    </div>
+
+    <!-- Overlay background -->
+    <div id="overlay" class="overlay"></div>
+
+    <script>
+        // Function to open the popup
+        function openPopup() {
+            document.getElementById("popup").style.display = "block";
+            document.getElementById("overlay").style.display = "block";
+        }
+
+        // Function to close the popup
+        function closePopup() {
+            document.getElementById("popup").style.display = "none";
+            document.getElementById("overlay").style.display = "none";
+        }
+    </script>
+
+</body>
+</html>

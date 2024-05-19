@@ -1,0 +1,48 @@
+// Responsive Variables
+$xxl: "only screen and (min-width: 1601px) and (max-width: 1750px)";
+$xl: "only screen and (min-width: 1400px) and (max-width: 1600px)";
+$laptop: "only screen and (min-width: 1200px) and (max-width: 1400px)";
+$lg: "only screen and (min-width: 992px) and (max-width: 1199px)";
+$md: "only screen and (min-width: 768px) and (max-width: 991px)";
+$sm: "only screen and (min-width: 576px) and (max-width: 767px)";
+$mn: "only screen and (min-width: 300px) and (max-width: 500px)";
+$xs: "(max-width: 767px)";
+
+@mixin mq($value) {
+    @if $value=='xxl' {
+        @media (min-width: 1400px) and (max-width: 1700px) {
+            @content;
+        }
+    }
+    @if $value=='xl' {
+        @media (min-width: 1200px) and (max-width: 1399px) {
+            @content;
+        }
+    }
+    @if $value=='lg' {
+        @media (min-width: 992px) and (max-width: 1199px) {
+            @content;
+        }
+    }
+    @if $value=='md' {
+        @media (min-width: 768px) and (max-width: 991px) {
+            @content;
+        }
+    }
+    @if $value=='xs' {
+        @media (max-width: 575px) {
+            @content;
+        }
+    }
+    @if $value=='mn' {
+        @media (max-width: 500px) {
+            @content;
+        }
+    }
+    @if $value=='sm' {
+        @media only screen and (min-width: 576px) and (max-width: 767px) {
+            @content;
+        }
+    }
+}
+

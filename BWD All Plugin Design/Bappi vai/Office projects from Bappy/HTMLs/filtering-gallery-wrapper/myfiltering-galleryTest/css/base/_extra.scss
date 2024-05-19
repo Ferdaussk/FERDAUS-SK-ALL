@@ -1,0 +1,17 @@
+
+// padding and margin //
+@for $i from 1 through 15{
+    .pt-#{$i * 10}{
+        padding-top: $i * 10px;
+    }
+    .pb-#{$i * 10}{
+        padding-bottom: $i * 10px;
+    }
+    .mt-#{$i * 10}{
+        margin-top: $i * 10px;
+    }
+    .mb-#{$i * 10}{
+        margin-bottom: $i * 10px;
+    }
+}
+

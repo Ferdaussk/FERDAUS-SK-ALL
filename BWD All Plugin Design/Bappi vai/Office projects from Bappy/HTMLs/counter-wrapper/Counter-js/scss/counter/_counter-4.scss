@@ -1,0 +1,149 @@
+.bwd-counter-4{
+
+    margin: 30px 0;
+   
+    .bwd-counter{
+        color: #f14159;
+        text-align: center;
+
+        margin: 15px auto;
+
+        
+        .bwd-counter-icon{
+            color: #fff;
+            background: #d36308;
+            font-size: 55px;
+            line-height: 130px;
+            width: 190px;
+            height: 140px;
+            margin: 0 auto 3px;
+            transform: rotateX(35deg);
+            position: relative;
+            clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+            transition:line-height .3s;
+            &::before{
+                content: '';
+                background: linear-gradient(to right,#F5BD01,#EE8903);
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 12px;
+                z-index: -1;
+                clip-path: inherit;
+                transition: .3s;
+            }
+
+
+            @include mq(xs){
+                font-size: 50px;
+                line-height: 120px;
+                width: 170px;
+                height: 130px;
+            }
+        }
+
+
+        .bwd-counter-value{
+            color: #F5BD01;
+            font-size: 40px;
+            font-weight: 700;
+            margin: 15px;
+            display: block;
+            line-height: 1;
+            @include mq(lg){
+                font-size: 35px;
+            }
+
+        }
+
+        .bwd-counter-heading{
+            color: #555;
+            font-size: 20px;
+            font-weight: 700;
+            text-transform: capitalize;
+            margin: 0;
+            line-height: 1.2;
+        }
+
+        &:hover{
+            .bwd-counter-icon{
+                line-height: 140px;
+                &::before{
+                    bottom: 0;
+                }
+            }
+        }
+    } 
+
+    .row > *{
+        &:nth-child(2){
+            .bwd-counter{
+            color: #6F27B2;
+
+            .bwd-counter-icon{
+                background-color: #6F27B2;
+
+                   &::before{
+                    background: linear-gradient(to right,#B874ED,#9641D7);
+                   }
+            }
+
+            .bwd-counter-value{
+                color: #B874ED;
+                 &::after{
+                    background: linear-gradient(to right,#B874ED,#9641D7);
+                 }
+            }
+
+     
+            }
+        }
+        &:nth-child(3){
+            .bwd-counter{
+            color: #6F27B2;
+
+            .bwd-counter-icon{
+                background-color: #3DA934;
+
+                   &::before{
+                    background: linear-gradient(to right,#A0EA63,#3cbf28);
+                   }
+            }
+
+            .bwd-counter-value{
+                color: #3DA934;
+                 &::after{
+                    background: linear-gradient(to right,#A0EA63,#3cbf28);
+                 }
+            }
+
+     
+            }
+        }
+        &:nth-child(4){
+            .bwd-counter{
+            color: #6F27B2;
+
+            .bwd-counter-icon{
+                background-color: #005DCE;
+
+                   &::before{
+                    background: linear-gradient(to right,#27A3FB,#0170F4);
+                   }
+            }
+
+            .bwd-counter-value{
+                color: #005DCE;
+                 &::after{
+                    background: linear-gradient(to right,#27A3FB,#0170F4);
+                 }
+            }
+
+     
+            }
+        }
+  
+    }
+ 
+}

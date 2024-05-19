@@ -1,0 +1,168 @@
+.bwd-service-style-27 {
+    .bwd-service-box {
+        color: #999;
+        padding: 160px 30px 50px;
+        position: relative;
+        box-shadow: 10px 12px 25px rgba(0, 0, 0, 0.24);
+        text-align: center;
+        border: 3px solid #ee4322;
+        margin-bottom: 60px;
+        @include mq (md) {
+            padding: 160px 15px 40px;
+        }
+        @include mq (xs) {
+            padding: 160px 20px 40px;
+        }
+        &.yellow {
+            border-color: #ed8d00;
+            &::before {
+                background-color: #ed8d00;
+            }
+            &:after {
+                border-color: #ed8d00 transparent transparent transparent;
+            }
+            .bwd-service-icon {
+                color: #ed8d00;
+            }
+            .bwd-service-content {
+                .title {
+                    color: #ed8d00;
+                }
+            }
+        }
+        &.green {
+            border-color: #7dbb2c;
+            &::before {
+                background-color: #7dbb2c;
+            }
+            &:after {
+                border-color: #7dbb2c transparent transparent transparent;
+            }
+            .bwd-service-icon {
+                color: #7dbb2c;
+            }
+            .bwd-service-content {
+                .title {
+                    color: #7dbb2c;
+                }
+            }
+        }
+        &.blue {
+            border-color: #00768f;
+            &::before {
+                background-color: #00768f;
+            }
+            &:after {
+                border-color: #00768f transparent transparent transparent;
+            }
+            .bwd-service-icon {
+                color: #00768f;
+            }
+            .bwd-service-content {
+                .title {
+                    color: #00768f;
+                }
+            }
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            top: -1px;
+            left: -1px;
+            width: 101%;
+            height: 30%;
+            background-color: #ee4322;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            top: 15%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 20px 20px 0 20px;
+            border-color: #ee4322 transparent transparent transparent;
+            transition: .3s linear;
+        }
+        &:hover {
+            &::after {
+                top: 28%;
+            }
+        }
+        .bwd-service-icon {
+            color: #ee4322;
+            background: linear-gradient(to left, #dedfe1, #f3f3f3);
+            font-size: 50px;
+            line-height: 130px;
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.144);
+            position: absolute;
+            top: -35px;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: 2s linear;
+            z-index: 1;
+            &::before {
+                content: "";
+                background: linear-gradient(to right, #dedfe1, #f3f3f3);
+                width: 88%;
+                height: 88%;
+                border-radius: 50%;
+                box-shadow: 5px 0 5px rgba(0, 0, 0, 0.144);
+                transform: translateX(-50%) translateY(-50%);
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                z-index: -1;
+            }
+        }
+        &:hover {
+            .bwd-service-icon {
+                animation: icons 2s linear 2;
+                box-shadow: none;
+                &::before {
+                    box-shadow: none;
+                }
+                @keyframes icons {
+                    0% {
+                        transform: translateX(-50%) rotate(0deg);
+                    }
+                    100% {
+                        transform: translateX(-50%) rotate(-360deg);
+                    }
+                }
+            }
+        }
+        .bwd-service-content {
+            position: relative;
+            .title {
+                font-size: 20px;
+                font-weight: 700;
+                color: #ee4322;
+                letter-spacing: 1px;
+                margin-bottom: 10px;
+                text-transform: uppercase;
+            }
+            p {
+                font-size: 15px;
+                letter-spacing: 1px;
+                line-height: 28px;
+                color: #333;
+                @include mq (md) {
+                    letter-spacing: 0;
+                    font-size: 13px;
+                    line-height: 26px;
+                }
+                @include mq (sm) {
+                    letter-spacing: 0;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+    
+}

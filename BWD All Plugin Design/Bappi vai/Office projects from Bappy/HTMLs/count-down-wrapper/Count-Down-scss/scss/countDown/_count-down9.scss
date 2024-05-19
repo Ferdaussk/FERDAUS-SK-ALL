@@ -1,0 +1,108 @@
+/** count down 9 start**/
+.bwd-count-down-9{
+    padding: 30px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .bwd-count-down-wrapper{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 30px;
+        padding: 0 10px;
+        position: relative;
+        .bwd-count-down-item {
+            margin: 15px 5px;
+            text-align: center;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding: 8px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            @include mq(xs){
+                margin: 15px 3px;
+                padding: 3px;
+
+            }
+                .bwd-count-down-num {
+                    position: relative;
+                    font-size: 40px;
+                    text-align: center;
+                    line-height: 97px;
+                    z-index: 1;
+                    margin: 0 1px;
+                    border-radius: 50%;
+                    color: #AF0BA5;
+                    height: 100px;
+                    width: 100px;
+                    border: 3px solid;
+                    border-left-style: dotted;
+                    border-right-style: dashed;
+                    background: transparent;
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        top: -15px;
+                        left: -15px;
+                        right: -15px;
+                        bottom: -15px;
+                        z-index: -1;
+                        box-shadow: 20px 40px 20px #33333336, 0 3px 50px #3333330f inset;
+                        border-radius: 50%;
+                        border: 10px solid #8EF0F2;
+                    }
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        height: 77%;
+                        width: 77%;
+                        left: 50%;
+                        transform: translateX(-50%) translateY(50%) rotate(45deg);
+                        z-index: -2;
+                        border: 3px solid;
+                        border-top: transparent;
+                        border-left: transparent;
+                    }
+                    @include mq(md){
+                        font-size: 35px;
+                        line-height: 85px;
+                        height: 85px;
+                        width: 85px;
+                    }
+                    @include mq(xs){
+                        font-size: 24px;
+                        line-height: 51px;
+                        height: 55px;
+                        width: 55px;
+                    }
+                }
+                .bwd-count-down-title{
+                    font-size: 16px;
+                    line-height: 1.2;
+                    background: #8EF0F2;
+                    padding: 8px 15px;
+                    border-radius: 10px;
+                    position: absolute;
+                    bottom: -40%;
+                    color: #333;
+                    z-index: 1;
+                    @include mq(md){
+                        font-size: 15px;
+                        bottom: -45%;
+                    }
+                    @include mq(xs){
+                        font-size: 12px;
+                        bottom: -46%;
+                        padding: 5px;
+                    }
+                }
+        }
+    }
+}
+/** count down 9 end*/
+

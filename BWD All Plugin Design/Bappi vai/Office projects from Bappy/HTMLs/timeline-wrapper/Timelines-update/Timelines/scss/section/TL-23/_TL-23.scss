@@ -1,0 +1,103 @@
+/*===========================*/
+/*TL-23*/
+.bwd-timeline-twenty-three{
+    padding: 60px 30px;
+    @include mq(xs){
+        padding: 50px 0;
+    }
+    .bwd-timeline-item-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .bwd-timeline-item {
+            position: relative;
+            max-width: 270px;
+            padding: 0 20px;
+            margin: 35px 15px;
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 20px;
+                bottom: 20px;
+                border: 2px solid purple;
+                transition: .5s;
+                border-radius: 15px;
+            }
+            .bwd-timeline-item-inner {
+                position: relative;
+                text-align: center;
+                background: #fff;
+                box-shadow: 0 0 8px #bababa;
+                padding: 25px;
+                @include mq(xs){
+                    padding: 15px;
+                }
+             
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: -20px;
+                    bottom: -20px;
+                    left: 20px;
+                    right: 20px;
+                    border-radius: 15px;
+                    background: purple;
+                    z-index: -1;
+                    transition: .5s;
+
+                }
+                    .bwd-timeline-item-content{
+                        .bwd-year {
+                            font-size: 30px;
+                        }
+                        .bwd-timeline-title {
+                            font-size: 22px;
+                            text-transform: capitalize;
+                            line-height: 28px;
+                            margin: 10px 0;
+                        }
+                        .bwd-timeline-dsc {
+                            line-height: 22px;
+                        }
+                 }
+            }
+
+            &:hover{
+
+                &::before{
+                    top: -20px;
+                    bottom: -20px;
+                    left: 40px;
+                    right: 40px;
+                }
+                .bwd-timeline-item-inner{
+                    &::after{
+                        top: 20px;
+                        bottom: 20px;
+                        left: -20px;
+                        right: -20px;
+                       
+                    }
+                }
+            }
+
+            &:nth-child(even){
+                &::before{
+                    border-color: #0B8AFA;
+                }
+
+                .bwd-timeline-item-inner{
+                    &::after{
+                        background-color: #0B8AFA;
+                    }
+                }
+            }
+        }
+    }
+}
+/*TL-23*/

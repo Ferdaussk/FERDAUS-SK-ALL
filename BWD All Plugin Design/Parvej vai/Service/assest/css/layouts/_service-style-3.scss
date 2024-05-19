@@ -1,0 +1,94 @@
+ .bwd-service-style-3 {
+    .bwd-service-box {
+        text-align: center;
+        padding: 25px 0 0;
+        margin: 0 -5px;
+        position: relative;
+        margin-bottom: 30px;
+        &.darkgreen {
+            .bwd-service-content {
+                background-color: #44D1A3;
+                &:before {
+                    border-color: transparent transparent #44D1A3 transparent;
+                }
+            }
+        }
+        &.blue {
+            .bwd-service-content {
+                background-color: #42D6E5;
+                &:before {
+                    border-color: transparent transparent #42D6E5 transparent;
+                }
+            }
+        }
+        &.darkblue {
+            .bwd-service-content {
+                background-color: #4584DF;
+                &:before {
+                    border-color: transparent transparent #4584DF transparent;
+                }
+            }
+        }
+        &:before {
+            content: '';
+            border: 3px solid #000;
+            border-radius: 20px;
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            right: 10px;
+            bottom: 10px;
+            z-index: 1;
+            transition: .4s linear;
+        }
+        &:hover {
+            &::before {
+                transform: rotateY(180deg);
+            }
+        }
+        .bwd-service-icon {
+            color: #222;
+            font-size: 50px;
+            margin: 0 auto 30px;
+            position: relative;
+            z-index: 2;
+            transition: .3s linear;
+        }
+        .bwd-service-content {
+            background: #A0D543;
+            padding: 30px 35px;
+            border-radius: 0 0 20px 20px;
+            position: relative;
+            &:before {
+                content: "";
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 0 30px 30px 30px;
+                border-color: transparent transparent #A0D543 transparent;
+                transform: translateX(-50%);
+                position: absolute;
+                left: 50%;
+                top: -13px;
+            }
+            .bwd-content {
+                position: relative;
+                z-index: 9;
+                .title {
+                    color: #fff;
+                    font-size: 20px;
+                    font-weight: 500;
+                    letter-spacing: 0.5px;
+                    text-transform: uppercase;
+                    margin: 0 0 10px;
+                }
+                p {
+                    color: #333;
+                    font-size: 15px;
+                    line-height: 26px;
+                }
+            }
+
+        }
+    }
+ }   

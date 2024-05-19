@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+		<script type="text/javascript" src="html-table-search.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('table.search-table').tableSearch({
+					searchText:'Search Table',
+					searchPlaceHolder:'Input Value'
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<table class="search-table">
+			<tr>
+				<td>Allen</td>
+			</tr>
+			<tr>
+				<td>James Mark</td>
+			</tr>
+			<tr>
+				<td>Christine Augilera</td>
+			</tr>
+		</table>
+	</body>
+<html>

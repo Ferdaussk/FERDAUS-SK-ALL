@@ -1,0 +1,293 @@
+.bwd-grid-container-active {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 66rem));
+    justify-content: center;
+    gap: 2rem;
+    @include mq (md) {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    @include mq (xs) {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+     @include mq (sm) {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    .bwd-pricing-table-seven {
+        padding: 45px 40px 50px;
+        background: rgba(240, 248, 255, 0.973);
+        margin: 0 15px 30px 15px;
+        box-shadow: 0 0 5px rgb(215, 221, 250);
+        border: 1px solid rgba(207, 221, 233, 0.97);
+         @include mq (xs) {
+            padding: 45px 10px 50px;
+        }
+        @include mq (sm) {
+            padding: 45px 35px 50px;
+        } 
+        .bwd-price-header {
+            border-bottom: 1px solid #1045db1f;
+            padding:0 0 20px;
+            .bwd-title {
+                font-size: 35px;
+                margin-bottom: 19px;
+                font-weight: 600;
+                letter-spacing: 1.5px;
+                color: #22455a;
+            }
+            p {
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 25px;
+                color: #6b7c93;
+            }
+        }
+        .bwd-price-area {
+            padding: 25px 0 20px;
+            text-align: center;
+            .bwd-pricing-amount {
+                h2 {
+                    font-size: 35px;
+                    font-weight: 500;
+                    color: #09ebaf;
+                }
+                .bwd-dollar {
+                    font-size: 20px;
+                    font-weight: 400;
+                    color: #09ebaf;
+                    position: relative;
+                    top: -15px;
+                    margin-right: 5px;
+                }
+                .bwd-duration {
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: #6b7c93;
+                    margin-left: 6px;
+
+                }
+                .bwd-monthly_price {
+                    display: none;
+                }
+                
+            }
+            .bwd-change-subs-duration {
+                .bwd-monthly_price {
+                    display: block;
+                }
+                .bwd-annual_price {
+                    display: none;
+                }
+            }
+            .bwd-discount  {
+                p {
+                    font-size: 14px;
+                    font-weight: 600;
+                    line-height: 28px;
+                    color: #6b7c93;
+                }
+                span {
+                    font-size: 18px;
+                    color: #09ebaf;
+                    font-weight: 500;
+               }
+            }
+        }
+        .bwd-pricing-card-content {
+            padding: 25px 0 0;
+            border-top: 1px solid #1045db1f;
+            span {
+                display: flex;
+                font-size: 16px;
+                padding: 10px;
+                font-weight: 500;
+                color: #6b7c93;
+                i {
+                    background: #09ebaf;
+                    color: #fff;
+                    width: 20px;
+                    height: 20px;
+                    line-height: 20px;
+                    text-align: center;
+                    border-radius: 50px;
+                    font-size: 10px;
+                    font-weight: 900;
+                    margin-right: 15px;
+                }
+            }
+            .bwd-pricing-signup {
+                text-align: center;
+                margin-top: 20px;
+                a{
+                    color: #fff;
+                    background-color: #00e5a8;
+                    font-size: 17px;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    padding: 5px 22px;
+                    margin: 0 auto;
+                    border: none;
+                    border-radius: 30px;
+                    display: inline-block;
+                    position: relative;
+                    white-space: nowrap;
+                    transition: all 0.3s ease 0s;
+                    &:hover {
+                        color: #fff;
+                        box-shadow: 0 0 10px rgba(0,0,0,0.4);
+                    }
+                    &::before {
+                        content: '';
+                        background-color: rgba(255,255,255,0.2);
+                        height: 100%;
+                        width: 0;
+                        border-radius: 20px;
+                        transform: scale(0.9,0.8);
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        transition: all 0.3s ease 0s;
+                    }
+                    &:hover {
+                        &::before {
+                            width: 100%;
+                        }
+                    }
+                    &:hover {
+                        &::before {
+                            width: 100%;
+                        }
+                    }
+                    i {
+                        width: 45px;
+                        background: #fff;
+                        color: #09ebaf;
+                        height: 45px;
+                        line-height: 45px;
+                        text-align: center;
+                        border-radius: 50px;
+                        font-size: 17px;
+                        font-weight: 900;
+                        margin-left: 11%;
+                    }
+                   
+                }
+            }
+        }
+    }
+    .slick-arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: transparent;
+        color: #6b7c93;
+        transition: .3s linear;
+        font-size: 15px;
+        background-color: transparent;
+        font-size: 18px;
+        cursor: pointer;
+        opacity: .9;
+        font-weight: 400;
+        z-index: 1;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        border-radius: 50%;
+        border: 1px solid #09ebaf;
+        transition: .3s linear;
+            @include mq(xs){
+            display: none !important;
+        }
+       
+        &:hover {
+            background: #6b7c93;
+            color: #09ebaf;
+            border-color: transparent;
+        }
+    }
+    .slick-prev {
+        left: 10px;
+        
+    }
+    .slick-next {
+        right: 18px;
+        left: auto;
+
+    }
+    .slick-dots {
+        position: absolute;
+        left: 0;
+        bottom: 85px;
+        right: 0;
+        text-align: center;
+        li {
+            display: inline-block;
+            margin: 0 5px;
+            line-height: 0;
+            &.slick-active {
+                button {
+                    background-color: #09ebaf;
+                }
+            }
+            button {
+                text-indent: -10000px;
+                border: none;
+                width: 15px;
+                height: 15px;
+                line-height: 15px;
+                border: 2px solid #09ebaf;
+                border-radius: 50%;
+                cursor: pointer;
+                outline: none;
+            }
+        }
+    }
+}
+.bwd-pricing-tab {
+    text-align: center;
+    position: relative;
+    font-weight: 500;
+    z-index: 2;
+    margin-bottom: 0;
+    span {
+        vertical-align: middle;
+    }
+    .bwd-pricing-tab-switcher {
+        height: 40px;
+        width: 90px;
+        display: inline-block;
+        border-radius: 50px;
+        position: relative;
+        margin: 0 18px;
+        transform: translateY(0px);
+        border: 1px solid #dcd2d2;
+        border-radius: 30px;
+        cursor: pointer;
+        &:before {
+            content: "";
+            position: absolute;
+            left: 5px;
+            top: 4px;
+            background-color: #00e5a8;;
+            width: 30px;
+            height: 30px;
+            border-radius: 100%;
+            transition: all 0.4s linear;
+        }
+        &.active {
+            &::before {
+                left: calc(100% - 35px);
+            }
+        }
+    }
+    &.seleceted {
+        .bwd-annual_tab_title {
+            color: #302c2d;
+        }
+    }
+    .bwd-tab-btn {
+        cursor: pointer;
+    }
+}

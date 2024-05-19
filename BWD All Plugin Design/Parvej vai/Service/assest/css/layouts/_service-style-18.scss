@@ -1,0 +1,208 @@
+.bwd-service-style-18 {
+    .bwd-service-box {
+        text-align: center;
+        position: relative;
+        padding: 20px 30px;
+        border: 1px solid #dddddd;
+        margin-bottom: 40px;
+        @include mq (md) {
+            padding: 20px 15px;
+        }
+        &.skyblue {
+            .bwd-service-icon {
+                border-color: #05b4b7;
+                &::before {
+                    border-bottom-color: #05b4b7;
+                    border-left-color: #05b4b7;
+                }
+                &::after {
+                    background: #05b4b7;
+                }
+                span {
+                    color: #05b4b7;
+                    border: 2px solid #05b4b7;
+                    &::before {
+                        background: #05b4b7;
+                    }
+                    &::after {
+                        border-right-color: #05b4b7;
+                        border-bottom-color: #05b4b7;
+                    }
+                }
+            }
+            .bwd-service-content {
+                .title {
+                    color: #05b4b7;
+                }
+            }
+        }
+        &.pink {
+            .bwd-service-icon {
+                border-color: #d41271;
+                &::before {
+                    border-bottom-color: #d41271;
+                    border-left-color: #d41271;
+                }
+                &::after {
+                    background: #d41271;
+                }
+                span {
+                    color: #d41271;
+                    border: 2px solid #d41271;
+                    &::before {
+                        background: #d41271;
+                    }
+                    &::after {
+                        border-right-color: #d41271;
+                        border-bottom-color: #d41271;
+                    }
+                }
+            }
+            .bwd-service-content {
+                .title {
+                    color: #d41271;
+                }
+            }
+        }
+        &.green {
+            .bwd-service-icon {
+                border-color: #0fb513;
+                &::before {
+                    border-bottom-color: #0fb513;
+                    border-left-color: #0fb513;
+                }
+                &::after {
+                    background: #0fb513;
+                }
+                span {
+                    color: #0fb513;
+                    border: 2px solid #0fb513;
+                    &::before {
+                        background: #0fb513;
+                    }
+                    &::after {
+                        border-right-color: #0fb513;
+                        border-bottom-color: #0fb513;
+                    }
+                }
+            }
+            .bwd-service-content {
+                .title {
+                    color: #0fb513;
+                }
+            }
+        }
+        .bwd-service-icon {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            padding: 10px;
+            margin: 0 auto 45px;
+            border: 2px solid #fba21a;
+            z-index: 1;
+            position: relative;
+            transition: .3s linear;
+            @include mq (md) {
+                margin: 0 auto 35px;
+            }
+            &::before,
+            &::after {
+                content: "";
+                width: 35px;
+                height: 35px;
+                border-radius: 50%;
+                background: #fff;
+                border: 3px solid #fba21a;
+                border-top: 2px solid transparent;
+                border-right: 2px solid transparent;
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                opacity: 0;
+                transform: translateX(-50%) rotate(135deg);
+                transition: .3s linear;
+            }
+            &:after {
+                width: 20px;
+                height: 20px;
+                background: #fba21a;
+                border: none;
+            }
+        }
+        &:hover {
+            .bwd-service-icon{
+                &::before {
+                    opacity: 1;
+                    bottom: -16px;
+                }
+                &::after {
+                    bottom: -8px;
+                    opacity: 1;
+                }
+            }
+        }
+         span {
+            display: block;
+            width: 100%;
+            height: 100%;
+            font-size: 50px;
+            color: #fba21a;
+            line-height: 104px;
+            border-radius: 50%;
+            border: 2px solid #fba21a;
+            &::before,
+            &::after {
+                content: '';
+                display: block;
+                width: 3px;
+                height: 30px;
+                background: #fba21a;
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                opacity: 0;
+                transform: translateX(-50%);
+                transition: .3s linear;
+            }
+            &:after {
+                width: 20px;
+                height: 20px;
+                background: transparent;
+                border: 3px solid #fba21a;
+                border-left: 3px solid transparent;
+                border-top: 3px solid transparent;
+                transform: translateX(-50%) rotate(45deg);
+            }
+        }
+        &:hover {
+            .bwd-service-icon {
+                span {
+                    &::before,
+                    &::after {
+                        bottom: -30px;
+                        opacity: 1;
+                    
+                    }
+                }
+            } 
+        }
+        .bwd-service-content {
+            .title {
+                font-size: 20px;
+                color: #fba21a;
+                text-transform: uppercase;
+                margin-bottom: 15px;
+            }
+            p {
+                font-size: 15px;
+                color: #555;
+                @include mq (md) {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
+
+
+

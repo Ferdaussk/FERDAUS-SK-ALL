@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FERDAUS SK</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+.rtl-check {
+    text-align: center;
+    font-size: 40px;
+    text-decoration: underline;
+    font-weight: 600;
+    color: darkred;
+}
+.wrapper {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  padding: 10px 0;
+}
+.title {
+  margin: 5px 0;
+}
+.box {
+  height: 100%;
+  width: 25%;
+  border: 1px solid rgb(42, 0, 194);
+  margin: 5px;
+}
+.box.inline-block {
+  display: inline-block;
+  vertical-align: middle;
+}
+.box.float {
+  display: inline-block;
+  vertical-align: middle;
+  float: left;
+}
+.wrapper.flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.wrapper.table {
+  display: table
+}
+.wrapper.table > .box {
+  display: table-cell;
+}
+.btn {
+  background: #fff;
+  border: 1px solid black;
+}
+.btn.l {
+  border: 1px solid blue;
+}
+.btn.r {
+  border: 1px solid red;
+}
+.btn_wrapper {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  padding: 10px 0;
+}
+.left {
+  direction: ltr;
+}
+.right {
+  direction: rtl;
+}
+.name-ff {
+    border-color: red;
+}
+    </style>
+</head>
+<body>
+    <div class="rtl-check">Test One</div>
+    <div class="btn_wrapper">
+        <button class="btn l">Left</button>
+        <button class="btn r">Right</button>
+      </div>
+      <div class="title">
+        1. Using inline block (works)
+      </div>
+      <div class="wrapper">
+        <div class="box inline-block">text 1.</div>
+        <div class="box inline-block">text 2.</div>
+        <div class="box inline-block name-ff">text 3.</div>
+      </div>
+      <div class="title">
+        2. If you float them (does not work)
+      </div>
+      <div class="wrapper">
+        <div class="box float">text 1.</div>
+        <div class="box float">text 2.</div>
+        <div class="box float name-ff">text 3.</div>
+        <div style="clear:both"></div>
+      </div>
+      <div class="title">
+        3. If you use flexbox (works)
+      </div>
+      <div class="wrapper flex">
+        <div class="box">text 1.</div>
+        <div class="box">text 2.</div>
+        <div class="box name-ff">text 3.</div>
+      </div>
+      <div class="title">
+        4. table display (works)
+      </div>
+      <div class="wrapper table">
+        <div class="box">text 1.</div>
+        <div class="box">text 2.</div>
+        <div class="box name-ff">text 3.</div>
+      </div>
+    <script src="https://releases.jquery.com/git/jquery-git.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
+    <script>
+        $('button').click(function(e) {
+        if ($(e.target).text() == "Left") {
+            $('.wrapper').addClass('left');
+            $('.wrapper').removeClass('right');
+        } else {
+            $('.wrapper').removeClass('left');
+            $('.wrapper').addClass('right');
+        }
+        });
+    </script>
+</body>
+</html>

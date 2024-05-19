@@ -1,0 +1,143 @@
+/******************************/
+/* TL-28*/
+    .bwd-timeline-twenty-eight{
+        position: relative;
+        padding: 60px 30px;
+        @include mq(sm){
+            padding: 50px;
+        }
+        @include mq(xs){
+            padding: 50px 15px;
+        }
+        background-color: #d606a329;
+        &::before {
+            content: "";
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            height: calc(100% - 100px);
+            width: 30px;
+            background: #AD03AA;
+            border-radius: 5px;
+            z-index: 1;
+    
+        }
+        .bwd-timeline-item-container{
+            .bwd-timeline-item {
+                position: relative;
+                width: 50%;
+                padding: 10px;
+                @include mq(xs){
+                    width: 100%;
+                }
+                .bwd-timeline-item-inner{
+                    position: relative;
+                    z-index: 2;
+                    .bwd-year {
+                        display: inline-block;
+                        background: linear-gradient(166deg, #7a00b3 0%,  #fd089b 100%);
+                        color: #fff;
+                        font-size: 30px;
+                        color: #eee;
+                        line-height: 50px;
+                        padding: 0 30px;
+                        border-top-right-radius: 30px;
+                        border-top-left-radius: 20px;
+                        font-weight: 600;
+                        position: relative;
+                        padding-bottom: 5px;
+                        z-index: -1;
+                        bottom: -8px;
+                    }
+                    max-width: 520px;
+                    @include mq(sm){
+                        max-width: 100%;
+                    }
+                
+                    .bwd-timeline-item-content{
+                        background:linear-gradient(166deg, #fd089b 0%, #7a00b3 100%);
+                        padding: 20px 30px;
+                        @include mq(xs){
+                            padding: 20px;
+                        }
+                      
+                        border-top: 2px solid #fd089b;
+                       
+                            .bwd-timeline-title {
+                            font-size: 22px;
+                            text-transform: capitalize;
+                            color: #fff;
+                            margin-bottom: 8px;
+                        }
+                            .bwd-timeline-dsc {
+                                color: #eee;
+                                line-height: 24px;
+                        }
+                    }
+                    
+                }
+                &:nth-child(odd){
+                    left: 60px;
+                    margin-top: -36px;
+                    @include mq(xs){
+                       margin-top: 0;
+                       left: 0;
+                    }
+                    .bwd-timeline-item-inner{
+                        margin-left: auto;
+                        .bwd-timeline-item-content{
+                            border-bottom-left-radius: 30px;
+                            border-right: 2px solid #001551
+                            ;
+
+                        }
+                    }
+                    &::before{
+                        content: "";
+                        width: 90px;
+                        height: 40px;
+                        background: #001247;
+                        position: absolute;
+                        right: 10px;
+                        bottom: -30px;
+                        clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+                    }
+
+                }
+                &:nth-child(even){
+                    margin-left: auto;
+                    right: 49px;
+                    margin-top: -36px;
+                    @include mq(xs){
+                        margin-top: 0;
+                        right: 0;
+                     }
+                    .bwd-timeline-item-inner{
+                        text-align: right;
+                        margin-right: auto;
+                        .bwd-timeline-item-content{
+                            border-bottom-right-radius: 30px;
+                        }
+                      
+                    }
+                     &::before{
+                        content: "";
+                        width: 90px;
+                        height: 40px;
+                        background: #001247;
+                        position: absolute;
+                        left: 10px;
+                        bottom: -30px;
+                        clip-path: polygon(0 0, 75% 0, 100% 99%, 24% 100%);
+                    }
+                }
+                &:nth-last-child(1){
+                    &::before{
+                        display: none !important;
+                    }
+                }
+              
+            }
+        }
+    }
+/* TL-28*/

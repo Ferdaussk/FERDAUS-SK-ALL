@@ -1,0 +1,170 @@
+.bwd-service-style-7 {
+    .bwd-service-box {
+        color: #999;
+        text-align: center;
+        padding: 10px 20px 35px;
+        position: relative;
+        box-shadow: 10px 12px 25px rgba(0, 0, 0, 0.24);
+        margin-bottom: 40px;
+        @include mq (md) {
+            padding: 10px 10px 35px;
+        }
+        &.green {
+            &::before,
+            &::after {
+                background: #719e2a;
+            }
+            &:hover {
+                &::after {
+                    background-color: #719e2a5c;
+                }
+            }
+            .bwd-service-content {
+                &::before {
+                    background:#719e2a;
+                }
+                .bwd-content {
+                    .title {
+                        color: #719e2a;
+                    }
+                }
+            }
+        }
+        &.yellow {
+            &::before,
+            &::after {
+                background: #ffa708;
+            }
+            &:hover {
+                &::after {
+                    background-color: #ffa70836;
+                }
+            }
+            .bwd-service-content {
+                &::before {
+                    background:#ffa708;
+                }
+                .bwd-content {
+                    .title {
+                        color: #ffa708;
+                    }
+                }
+            }
+        }
+        &.darkgreen {
+            &::before,
+            &::after {
+                background: #44D1A3 ;
+            }
+            &:hover {
+                &::after {
+                    background-color: #44d1a34f;
+                }
+            }
+            .bwd-service-content {
+                &::before {
+                    background:#44D1A3 ;
+                }
+                .bwd-content {
+                    .title {
+                        color: #44D1A3 ;
+                    }
+                }
+            }
+        }
+        &::before,
+        &::after {
+            content: "";
+            background: #1e5270;
+            width: 150px;
+            height: 10px;
+            transform: translateX(-50%);
+            position: absolute;
+            top: -11px;
+            left: 50%;
+            clip-path: polygon(7% 0%, 93% 0%, 100% 100%, 0% 100%);
+        
+        }
+        &:after{
+            width: 80%;
+            height: 15px;
+            border-radius: 0 0 10px 10px;
+            top: auto;
+            bottom: 0;
+            clip-path: none;
+            transition: .3s linear;
+        }
+        &:hover {
+            &::after {
+                width: 100.2%;
+                height: 100.5%;
+                border-radius: 0;
+                background-color: #1e52703b;
+            }
+        }
+        .bwd-service-icon{
+            color: #77787a;
+            background: linear-gradient(to left, #dedfe1, #f3f3f3);
+            font-size: 40px;
+            line-height: 100px;
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            box-shadow: 0 0 0 5px rgba(0,0,0,0.03);
+            position: relative;
+            z-index: 1;
+            &::before{
+                content: "";
+                background: linear-gradient(to right, #dedfe1, #f3f3f3);
+                width: 88%;
+                height: 88%;
+                border-radius: 50%;
+                box-shadow: 5px 0 5px rgba(0, 0, 0, 0.1);
+                transform: translateX(-50%) translateY(-50%);
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                z-index: -1;
+            }
+        }
+        .bwd-service-content{
+            background: #fff;
+            border-radius: 10px;
+            &::before{
+                content: "";
+                background:#1b657e;
+                width: 128px;
+                height: 100px;
+                transform: translateX(-50%);
+                position: absolute;
+                top: -11px;
+                left: 50%;
+                clip-path: polygon(0 0, 100% 0, 50% 100%);
+            }
+            .bwd-content {
+                position: relative;
+                z-index: 2;
+                .title{
+                    color: #1e5270;
+                    font-size: 20px;
+                    font-weight: 600;
+                    letter-spacing: 0.5px;
+                    text-transform: uppercase;
+                    margin: 0 0 10px;
+                }
+                p{
+                    color: rgb(73, 72, 72);
+                    font-size: 14px;
+                    line-height: 24px;
+                    margin: 0;
+                    @include mq (md) {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+

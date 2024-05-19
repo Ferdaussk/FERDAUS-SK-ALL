@@ -1,0 +1,57 @@
+/** count down 6 start**/
+.bwd-count-down-6{
+    padding: 30px;
+    margin: 30px auto;
+    background-color: #00ECB9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .bwd-count-down-item {
+        margin: 15px 1px;
+        text-align: center;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #eaeaea;
+        background: #00BF96;
+        padding: 15px;
+        border-radius: 10px;
+
+        @include mq(xs){
+            padding: 10px 5px;
+        }
+            .bwd-count-down-title{
+                font-size: 20px;
+                color: #fff;
+                line-height: 1.2;
+                margin-top: 10px;
+                @include mq(md){
+                    font-size: 17px;
+                }
+                @include mq(md){
+                    font-size: 13px;
+                }
+            }
+            .bwd-count-down-num {
+                position: relative;
+                font-size: 45px;
+                text-align: center;
+                color: #fff;
+                z-index: 1;
+                margin: 0 1px;
+                background: #00816A;
+                border-radius: 10px;
+                line-height: 1;
+                padding: 15px 10px;
+                @include mq(md){
+                    font-size: 35px;
+                    padding: 15px 5px;
+                }
+                @include mq(xs){
+                    font-size: 30px;
+                    padding: 15px 5px;
+                }
+            }
+    }
+}
+/** count down 6 end*/
+

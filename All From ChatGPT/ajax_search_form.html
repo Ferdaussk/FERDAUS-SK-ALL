@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .input_clas {
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.boxes {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  width: 200px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#search-results {
+  margin-top: 20px;
+}
+
+  </style>
+</head>
+<body>
+  <div>
+    <div class="input_clas">
+      <input type="text" name="bwdeb-search" id="bwdeb-search" placeholder="Search Widget">
+    </div>
+    <div class="boxes">
+      <div class="box_one">
+        <div class="title">One</div>
+      </div>
+      <div class="box_Two">
+        <div class="title">Two</div>
+      </div>
+      <div class="box_three">
+        <div class="title">Three</div>
+      </div>
+      <div class="box_Four">
+        <div class="title">Four</div>
+      </div>
+    </div>
+  </div>
+  
+  <div id="search-results">
+    <!-- Search results will be displayed here -->
+    
+    <div class="box">
+      <div class="title">One</div>
+      <div class="title">Two</div>
+      <div class="title">Three</div>
+    </div>
+    <div class="box_Two">
+    </div>
+    <div class="box_three">
+    </div>
+    <div class="box">
+      <div class="title">Four</div>
+    </div>
+  </div>
+  <script>
+    function searchBoxes() {
+  var input = document.getElementById("bwdeb-search").value;
+  var boxes = document.getElementsByClassName("box");
+  var results = [];
+  
+  for (var i = 0; i < boxes.length; i++) {
+    var title = boxes[i].getElementsByClassName("title")[0].innerHTML;
+    
+    if (title.toLowerCase().includes(input.toLowerCase())) {
+      results.push(boxes[i].outerHTML);
+    }
+  }
+  
+  if (results.length > 0) {
+    document.getElementById("search-results").innerHTML = results.join("");
+  } else {
+    document.getElementById("search-results").innerHTML = "No results found.";
+  }
+}
+
+document.getElementById("bwdeb-search").addEventListener("input", searchBoxes);
+
+  </script>
+</body>
+</html>

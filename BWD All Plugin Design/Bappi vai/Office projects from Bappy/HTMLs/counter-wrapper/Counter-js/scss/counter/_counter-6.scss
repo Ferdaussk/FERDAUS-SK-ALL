@@ -1,0 +1,131 @@
+.bwd-counter-6{
+    margin: 30px 0;
+    .bwd-counter{
+      color: #54840c;
+      background: linear-gradient(to top left, #54840c, #b9eb72);
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+      padding: 26px 20px 30px;
+      margin: 15px auto;
+      border-radius: 30px;
+      position: relative;
+      z-index: 1;
+      max-width: 290px;
+      width: 100%;
+      min-height: 280px;
+      @include mq(lg){
+        min-height: 270px;
+      }
+
+
+        &::after{
+            content: "";
+            background: #fff;
+            width: 120px;
+            height: 120px;
+            border-radius: 0 100% 0 100% / 0 100% 0 100%;
+            box-shadow: inset 3px 3px 5px rgba(0, 0, 0, 0.4);
+            transform: translateX(-50%) rotate(-45deg);
+            position: absolute;
+            top: -5px;
+            left: 50%;
+            z-index: -1;
+        }
+
+        &::after{
+            top: auto;
+            bottom: -3px;
+            @include mq(lg){
+              width: 110px;
+              height: 110px;
+              bottom: -15px;
+            }
+        }
+
+        .bwd-counter-icon{
+          font-size: 55px;
+          line-height: 58px;
+          color: #fff;
+          transition: .3s;
+          @include mq(lg){
+            font-size: 50px;
+            line-height: 50px;
+          }
+        }
+
+        .bwd-counter-heading{
+          color: #fff;
+          font-size: 20px;
+          font-weight: 600;
+          letter-spacing: 0.5px;
+          text-transform: uppercase;
+          position: absolute;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+          left: 50%;
+          width: 100%;
+          padding: 0px 15px;
+          line-height: 1.2;
+          @include mq(lg){
+            font-size: 18px;
+          }
+        }
+
+        .bwd-counter-value{
+            font-size: 35px;
+            font-weight: 600;
+            line-height: 1;
+            position: absolute;
+            top: auto;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+
+            @include mq(lg){
+              font-size: 30px;
+              bottom: 25px;
+            }
+
+        }
+
+        &:hover{
+          .bwd-counter-icon{
+                transform: scale(1.1);
+
+          }
+        }
+    }
+
+
+    .row > * {
+        &:nth-child(2) {
+          .bwd-counter {
+            color: #026793;
+            background: linear-gradient(to top left,#026793,#54bfee);
+       
+    
+       
+          }
+        }
+
+          &:nth-child(3) {
+          .bwd-counter {
+            color: #1b282e;
+            background: linear-gradient(to top left,#1b282e,#688799);
+       
+          }
+        }
+
+        &:nth-child(4) {
+            .bwd-counter {
+                color: #ba2f8d;
+              background: linear-gradient(to top left,#ba2f8d,#d4529c);
+         
+      
+         
+            }
+          }
+      }
+ 
+}

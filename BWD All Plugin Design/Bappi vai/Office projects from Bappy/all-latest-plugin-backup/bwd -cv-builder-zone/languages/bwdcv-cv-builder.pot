@@ -1,0 +1,1291 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: BWD CV VILDER\n"
+"POT-Creation-Date: 2022-07-23 09:31+0600\n"
+"PO-Revision-Date: 2022-07-23 09:31+0600\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: bwdcv-cv-vilder.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: bwdcv-boots.php:54 bwdcv-cv-vilder.php:93 bwdcv-cv-vilder.php:108
+msgid "BWD Cv Vilder"
+msgstr ""
+
+#: bwdcv-cv-vilder.php:64 bwdcv-cv-vilder.php:94
+msgid "Elementor"
+msgstr ""
+
+#: bwdcv-cv-vilder.php:92 bwdcv-cv-vilder.php:107
+#, php-format
+msgid "\"%1$s\" requires \"%2$s\" version %3$s or greater."
+msgstr ""
+
+#: bwdcv-cv-vilder.php:98 bwdcv-cv-vilder.php:113
+#, php-format
+msgid "%1$s"
+msgstr ""
+
+#: bwdcv-cv-vilder.php:109
+msgid "PHP"
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:334
+msgid "Install Required Plugins"
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:335
+msgid "Install Plugins"
+msgstr ""
+
+#. translators: %s: plugin name.
+#: includes/class-tgm-plugin-activation.php:337
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#. translators: %s: plugin name.
+#: includes/class-tgm-plugin-activation.php:339
+#, php-format
+msgid "Updating Plugin: %s"
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:340
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#. translators: 1: plugin name(s).
+#: includes/class-tgm-plugin-activation.php:343
+#, php-format
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: includes/class-tgm-plugin-activation.php:349
+#, php-format
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: includes/class-tgm-plugin-activation.php:355
+#, php-format
+msgid ""
+"The following plugin needs to be updated to its latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgid_plural ""
+"The following plugins need to be updated to their latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: includes/class-tgm-plugin-activation.php:361
+#, php-format
+msgid "There is an update available for: %1$s."
+msgid_plural "There are updates available for the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: includes/class-tgm-plugin-activation.php:367
+#, php-format
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: includes/class-tgm-plugin-activation.php:373
+#, php-format
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/class-tgm-plugin-activation.php:378
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/class-tgm-plugin-activation.php:383
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/class-tgm-plugin-activation.php:388
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/class-tgm-plugin-activation.php:392
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:393
+#: includes/class-tgm-plugin-activation.php:920
+#: includes/class-tgm-plugin-activation.php:2626
+#: includes/class-tgm-plugin-activation.php:3673
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:394
+#: includes/class-tgm-plugin-activation.php:3252
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:395
+#: includes/class-tgm-plugin-activation.php:3045
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name.
+#: includes/class-tgm-plugin-activation.php:397
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: includes/class-tgm-plugin-activation.php:399
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+
+#. translators: 1: dashboard link.
+#: includes/class-tgm-plugin-activation.php:401
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:402
+msgid "Dismiss this notice"
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:403
+msgid ""
+"There are one or more required or recommended plugins to install, update or "
+"activate."
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:404
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:607
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:608
+msgid "Update Required"
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:725
+msgid "Set the parent_slug config variable instead."
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:1027
+msgid ""
+"The remote plugin package does not contain a folder with the desired slug "
+"and renaming did not work."
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:1027
+#: includes/class-tgm-plugin-activation.php:1030
+msgid ""
+"Please contact the plugin provider and ask them to package their plugin "
+"according to the WordPress guidelines."
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:1030
+msgid ""
+"The remote plugin package consists of more than one file, but the files are "
+"not packaged in a folder."
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:1214
+#: includes/class-tgm-plugin-activation.php:3041
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr ""
+
+#. translators: %s: version number
+#: includes/class-tgm-plugin-activation.php:2075
+#, php-format
+msgid "TGMPA v%s"
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:2366
+msgid "Required"
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:2369
+msgid "Recommended"
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:2385
+msgid "WordPress Repository"
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:2388
+msgid "External Source"
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:2391
+msgid "Pre-Packaged"
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:2408
+msgid "Not Installed"
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:2412
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:2414
+msgid "Active"
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:2420
+msgid "Required Update not Available"
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:2423
+msgid "Requires Update"
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:2426
+msgid "Update recommended"
+msgstr ""
+
+#. translators: 1: install status, 2: update status
+#: includes/class-tgm-plugin-activation.php:2435
+#, php-format
+msgctxt "Install/Update Status"
+msgid "%1$s, %2$s"
+msgstr ""
+
+#. translators: 1: number of plugins.
+#: includes/class-tgm-plugin-activation.php:2481
+#, php-format
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: includes/class-tgm-plugin-activation.php:2485
+#, php-format
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: includes/class-tgm-plugin-activation.php:2489
+#, php-format
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: includes/class-tgm-plugin-activation.php:2493
+#, php-format
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/class-tgm-plugin-activation.php:2575
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:2583
+msgid "Installed version:"
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:2591
+msgid "Minimum required version:"
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:2603
+msgid "Available version:"
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:2626
+msgid "No plugins to install, update or activate."
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:2640
+msgid "Plugin"
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:2641
+#: widgets/bwdcv-cv-builder.php:2558
+msgid "Source"
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:2642
+msgid "Type"
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:2646
+msgid "Version"
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:2647
+msgid "Status"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+#: includes/class-tgm-plugin-activation.php:2696
+#, php-format
+msgid "Install %2$s"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+#: includes/class-tgm-plugin-activation.php:2701
+#, php-format
+msgid "Update %2$s"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+#: includes/class-tgm-plugin-activation.php:2707
+#, php-format
+msgid "Activate %2$s"
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:2777
+msgid "Upgrade message from the plugin author:"
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:2810
+msgid "Install"
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:2816
+msgid "Update"
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:2819
+msgid "Activate"
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:2850
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:2852
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:2893
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:2895
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:3001
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:3027
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:3251
+msgid "Plugin activation failed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: includes/class-tgm-plugin-activation.php:3591
+#, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#. translators: 1: plugin name, 2: error message.
+#: includes/class-tgm-plugin-activation.php:3594
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: includes/class-tgm-plugin-activation.php:3596
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:3600
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: includes/class-tgm-plugin-activation.php:3602
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:3602
+#: includes/class-tgm-plugin-activation.php:3610
+msgid "Show Details"
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:3602
+#: includes/class-tgm-plugin-activation.php:3610
+msgid "Hide Details"
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:3603
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: includes/class-tgm-plugin-activation.php:3605
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:3608
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: includes/class-tgm-plugin-activation.php:3610
+#, php-format
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:3611
+msgid "All installations have been completed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: includes/class-tgm-plugin-activation.php:3613
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: page-settings/bwdcv-cv-builder-manager.php:21
+msgid "bwdcv-cv-builder"
+msgstr ""
+
+#: page-settings/bwdcv-cv-builder-manager.php:32
+msgid "Settings"
+msgstr ""
+
+#: page-settings/bwdcv-cv-builder-manager.php:40
+#: page-settings/bwdcv-cv-builder-manager.php:42
+#: widgets/bwdcv-cv-builder.php:578 widgets/bwdcv-cv-builder.php:748
+#: widgets/bwdcv-cv-builder.php:971 widgets/bwdcv-cv-builder.php:1198
+#: widgets/bwdcv-cv-builder.php:1408 widgets/bwdcv-cv-builder.php:1655
+#: widgets/bwdcv-cv-builder.php:1951 widgets/bwdcv-cv-builder.php:2241
+msgid "Title"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:17
+msgid "BWD Cv"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:41
+msgid "Cv Style"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:49
+msgid "Choose Style"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:53
+msgid "Style 1"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:54
+msgid "Style 2"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:55
+msgid "Style 3"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:56
+msgid "Style 4"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:57
+msgid "Style 5"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:58
+msgid "Style 6"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:59
+msgid "Style 7"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:60
+msgid "Style 8"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:61
+msgid "Style 9"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:62
+msgid "Style 10"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:63
+msgid "Style 11"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:64
+msgid "Style 12"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:65
+msgid "Style 13"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:66
+msgid "Style 14"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:67
+msgid "Style 15"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:68
+msgid "Style 16"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:79
+msgid "Shadow"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:88
+msgid "Box Shadow"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:99
+msgid "Header"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:108 widgets/bwdcv-cv-builder.php:2685
+msgid "Choose Image"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:118
+msgid "Choose Png Image"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:128
+msgid "Name"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:134
+msgid "Edward Shine"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:140
+msgid "Desingnation"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:146
+msgid "graphic designer"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:153 widgets/bwdcv-cv-builder.php:590
+#: widgets/bwdcv-cv-builder.php:1721 widgets/bwdcv-cv-builder.php:2047
+msgid "Description"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:159
+msgid ""
+"Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium ullam "
+"inventore eveniet deserunt, facere perferendis ad ratione fugit eum minima "
+"nesciunt nemo aut dolorem facilis tempore ea iure corrupti quaerat nostrum "
+"dignissimos vel incidunt omnis nisi! Totam, eveniet quos. Quis, reiciendis "
+"corporis? Voluptatem cumque nam omnis, nostrum fugit exercitationem illum?."
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:165
+msgid "Social Name"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:168
+msgid "Social"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:176
+msgid "cv box icon title"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:178
+msgid "cv box icon"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:188
+msgid "cv box Icon"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:200
+msgid "Icon Link"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:202
+msgid "Write cv icon link here"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:217 widgets/bwdcv-cv-builder.php:1711
+#: widgets/bwdcv-cv-builder.php:1742 widgets/bwdcv-cv-builder.php:2007
+#: widgets/bwdcv-cv-builder.php:2037 widgets/bwdcv-cv-builder.php:2067
+#: widgets/bwdcv-cv-builder.php:2275 widgets/bwdcv-cv-builder.php:2306
+#: widgets/bwdcv-cv-builder.php:2337 widgets/bwdcv-cv-builder.php:2368
+msgid "Color"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:228 widgets/bwdcv-cv-builder.php:624
+#: widgets/bwdcv-cv-builder.php:1844 widgets/bwdcv-cv-builder.php:2133
+#: widgets/bwdcv-cv-builder.php:2436
+msgid "Bg Color"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:239 widgets/bwdcv-cv-builder.php:862
+msgid "Icon Font Size"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:258 widgets/bwdcv-cv-builder.php:843
+#: widgets/bwdcv-cv-builder.php:2650
+msgid "Icon Round Size"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:275
+msgid "cv social List"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:315
+msgid "Cv Bilder Bg Area "
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:323
+msgid "Cv Bilder Bg Color"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:336
+msgid "Item Bg Area "
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:344
+msgid "Item Left Bg Color"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:358
+msgid "Item Right Bg Color"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:372
+msgid "Header "
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:380
+msgid "Header Bg Color"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:390
+msgid "Header Bg Color2"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:401
+msgid "Image Border Color"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:412
+msgid "Image Outline Color"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:422
+msgid "Before border Color"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:432
+msgid "After border Color"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:443
+msgid "Shape Bg Color"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:454
+msgid "profile Bg Color"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:469 widgets/bwdcv-cv-builder.php:613
+#: widgets/bwdcv-cv-builder.php:782 widgets/bwdcv-cv-builder.php:1100
+#: widgets/bwdcv-cv-builder.php:1310 widgets/bwdcv-cv-builder.php:1547
+msgid "Title Color"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:480 widgets/bwdcv-cv-builder.php:549
+#: widgets/bwdcv-cv-builder.php:771 widgets/bwdcv-cv-builder.php:1089
+#: widgets/bwdcv-cv-builder.php:1299 widgets/bwdcv-cv-builder.php:1833
+#: widgets/bwdcv-cv-builder.php:2122 widgets/bwdcv-cv-builder.php:2425
+msgid "Title Bg Color"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:500 widgets/bwdcv-cv-builder.php:643
+msgid "Desg Color"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:519
+msgid "Description Color"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:538
+msgid "Social Title Color"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:571 widgets/bwdcv-cv-builder.php:605
+msgid "About"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:581
+msgid "about me"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:596
+msgid ""
+"Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum a incidunt, "
+"voluptatibus doloribus quod praesentium quibusdam provident? Culpa ut, ex "
+"laboriosam adipisci est quaerat, autem aspernatur doloribus alias iste amet."
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:662 widgets/bwdcv-cv-builder.php:821
+#: widgets/bwdcv-cv-builder.php:1882 widgets/bwdcv-cv-builder.php:2171
+#: widgets/bwdcv-cv-builder.php:2474
+msgid "Icon Color"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:673 widgets/bwdcv-cv-builder.php:801
+#: widgets/bwdcv-cv-builder.php:1119 widgets/bwdcv-cv-builder.php:1329
+#: widgets/bwdcv-cv-builder.php:1577 widgets/bwdcv-cv-builder.php:1863
+#: widgets/bwdcv-cv-builder.php:2152 widgets/bwdcv-cv-builder.php:2455
+#: widgets/bwdcv-cv-builder.php:2627
+msgid "Icon Size"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:693 widgets/bwdcv-cv-builder.php:912
+#: widgets/bwdcv-cv-builder.php:1139 widgets/bwdcv-cv-builder.php:1349
+#: widgets/bwdcv-cv-builder.php:1597 widgets/bwdcv-cv-builder.php:1893
+#: widgets/bwdcv-cv-builder.php:2182 widgets/bwdcv-cv-builder.php:2486
+msgid "Title Width"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:712 widgets/bwdcv-cv-builder.php:935
+#: widgets/bwdcv-cv-builder.php:1162 widgets/bwdcv-cv-builder.php:1372
+#: widgets/bwdcv-cv-builder.php:1620 widgets/bwdcv-cv-builder.php:1916
+#: widgets/bwdcv-cv-builder.php:2205 widgets/bwdcv-cv-builder.php:2509
+msgid "Title Padding"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:725 widgets/bwdcv-cv-builder.php:948
+#: widgets/bwdcv-cv-builder.php:1175 widgets/bwdcv-cv-builder.php:1385
+#: widgets/bwdcv-cv-builder.php:1633 widgets/bwdcv-cv-builder.php:1929
+#: widgets/bwdcv-cv-builder.php:2218 widgets/bwdcv-cv-builder.php:2522
+msgid "Title Border Radius"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:741 widgets/bwdcv-cv-builder.php:763
+msgid "Contact"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:754
+msgid "contact"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:832
+msgid "Icon Bg Color"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:882
+msgid "Item Font Color"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:893
+msgid "Item Font Size"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:964 widgets/bwdcv-cv-builder.php:1081
+msgid "Skill"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:977
+msgid "skill"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:984
+msgid "Skill Name"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:990
+msgid "web developer"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:997
+msgid "Name Color"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:1016 widgets/bwdcv-cv-builder.php:1244
+msgid "Range Bg Color"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:1026 widgets/bwdcv-cv-builder.php:1254
+msgid "Range After Bg Color"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:1037
+msgid "Range Border Color"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:1047
+msgid "Skill Name List"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:1053
+msgid "web design"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:1056
+msgid "graphic design"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:1059
+msgid "java script"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:1062
+msgid "html"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:1065
+msgid "css"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:1068
+msgid "php"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:1191 widgets/bwdcv-cv-builder.php:1204
+msgid "language"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:1212
+msgid "language Name"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:1218 widgets/bwdcv-cv-builder.php:1271
+msgid "english"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:1225
+msgid "Language name Color"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:1265
+msgid "Language Name List"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:1274
+msgid "spanish"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:1277
+msgid "chinese"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:1291
+msgid "Language"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:1401 widgets/bwdcv-cv-builder.php:1539
+msgid "Hobby"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:1414
+msgid "hobby"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:1422
+msgid "Hobby Name"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:1428 widgets/bwdcv-cv-builder.php:1522
+msgid "football"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:1443
+msgid "Hobby name Color"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:1454
+msgid "hobby Icon"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:1466
+msgid "Hobby Icon Color"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:1477
+msgid "Hobby Icon Size"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:1495
+msgid "Hobby Name List"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:1501
+msgid "music"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:1508
+msgid "MOVIE"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:1515
+msgid "writing"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:1558
+msgid "TItle Bg Color"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:1648 widgets/bwdcv-cv-builder.php:1814
+msgid "Education"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:1661
+msgid "education"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:1669
+msgid "education Name"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:1675
+msgid "UNIVERSITY DEGREE"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:1690
+msgid "Institute Babkground Color"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:1700
+msgid "Institute after Babkground Color"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:1727 widgets/bwdcv-cv-builder.php:1790
+#: widgets/bwdcv-cv-builder.php:1795 widgets/bwdcv-cv-builder.php:1800
+#: widgets/bwdcv-cv-builder.php:2085 widgets/bwdcv-cv-builder.php:2090
+msgid ""
+"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat totam "
+"voluptates quasi illo! Maiores doloremque quisquam ipsa?"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:1752 widgets/bwdcv-cv-builder.php:1986
+msgid "Year"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:1758 widgets/bwdcv-cv-builder.php:1791
+msgid "2014"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:1773
+msgid "Year Color"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:1783
+msgid "Education Name List"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:1789
+msgid "university degree"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:1794
+msgid "university of honours"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:1796
+msgid "2017"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:1799
+msgid "university master"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:1801 widgets/bwdcv-cv-builder.php:2088
+msgid "2020"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:1822 widgets/bwdcv-cv-builder.php:2111
+#: widgets/bwdcv-cv-builder.php:2414
+msgid "Text Color"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:1944 widgets/bwdcv-cv-builder.php:2103
+msgid "Experience"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:1957
+msgid "experience"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:1966
+msgid "Name Bg Color"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:1976
+msgid "Name after Bg Color"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:1992 widgets/bwdcv-cv-builder.php:2083
+msgid "2016"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:2017
+msgid "Experience Name"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:2077
+msgid "Experience Name List"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:2084
+msgid "tech company - junior data"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:2089
+msgid "techno company - senior data"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:2234 widgets/bwdcv-cv-builder.php:2406
+msgid "Reference"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:2247
+msgid "reference"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:2254
+msgid "Reference Name"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:2260 widgets/bwdcv-cv-builder.php:2384
+msgid "johan doe"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:2285
+msgid "Reference Company"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:2291 widgets/bwdcv-cv-builder.php:2385
+#: widgets/bwdcv-cv-builder.php:2391
+msgid "company / job position"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:2316
+msgid "Reference Number"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:2322 widgets/bwdcv-cv-builder.php:2386
+msgid "phone: +123 456 980"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:2347
+msgid "Relation Number"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:2353 widgets/bwdcv-cv-builder.php:2387
+msgid "relation: brother"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:2378
+msgid "Reference Name List"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:2390
+msgid "marinda joe"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:2392
+msgid "phone: +256 456 980"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:2393
+msgid "relation: student"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:2537 widgets/bwdcv-cv-builder.php:2845
+msgid "Footer"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:2547
+msgid "Show Video"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:2549 widgets/bwdcv-cv-builder.php:2676
+#: widgets/bwdcv-cv-builder.php:2701
+msgid "Show"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:2550 widgets/bwdcv-cv-builder.php:2677
+#: widgets/bwdcv-cv-builder.php:2702
+msgid "Hide"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:2562
+msgid "YouTube"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:2563
+msgid "Self Hosted"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:2573 widgets/bwdcv-cv-builder.php:2726
+msgid "Link"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:2578
+msgid "Enter your URL"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:2592
+msgid "Choose video"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:2605
+msgid "Vedio Color"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:2616
+msgid "Vedio Background Color"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:2674
+msgid "Show Signature"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:2699
+msgid "Show Button"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:2710
+msgid "Button Text"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:2713
+msgid "Contact Me"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:2714
+msgid "Type button text here"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:2728
+msgid "https://your-link.com"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:2746
+msgid "Normal"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:2753
+msgid "Button Normal Color"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:2764
+msgid "Button Normal Background Color"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:2783
+msgid "Button Padding"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:2796
+msgid "Border Radius"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:2810
+msgid "Hover"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:2817
+msgid "Button Hover Color"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:2828
+msgid "Button Hover Background Color"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:2852
+msgid "Padding"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:2865
+msgid "Footer Bg Color"
+msgstr ""
+
+#: widgets/bwdcv-cv-builder.php:2875
+msgid "Before Bg Color"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "BWD CV VILDER"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://bwdplugins.com/plugins/bwdcv-cv-builder/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "BWD cv vilder with eye-cathing style. 15+ preset design"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Best WP Developer"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://bestwpdeveloper.com/"
+msgstr ""

@@ -1,0 +1,92 @@
+/*********************************/
+/*timeline seventeen*/
+.bwd-timeline-seventeen{
+     padding: 60px 30px;
+     @include mq(xs){
+         padding: 40px 10px;
+     }
+    .bwd-timeline-item-container{
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+        .bwd-timeline-item {
+            position: relative;
+            width: 250px;
+            padding: 20px 15px;
+            border: 3px dotted #0fbcf9;
+            border-top-left-radius: 120px;
+            border-top-right-radius: 120px;
+            border-bottom: 0;
+            margin-bottom: 140px;
+            .bwd-timeline-item-top-shape {
+                position: absolute;
+                left: 15px;
+                right: 15px;
+                height: 230px;
+                background: #0c96c7;
+                border-radius: 120px 120px 50px 50px;
+                text-align: center;
+                padding: 30px;
+                .bwd-year {
+                    position: relative;
+                    font-size: 40px;
+                    color: #ff5e57;
+                    z-index: 3;
+                }
+      
+            }
+             
+            .bwd-timeline-item-bottom-shape{
+                background: #4f2b64;
+                border-radius: 120px;
+                text-align: center;
+                padding: 70px 25px;
+                position: relative;
+                margin-bottom: -100px;
+                margin-top: 0;
+                transition: .4s;
+                border-bottom: 1px solid transparent;
+                .bwd-timeline-title {
+                    font-size: 20px;
+                    text-transform: capitalize;
+                    font-weight: 600;
+                    color: #fff;
+                   
+                }
+                .bwd-timeline-desc {
+                    line-height: 22px;
+                    margin-top: 15px;
+                    color: #eee;
+                }
+
+             
+            }
+
+            &:hover{
+                .bwd-timeline-item-bottom-shape{
+                    margin-top: 80px;
+                    box-shadow: 0 10px 4px #47265a;
+                    border-bottom: 1px solid #fff;
+                }
+            }
+
+            &:nth-child(even){
+                .bwd-timeline-item-top-shape{
+                    background-color: #47265a;
+                }
+                .bwd-timeline-item-bottom-shape{
+                    background-color: #0c96c7;
+                }
+                &:hover{
+                    .bwd-timeline-item-bottom-shape{
+                        box-shadow: 0 10px 4px #0c96c7;
+                    }
+                }
+            }
+
+          
+        }
+       
+    }
+} 
+/*timeline seventeen*/ 

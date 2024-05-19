@@ -1,0 +1,171 @@
+
+
+/* xxl devices */
+    @media (min-width: 1400px) and (max-width: 1700px) {
+
+       
+    }
+
+/* xl devices */
+    @media (min-width: 1200px) and (max-width: 1399px){
+        .woocrp_business_our_13 .woocrp_main-title {
+            font-size: 42px;
+        }
+    }
+
+/* lg devices */
+    @media (min-width: 992px) and (max-width: 1199px){
+        
+        .woocrp_business_our_13 .woocrp_main-title {
+            font-size: 35px;
+        }
+        .woocrp_business_our_9 .woocrp_content-box {
+            margin-bottom: 50px;
+        }
+        
+    }
+
+/* md devices */
+    @media (min-width: 768px) and (max-width: 991px){
+
+        .woocrp_business_our_8 .woocrp_timing-box {
+            margin-bottom: 50px;
+        }
+
+        .woocrp_business_our_9 .woocrp_content-box {
+            margin-bottom: 50px;
+        }
+
+        .woocrp_business_our_12 .woocrp_timing-box {
+            max-width: 85%;
+            margin: auto;
+            transform: translateY(-150px);
+        }
+    }
+
+/* xs devices */
+@media (max-width: 767px){
+
+    .woocrp_business_our_1 .woocrp_timing-box,
+    .woocrp_business_our_2 .woocrp_timing-box {
+        padding: 50px 35px;
+    }
+    .woocrp_business_our_1 .main-title::before {
+        bottom: -5px;
+    }
+    .woocrp_business_our_3 .woocrp_timing-box {
+        padding: 50px 0;
+    }
+    .woocrp_business_our_3 .woocrp_week_time {
+        padding: 0;
+    }
+
+    .woocrp_business_our_8 .woocrp_timing-box {
+        margin-bottom: 50px;
+    }
+    .woocrp_business_our_8 .woocrp_single-item {
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+
+    .woocrp_business_our_9 .woocrp_content-box {
+        margin-bottom: 50px;
+    }
+    .woocrp_business_our_9 {
+        padding: 50px 0;
+    }
+
+    .woocrp_business_our_10 .woocrp_timing-box {
+        padding: 80px 10px 20px;
+    }
+    .woocrp_business_our_10 .woocrp_business_BG {
+        padding: 50px 0;
+    }
+
+    .woocrp_business_our_12 .woocrp_timing-box {
+        padding: 20px;
+        max-width: 90%;
+        margin: auto;
+        transform: translateY(-100px);
+    }
+    .woocrp_business_our_12 .woocrp_single-item {
+        padding: 8px 0;
+    }
+
+
+    .woocrp_business_our_13 .woocrp_main-title {
+        font-size: 36px;
+    }
+    .woocrp_business_our_13 .woocrp_timeing-box {
+        padding: 50px 30px;
+    }
+
+    .woocrp_business_our_14 .woocrp_timeing-box {
+        padding: 30px 20px;
+    }
+
+    .woocrp_business_our_15 .woocrp_all-item {
+        padding: 20px 15px;
+    }
+    .woocrp_business_our_15 .woocrp_timeing-box {
+        padding: 20px 20px;
+    }
+
+    .woocrp_business_our_16 .woocrp_timeing-box {
+        padding: 20px 15px;
+    }
+    .woocrp_business_our_16 .woocrp_week-date_item {
+        padding: 15px 10px;
+    }
+    .woocrp_business_our_16 .woocrp_main-title {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+    .woocrp_business_our_16 .woocrp_sub-title {
+        font-size: 16px;
+        bottom: -15px;
+    }
+
+
+
+
+
+/* .woocrp_business_our_1,
+.woocrp_business_our_2,
+.woocrp_business_our_3,
+.woocrp_business_our_4,
+.woocrp_business_our_6,
+.woocrp_business_our_7,
+.woocrp_business_our_8,
+.woocrp_business_our_9,
+.woocrp_business_our_10,
+.woocrp_business_our_11,
+.woocrp_business_our_12,
+.woocrp_business_our_13,
+.woocrp_business_our_14,
+.woocrp_business_our_15,
+.woocrp_business_our_160{
+   display: none;
+} */
+
+
+}
+
+/* sm devices */
+    @media only screen and (min-width: 576px) and (max-width: 767px){
+
+
+
+        .woocrp_business_our_13 .woocrp_timeing-box {
+            padding: 50px;
+        }
+
+    }
+
+
+    @media only screen and (min-width: 2000px) and (max-width: 5000px){
+        .container-fluid{
+            max-width: 1700px;
+        }
+    }
+

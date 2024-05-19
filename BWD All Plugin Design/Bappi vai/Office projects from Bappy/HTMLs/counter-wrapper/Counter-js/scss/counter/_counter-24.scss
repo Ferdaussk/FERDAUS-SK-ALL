@@ -1,0 +1,85 @@
+.bwd-counter-24 {
+  background-color: #e7e7e7;
+  padding: 30px 0;
+
+  .bwd-counter{
+    color: #555;
+    background-color: #FE9610;
+    text-align: center;
+    padding: 35px 25px;
+    border-radius: 25px;
+    position: relative;
+    z-index: 1;
+    margin: 15px auto; 
+    max-width: 290px;
+
+    &::before{
+      content: '';
+      background-color: #fff;
+      border-radius: 100px/40px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      position: absolute;
+      left: 20px;
+      right: 20px;
+      top: 0;
+      bottom: 0;
+      z-index: -1;
+  }
+
+  .bwd-counter-icon{
+    font-size: 55px;
+    line-height: 1;
+    @include mq(lg){
+      font-size: 50px;
+    }
+}
+
+.bwd-counter-value{
+  font-size: 35px;
+  font-weight: 400;
+  display: block;
+  line-height: .8;
+  margin: 20px 0;
+  @include mq(lg){
+    font-size: 30px;
+    margin: 17px 0;
+  }
+}
+
+.bwd-counter-heading{
+  font-size: 21px;
+  font-weight: 400;
+  text-transform: capitalize;
+  margin: 0;
+  line-height: 1.2;
+  @include mq(lg){
+    font-size: 19px;
+  }
+}
+} 
+ 
+
+  .row > * {
+    &:nth-child(2) {
+      .bwd-counter {
+        background: #5EB15E;
+      }
+    }
+
+    &:nth-child(3) {
+      .bwd-counter {
+        background-color: #0A8AFA;
+      }
+    }
+
+    &:nth-child(4) {
+      .bwd-counter {
+        background-color: #0A6880;
+      }
+    }
+  }
+
+
+  
+
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>simple invoice receipt email template - Bootdey.com</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <link href="assets/css/bootstrap.css" rel="stylesheet"> -->
+<link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <table class="body-wrap">
+        <tbody>
+            <tr>
+                <td></td>
+                    <td class="container" width="600">
+                        <div class="content">
+                            <table class="main" width="100%" cellpadding="0" cellspacing="0">
+                                <tbody>
+                                    <tr>
+                                        <td class="content-wrap aligncenter">
+                                            <table width="100%" cellpadding="0" cellspacing="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="content-block">
+                                                            <img src="https://ai0.wp.com/bestwpdeveloper.com/wp-content/uploads/2022/09/logo-footer.png?fit=154%2C72&ssl=1" alt="" srcset="">
+                                                            <h2>Best WP Developer</h2>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="content-block">
+                                                            <table class="invoice">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td><strong>Name:- </strong>FERDAUS SK<br><strong>Mobile:- </strong>12345<br><strong>Date:- </strong>June 01 2015</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <table class="data-table">
+                                                                                <thead>
+                                                                                    <tr>
+                                                                                        <td>No</td>
+                                                                                        <td>Product Name</td>
+                                                                                        <td>Rate</td>
+                                                                                        <td>Qty</td>
+                                                                                        <td>Av. Amount</td>
+                                                                                    </tr>
+                                                                                </thead>
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td>1</td>
+                                                                                        <td>A</td>
+                                                                                        <td>1200</td>
+                                                                                        <td>12</td>
+                                                                                        <td>1200</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>2</td>
+                                                                                        <td>B</td>
+                                                                                        <td>4700</td>
+                                                                                        <td>47</td>
+                                                                                        <td>4700</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>3</td>
+                                                                                        <td>C</td>
+                                                                                        <td>1200</td>
+                                                                                        <td>12</td>
+                                                                                        <td>1200</td>
+                                                                                    </tr>
+                                                                                    <tr class="table_row">
+                                                                                        <td class="table_row_data"></td>
+                                                                                        <td class="table_row_data"></td>
+                                                                                        <td class="table_row_data"></td>
+                                                                                        <td><strong>Total:-</strong></td>
+                                                                                        <td><strong>৳ 445566</strong></td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                            <div id="badge-ribbon">PAID</div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="content-block">
+                                                            <a href="www.lotusskltd.com">www.lotusskltd.com</a>
+                                                        </td>
+                                                    </tr>
+                                                    <br>
+                                                        <td class="content-block"><strong>Address:- </strong>Company Inc. 123 Van Ness, </br><strong>E-mail:- </strong>info@lotusskltd.com </br><strong>Phone:- </strong>43242394102</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+<script>
+    function myFunction() {
+      var input, filter, table, tr, td, i, txtValue;
+      input = document.getElementById("myInput");
+      filter = input.value.toUpperCase();
+      table = document.getElementById("myTable");
+      tr = table.getElementsByTagName("tr");
+      for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td")[0];
+        if (td) {
+          txtValue = td.textContent || td.innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            tr[i].style.display = "";
+          } else {
+            tr[i].style.display = "none";
+          }
+        }       
+      }
+    }
+    </script>
+</body>
+</html>

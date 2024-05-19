@@ -1,0 +1,80 @@
+.bwd-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 20rem));
+    justify-content: center;
+    gap: 2rem;
+    .bwd-pricing-card {
+        background-color: white;
+        text-align: center;
+        cursor: pointer;
+        transition: .4s linear;
+        color: #2d2d2d;
+        box-shadow: 0px 3px 29.76px 2.24px rgba(131, 131, 132, 0.17);
+        overflow: hidden;
+        padding-bottom: 40px;
+        margin-bottom: 50px;
+        &.active {
+            background-color: #049cd1fa;
+            color: #fff;
+            .bwd-price {
+                color: #fff;
+            }
+        }
+        .bwd-title {
+            display: inline-block;
+            color: #fff;
+            background-color: #049cd1c7;
+            text-transform: uppercase;
+            padding: 12px 30px;
+            border-radius: 0 0 20px 20px;
+            font-size: 20px;
+            font-weight: 600;
+            transition: .3s linear;
+        }
+        .bwd-price {
+            font-size: 70px;
+            color: #0fbcf9;
+            margin: 40px 0;
+            transition: .3s linear;
+            sup {
+                top: -10px;
+                font-size: 45px;
+            }
+            span {
+                text-transform: capitalize;
+                font-size: 25px;
+                font-weight: 600;
+                display: inline-block;
+            }
+        }
+        span {
+            font-size: 16px;
+            padding: 10px 0;
+            text-transform: uppercase;
+            transition: .3s linear;
+            font-weight: 500;
+            display: block;
+       }
+        .bwd-pricing-signup {
+            @include btn-one;
+            margin-top: 30px;
+        }
+        &:hover {
+           span {
+               color: $white;
+           }
+        }
+        &:hover {
+            .bwd-price {
+                color: $white;
+            }
+        }
+        &:hover {
+            .bwd-title {
+                box-shadow: 0 0 0 26em #049cd1c7;
+                border-radius: 0;
+            }
+        }
+    }
+}
+

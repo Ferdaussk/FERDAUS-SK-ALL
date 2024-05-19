@@ -1,0 +1,136 @@
+.bwd-counter-25 {
+  padding: 30px 0;
+  .bwd-counter {
+    color: #d83413;
+    text-align: center;
+    margin: 20px auto;
+    width: 100%;
+  max-width: 280px;
+
+    .bwd-counter-value {
+      color: #fff;
+      background: #d83413;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 70px;
+      margin: 0 0 10px;
+      display: block;
+      clip-path: polygon(90% 0%, 100% 50%, 90% 100%, 0% 100%, 0% 0%);
+
+      @include mq(lg){
+        font-size: 35px;
+        line-height: 65px;
+      }
+
+      transition: .4s;
+    }
+
+    .bwd-counter-content {
+      padding: 5px 15px;
+      margin: 0 3px;
+      border-left: 2px solid #d83413;
+      position: relative;
+      &::before,
+      &::after {
+        content: "";
+        background: #d83413;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        position: absolute;
+        top: 0px;
+        left: -4.7px;
+      }
+
+      &::after {
+        top: auto;
+        bottom: 0;
+      }
+    }
+
+    .bwd-counter-icon {
+      color: #999;
+      font-size: 55px;
+      margin: 15px 0 20px;
+      line-height: 1;
+
+      @include mq(lg){
+        font-size: 50px;
+        margin: 15px 0 15px;
+      }
+    }
+
+    .bwd-counter-heading {
+      font-size: 21px;
+      font-weight: 700;
+      text-transform: capitalize;
+      margin: 0;
+      line-height: 1.2;
+      @include mq(lg){
+        font-size: 19px;
+      }
+    }
+
+    &:hover{
+      .bwd-counter-value{
+       clip-path:  polygon(100% 0%, 100% 50%, 100% 100%, 0% 100%, 0% 0%);
+      }
+    }
+  }
+
+  .row > * {
+    &:nth-child(2) {
+      .bwd-counter {
+        color: #2785d8;
+
+        .bwd-counter-value {
+          background: #2785d8;
+        }
+
+        .bwd-counter-content {
+          border-color: #2785d8;
+          &::before,
+          &::after {
+            background: #2785d8;
+          }
+        }
+      }
+    }
+
+    &:nth-child(3) {
+      .bwd-counter {
+        color: #8c47b9;
+
+        .bwd-counter-value {
+          background: #8c47b9;
+        }
+
+        .bwd-counter-content {
+          border-color: #8c47b9;
+          &::before,
+          &::after {
+            background: #8c47b9;
+          }
+        }
+      }
+    }
+
+    &:nth-child(4) {
+      .bwd-counter {
+        color: #0dbc5f;
+
+        .bwd-counter-value {
+          background: #0dbc5f;
+        }
+
+        .bwd-counter-content {
+          border-color: #0dbc5f;
+          &::before,
+          &::after {
+            background: #0dbc5f;
+          }
+        }
+      }
+    }
+  }
+}

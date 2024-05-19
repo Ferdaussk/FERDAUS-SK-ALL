@@ -1,0 +1,39 @@
+.bwd-brand-logo-19{
+    #menu{
+        text-align:center;
+        margin:0px;
+        padding:0px;
+        list-style:none;
+        li{
+            display: inline-block;
+            .active{
+                background:green;
+                color:#fff;
+            }
+            button{
+                display: inline-block;
+                padding:4px 20px;
+                border: 1px solid #333;
+                text-decoration:none;
+            }
+        }
+    }
+    #items {
+        text-align:center;
+        margin-top:40px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: end;
+        .single-item{
+            display:inline-block;
+            flex-basis: 23%;
+            border: 2px solid red;
+            margin: 12px 11px;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+
+

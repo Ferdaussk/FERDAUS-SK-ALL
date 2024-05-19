@@ -1,0 +1,152 @@
+.bwd-service-style-8 {
+    .bwd-service-box {
+        color: #e85c90;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+        margin-bottom: 40px;
+        &.blue {
+            color: #6b9fe3;
+            .title {
+                border-color: #6b9fe3;
+            }
+            .bwd-service-content {
+                background: #6b9fe3;
+            }
+            .bwd-service-icon {
+                background: #6b9fe3;
+                &::after {
+                    background: #6b9fe3;
+                }
+            }
+        }
+        &.cyan {
+            color: #31bfc4;
+            .title {
+                border-color: #31bfc4;
+            }
+            .bwd-service-content {
+                background: #31bfc4;
+            }
+            .bwd-service-icon {
+                background: #31bfc4;
+                &::after {
+                    background: #31bfc4;
+                }
+            }
+        }
+        &.purple {
+            color: #8746ae;
+            .title {
+                border-color: #8746ae;
+            }
+            .bwd-service-content {
+                background: #8746ae;
+            }
+            .bwd-service-icon {
+                background: #8746ae;
+                &::after {
+                    background: #8746ae;
+                }
+            }
+        }
+        .title {
+            background: #fff;
+            font-size: 20px;
+            font-weight: 600;
+            text-transform: capitalize;
+            padding: 8px 12px;
+            margin: 0 0 30px;
+            display: inline-block;
+            border: 3px solid #e85c90;
+        }
+        .bwd-service-content {
+            color:#fff;
+            background: #e85c90;
+            padding: 20px 25px;
+            margin: 0 0 40px;
+            border-radius: 30px;
+            border: 10px solid #fff;
+            box-shadow: 0 0 5px rgba(0,0,0,0.3);
+            @include mq (lg) {
+                padding: 20px;
+            }
+            @include mq (md) {
+                padding: 20px 10px;
+            }
+            @include mq (xs) {
+                padding: 20px 10px;
+            }
+            p {
+                font-size: 15px;
+                line-height: 28px;
+                @include mq (md) {
+                    font-size: 13px;
+                    line-height: 22px;
+                }
+                @include mq (xs) {
+                    font-size: 13px;
+                    line-height: 22px;
+                }
+            }
+        }
+        .bwd-service-icon {
+            background: #e85c90;
+            font-size: 40px;
+            line-height: 100px;
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+            border-radius: 100px;
+            position: relative;
+            z-index: 1;
+            transition: .3s linear;
+            transform-origin: top;
+            animation-direction: alternate;
+            &::before,
+            &::after {
+                content: "";
+                background: #fff;
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                z-index: -1;
+            }
+            &::after{
+                background: #e85c90;
+                width: 3px;
+                height: 40px;
+                margin: 0 auto;
+                box-shadow: none;
+                border-radius: 0;
+                left: 0;
+                right: 0;
+                top: -40px;
+            }
+        }
+        &:hover {
+            .bwd-service-icon {
+                animation: icon 1s linear 25;
+                animation-direction: alternate;
+                @keyframes icon {
+                    0% {
+                        transform: rotate(0deg);
+                    }
+                    50% {
+                        transform: rotate(5deg);
+                    }
+                    100% {
+                        transform: rotate(-5deg);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+

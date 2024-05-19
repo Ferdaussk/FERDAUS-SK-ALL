@@ -1,0 +1,286 @@
+/*******************************/
+/*TL-26*/
+.bwd-timeline-twenty-six{
+    position: relative;
+    padding: 60px 30px;
+    @include mq(xs){
+        padding: 40px 20px;
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 100%;
+        max-height: calc(100% - 100px);
+        width: 10px;
+        background: #E0E0E0;
+        border-radius: 5px;
+    
+        @include mq(xs){
+            left: 35px;
+        }
+        @include mq(sm){
+            left: 80px;
+        }
+
+    }
+    .bwd-progress-line {
+        top: 50px;
+        position: absolute;
+        left: 50%;
+        width: 10px;
+        background: #0f537c;
+        height: 0;
+        max-height: calc(100% - 90px);
+        transform: translateX(-50%);
+        transition: .3s;
+
+        @include mq(xs){
+            left: 35px;
+            top: 40px;
+        }
+        @include mq(sm){
+            left: 80px;
+            top: 40px;
+        }
+        border-radius: 5px;
+    }
+    .bwd-progress-helper-twenty-six {
+        height: 50vh;
+        background-color: transparent;
+        position: absolute;
+        bottom: 100%;
+    }
+    .bwd-timeline-item-container{
+        .bwd-timeline-item {
+            position: relative;
+            width: 50%;
+            @include mq(xs){
+                width: 100%;
+            }
+        
+            .bwd-timeline-item-inner {
+                max-width: 250px;
+                .bwd-timeline-item-content{
+                    position: relative;
+                 
+                    padding-bottom: 25px;
+                    box-shadow: -10px 10px 10px #ddd;
+
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        width: 95px;
+                        height: 5px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                       
+                    }
+           
+                    .bwd-timeline-title {
+                        font-size: 22px;
+                        width: 100%;
+                        position: relative;
+                        margin-bottom: 10px;
+                        color: #333;
+                        text-transform: capitalize;
+
+                        &::before{
+                            content: "";
+                            position: absolute;
+                            width: 150px;
+                            height: 4px;
+                            top: 50%;
+                            transform: translateY(-50%);
+                         
+
+                        }
+
+                        &::after{
+                            content: "";
+                            position: absolute;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            height: 20px;
+                            width: 20px;
+                            border-radius: 50%;
+                        
+
+                        }
+                    }
+                    .bwd-year {
+                        position: relative;
+                        font-size: 35px;
+                        text-transform: capitalize;
+                        margin-bottom: 10px;
+                        background: #13689B;
+                        line-height: 50px;
+
+                    }
+                    .bwd-timeline-dsc {
+                        line-height: 25px;
+                    }
+                }
+            }
+
+            &:nth-child(odd){
+                margin-top: 50px;
+                transition: .4s;
+                @include mq(sm){
+                    margin-top: 0;
+                    margin-bottom: 50px;
+                }
+                @include mq(xs){
+                    margin-top: 0;
+                    margin-bottom: 50px;
+                }
+             
+                .bwd-timeline-item-inner{
+                    margin-right: 100px;
+                    margin-left: auto;
+                    @include mq(xs){
+                        margin-left: 50px;
+                        margin-right: 0;
+                    }
+                    @include mq(sm){
+                        margin-left: 150px;
+                        margin-right: 0;
+                    }
+                    .bwd-timeline-item-content{
+                        border-bottom-left-radius: 40px;
+                        border-bottom-right-radius: 40px;
+                        padding-left: 25px;
+                        &::after{
+                            content: "";
+                            position: absolute;
+                            right: -112px;
+                            height: 25px;
+                            width: 25px;
+                            background: #13689B;
+                            border-radius: 50%;
+                            top: 50%;
+                            transform: translateY(-50%);
+                              @include mq(xs){
+                                left: -47px;
+                            }
+                            @include mq(sm){
+                                left: -102px;
+                            }
+                        }
+
+                        &::before{
+                            left: 100%;
+                            background: #13689B;
+                              @include mq(xs){
+                                right: 100%;
+                                left: auto;
+                                width: 35px;
+                            }
+                            @include mq(sm){
+                                right: 100%;
+                                left: auto;
+                                width: 95px;
+                            }
+                        }
+                        .bwd-year{
+                            margin-left: -25px;
+                            padding-left: 25px;
+                            color: #fff;
+                            &::before {
+                                content: "";
+                                position: absolute;
+                                border-bottom: 50px solid #0f537c;
+                                border-left: 20px solid transparent;
+                                left: -20px;
+                            }
+
+                           
+                        }
+                    }
+                }
+            }
+
+            &:nth-child(even){
+                margin-left: auto;
+                text-align: right;
+                border-bottom-left-radius: 40px;
+                border-bottom-right-radius: 40px;
+                @include mq(xs){
+                    margin-top: 0;
+                    margin-bottom: 50px;
+                }
+                  @include mq(sm){
+                    margin-top: 0;
+                    margin-bottom: 50px;
+                }
+             
+
+                .bwd-timeline-item-inner{
+                    margin-left: 100px;
+                    margin-right: auto;
+                    text-align: left;
+                  
+                    @include mq(xs){
+                        margin-left: 50px;
+                    }
+                    @include mq(sm){
+                        margin-left: 150px;
+                    }
+                    .bwd-timeline-item-content{
+                        padding-left: 25px;
+                        border-bottom-left-radius: 30px;
+                        border-bottom-right-radius: 30px;
+                        
+
+                        &::after{
+                            content: "";
+                            position: absolute;
+                            left: -112px;
+                            height: 25px;
+                            width: 25px;
+                            background: #940A64;
+                            border-radius: 50%;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            @include mq(xs){
+                                left: -47px;
+                                width: 25px;
+                            }
+                              @include mq(sm){
+                                left: -102px;
+                            }
+                        }
+
+                        &::before{
+                            right: 100%;
+                            background: #940A64;
+                            @include mq(xs){
+                                width: 35px;
+                            }
+                            @include mq(sm){
+                                width: 95px;
+                            }
+                        }
+                        .bwd-year{
+                            margin-left: -25px;
+                            padding-left: 25px;
+                            color: #fff;
+                            background-color: #940A64;
+                            &::before {
+                                content: "";
+                                position: absolute;
+                                border-bottom: 50px solid #760850;
+                                border-left: 20px solid transparent;
+                                left: -20px;
+                            }
+
+                           
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/*TL-26*/

@@ -1,0 +1,362 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: Timeline\n"
+"POT-Creation-Date: 2022-09-25 20:50+0600\n"
+"PO-Revision-Date: 2022-09-25 20:50+0600\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: bwd-timeline.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: bwd-timeline.php:67 bwd-timeline.php:82
+#, php-format
+msgid "\"%1$s\" requires \"%2$s\" version %3$s or greater."
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+#: bwd-timeline.php:68 bwd-timeline.php:83 widgets/bwdtl-timeline.php:96
+msgid "Timeline"
+msgstr ""
+
+#: bwd-timeline.php:69
+msgid "Elementor"
+msgstr ""
+
+#: bwd-timeline.php:73 bwd-timeline.php:88
+#, php-format
+msgid "%1$s"
+msgstr ""
+
+#: bwd-timeline.php:84
+msgid "PHP"
+msgstr ""
+
+#: bwdtl_plugin_boots.php:55 widgets/bwdtl-timeline.php:12
+#: widgets/bwdtl-timeline.php:15
+msgid "BWD Timeline"
+msgstr ""
+
+#: page-settings/timeline-manager.php:21
+msgid "New Timeline"
+msgstr ""
+
+#: page-settings/timeline-manager.php:32
+msgid "Settings"
+msgstr ""
+
+#: page-settings/timeline-manager.php:40 page-settings/timeline-manager.php:42
+#: widgets/bwdtl-timeline.php:157 widgets/bwdtl-timeline.php:433
+msgid "Title"
+msgstr ""
+
+#: widgets/bwdtl-timeline.php:34
+msgid "Presets"
+msgstr ""
+
+#: widgets/bwdtl-timeline.php:42
+msgid "Choose Designs"
+msgstr ""
+
+#: widgets/bwdtl-timeline.php:46
+msgid "Style1"
+msgstr ""
+
+#: widgets/bwdtl-timeline.php:47
+msgid "Style2"
+msgstr ""
+
+#: widgets/bwdtl-timeline.php:48
+msgid "Style3"
+msgstr ""
+
+#: widgets/bwdtl-timeline.php:49
+msgid "Style4"
+msgstr ""
+
+#: widgets/bwdtl-timeline.php:50
+msgid "Style5"
+msgstr ""
+
+#: widgets/bwdtl-timeline.php:51
+msgid "Style6"
+msgstr ""
+
+#: widgets/bwdtl-timeline.php:52
+msgid "Style7"
+msgstr ""
+
+#: widgets/bwdtl-timeline.php:53
+msgid "Style8"
+msgstr ""
+
+#: widgets/bwdtl-timeline.php:54
+msgid "Style9"
+msgstr ""
+
+#: widgets/bwdtl-timeline.php:55
+msgid "Style10"
+msgstr ""
+
+#: widgets/bwdtl-timeline.php:56
+msgid "Style11"
+msgstr ""
+
+#: widgets/bwdtl-timeline.php:57
+msgid "Style12"
+msgstr ""
+
+#: widgets/bwdtl-timeline.php:58
+msgid "Style13"
+msgstr ""
+
+#: widgets/bwdtl-timeline.php:59
+msgid "Style14"
+msgstr ""
+
+#: widgets/bwdtl-timeline.php:60
+msgid "Style15"
+msgstr ""
+
+#: widgets/bwdtl-timeline.php:61
+msgid "Style16"
+msgstr ""
+
+#: widgets/bwdtl-timeline.php:62
+msgid "Style17"
+msgstr ""
+
+#: widgets/bwdtl-timeline.php:63
+msgid "Style18"
+msgstr ""
+
+#: widgets/bwdtl-timeline.php:64
+msgid "Style19"
+msgstr ""
+
+#: widgets/bwdtl-timeline.php:65
+msgid "Style20"
+msgstr ""
+
+#: widgets/bwdtl-timeline.php:66
+msgid "Style21"
+msgstr ""
+
+#: widgets/bwdtl-timeline.php:67
+msgid "Style22"
+msgstr ""
+
+#: widgets/bwdtl-timeline.php:68
+msgid "Style23"
+msgstr ""
+
+#: widgets/bwdtl-timeline.php:69
+msgid "Style24"
+msgstr ""
+
+#: widgets/bwdtl-timeline.php:77
+msgid "Choose Column"
+msgstr ""
+
+#: widgets/bwdtl-timeline.php:81
+msgid "column-1"
+msgstr ""
+
+#: widgets/bwdtl-timeline.php:82
+msgid "column-2"
+msgstr ""
+
+#: widgets/bwdtl-timeline.php:83
+msgid "column-3"
+msgstr ""
+
+#: widgets/bwdtl-timeline.php:84
+msgid "column-4"
+msgstr ""
+
+#: widgets/bwdtl-timeline.php:109
+msgid "CONTENT"
+msgstr ""
+
+#: widgets/bwdtl-timeline.php:116
+msgid "Note: Choose Image or Icon if these are exist in the design"
+msgstr ""
+
+#: widgets/bwdtl-timeline.php:125
+msgid "Choose Image"
+msgstr ""
+
+#: widgets/bwdtl-timeline.php:136 widgets/bwdtl-timeline.php:341
+msgid "Icon"
+msgstr ""
+
+#: widgets/bwdtl-timeline.php:144 widgets/bwdtl-timeline.php:383
+msgid "Date"
+msgstr ""
+
+#: widgets/bwdtl-timeline.php:159 widgets/bwdtl-timeline.php:641
+msgid "Welcome here!"
+msgstr ""
+
+#: widgets/bwdtl-timeline.php:170 widgets/bwdtl-timeline.php:498
+msgid "Description"
+msgstr ""
+
+#: widgets/bwdtl-timeline.php:173
+msgid ""
+"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est voluptates "
+"voluptatem officia deserunt quo, nostrum quasi ratione illum suscipit "
+"reiciendis."
+msgstr ""
+
+#: widgets/bwdtl-timeline.php:184
+msgid "STYLE"
+msgstr ""
+
+#: widgets/bwdtl-timeline.php:191
+msgid "Content Box"
+msgstr ""
+
+#: widgets/bwdtl-timeline.php:200 widgets/bwdtl-timeline.php:307
+#: widgets/bwdtl-timeline.php:826
+msgid "Margin"
+msgstr ""
+
+#: widgets/bwdtl-timeline.php:213 widgets/bwdtl-timeline.php:838
+msgid "Padding"
+msgstr ""
+
+#: widgets/bwdtl-timeline.php:226 widgets/bwdtl-timeline.php:361
+#: widgets/bwdtl-timeline.php:411 widgets/bwdtl-timeline.php:487
+#: widgets/bwdtl-timeline.php:785
+msgid "Background Color"
+msgstr ""
+
+#: widgets/bwdtl-timeline.php:238 widgets/bwdtl-timeline.php:372
+#: widgets/bwdtl-timeline.php:422 widgets/bwdtl-timeline.php:570
+#: widgets/bwdtl-timeline.php:609 widgets/bwdtl-timeline.php:770
+msgid "Border Color"
+msgstr ""
+
+#: widgets/bwdtl-timeline.php:251
+msgid "Image"
+msgstr ""
+
+#: widgets/bwdtl-timeline.php:260 widgets/bwdtl-timeline.php:450
+#: widgets/bwdtl-timeline.php:515
+msgid "Alignment"
+msgstr ""
+
+#: widgets/bwdtl-timeline.php:264 widgets/bwdtl-timeline.php:454
+#: widgets/bwdtl-timeline.php:519
+msgid "Left"
+msgstr ""
+
+#: widgets/bwdtl-timeline.php:268 widgets/bwdtl-timeline.php:458
+#: widgets/bwdtl-timeline.php:523
+msgid "Center"
+msgstr ""
+
+#: widgets/bwdtl-timeline.php:272 widgets/bwdtl-timeline.php:462
+#: widgets/bwdtl-timeline.php:527
+msgid "Right"
+msgstr ""
+
+#: widgets/bwdtl-timeline.php:287
+msgid "Image Size"
+msgstr ""
+
+#: widgets/bwdtl-timeline.php:319 widgets/bwdtl-timeline.php:726
+msgid "Border Radius"
+msgstr ""
+
+#: widgets/bwdtl-timeline.php:332
+msgid "Box Shadow"
+msgstr ""
+
+#: widgets/bwdtl-timeline.php:350 widgets/bwdtl-timeline.php:400
+#: widgets/bwdtl-timeline.php:476 widgets/bwdtl-timeline.php:541
+#: widgets/bwdtl-timeline.php:585 widgets/bwdtl-timeline.php:621
+#: widgets/bwdtl-timeline.php:755
+msgid "Color"
+msgstr ""
+
+#: widgets/bwdtl-timeline.php:552
+msgid "Shapes Style"
+msgstr ""
+
+#: widgets/bwdtl-timeline.php:561
+msgid "Shape One"
+msgstr ""
+
+#: widgets/bwdtl-timeline.php:600
+msgid "Shape Two"
+msgstr ""
+
+#: widgets/bwdtl-timeline.php:636
+msgid "Repeater List"
+msgstr ""
+
+#: widgets/bwdtl-timeline.php:648
+msgid "First Meetup!"
+msgstr ""
+
+#: widgets/bwdtl-timeline.php:655
+msgid "Be Productive!"
+msgstr ""
+
+#: widgets/bwdtl-timeline.php:662
+msgid "Be Happy!"
+msgstr ""
+
+#: widgets/bwdtl-timeline.php:677
+msgid "Style"
+msgstr ""
+
+#: widgets/bwdtl-timeline.php:685
+msgid "Progress Bar"
+msgstr ""
+
+#: widgets/bwdtl-timeline.php:697
+msgid "Width"
+msgstr ""
+
+#: widgets/bwdtl-timeline.php:801
+msgid "BG Border Color"
+msgstr ""
+
+#: widgets/bwdtl-timeline.php:817
+msgid "Timeline Wrapper"
+msgstr ""
+
+#: widgets/bwdtl-timeline.php:851
+msgid "Background"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://wppluginzone.com/timeline-addon-for-elementor/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "BWD Timeline plugin with 23+ types of  Timeline Effects for Elementor."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Best WP Developer"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://wppluginzone.com/"
+msgstr ""

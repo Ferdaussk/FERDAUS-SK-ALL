@@ -1,0 +1,43 @@
+/* padding & margin */
+@for $i from 1 through 10 {
+    .pt-#{$i * 10} {
+        padding-top: 10px * $i;
+    }
+    
+}
+
+@for $i from 1 through 12 {
+    .pb-#{$i * 10} {
+        padding-bottom: 10px * $i;
+    }
+}
+@for $i from 1 through 10 {
+    .pr-#{$i * 10} {
+        padding-right: 10px * $i;
+    }
+}
+@for $i from 1 through 10 {
+    .pl-#{$i * 10} {
+        padding-left: 10px * $i;
+    }
+}
+@for $i from 1 through 10 {
+    .mt-#{$i * 10} {
+        margin-top: 10px * $i;
+    }
+}
+@for $i from 1 through 10 {
+    .mb-#{$i * 10} {
+        margin-bottom: 10px * $i;
+    }
+}
+@for $i from 1 through 10 {
+    .mr-#{$i * 10} {
+        margin-right: 10px * $i;
+    }
+}
+@for $i from 1 through 10 {
+    .ml-#{$i * 10} {
+        margin-left: 10px * $i;
+    }
+}

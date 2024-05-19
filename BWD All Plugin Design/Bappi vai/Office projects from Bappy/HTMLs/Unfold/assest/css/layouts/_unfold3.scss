@@ -1,0 +1,38 @@
+.bwduf-unfold-3-area {
+    .bwduf-unfold-item {
+        max-inline-size: 600px;
+        margin: 0 auto;
+        min-block-size: 200px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        background: linear-gradient(320deg, #562dd4 0%, #e2498a 100%);
+        padding-block: 25px;
+        padding-inline: 30px;
+        border-radius: 20px;
+    }
+    .bwduf-unfold-content {
+        transition: .4s linear;
+        .bwduf-unfold-title {
+            margin-block-end: 15px;
+            line-height: 1;
+            font-size: 25px;
+            font-weight: 600;
+            color: #fff;
+            letter-spacing: 2px;
+            text-transform: capitalize;
+        }
+        .bwduf-unfold-description {
+            font-size: 15px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            line-height: 25px;
+            overflow: hidden;
+            // max-height: 75px;
+            color: #fff;
+            transition: .4s linear;
+            position: relative;
+            .bwduf-unfold-show {
+                
+            }
+        }
+    }
+}

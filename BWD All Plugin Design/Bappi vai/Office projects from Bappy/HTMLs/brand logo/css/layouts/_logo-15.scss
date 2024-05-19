@@ -1,0 +1,58 @@
+.bwd-brand-logo-15{
+    padding: 30px 0;
+    .brand-logo-active{
+        .slick-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 0px;
+            height: 0px;
+            border: 1px solid #eaeaf1;
+            border-radius: 50%;
+            line-height: 0px;
+            background: #fff;
+            z-index: 1;
+            transition: .4s;
+            &:hover {
+                i{
+                    color: red;
+                }
+            }
+            i {
+                font-size: 24px;
+                color: #9192a3;
+                font-weight: 600;
+            }
+            &.slick-prev {
+                left: -10px;
+            }
+            &.slick-next {
+                right: 0px;
+            }
+            
+        }
+        .bwd-brand-box-part {
+            display: flex;
+            align-items: center;
+            height: 120px;
+            justify-content: center;
+            transition: .4s;
+            padding: 15px;
+            margin-bottom: 25px;
+            border: 1px solid #dadae3;
+            transition: .4s;
+            margin: 20px 10px;
+            &:hover .bwd-logo-img{
+                transform: scale(1.1);
+            }
+            .bwd-logo-img{
+                transition: .4s;
+                a{
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

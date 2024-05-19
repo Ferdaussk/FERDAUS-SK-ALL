@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Client-Side Search and Sections Example</title>
+  <style>
+    /* CSS for layout and styling */
+    .row {
+      display: flex;
+    }
+    .column {
+      flex: 25%;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Search input section -->
+  <div>
+    <input type="text" id="searchInput" placeholder="Enter your search term" oninput="another_test_function()">
+  </div>
+  
+  <!-- Sections -->
+  <div class="row" id="sectionsContainer">
+    <!-- Sections will be dynamically added here -->
+    <div class="column">
+      <h2>Section 1</h2>
+      <p>This is the content of section 1.</p>
+    </div>
+    <div class="column">
+      <h2>Section 2</h2>
+      <p>This is the content of section 2.</p>
+    </div>
+    <div class="column">
+      <h2>Section 3</h2>
+      <p>This is the content of section 3.</p>
+    </div>
+    <div class="column">
+      <h2>Section 4</h2>
+      <p>This is the content of section 4.</p>
+    </div>
+    <div class="column">
+      <h2>Section 5</h2>
+      <p>This is the content of section 5.</p>
+    </div>
+    <div class="column">
+      <h2>Section 6</h2>
+      <p>This is the content of section 6.</p>
+    </div>
+  </div>
+
+  <script>
+    function ferdaus_sk_search(){
+      var inputDatas = document.getElementById('searchInput').value.toLowerCase();
+      var selectBoxAll = document.querySelectorAll('.column');
+
+      selectBoxAll.forEach(function(section) {
+        var selectTitle = section.querySelector('h2').textContent.toLowerCase();
+        if(selectTitle.includes(inputDatas)){
+          section.style.display = 'block';
+        } else{
+          section.style.display = 'none';
+        }
+      });
+    }
+
+    function another_test_function(){
+      var find_all_inputs = document.getElementById('searchInput').value.toLowerCase();
+      var find_wrap = document.querySelectorAll('.column');
+
+      find_wrap.forEach(function(section){
+        var call_title = section.querySelector('h2').textContent.toLowerCase();
+        if(call_title.includes(find_all_inputs)){
+          section.style.display = 'block';
+        } else{
+          section.style.display = 'none';
+        }
+      });
+    }
+  </script>
+</body>
+</html>

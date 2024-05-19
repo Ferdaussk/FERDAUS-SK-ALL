@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Invoice Details PDF</title>
+</head>
+
+<body style="font-family: Arial, sans-serif;">
+
+    <div style="max-width: 800px; margin: 0 auto; padding: 20px; border: 1px solid #ddd;">
+
+        <div style="text-align: center; margin-bottom: 20px;">
+            <h2 style="margin: 0; font-weight: bold; background-color: rgb(173, 172, 172); padding: 5px; display: inline-block;">JSL Electric Co.</h2>
+            <p>Kalai Market, Board Bazar,<br>Gazipur, Dhaka.</p>
+        </div>
+
+        <hr>
+
+        <div>
+            <div>
+                <p style="text-align: center; margin-bottom: 10px;"><u><strong>Customer Invoice Details Report</strong></u></p>
+            </div>
+        </div>
+
+        <div>
+            <table border="1" width="50%" style="margin: 0 auto; margin-bottom: 25px; border-collapse: collapse;">
+                <tr>
+                    <td colspan="2" style="text-align: center; font-size: 18px; font-weight: bold;"><u>Customer Information</u></td>
+                </tr>
+                <tr>
+                    <td width="15%"><strong>Name: </strong></td>
+                    <td width="35%">{{ $payment->customer->name }}</td>
+                </tr>
+                <tr>
+                    <td width="15%"><strong>Mobile: </strong></td>
+                    <td width="35%">{{ $payment->customer->mobile }}</td>
+                </tr>
+                <tr>
+                    <td width="15%"><strong>Address: </strong></td>
+                    <td width="35%">{{ $payment->customer->address }}</td>
+                </tr>
+            </table>
+        </div>
+
+        <div>
+            <table border="1" width="65%" style="margin: 0 auto; text-align: center; margin-bottom: 25px; border-collapse: collapse;">
+                <tr>
+                    <td colspan="2" style="text-align: center; font-size: 18px; font-weight: bold;"><u>Customer Paid Summary</u></td>
+                </tr>
+                <tr>
+                    <td width="30%"><strong>Date: </strong></td>
+                    <td width="35%"><strong>Amount</strong></td>
+                </tr>
+                @php
+                    $payment_details = App\Models\PaymentDetails::where('invoice_id', $payment->invoice_id)->get();
+                @endphp
+                @foreach ($payment_details as $item)
+                <tr>
+                    <td width="30%">{{ date('d-M-Y', strtotime($item->date)) }}</td>
+                    <td width="35%">{{ $item->current_paid_amount }} Tk.</td>
+                </tr>
+                @endforeach
+            </table>
+        </div>
+
+        <div>
+            @php
+                $invoice_details = App\Models\InvoiceDetails::where('invoice_id', $payment->invoice_id)->orderBy('category_id', 'asc')->get();
+            @endphp
+            <table border="1" width="100%" style="margin-bottom: 6px; border-collapse: collapse;">
+                <tr style="text-align: center; font-weight: bold;">
+                    <th width="8%">SL.</th>
+                    <th width="15%">Category</th>
+                    <th>Product Name</th>
+                    <th width="11%">Quantity</th>
+                    <th width="12%">Unit Price</th>
+                    <th width="13%">Total Price</th>
+                </tr>
+                @php
+                    $total_sum = 0;
+                @endphp
+                @foreach ($invoice_details as $key => $item)
+                    <tr style="text-align: center;">
+                        <td>{{ $key + 1 }}</td>
+                        <td>{{ $item->category->name }}</td>
+                        <td>{{ $item->product->name }} </td>
+                        <td>{{ $item->selling_qty }}</td>
+                        <td>{{ $item->unit_price }}</td>
+                        <td>{{ $item->selling_price }}</td>
+                    </tr>
+                    @php
+                        $total_sum += $item->selling_price;
+                    @endphp
+                @endforeach
+                <tr>
+                    <td colspan="5" style="text-align: right; font-size: 16px; font-weight: bold;">Sub Total:</td>
+                    <td>{{ $total_sum }}</td>
+                </tr>
+                <tr>
+                    <td colspan="5" style="text-align: right;">Discount:</td>
+                    <td>{{ $payment->discount_amount }}</td>
+                </tr>
+                <tr>
+                    <td colspan="5" style="text-align: right;">Paid Amount:</td>
+                    <td>{{ $payment->paid_amount }}</td>
+                </tr>
+                <tr>
+                    <td colspan="5" style="text-align: right;">Due Amount:</td>
+                    <td>{{ $payment->due_amount }}</td>
+                </tr>
+                <tr>
+                    <td colspan="5" style="text-align: right; font-size: 16px; font-weight: bold;">Grand Total:</td>
+                    <td>{{ $payment->total_amount }}</td>
+                </tr>
+            </table>
+            @php
+                $date = new DateTime('now', new DateTimeZone('Asia/Dhaka'));
+            @endphp
+            <i style="margin-top: 10px;">Printing Time : {{ $date->format('F j, Y, g:i a') }}</i>
+        </div>
+
+        <div style="margin-top: 30px;">
+            <div style="text-align: center; margin-bottom: 10px;">
+                <hr style="margin-bottom: 0;">
+                <p style="margin: 0;">Customer Signature</p>
+                <p style="margin: 0;"></p>
+                <p style="margin: 0;">Seller Signature</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

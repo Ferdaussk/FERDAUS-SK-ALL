@@ -1,0 +1,90 @@
+.mtt-team-style-31-area {
+    .mtt-team-style-31-team {
+        text-align: center;
+        overflow: hidden;
+        border: 3px solid #ddd;
+        margin-bottom: 40px;
+        .mtt-pic {
+            position: relative;
+            transition: .3s linear;
+            top: -35px;
+            left: 0;
+            height: 320px;
+            border-radius: 50%;
+            -webkit-mask-image: url(/assest/img/team/1.svg);
+            mask-image: url(/assest/img/team/1.svg);
+            -webkit-mask-size: cover;
+            mask-size: cover;
+            -webkit-mask-repeat: no-repeat;
+            mask-repeat: no-repeat; 
+            -webkit-mask-position: center;
+            mask-position: center;
+            @include mq (xs) {
+                margin-bottom: 30px;
+                top: -10px;
+            }
+            @include mq (sm) {
+                margin-bottom: 0px;
+                top: -35px;
+            }
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .mtt-team-content {
+            padding: 0 15px;
+            margin-top: -35px;
+            .mtt-title {
+                color: #e74c3c;
+                font-size: 24px;
+                text-transform: capitalize;
+                font-weight: 600;
+                margin-bottom: 5px;
+                letter-spacing: 1px;
+            }
+            .mtt-post {
+                color: #2C3A47;
+                font-size: 17px;
+                font-weight: 500;
+                text-transform: capitalize;
+                font-style: italic;
+            }    
+        }
+        .mtt-social {
+            position: relative;
+            padding: 25px 10px;
+            transform: translateX(-160px);
+            overflow: hidden;
+            opacity: 0;
+            transition: .4s linear;
+            a {
+                display: inline-block;
+                color: #fff;
+                background-color: #e74c3c;
+                font-size: 16px;
+                text-align: center;
+                line-height: 38px;
+                width: 40px;
+                height: 40px;
+                margin: 0 3px;
+                border-radius: 50%;
+                border: 2px solid #fff;
+                position: relative;
+                transition: .3s linear;
+                transform: rotate(0);
+                &:hover {
+                    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+                    transform: rotate(360deg);
+                }
+            }
+        }
+        &:hover {
+            .mtt-social {
+                transform: translateX(0px);
+                opacity: 1;
+            }
+        }
+    }
+}

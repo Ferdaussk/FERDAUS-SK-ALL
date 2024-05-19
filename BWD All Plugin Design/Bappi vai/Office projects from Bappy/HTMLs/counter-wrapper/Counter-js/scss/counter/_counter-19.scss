@@ -1,0 +1,142 @@
+.bwd-counter-19 {
+    padding: 30px 0;
+  .bwd-counter {
+    color: #222;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    margin: 15px auto;
+    border-radius: 100px;
+    position: relative;
+    z-index: 1;
+    max-width: 290px;
+    min-height: 300px;
+    @include mq(lg){
+      min-height: 280px;
+    }
+
+
+    &::before,
+    &::after {
+      content: "";
+      background: linear-gradient(to right, #3da2f4, #1a57f2);
+      height: 50%;
+      width: 95%;
+      border-radius: 120px 120px 0 0;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: -1;
+      transition: .4s;
+    }
+
+    &::after {
+      border-radius: 0 0 120px 120px;
+      top: auto;
+      bottom: 0;
+      left: auto;
+      right: 0;
+    }
+
+    .bwd-counter-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: #fff;
+      min-height: 260px;
+      padding: 15px 20px;
+      border-radius: 25px;
+      box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
+      @include mq(lg){
+      min-height: 250px;
+    }
+    }
+
+    .bwd-counter-icon {
+    color: #d1d1d1;
+    font-size: 50px;
+    line-height: 1;
+
+      @include mq(lg){
+        font-size: 45px;
+      }
+    }
+
+    .bwd-counter-value {
+        color: #1a57f2;
+        font-size: 35px;
+        font-weight: 600;
+        display: block;
+        line-height: .8;
+
+        @include mq(lg){
+          font-size: 30px;
+        }
+    }
+
+    .bwd-counter-heading {
+      color: #555;
+      font-size: 20px;
+      font-weight: 500;
+      text-transform: capitalize;
+      margin: 15px 0;
+      line-height: 1.2;
+      @include mq(lg){
+        font-size: 19px;
+      }
+    }
+    &:hover{
+      &::before{
+        left: 5%;
+      }
+
+      &::after{
+        right: 5%;
+      }
+
+    }
+  }
+
+  .row > * {
+    &:nth-child(2) {
+      .bwd-counter {
+        &::before,
+        &::after {
+          background: linear-gradient(to right, #eb9421, #ef6024);
+        }
+
+        .bwd-counter-value {
+          color: #ef6024;
+        }
+      }
+    }
+
+    &:nth-child(3) {
+      .bwd-counter {
+        &::before,
+        &::after {
+          background: linear-gradient(to right, #8475b6, #483f90);
+        }
+
+        .bwd-counter-value {
+          color: #483f90;
+        }
+      }
+    }
+
+    &:nth-child(4) {
+      .bwd-counter {
+        &::before,
+        &::after {
+          background: linear-gradient(to right, #adce37, #61bc47);
+        }
+
+        .bwd-counter-value {
+          color: #61bc47;
+        }
+      }
+    }
+  }
+}
+
+

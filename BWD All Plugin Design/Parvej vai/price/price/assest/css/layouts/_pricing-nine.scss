@@ -1,0 +1,142 @@
+.bwd-grid-container {
+    .bwd-pricing-table-nine {
+        background: #fff;
+        padding: 40px 30px 0;
+        margin: 0 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 60px 0 0 0;
+        .bwd-pricing-header{
+            padding: 0 0 15px;
+            margin: 0 0 20px;
+            border-bottom: 1px solid #8200d4a8;
+            .bwd-title{
+                color: #8200d4a8;
+                font-size: 28px;
+                font-weight: 500;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                margin: 0;
+                @include mq (xs) {
+                    font-size: 25px;
+                }
+                i{
+                    margin-right: 5px;
+                    display: inline-block;
+                }
+            }
+        }
+        .bwd-price{
+            color: #8200d4a8;
+            font-size: 70px;
+            font-weight: 700;
+            line-height: 70px;
+            letter-spacing: -3px;
+            text-align: center;
+            margin: 0 0 20px;
+            span{
+                font-size: 18px;
+                letter-spacing: normal;
+                font-weight: 500;
+            }
+        }
+        .bwd-pricing-card-content{
+            background: linear-gradient(to right bottom, #8200d4a8, #f3b28e);
+            text-align: center;
+            padding: 40px 25px;
+            margin: 0 -45px;
+            border-radius: 0 60px 0 0;
+            text-align: left;
+            transition: .3s linear;
+            span{
+                color: #fff;
+                font-size: 18px;
+                font-weight: 500;
+                display: block;
+                padding: 15px;
+                i {
+                    font-weight: 900;
+                    width: 25px;
+                    height: 25px;
+                    line-height: 22px;
+                    border-radius: 50%;
+                    border: 2px solid #fff;
+                    color: #fff;
+                    text-align: center;
+                    display: inline-block;
+                    margin-right: 15px;
+                    font-size: 14px;
+                }
+            }
+        }
+        &:hover {
+            .bwd-pricing-card-content {
+                box-shadow: 0 0 10px #3e6f8e;
+            }
+        }
+        .bwd-pricing-signup {
+            border-top: 1px solid #fff;
+            padding-top: 25px;
+            text-align: center;
+            a {
+                @include btn-two;
+                background: linear-gradient(to right, #6190e8, #a7bfe8);
+                color: #fff;
+                transform: translate3d(0, -15px, 0);
+                opacity: 0;
+            }
+            &.active {
+                a {
+                    opacity: 1;
+                transform: translate3d(0, 0, 0);
+                }
+            }
+        }
+        &:hover {
+            .bwd-pricing-signup {
+                a {
+                    transform: translate3d(0, 0, 0);
+                    opacity: 1;
+               }
+            }
+        }
+        &.orange {
+            .bwd-pricing-header {
+                border-bottom-color: #7b89cc;
+                .bwd-title {
+                    color: #7b89cc;
+                }
+            }
+            .bwd-price {
+                color: #7b89cc;
+            }
+            .bwd-pricing-card-content {
+                background: linear-gradient(to right, #9e80a3, #7b89cc);
+            }
+            &.active {
+                .bwd-pricing-card-content {
+                    box-shadow: 0 0 10px #3e6f8e;
+                }
+                .bwd-pricing-signup {
+                    a {
+                        opacity: 1;
+                        transform: translate3d(0, 0, 0);
+                    }
+                }
+            }
+        }
+        &.purple {
+            .bwd-pricing-header {
+                border-bottom-color: #e100ff;
+                .bwd-title {
+                    color: #e100ff;
+                }
+            }
+            .bwd-price {
+                 color: #e100ff;
+            }
+            .bwd-pricing-card-content {
+                background: linear-gradient(to right, #7f00ffa3, #e100ffa3);
+            }
+        }
+    }
+}

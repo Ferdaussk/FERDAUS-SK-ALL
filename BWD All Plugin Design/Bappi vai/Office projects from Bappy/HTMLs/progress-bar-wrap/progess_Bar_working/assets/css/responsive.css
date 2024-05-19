@@ -1,0 +1,90 @@
+
+
+/* xxl devices */
+    @media (min-width: 1400px) and (max-width: 1700px) {
+
+       
+    }
+
+/* xl devices */
+    @media (min-width: 1200px) and (max-width: 1399px){
+        
+    }
+
+/* lg devices */
+    @media (min-width: 992px) and (max-width: 1199px){
+        
+
+        
+    }
+
+/* md devices */
+    @media (min-width: 768px) and (max-width: 991px){
+       
+    }
+
+/* xs devices */
+    @media (max-width: 767px){
+        .bwd_progress_Design_10 .bwd-progress .bwd_progress-value {
+            position: inherit;
+            right: 0;
+            bottom: 0;
+        }
+        .bwd_progress_Design_10 .bwd-progress .bwd_progress-bar::before {
+            right: -10px;
+        }
+        .bwd_progress_Design_13 .bwd-progress .bwd_progress-title {
+            font-size: 14px;
+        }
+        .bwd_progress_Design_17 .bwd-progress .bwd_progress-title:after {
+            display: none;
+        }
+        .bwd_progress_Design_17 .bwd-progress {
+            display: block;
+            background: transparent;
+            margin-bottom: 60px;
+        }
+        .bwd_progress_Design_17 .bwd-progress .bwd_progress-title{
+            width: 100%;
+            text-align: left;
+            background: transparent;
+            border-radius: 0;
+            float: inherit;
+        }
+        .bwd_progress_Design_19 .bwd-progress .bwd_progress-title {
+            font-size: 16px;
+            top: -28px;
+            left: 0;
+        }
+        .bwd_progress_Design_9 .bwd_progress-title,
+        .bwd_progress_Design_23 .bwd_progress-title,
+        .bwd_progress_Design_24 .bwd_progress-title,
+        .bwd_progress_Design_25 .bwd_progress-title,
+        .bwd_progress_Design_26 .bwd_progress-title,
+        .bwd_progress_Design_27 .bwd_progress-title {
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+        .bwd_progress_Design_25 .bwd-progress .bwd_progress-value {
+            top: -22px;
+        }
+        .bwd_progress_Design_31 .bwd_progress-outer {
+            padding: 15px;
+        }
+    }
+
+/* sm devices */
+    @media only screen and (min-width: 576px) and (max-width: 767px){
+
+       
+
+    }
+
+
+    @media only screen and (min-width: 2000px) and (max-width: 5000px){
+        .container-fluid,
+        .container{
+            max-width: 1720px;
+        }
+    }
+

@@ -1,0 +1,19 @@
+accordian - 3 ta item thakbe,
+
+abr prottekta single item ar vitoe akta button r akta collapse thakbe,
+
+problem solving step================
+
+step-1---- accordian item select kora,
+
+step-2--for of loop chalia single item select kora, 
+
+step-3--- single item a query selectorAll diye select kora,
+
+step-4-- selected item ar 0 index a click korle index 
+
+main accordian a active class add hobe. ar active class add hole collapse open hobe, r button ar icon change hobe,
+r onno sob accordian theke active class remove hobe.
+
+
+

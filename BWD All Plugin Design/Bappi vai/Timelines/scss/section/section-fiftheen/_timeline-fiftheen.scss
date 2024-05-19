@@ -1,0 +1,195 @@
+/*===========================*/
+
+
+/*timeline fifteen*/
+
+.bwd-timeline-fifteen {
+    position: relative;
+    overflow: hidden;
+    padding: 60px 30px;
+    margin: 80px 0;
+    background: #fff;
+    transition: min-height .3s;
+    .bwd-progress-line-wrapper {
+        position: relative;
+        height: 10px;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        background: #F97F51;
+        box-shadow: 0 0 3px #d63031;
+        margin: 30px 0;
+        @include mq(md){
+            position: absolute;
+            margin: 0;
+            bottom: 20px;
+        }
+
+        .bwd-progress-line{
+            position: relative;
+            height: 100%;
+            width: 10px;
+            max-width: 100%;
+            background-color: #d63031;
+            left: 0;
+            transition: .5s;
+            &::before{
+                content: "";
+                position: absolute;
+                display: inline-block;
+                height: 20px;
+                width: 20px;
+                background-color: red;
+                border-radius: 50%;
+                right: 0;
+                top: -5px;
+            }
+            
+        }
+       
+    }
+    .bwd-timeline-item-container {
+        display: flex;
+        justify-content: space-between;
+        &.bwd-timeline-top-items {
+            position: relative;
+            align-items: flex-end;
+         
+             @include mq(md){
+                padding: 0;
+                height: 0;
+                overflow: hidden;
+                position: static;
+            }
+            
+            .bwd-timeline-item {
+                .bwd-timeline-item-inner {
+                    &::before {
+                        top: 100%;
+                    }
+                }
+                transform-origin: left;
+                transform: rotateY(90deg);
+                transition: 1s;
+
+                &.active{
+                    transform: translate(0);
+                }
+            }
+        }
+        &.bwd-timeline-bottom-items {
+            align-items: flex-start;
+            @include mq(md){
+                padding: 0;
+                overflow: hidden;
+                height: 0;
+            }
+            .bwd-timeline-item {
+                .bwd-timeline-item-inner {
+                    &::before {
+                        bottom: 100%;
+                        right:20px;
+                        @include mq(md){
+                            top: 100%;
+                        }
+                    }
+                }
+                transform-origin: right;
+                transform: rotateY(90deg);
+                transition: 1s;
+
+                &.active{
+                    transform: translate(0);
+                }
+
+             
+            }
+        }
+        .bwd-timeline-item {
+              background: #fff;
+              flex-basis: 30%;
+              min-width: 230px;
+              max-width: 300px;
+            .bwd-timeline-item-inner {
+                position: relative;
+                text-align: left;
+                padding: 20px;
+                box-shadow: 0 0 10px #dcc;
+                border-radius: 5px;
+                background: #4238A8;
+                border-top-left-radius: 29px;
+                border-bottom-right-radius: 20px;
+                .bwd-year {
+                    position: relative;
+                    font-size: 30px;
+                    font-weight: 600;
+                    color: #fff;
+                    margin-bottom: 8px;
+                    margin: 0 -20px;
+                    padding: 10px 20px;
+                    background: #D80D70;
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        right: 100%;
+                        border-bottom: 46px solid #a80d58;
+                        border-left: 14px solid transparent;
+                        top: 0;
+                    }
+                }
+                .bwd-timeline-content {
+                    .bwd-timeline-title {
+                        font-size: 25px;
+                        text-transform: capitalize;
+                        margin: 8px 0;
+                        color: #fff;
+                    }
+                    .bwd-timeline-desc {
+                        line-height: 24px;
+                        color: #eee;
+                    }
+                }
+                &::before {
+                    content: "";
+                    position: absolute;
+                    height: 38px;
+                    width: 5px;
+                    background: #F97F51;
+                }
+            }
+            margin:0 15px;
+
+            &:nth-child(odd){
+                &.active{
+                    @include mq(md){
+                        position: absolute;
+                        left: 0;
+                    }
+
+                } 
+                
+          }
+            &:nth-child(even){
+                &.active{
+                    @include mq(md){
+                        position: absolute;
+                        right: 0;
+                    }
+                }
+            }
+
+          &.active{
+            @include mq(md){
+               position: absolute;
+               top: 60px;
+            }
+         }
+
+          
+        }
+        
+    }
+}
+
+
+/*timeline fifteen*/

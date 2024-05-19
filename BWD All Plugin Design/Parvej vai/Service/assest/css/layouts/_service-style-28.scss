@@ -1,0 +1,124 @@
+.bwd-service-style-28 {
+    .bwd-service-box {
+        background: #f2f2f2;
+        box-shadow: 10px 12px 10px rgba(0, 0, 0, 0.363);
+        text-align: center;
+        padding: 40px 25px;
+        position: relative;
+        margin: 0 15px;
+        transition: .3s linear;
+        border: 2px solid transparent;
+        margin-bottom: 80px;
+        @include mq (md) {
+            padding: 40px 15px;
+        }
+        @include mq (xs) {
+            padding: 40px 15px;
+        }
+        &.gray {
+            &::before {
+                background: #5f6d7a;
+            }
+            &:hover {
+                border-color: #5f6d7a;
+            }
+            .bwd-service-icon {
+                background: #5f6d7a;
+            }
+            .bwd-service-content {
+                .title {
+                    color: #5f6d7a;
+                }
+            }
+        }
+        &.pink {
+            &::before {
+                background: #cd2f69;
+            }
+            &:hover {
+                border-color: #cd2f69;
+            }
+            .bwd-service-icon {
+                background: #cd2f69;
+            }
+            .bwd-service-content {
+                .title {
+                    color: #cd2f69;
+                }
+            }
+        }
+        &.purple {
+            &::before {
+                background: #8455D0;
+            }
+            &:hover {
+                border-color: #8455D0;
+            }
+            .bwd-service-icon {
+                background: #8455D0;
+            }
+            .bwd-service-content {
+                .title {
+                    color: #8455D0;
+                }
+            }
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            left: -20px;
+            bottom: -30px;
+            width: 90%;
+            height: 90%;
+            background: #ffa708;
+            z-index: -1;
+            transition: .4s linear;
+        }
+        &:hover {
+            box-shadow: none;
+            border-color: #ffa708;
+            &::before {
+                left: 35px;
+                bottom: 45px;
+                width: 20%;
+                height: 20%;
+            }
+        }
+        .bwd-service-icon {
+            width: 80px;
+            height: 80px;
+            line-height: 80px;
+            background: #ffa708;
+            display: block;
+            text-align: center;
+            margin: 0 auto 20px;
+            border-radius: 50px;
+            font-size: 45px;
+            color: #fff;
+            font-weight: 700;
+        }
+        .bwd-service-content {
+            .title {
+                font-size: 20px;
+                font-weight: 700;
+                color: #ffa708;
+                letter-spacing: 1px;
+                margin-bottom: 10px;
+                text-transform: uppercase;
+            }
+            p {
+                line-height: 28px;
+                font-size: 15px;
+                color: #333;
+                @include mq (md) {
+                    line-height: 24px;
+                    font-size: 13px;
+                }
+                @include mq (sm) {
+                    line-height: 24px;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}

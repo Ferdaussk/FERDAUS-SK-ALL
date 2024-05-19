@@ -1,0 +1,116 @@
+.mtt-team-style-16-area {
+    .mtt-team-style-16-box {
+        text-align: center;
+        box-shadow: 0 0 3px rgba(0,0,0,0.3);
+        overflow: hidden;
+        perspective: 200px;
+        position: relative;
+        margin-bottom: 40px;
+        border-radius: 5px;
+        &::before {
+            content: "";
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            position: absolute;
+            top: -100%;
+            left: 0;
+            z-index: 1;
+            transition: .4s linear;
+        }
+        &:hover {
+            &::before {
+                top: 0;
+            }
+        }
+        .mtt-pic {
+            img{
+                width: 100%;
+                height: auto;
+                transform: scale(1.1);
+                transition: .4s linear;
+            }
+        }
+        &:hover {
+            .mtt-pic {
+                img {
+                    transform: scale(1);
+                }
+            }
+        }
+        .mtt-team-content{
+            width: 101%;
+            background: #fff;
+            position: absolute;
+            bottom: -1px;
+            height: 35%;
+            left: 50%;
+            opacity: 0;
+            z-index: 1;
+            transform: translateX(-50%) rotateX(90deg);
+            transform-origin: bottom;
+            transition: .4s linear;
+            @include mq(xs){ 
+                height: 40%;
+            }
+            .mtt-title{
+                font-size: 25px;
+                color: #101010;
+                letter-spacing: 1px;
+                margin-bottom: 8px;
+                text-transform: capitalize;
+                font-weight: 700;
+            }
+            .mtt-post{
+                display: inline-block;
+                font-size: 17px;
+                font-style: italic;
+                color: #606060;
+                font-weight: 500;
+            }
+            .mtt-social{
+                margin: -17px 0 20px 0;
+                display: flex;
+                justify-content: center;
+                a{
+                    display: block;
+                    width: 35px;
+                    height: 35px;
+                    line-height: 35px;
+                    font-size: 18px;
+                    color: #000;
+                    position: relative;
+                    margin: 0 8px;
+                    &:hover {
+                        color: #fff;
+                    }
+                    &:after{
+                        content: "";
+                        width: 100%;
+                        height: 100%;
+                        background: #ff6070;
+                        position: absolute;
+                        top: 50%;
+                        left: 0;
+                        z-index: -1;
+                        transform: translateY(-50%) rotate(45deg);
+                        transition: .4s linear;
+                    }
+                    &:hover {
+                        &::after {
+                            box-shadow: 0 0 10px #000;
+                            transform: translateY(-50%) rotate(360deg);
+                        }
+                    }
+                }
+            }
+        }
+        &:hover {
+            .mtt-team-content{
+                opacity: 1;
+                transform: translateX(-50%) rotateX(0deg);
+            }
+        }
+    }
+}
+

@@ -1,0 +1,118 @@
+.bwd-service-style-2 {
+    .bwd-service-box {
+        background: #fff;
+        padding: 30px 25px;
+        position: relative;
+        box-shadow: 10px 12px 25px rgba(0, 0, 0, 0.32);
+        text-align: center;
+        border-radius: 0 90px 0 90px;
+        margin-bottom: 40px;
+        @include mq (md) {
+            padding-right: 10px;
+        }
+        &.orange {
+            &:before {
+                border-color: #EE5A24 transparent transparent transparent;
+            }
+            .bwd-service-icon {
+                background: #EE5A24;
+                &::before {
+                    border-color: #EE5A24;
+                }
+            }
+            .title {
+             color: #EE5A24;
+            }
+        }
+        &.pink {
+            &:before {
+                border-color: #B53471 transparent transparent transparent;
+            }
+            .bwd-service-icon {
+                background: #B53471;
+                &::before {
+                    border-color: #B53471;
+                }
+            }
+            .title {
+                color: #B53471;
+            }
+        }
+        &.purple {
+            &:before {
+                border-color: #a55eea transparent transparent transparent;
+            }
+            .bwd-service-icon {
+                background: #a55eea;
+                &::before {
+                    border-color: #a55eea;
+                }
+            }
+            .title {
+                color: #a55eea;
+            }
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 100px 100px 0 0;
+            border-color: #029a90 transparent transparent transparent;
+        }
+        .bwd-service-icon {
+            width: 70px;
+            height: 70px;
+            line-height: 70px;
+            display: inline-block;
+            margin: 20px auto 30px;
+            background: #029a90;
+            font-size: 40px;
+            color: #ffff;
+            border-radius: 50px;
+            box-shadow: 10px 12px 25px rgba(0, 0, 0, 0.247);
+            position: relative;
+            &::before {
+                content: "";
+                position: absolute;
+                top: -10px;
+                left: -10px;
+                right: -10px;
+                bottom: -10px;
+                background: transparent;
+                border: 2px dashed #029a90;
+                border-radius: 50px;
+                animation: border 10s linear infinite;
+                @keyframes border {
+                    form {
+                        transform: rotate(0deg);
+                    }
+                    to {
+                        transform: rotate(360deg);
+                    }
+                }
+            }
+        }
+        .title {
+            font-size: 28px;
+            font-weight: 500;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            color: #029a90;
+            @include mq (md) {
+                font-size: 24px;
+            }
+        }
+        p {
+            font-weight: 400;
+            color: #636e72;
+            line-height: 26px;
+            @include mq (md) {
+                font-size: 13px;
+            }
+        }
+    }
+}

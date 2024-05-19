@@ -1,0 +1,63 @@
+.bwd-grid-container {
+    .bwd-pricingTable{
+        cursor: default;
+        color: #84697c;
+        background: #fff;
+        box-shadow: 0 0 10px rgba(46, 59, 125, 0.23);
+        border-radius: 20px 20px 10px 10px;
+        text-align: center;
+        .bwd-pricingTable-header {
+            border-radius: 10px 10px 0 0;
+            background: linear-gradient(135deg,#312a6c, #852d91, #312a6c);
+            color: #fff;
+            padding: 40px 0;
+            .bwd-title {
+                font-size: 26px;
+                margin: 0;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                color: #ffc8a9;
+                margin-bottom: 20px;
+                font-weight: 600;
+            }
+            .bwd-price {
+                font-size: 35px;
+                font-weight: 500;
+                padding: 0;
+                color: #fff;
+                line-height: 1.2;
+                & sup {
+                    font-size: 20px !important;
+                    color: #f13bbb;
+                    top: -13px !important;
+                    margin-right: 10px;
+                }
+                & span {
+                    font-size: 16px;
+                    color: #f13bbb;
+                    font-style: italic;
+                    font-weight: 500;
+                    margin-left: 10px;
+                }
+            }
+        }
+        .bwd-pricing-content {
+            padding: 35px;
+            span {
+                color: #84697c;
+                font-weight: 500;
+                padding: 10px 0;
+                border-bottom: 1px dashed #ddd;
+                font-size: 15px;
+                font-style: italic;
+                display: block;
+            }
+            .bwd-pricing-signup {
+                @include btn-two;
+                transition: .3s linear;
+                margin-top: 20px;
+            }
+        }
+        
+    }
+}

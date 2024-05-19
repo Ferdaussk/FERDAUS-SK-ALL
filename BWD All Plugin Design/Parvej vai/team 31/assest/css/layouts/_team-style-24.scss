@@ -1,0 +1,131 @@
+.mtt-team-style-24-area {
+    .mtt-team-style-24-team {
+        margin-bottom: 40px;
+        transition: .3s linear;
+        .mtt-pic {
+            clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 74%);
+            position: relative;
+            width: 100%;
+            height: 320px;
+            overflow: hidden;
+            @include mq(xs) {
+                height: 410px;
+            }
+            @include mq(sm) {
+                height: 320px;
+            }
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            &::before {
+                position: absolute;
+                content: "";
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                background-color: #333;
+                opacity: 0.6;
+                transform: scale(0);
+                transition: .3s linear;
+                overflow: hidden;
+            }
+        }
+        &:hover {
+            .mtt-pic {
+                &::before {
+                    transform: scale(1);
+                }
+            }
+        }
+        .mtt-team-content {
+            position: absolute;
+            width: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            padding: 0 20px;
+            transition: .3s linear;
+            opacity: 0;
+            .mtt-title {
+                color: #7dbc26;
+                font-size: 22px;
+                text-transform: capitalize;
+                font-weight: 600;
+                margin-bottom: 10px;
+                letter-spacing: 1px;
+                position: relative;
+                transform: translateX(60px);
+                opacity: 0;
+                visibility: hidden;
+                transition-delay: .5s;
+                transition: .6s linear;
+            }
+            .mtt-post {
+                color: #f5f5f5;
+                font-size: 16px;
+                font-weight: 500;
+                text-transform: capitalize;
+                display: block;
+                position: relative;
+                transform: translateX(-60px);
+                opacity: 0;
+                visibility: hidden;
+                transition-delay: .6s;
+                transition: .7s linear;
+            }
+            .mtt-social {
+                position: relative;
+                transform: translateY(50px);
+                transition: .4s linear;
+                transition-delay: .7s;
+                margin-top: 15px;
+                overflow: hidden;
+                visibility: hidden;
+                a {
+                    color: #7dbc26;
+                    background: #fff;
+                    font-size: 20px;
+                    line-height: 35px;
+                    height: 35px;
+                    width: 35px;
+                    display: inline-block;
+                    transition: .3s linear;
+                    margin: 0 3px;
+                    &:hover {
+                        color: #fff;
+                        background: #7dbc26;
+                        border: none;
+                        border-radius: 0 50%;
+                        box-shadow: 0 0 3px rgba(255, 255, 255, 0.842);
+                    }
+                }
+            }
+        }
+        &:hover {
+            .mtt-team-content {
+                opacity: 1;
+                .mtt-title {
+                    transform: translateX(0px);
+                    opacity: 1;
+                    visibility: visible;
+                }
+                .mtt-post {
+                    transform: translateX(0px);
+                    opacity: 1;
+                    visibility: visible;
+                }
+                .mtt-social {
+                    transform: translateY(0);
+                    visibility: visible;
+                }
+            }
+        }
+    }
+    
+}
+
+

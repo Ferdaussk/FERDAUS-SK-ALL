@@ -1,0 +1,171 @@
+.bwd-service-style-31 {
+    .bwd-service-box {
+        width: 50%;
+        border: 1px solid;
+        padding: 25px 70px;
+        padding-right: 115px;
+        border-radius: 100px;
+        float: left;
+        text-align: left;
+        clear: both;
+        display: flex;
+        align-items: center;
+        position: relative;
+        @include mq (lg) {
+            padding: 25px 45px;
+            padding-right: 105px;
+        }
+        @include mq (md) {
+            width: 100%;
+            margin-bottom: 40px;
+            clear: none;
+        }
+        @include mq (xs) {
+            width: 100%;
+            margin-bottom: 40px;
+            clear: none;
+            padding: 15px 20px;
+            padding-right: 45px;
+        }
+        @include mq (sm) {
+            padding-right: 70px;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: #fbba1a;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 0px;
+            @include mq (xs) {
+                width: 45px;
+                height: 45px;
+            }
+            @include mq (sm) {
+                width: 65px;
+                height: 65px;
+            }
+        }
+        &:nth-child(even) {
+            float: right;
+            text-align: left;
+            padding-right: 70px;
+            padding-left: 115px;
+            @include mq (lg) {
+                padding-right: 50px;
+                padding-left: 105px;
+            }
+            @include mq (xs) {
+                float: left;
+                text-align: left;
+                padding-right: 50px;
+                padding-left: 15px;
+            }
+            @include mq (sm) {
+                padding-right: 70px;
+            }
+            &::before {
+                right: auto;
+                left: -5px;
+                @include mq (xs) {
+                    right: 0;
+                    left: auto;
+                }
+            }
+            .bwd-service-icon {
+                right: auto;
+                left: -15px;
+                @include mq (xs) {
+                    right: -15px;
+                    left: auto;
+                }
+            }
+        }
+        .bwd-service-content {
+            .title {
+                font-size: 18px;
+                font-weight: 700;
+                color: #fbba1a;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                margin-bottom: 10px;
+                @include mq (xs) {
+                    font-size: 15px;
+                    letter-spacing: 0px;
+                    margin-bottom: 5px;
+                }
+                @include mq (sm) {
+                    font-size: 20px;
+                }
+            }
+            p {
+                font-size: 15px;
+                color: #808080;
+                line-height: 27px;
+                @include mq (lg) {
+                    font-size: 13px;
+                    line-height: 22px;
+                }
+                @include mq (xs) {
+                    font-size: 9px;
+                    font-weight: 400;
+                    line-height: 17px;
+                }
+                @include mq (sm) {
+                    font-size: 13px;
+                }
+            }
+        }
+        .bwd-service-icon {
+            background: #fff;
+            font-size: 40px;
+            line-height: 90px;
+            width: 90px;
+            height: 90px;
+            margin: 0 auto;
+            border-radius: 100px;
+            position: absolute;
+            color: #fbba1a;
+            top: 50%;
+            transform: translateY(-50%);
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.329);
+            right: -15px;
+            text-align: center;
+            z-index: 1;
+            transition: .3s linear;
+            @include mq (xs) {
+                font-size: 16px;
+                line-height: 35px;
+                width: 35px;
+                height: 35px;
+            }
+            @include mq (sm) {
+                font-size: 30px;
+                line-height: 55px;
+                width: 55px;
+                height: 55px;
+            }
+        }
+        &:hover {
+            &:nth-child(even) {
+                .bwd-service-icon {
+                    right: auto;
+                    left: 0px;
+                    box-shadow: none;
+                    @include mq (xs) {
+                        right: 5px;
+                        left: auto;
+                        box-shadow: none;
+                    }
+                }  
+            }
+            .bwd-service-icon {
+                right: 5px;
+                box-shadow: none;
+            }
+        }
+    }
+}

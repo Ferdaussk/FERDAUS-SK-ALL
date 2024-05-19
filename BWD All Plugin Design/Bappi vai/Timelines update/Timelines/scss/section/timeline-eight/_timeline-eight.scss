@@ -1,0 +1,262 @@
+/*===================================*/
+
+
+/*timeline eight*/
+
+.bwd-timeline-eight {
+    position: relative;
+    overflow: hidden;
+    padding: 60px 30px;
+    @include mq(xs){
+        padding: 50px 20px;
+      
+    }
+    @include mq(sm){
+        padding: 50px 25px;
+      
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        height: calc(100% - 100px);
+        width: 5px;
+        border: 5px dotted #eb4d4b;
+        z-index: 1;
+        top: 50px;
+        transform: translateX(-50%);
+
+        @include mq(md){
+            left: 50px;
+        }
+        @include mq(xs){
+            left: 35px;
+        }
+        @include mq(sm){
+            left: 50px;
+        }
+    }
+    .bwd-progress-line {
+        top: 50px;
+        position: absolute;
+       max-height: calc(100% - 90px);
+        left: 50%;
+        width: 15px;
+        background: #eb4d4b;
+        z-index: 2;
+        height: 0;
+        box-shadow: 0 0 10px #eb4d4b;
+        transform: translateX(-50%);
+        transition: .3s;
+
+        @include mq(md){
+            left: 50px;
+        }
+        @include mq(xs){
+            left: 35px;
+        }
+        @include mq(sm){
+            left: 50px;
+        }
+    }
+
+    .bwd-progress-helper {
+        height: 50vh;
+        background-color: gray;
+        position: absolute;
+        bottom: 100%;
+    }
+    .bwd-timeline-item-container {
+        .bwd-timeline-item {
+            width: 50%;
+            transition: .6s;
+
+            @include mq(md){
+                width: 100%;
+                margin-top: 60px;
+                max-width: 650px;
+            }
+            @include mq(xs){
+            
+                margin-top: 30px;
+              
+            }
+
+            @include mq(sm){
+              
+                margin-top: 60px;
+               
+            }
+           
+            .bwd-timeline-item-inner {
+                padding: 30px;
+                position: relative;
+                box-shadow: 0 5px 30px #acadc3;
+
+                @include mq(xs){
+                           
+                    padding: 15px;
+                  }
+                .bwd-timeline-header {
+                    margin-bottom: 20px;
+                    @include mq(xs){
+                           
+                        margin-bottom: 13px;
+                      }
+                    .bwd-timeline-title {
+                        font-size: 27px;
+                        margin-bottom: 10px;
+                        text-transform: capitalize;
+                        color: #21234a;
+
+                        @include mq(xs){
+                          font-size: 23px;
+                          margin-bottom: 8px;
+                          line-height: 27px;
+                        }
+
+                       
+                        
+                    }
+                    .bwd-timeline-time {
+                        font-size: 16px;
+                        font-weight: 600;
+                        color: #262855;
+                        @include mq(xs){
+                           
+                            line-height: 22px;
+                          }
+                    }
+                }
+                .bwd-timeline-content {
+                    .bwd-timeline-desc {
+                        color: #30336b;
+                    }
+                }
+                .bwd-bottom-circles {
+                    display: flex;
+                    justify-content: space-around;
+                    position: absolute;
+                    width: 100%;
+                    left: 0;
+                    .bwd-circle {
+                        height: 60px;
+                        width: 60px;
+                        border: 3px dotted #21234a;
+                        border-radius: 50%;
+                        background: #d5d6e1;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        transform-origin: center;
+                        animation-name: circleRouting;
+                        animation-duration: .6s;
+                        animation-iteration-count: 1;
+                        .bwd-circle-inner {
+                            display: inline-block;
+                            height: 35px;
+                            width: 35px;
+                            border: 2px dotted #1c1e40;
+                            border-radius: 50%;
+                        }
+                        @keyframes circleRouting {
+                            from {
+                                transform: rotate(0);
+                            }
+                            to {
+                                transform: rotate(360deg);
+                            }
+                        }
+                    }
+
+                    @include mq(xs){
+                        display: none !important;
+            
+                     }
+                     @include mq(sm){
+                        display: flex !important;
+                     }
+                    
+                }
+            }
+            &:nth-child(odd) {
+                padding-right: 50px;
+                
+                transform:translateX(-120%);
+                @include mq(md){
+                    padding-left: 50px;
+                    padding-right: 0;
+                }
+                // @include mq(xs){
+                //     padding-left: 30px;
+            
+                // }
+                // @include mq(sm){
+                //     padding-left: 30px;
+                // }
+                .bwd-timeline-item-inner {
+                    border-top-right-radius: 140px;
+                      @include mq(xs){
+                        border-top-right-radius: 0;
+            
+                }
+                    @include mq(sm){
+                        border-top-right-radius: 140px;
+                    }
+                }
+            }
+            &:nth-child(even) {
+                margin-left: auto;
+                padding-left: 50px;
+                @include mq(md){
+                    padding-left: 50px;
+                }
+              
+                .bwd-timeline-item-inner {
+                  
+                    text-align: right;
+                    border-top-left-radius: 140px;
+                    @include mq(xs){
+                      border-radius: 0;
+                      text-align: left;
+              }
+                    @include mq(sm){
+                        border-top-left-radius: 140px;
+                        text-align: right;
+                    }
+                }
+                transform:translateX(120%);
+            }
+          
+            &.active {
+                transform: translate(0);
+                .bwd-timeline-item-inner {
+                    .bwd-bottom-circles {
+                        display: flex;
+                        justify-content: space-around;
+                        position: absolute;
+                        width: 100%;
+                        left: 0;
+                        .bwd-circle {
+                            transform-origin: center;
+                            animation-name: circleRouting;
+                            animation-duration: 2s;
+                            animation-iteration-count: infinite;
+                            @keyframes circleRouting {
+                                from {
+                                    transform: rotate(0);
+                                }
+                                to {
+                                    transform: rotate(360deg);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*timeline eight*/

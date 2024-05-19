@@ -1,0 +1,76 @@
+.bwduf-unfold-2-area {
+    .bwduf-unfold-item {
+        max-inline-size: 900px;
+        margin: 0 auto;
+        min-block-size: 200px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        background-color: #2A9D8F;
+        padding-block: 25px;
+        padding-inline: 30px;
+        border-radius: 20px;
+    }
+    .bwduf-unfold-content {
+        transition: .4s linear;
+        .bwduf-unfold-title {
+            margin-block-end: 15px;
+            line-height: 1;
+            font-size: 25px;
+            font-weight: 600;
+            color: #fff;
+            letter-spacing: 2px;
+            text-transform: capitalize;
+        }
+        .bwduf-unfold-description {
+            font-size: 15px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            line-height: 25px;
+            overflow: hidden;
+            max-height: 75px;
+            color: #fff;
+            transition: .4s linear;
+            position: relative;
+            &::before {
+                content: "";
+                position: absolute;
+                inset-block-end: -25px;
+                inset-inline-start: 0;
+                background-color: transparent;
+                background-image: linear-gradient(180deg,#00000003 0%,#2A9D8F 100%);
+                z-index: 1;
+                block-size: 100%;
+                inline-size: 100%;
+                transition: .4s;
+            }
+            &.unfold-show-more {
+                max-height: 100000px;
+                &::before {
+                    content: none;
+                }
+            }
+        }
+        .bwduf-unfold-btn-area {
+            margin-block-start: 8px;
+            .bwduf-unfold-icon {
+                display: inline-table;
+                font-size: 24px;
+                color: #fff;
+                margin-inline-end: 5px;
+            }
+            .bwduf-unfold-btn {
+                color:#fff;
+                font-size: 20px;
+                font-weight: 700;
+                text-transform: capitalize;
+                letter-spacing: 2px;
+                cursor: pointer;
+                display: inline-block;
+                border: none;
+                overflow: hidden;
+                position: relative;
+                z-index: 1;
+                border-bottom: 2px dotted #fff;
+            }
+        }
+    }
+}

@@ -1,0 +1,80 @@
+.bwd-counter-1 {
+  padding: 30px 0;
+
+  .bwd-counter {
+    color: #fff;
+    background: linear-gradient(225deg, #90ccaf, #2faaba);
+    width: 100%;
+    padding: 30px 25px;
+    margin: 15px auto;
+    border: 5px solid #fff;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    max-width: 290px;
+
+    .bwd-counter-icon {
+      font-size: 55px;
+      line-height: 1;
+      @include mq(lg){
+        font-size: 50px;
+      }
+    }
+
+    .bwd-counter-heading {
+      font-size: 22px;
+      font-weight: 400;
+      letter-spacing: 0.5px;
+      text-transform: capitalize;
+      line-height: 1.2;
+      margin: 25px 0;
+      @include mq(lg){
+        font-size: 19px;
+        margin: 22px 0;
+      }
+    }
+
+    .bwd-counter-value {
+      color: #2faaba;
+      background-color: #fff;
+      font-size: 35px;
+      font-weight: 700;
+      text-align: center;
+      padding: 5px 5px 4px;
+      border-radius: 20px;
+      display: block;
+      @include mq(lg){
+        font-size: 30px;
+
+      }
+    }
+  }
+
+  .row > * {
+    &:nth-child(2) {
+      .bwd-counter {
+        background: linear-gradient(225deg, #7261c9, #4751ad);
+        .bwd-counter-value {
+          color: #4751ad;
+        }
+      }
+    }
+
+    &:nth-child(3) {
+      .bwd-counter {
+        background: linear-gradient(225deg, #5fcb71, #03776b);
+        .bwd-counter-value {
+          color: #03776b;
+        }
+      }
+    }
+
+    &:nth-child(4) {
+      .bwd-counter {
+        background: linear-gradient(225deg, #ffb01d, #fd622e);
+        .bwd-counter-value {
+          color: #fd622e;
+        }
+      }
+    }
+  }
+}

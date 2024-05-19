@@ -1,0 +1,15 @@
+problem= akta timer banano. j khane akta nidristo time porjonto count down hote thakbe
+
+pblm slving step=
+
+lagbe, sec, min, hour, day, month,
+
+1.running time theke destination time ta minus korle distance ta powa jabe,
+
+2, sec=distance / (1000),
+
+3, min= distance / (1000 * 60);
+
+4, hour= distance /(1000 * 60 * 60)
+
+5, day= distance / (1000 * 60 * 60 * 24)

@@ -1,0 +1,466 @@
+.bwd-author-bio-15-area {
+    .bwd-author-information {
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        position: relative;
+        padding: 25px;
+        z-index: 1;
+        background-color: #f7f7f7;
+        overflow: hidden;
+        margin-bottom: 40px;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 330px;
+            height: 250px;
+            background-color: #3aba6b;
+            clip-path: polygon(0 0, 100% 0%, 100% 37%, 0 100%);
+            @include mq (xs) {
+                width: 260px;
+                height: 200px;
+            }
+            @include mq (xs) {
+                width: 330px;
+                height: 250px;
+            }
+        }
+        &::after {
+            content: "";
+            top: 0px;
+            right: 0;
+            position: absolute;
+            width: 75px;
+            height: 75px;
+            clip-path: polygon(100% 0, 0 0, 100% 100%);
+            background-color: #3aba6b;
+        }
+        .bwd-author-bio-img {
+            height: 330px;
+            width: 280px;
+            position: relative;
+            overflow: hidden;
+            clip-path: polygon(0 0, 100% 0%, 100% 70%, 0 100%);
+            z-index: 9;
+            @include mq (xs) {
+                width: 200px;
+                height: 260px;
+            }
+            @include mq (sm) {
+                width: 280px;
+                height: 230px;
+            }
+            img {
+                max-width: 100%;
+                height: 100%;
+                object-fit: cover;  
+                transition: .5s linear;             
+            }
+        }
+        .bwd-author-profile {
+            position: absolute;
+            top: 7%;
+            right: 35px;
+            @include mq (xs) {
+                position: inherit;
+                top: 0;
+                right: 0;
+                text-align: center;
+                margin-bottom: 30px;
+            }
+            .bwd-author-name {
+                font-size: 35px;
+                font-weight: 600;
+                text-transform: capitalize;
+                line-height: 1.2;
+                letter-spacing: 2px;
+                color: #3aba6b;
+                @include mq (xs) {
+                    font-size: 24px;
+                }
+                @include mq (sm) {
+                    font-size: 35px;
+                }
+            }
+            .bwd-author-birthday {
+                font-size: 16px;
+                letter-spacing: 1px;
+                margin-bottom: 0;
+                font-style: normal;
+                position: relative;
+                font-weight: 400;
+                color: #000;
+                line-height: 2;
+                border-bottom: 1px solid #10bf44;
+                &::before {
+                    position: absolute;
+                    content: "";
+                    bottom: -2.7px;
+                    left: 0;
+                    width: 70%;
+                    height: 5px;
+                    background-color: #3aba6b;
+                }
+            }
+        }
+        .bwd-author-bio-item {
+            flex-wrap: wrap;
+            @include mq (xs) {
+                flex-direction: column;
+            }
+            .bwd-author-bio-left-content {
+                position: relative;
+                z-index: 1;
+                padding: 110px 30px 30px;
+                color: #fff;
+                margin-top: -70px;
+                @include mq (xs) {
+                    margin-top: 0;
+                }
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: #252a41;
+                    clip-path:polygon(100% 0, 100% 0, 100% 60%, 100% 100%, 60% 100%, 0 100%, 0 100px);
+                    z-index: -1;
+                }
+                .bwd-author-book-name {
+                    color: #fff;
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 1.3;
+                    letter-spacing: 1.5px;
+                    .bwd-author-subtitle {
+                        display: block;
+                        text-transform: capitalize;
+                        font-weight: 600;
+                        font-size: 16px;
+                        margin-bottom: 15px;
+                        line-height: 2;
+                        letter-spacing: 2px;
+                        border-bottom: 1px solid #3aba6b;
+                        position: relative;
+                        &::before {
+                            position: absolute;
+                            content: "";
+                            bottom: -2.7px;
+                            left: 0;
+                            width: 70%;
+                            height: 5px;
+                            background-color: #3aba6b;
+                        }
+                    }
+                }
+                .bwd-author-book-cat {
+                    font-size: 16px;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    margin: 15px 0;
+                    font-style: italic;
+                    line-height: 1.5;
+                    letter-spacing: 2px;
+                    .bwd-author-subtitle {
+                        display: block;
+                        text-transform: capitalize;
+                        font-weight: 600;
+                        font-size: 16px;
+                        margin-bottom: 15px;
+                        line-height: 2;
+                        letter-spacing: 2px;
+                        border-bottom: 1px solid #3aba6b;
+                        position: relative;
+                        &::before {
+                            position: absolute;
+                            content: "";
+                            bottom: -3px;
+                            left: 0;
+                            width: 70%;
+                            height: 5px;
+                            background-color: #3aba6b;
+                        }
+                    }
+                }
+                .bwd-author-hobby {
+                    color: #fff;
+                    font-size: 16px;
+                    text-transform: capitalize;
+                    font-weight: 500;
+                    letter-spacing: 1.5px;
+                    margin-bottom: 15px;
+                    .bwd-author-subtitle {
+                        display: block;
+                        text-transform: capitalize;
+                        font-weight: 600;
+                        font-size: 16px;
+                        margin-bottom: 15px;
+                        line-height: 2;
+                        letter-spacing: 2px;
+                        border-bottom: 1px solid #3aba6b;
+                        position: relative;
+                        &::before {
+                            position: absolute;
+                            content: "";
+                            bottom: -3px;
+                            left: 0;
+                            width: 70%;
+                            height: 5px;
+                            background-color: #3aba6b;
+                        }
+                    }
+                }
+                .bwd-author-lang {
+                    color: #fff;
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 1;
+                    letter-spacing: 1px;
+                    margin-bottom: 25px;
+                }
+                .bwd-author-social {
+                    display: inline-block;
+                    width: 45px;
+                    height: 45px;
+                    line-height: 47px;
+                    border-radius: 50%;
+                    text-align: center;
+                    background: #fff;
+                    font-size: 20px;
+                    color: #3aba6b;
+                    transition: .3s linear;
+                    margin-right: 5px;
+                    &:hover {
+                        background: linear-gradient(to bottom,#3aba6b, #016b2a);
+                        box-shadow: 0 0 0 5px rgba(255,255,255,0.3);
+                        color: #fff;
+                    }
+                }
+            }
+            .bwd-author-bio-right-content {
+                margin-top: -65px;
+                padding-left: 25px;
+                @include mq (xs) {
+                    padding-left: 0;
+                    margin-top: 40px;
+                }
+                .bwd-author-review {
+                    display: block;
+                    font-size: 16px;
+                    color: #10bf44;
+                }
+                .bwd-author-award {
+                    margin-top:0px;
+                    table {
+                        width: 100%;
+                        tbody {
+                            background: transparent;
+                            tr {
+                                transition: .3s linear;
+                                &:hover {
+                                    background-color: #514e4e;
+                                    td {
+                                        color: #fff;
+                                        letter-spacing: 1px;
+                                    }
+                                }
+                                th {
+                                    background-color: #10bf44;
+                                    color: #fff;
+                                    border: 1px solid #979797;
+                                    padding: 15px;
+                                    text-transform: capitalize;
+                                    font-weight: 600;
+                                    letter-spacing: 1px;
+                                    font-size: 18px;
+                                    padding-left: 25px;
+                                }
+                                td {
+                                    border: 1px solid #979797;
+                                    padding: 17px;
+                                    color: #333;
+                                    padding-left: 25px;
+                                    transition: .3s linear;
+                                    font-weight: 600;
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                        
+                    }
+                }
+                .bwd-author-best-book {
+                    margin: 25px 0;
+                    .bwd-author-subtitle {
+                        display: block;
+                        text-transform: capitalize;
+                        font-weight: 600;
+                        font-size: 16px;
+                        margin-bottom: 20px;
+                        line-height: 2;
+                        letter-spacing: 2px;
+                        border-bottom: 1px solid #3aba6b;
+                        position: relative;
+                        &::before {
+                            position: absolute;
+                            content: "";
+                            bottom: -2.7px;
+                            left: 0;
+                            width: 70%;
+                            height: 5px;
+                            background-color: #3aba6b;
+                        }
+                    }
+                    .bwd-author-book-img {
+                        display: flex;
+                        align-items: center;
+                        justify-content: start;
+                        flex-wrap: wrap;
+                        img {
+                            width: 80px;
+                            height: 140px;
+                            object-fit: contain;
+                            transition: .4s linear;
+                            transform: scale(.92);
+                            &:hover {
+                                transform: scale(1);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .bwd-author-dic {
+            color: #000;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 24px;
+            letter-spacing: .6px;
+            margin-top: 25px;
+        }
+        .bwd-author-meta {
+            background: #10bf44;
+            padding: 80px 25px 30px;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            margin-left: -25px;
+            margin-right: -25px;
+            margin-bottom: -25px;
+            justify-content: center;
+            flex-wrap: wrap;
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 55px;
+                background: #f7f7f7;
+                border-bottom-left-radius: 100%;
+                z-index: -1;
+            }
+            .bwd-author-signature {
+                width: 180px;
+                margin: 0 40px 0 0px ;
+                @include mq (xs) {
+                    margin: 0 20px 0 0px ; 
+                }
+            }
+            .bwd-author-vedio {
+                cursor:pointer;
+                border:  1px solid #fff;
+                color: #fff;
+                height: 80px;
+                width: 80px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 25px;
+                transition: .3s linear;
+                border-radius: 100%;
+                margin-right: 60px;
+                &:hover {
+                    transform: scale(1.1);
+                }
+                &.ripple-white {
+                    animation: ripple-whites 1.2s linear infinite;
+                    transition: .9s;
+                    animation-direction: alternate;
+                }
+                @keyframes ripple-whites {
+                    from {
+                        box-shadow: 0 0 0 0 #ffffff87;
+                      }
+                      to {
+                        box-shadow: 0 0 0 10px #ffffff87;
+                    }
+                }
+                @include mq (xs) {
+                    margin-right: 20px;
+                }
+            }
+            .bwd-author-button{
+                color:rgba(255,255,255,0.8);
+                background: #016b2a;
+                font-size: 20px;
+                font-weight: 700;
+                text-transform: capitalize;
+                letter-spacing: 1px;
+                padding: 18px 36px;
+                border-radius: 50px 50px/30px 50px;
+                border: none;
+                overflow: hidden;
+                position: relative;
+                z-index: 1;
+                transition: .3s linear;
+                &:before,
+                &:after{
+                    content: "";
+                    background: #fff;
+                    width: 0;
+                    height: calc(100% - 25px);
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    transition: 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+                    z-index: -1;
+                }
+                &:after{
+                    top: auto;
+                    bottom: 0;
+                    left: auto;
+                    right: 0;
+                }
+                &:hover{
+                    color: #016b2a; 
+                    background: transparent;
+                    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+                    transform: rotate(-3deg) scale(1.1);
+                    &::before,
+                    &::after {
+                        width: 100%;
+                        left: 0;
+                    }
+                    &::after {
+                        top:auto;
+                        bottom: 0;
+                        left: auto;
+                        right: 0;
+                    }
+                }
+                @include mq (xs) {
+                    padding: 18px 30px;
+                    font-size: 16px;
+                    margin-top: 20px;
+                }
+                @include mq (sm) {
+                    margin-top: 0;
+                }
+            }
+        }
+        
+    }
+}

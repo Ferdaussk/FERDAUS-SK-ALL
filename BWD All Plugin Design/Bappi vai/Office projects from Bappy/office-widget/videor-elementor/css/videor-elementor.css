@@ -1,0 +1,131 @@
+/**
+ * * Videor for Elementor
+ * * Videor masks YouTube & Vimeo videos by creative & extra-ordinary custom shapes.
+ * * Exclusively on https://1.envato.market/videor-elementor
+ * *
+ * * @encoding        UTF-8
+ * * @version         1.1.0
+ * * @copyright       (C) 2018 - 2022 Merkulove ( https://merkulov.design/ ). All rights reserved.
+ * * @license         Envato License https://1.envato.market/KYbje
+ * * @contributors    Nemirovskiy Vitaliy (nemirovskiyvitaliy@gmail.com), Dmitry Merkulov (dmitry@merkulov.design)
+ * * @support         help@merkulov.design
+ * **/
+.mdp-videor {
+  position: relative;
+}
+
+.mdp-videor-header,
+.mdp-videor-subheader {
+  display: block;
+}
+
+.mdp-videor-video,
+.mdp-videor-mask {
+  transform-origin: center;
+}
+
+.mdp-videor-link {
+  position: absolute;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.mdp-videor-over {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.mdp-videor-over .mdp-videor-heading,
+.mdp-videor-over .mdp-videor-description {
+  width: 100%;
+}
+
+.mdp-videor-video {
+  position: relative;
+  overflow: hidden;
+  display: block;
+}
+
+.mdp-videor-visible {
+  transition: 1s;
+  opacity: 1;
+}
+
+.mdp-videor-wrap {
+  position: absolute;
+}
+.mdp-videor-wrap iframe,
+.mdp-videor-wrap video {
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: 100%;
+  min-height: 100%;
+  max-height: 100%;
+}
+
+.mdp-videor-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Video position */
+.mdp-videor-default {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.mdp-videor-centerleft {
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.mdp-videor-centerright {
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.mdp-videor-topcenter {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.mdp-videor-topleft {
+  top: 0;
+  left: 0;
+}
+
+.mdp-videor-topright {
+  top: 0;
+  right: 0;
+}
+
+.mdp-videor-bottomcenter {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.mdp-videor-bottomleft {
+  bottom: 0;
+  left: 0;
+}
+
+.mdp-videor-bottomright {
+  bottom: 0;
+  right: 0;
+}

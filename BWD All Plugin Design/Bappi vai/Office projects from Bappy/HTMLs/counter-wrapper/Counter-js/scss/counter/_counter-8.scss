@@ -1,0 +1,114 @@
+.bwd-counter-8 {
+    margin: 30px 0;
+  .bwd-counter {
+  
+      background: #fff;
+      text-align: center;
+      width: 100%;
+      padding: 0 0 25px;
+      margin: 15px auto;
+      margin-bottom: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+      position: relative;
+      max-width: 290px;
+     
+  
+    &::before{
+          content: "";
+          background: #fff;
+          width: 30px;
+          height: 30px;
+          border-radius: 5px 0;
+          box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.07);
+          transform: translateX(-50%) rotate(45deg);
+          position: absolute;
+          bottom: -15px;
+          left: 50%;
+      }
+  .bwd-counter-value{
+    color: #fff;
+    background: linear-gradient(to right, #19bbd2, #2778ee);
+    font-size: 40px;
+    padding: 13px 0;
+    margin: 0 0 25px;
+    border-radius: 10px 10px 0 0;
+    display: block;
+    line-height: 1;
+    font-weight: 600;
+  }
+  .bwd-counter-heading{
+    color: #2778ee;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: capitalize;
+    margin: 5px 0 30px;
+    line-height: 1.2;
+  }
+
+  .bwd-counter-icon{
+    color: #fff;
+    background: linear-gradient(to right, #19bbd2, #2778ee);
+    font-size: 45px;
+    line-height: 70px;
+    width: 75px;
+    height: 75px;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-bottom: 5px;
+  }
+}
+
+  .row > * {
+    &:nth-child(2) {
+
+      .bwd-counter {
+       
+        .bwd-counter-heading{
+          color: #c452ef;
+        }
+        .bwd-counter-icon{
+          background: linear-gradient(to right, #8f70e7, #c452ef);
+        }
+        .bwd-counter-value{
+          background: linear-gradient(to right, #8f70e7, #c452ef);
+        }
+      }
+    }
+
+      &:nth-child(3) {
+      .bwd-counter {
+        .bwd-counter-heading{
+          color: #ae379b;
+        }
+        .bwd-counter-icon{
+          background: linear-gradient(to right, #e84a94, #ae379b);
+        }
+        .bwd-counter-value{
+           background: linear-gradient(to right, #e84a94, #ae379b);
+        }
+      }
+    }
+
+
+    &:nth-child(4) {
+
+      .bwd-counter {
+       
+        .bwd-counter-heading{
+          color: #e69814;
+        }
+        .bwd-counter-icon{
+          background: linear-gradient(to right, #fecb4b, #e69814);
+        }
+        .bwd-counter-value{
+         background: linear-gradient(to right, #fecb4b, #e69814);
+        }
+      }
+    }
+
+  }
+
+}
+

@@ -1,0 +1,177 @@
+/**********************************/
+/* TL-29*/
+.bwd-timeline-twenty-nine{
+        position: relative;
+        padding: 60px 30px;
+        &::before {
+            content: "";
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            height: calc(100% - 100px);
+            width: 7px;
+            background: #fff;
+            border-radius: 5px;
+            z-index: 1;
+            box-shadow: 0 0 15px #aaa;
+            border-radius: 5px;
+            @include mq(xs){
+                left: 25px;
+            }
+            @include mq(sm){
+                left: 80px;
+            }
+        }
+        .bwd-progress-line {
+            top: 50px;
+            position: absolute;
+            left: 50%;
+            width: 8px;
+            background: #09667B;
+            height: 0;
+            max-height: calc(100% - 89px);
+            transform: translateX(-50%);
+            transition: .3s;
+            @include mq(xs){
+                left: 25px;
+                top: 40px;
+                max-height: calc(100% - 80px);
+            }
+            @include mq(sm){
+                left: 80px;
+                max-height: calc(100% - 80px);
+            }
+            border-radius: 5px;
+            z-index: 999;
+        }
+        .bwd-progress-helper-twenty-nine {
+            height: 50vh;
+            background-color: transparent;
+            position: absolute;
+            bottom: 100%;
+        }
+       .bwd-timeline-item-container{
+        .bwd-timeline-item{
+            position: relative;
+            width: 50%;
+            margin-top: 45px;
+               @include mq(xs){
+                width: 100%;
+                margin-bottom: 110px;
+            }
+            &.active{
+                .bwd-timeline-item-inner{
+                  
+
+                    &::before{
+                        border-radius: 0 70px;
+                    }
+                }
+            }
+            .bwd-timeline-item-inner {
+                background: #fff;
+                padding: 20px;
+                position: relative;
+
+                max-width: 450px;
+                box-shadow: 7px 0 4px #eee, -7px 0 4px #eee;
+                .bwd-year {
+                    font-size: 30px;
+                    height: 100px;
+                    width: 100px;
+                    border-radius: 50%;
+                    background: #fff;
+                    text-align: center;
+                    line-height: 100px;
+                    margin: -45px auto 0 auto;
+                    box-shadow: 0 0 5px #ccc;
+                    font-weight: 600;
+                }
+                &::before{
+                    content: "";
+                    position: absolute;
+                    left: 15px;
+                    right: 15px;
+                    background: #0D87F2;
+                    top: -45px;
+                    bottom: -25px;
+                    z-index: -1;
+                    border-radius: 70px 0;
+                    transition: .6s;
+                }
+ 
+                .bwd-timeline-item-content{
+                    padding: 10px 30px;
+                    text-align: center;
+                    @include mq(xs){
+                        padding: 10px 0;
+                    }
+                    .bwd-timeline-title {
+                        font-size: 22px;
+                        text-transform: capitalize;
+                    }
+                }
+            }
+
+            &:nth-child(odd){
+                .bwd-timeline-item-inner{
+                    margin-right: 40px;
+                    margin-left: auto;
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        right: 0;
+                        border-left: 15px solid #0D87F2;
+                        border-top: 25px solid transparent;
+                        border-bottom: 25px solid transparent;
+                        top: 50%;
+                        left: 100%;
+                        transform: translateY(-50%);
+                    }
+                    .bwd-year {
+                        color: #0D87F2;
+                    }
+                    @include mq(xs){
+                        margin-right: auto;
+                        margin-left: 30px;
+                    }
+                    @include mq(sm){
+                        margin-right: auto;
+                        margin-left: 150px;
+                    }
+                }
+            }
+            &:nth-child(even){
+                margin-left: auto;
+                .bwd-timeline-item-inner{
+                    margin-left: 40px;
+                    margin-right: auto;
+                    @include mq(xs){
+                        margin-left: 30px;
+                    }
+                        @include mq(sm){
+                            margin-left: 150px;
+                        }
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        right: 0;
+                        border-right: 15px solid #09667B;
+                        border-top: 25px solid transparent;
+                        border-bottom: 25px solid transparent;
+                        top: 50%;
+                        right: 100%;
+                        transform: translateY(-50%);
+                    }
+                    &::before{
+                        background-color: #09667B;
+                    }
+                    .bwd-year {
+                        color: #09667B;
+                 }
+                }
+            }
+        }
+       }
+}
+/* TL-29*/

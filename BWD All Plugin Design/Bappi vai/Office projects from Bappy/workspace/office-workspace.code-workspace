@@ -1,0 +1,13 @@
+{
+  "folders": [
+    {
+      "path": "../HTML/img-hot-wrapper/img-Hotspot"
+    },
+    {
+      "path": "../../../../../xampp/htdocs/bwd/wp-content/plugins/image-hotspot"
+    }
+  ],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "filter-gallery"
+  }
+}

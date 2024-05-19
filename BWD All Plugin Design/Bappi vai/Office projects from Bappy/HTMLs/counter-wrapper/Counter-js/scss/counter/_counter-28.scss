@@ -1,0 +1,125 @@
+.bwd-counter-28{
+    padding: 30px 0;
+    .bwd-counter{
+        padding: 0 20px 20px;
+        text-align: center;
+        z-index: 1;
+        position: relative;
+        margin: 15px auto;
+        width: 100%;
+        max-width: 290px;
+
+        &::after{
+            content: "";
+            width: 100%;
+            height: 75%;
+            background: linear-gradient(to right,#15bff7,#1a88da);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+            transition: all 0.3s ease 0s;
+        }
+
+        .bwd-counter-content{
+            width: 100%;
+            background: #f1f1f1;
+            padding: 15px 0 15px;
+            margin-bottom: 15px;
+            overflow: hidden;
+            z-index: 1;
+            position: relative;
+            -webkit-clip-path: polygon(100% 0, 100% 85%, 80% 85%, 70% 100%, 60% 85%, 0 85%, 0 15%);
+            clip-path: polygon(100% 0, 100% 85%, 80% 85%, 70% 100%, 60% 85%, 0 85%, 0 15%);
+            transition: .3s;
+        }
+
+        .bwd-counter-icon{
+            font-size: 55px;
+            color: #1a88da;
+            transform: rotateX(360deg);
+            transition: all 0.3s ease 0s;
+            line-height: 1.2;
+            margin: 15px 0;
+            @include mq(lg){
+                font-size: 50px;
+            }
+        }
+
+
+        .bwd-counter-value{
+            display: block;
+            font-size: 40px;
+            font-weight: 700;
+            color: #606060;
+            margin: 0 0 60px;
+
+            
+            @include mq(lg){
+                font-size: 35px;
+                margin: 0 0 50px;
+            }
+        }
+
+        .bwd-counter-heading{
+            font-size: 20px;
+            font-weight: 600;
+            color: #fff;
+            text-transform: uppercase;
+            margin: 0;
+            line-height: 1.2;
+            @include mq(lg){
+                font-size: 18px;
+            }
+        }
+        &:hover{
+            .bwd-counter-content{
+                clip-path: polygon(100% 0%, 100% 85%, 80% 85%, 70% 100%, 60% 85%, 0 85%, 0 0%);
+            }
+        }
+    }
+
+
+
+    .row > * {
+        &:nth-child(2) {
+          .bwd-counter {
+              &::after{
+                background: linear-gradient(to right,#b4d93d,#789532); 
+              }
+          
+            .bwd-counter-icon {
+                color: #789532;
+            }
+          }
+        }
+
+        &:nth-child(3) {
+            .bwd-counter {
+                &::after{
+                    background: linear-gradient(to right,#f9b840,#f07d24);
+                }
+            
+              .bwd-counter-icon {
+                  color: #f07d24;
+              }
+            }
+          }
+
+
+          &:nth-child(4) {
+            .bwd-counter {
+                &::after{
+                    background: linear-gradient(to right,#f56a87,#ca3e57);
+                }
+            
+              .bwd-counter-icon {
+                  color: #ca3e57;
+              }
+            }
+          }
+    
+ 
+      }
+ 
+}

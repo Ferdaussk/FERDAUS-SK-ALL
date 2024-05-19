@@ -1,0 +1,81 @@
+.mtt-our-team-area {
+    .mtt-our-team-box {
+        overflow: hidden;
+        cursor: pointer;
+        margin-bottom: 40px;
+        .mtt-our-team-item {
+            position: relative;
+            transition: .4s linear;
+            .mtt-pic {
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .mtt-team-content {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                top: 0;
+                left: 0;
+                text-align: center;
+                background: linear-gradient(#8dadc75d, #79a1c1f7 40%, #81a2bd 40%, #8dadc75d);
+                color: white;
+                text-transform: capitalize;
+                transform: translateY(114%);
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                padding: 5px 15px;
+                @include mq(xs){
+                    height: 102%;
+                }
+                .mtt-title {
+                    font-size: 25px;
+                    font-weight: 700;
+                    text-transform: capitalize;
+                    margin-bottom: 10px;
+                }
+                .mtt-post {
+                    display: block;
+                    font-size: 18px;
+                    font-weight: 400;
+                    margin-bottom: 10px;
+                }
+                
+                .mtt-social {
+                    display: flex;
+                    align-items: center;
+                    margin-top: 10px;
+                    a {
+                        color: $white;
+                        font-size: 18px;
+                        margin: 0 5px;
+                        width: 40px;
+                        display: block;
+                        height: 40px;
+                        line-height: 40px;
+                        border-radius: 50%;
+                        background: rgba(228, 101, 143, 0.87);
+                        border: 1px solid transparent;
+                        text-align: center;
+                        transition: .4s linear;
+                        &:hover {
+                            transform: rotate(360deg);
+                            background: transparent;
+                            border: 1px solid rgba(228, 101, 143, 0.87);
+                        }
+                    }
+                }
+            }
+        }
+        &:hover {
+            .mtt-our-team-item {
+                transform: translateY(-114%);
+                
+            }
+        }
+    }
+}

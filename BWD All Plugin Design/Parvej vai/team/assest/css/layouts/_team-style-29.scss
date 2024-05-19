@@ -1,0 +1,113 @@
+.mtt-team-style-29-area {
+    .mtt-team-style-29-team {
+        border-radius: 15px;
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 40px;
+        &::before {
+            content:"";
+            background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 35%, transparent 65%, rgba(0,0,0,0.8) 100%);
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            transition: all 0.4s ease 0.3s;
+        }
+        .mtt-pic {
+            img {
+                width: 100%;
+                height: auto;
+                transition: all 0.4s linear;
+            }
+        }
+        .mtt-team-content {
+            transform: translateY(-50%);
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            z-index: 2;
+            .mtt-inner-content {
+                color: #fff;
+                background: rgba(214,48,49,0.9);
+                text-align: center;
+                width: 90%;
+                padding: 10px;
+                border-radius: 0 10px 0 0;
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+                transform: translateX(-100%);
+                transition: all 0.4s ease-in-out 0.2s;
+            }
+            .mtt-title {
+                font-size: 22px;
+                font-weight: 600;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                margin: 0;
+            }
+            .mtt-post {
+                font-size: 16px;
+                text-transform: capitalize;
+                font-style: italic;
+            }
+        }
+        .mtt-social {
+            background: rgba(255, 255, 255, 0.9);
+            width: 70%;
+            position: absolute;
+            z-index: 9;
+            top: 65%;
+            left: 0;
+            padding: 7px 10px;
+            margin: 0;
+            list-style: none;
+            border-radius: 0 0 0 10px;
+            transform: translateX(150%);
+            transition: .3s linear;
+            a {
+                display: inline-block;
+                color:#fff;
+                background-color: rgba(214, 48, 48, 0.712);
+                font-size: 19px;
+                text-align: center;
+                line-height: 37px;
+                height: 35px;
+                width: 35px;
+                border-radius: 10px;
+                transition: all 0.35s;
+                margin: 0 2px;
+                transform:translateX(350px);
+                transition: .3s linear;
+                &:hover {
+                    background-color: #333;
+                }
+            }
+        }
+        &:hover {
+            &::before {
+             opacity: 1;
+            }
+            .mtt-pic {
+                img {
+                    opacity: 0.8;
+                }
+            }
+            .mtt-team-content {
+                .mtt-inner-content {
+                    transform: translateX(0);
+                }
+            }
+            .mtt-social {
+                transform: translateX(50%);
+                a {
+                    transform: translateX(0);
+                }
+            }
+        }
+
+    }
+    
+}

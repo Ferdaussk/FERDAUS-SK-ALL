@@ -1,0 +1,522 @@
+.bwd-author-bio-10-area {
+    .bwd-author-information {
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        position: relative;
+        padding: 25px;
+        z-index: 1;
+        margin: 0 15px;
+        margin-bottom: 40px;
+        .bwd-author-bio-img {
+            height: 210px;
+            width: 210px;
+            margin-bottom: 60px;
+            margin-left: auto;
+            margin-right: 20px;
+            position: relative;
+            margin-top: 20px;
+            @include mq (xs) {
+                margin: 25px auto 40px;
+                width: 150px;
+                height: 150px;
+            }
+            @include mq (sm) {
+                width: 220px;
+                height: 220px;
+            }
+            .bwd-img-circle {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+                outline: 3px solid #ddd;
+                border-radius: 100%;
+                outline-offset: 15px;
+                animation: animate 15s linear infinite;
+                @keyframes animate {
+                    form {
+                        transform: rotate(0deg);
+                    }
+                    to {
+                        transform: rotate(360deg);
+                    }
+                }
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 0px;
+                    right: -20px;
+                    border: 3px solid #ff793f;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 100%;
+                    border-top-color: transparent;
+                    border-bottom-color: transparent;
+                    border-left-color: transparent;
+                }
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    left: -28px;
+                    transform: translateY(-50%);
+                    width: 25px;
+                    height: 25px;
+                    background-color: #ff793f;
+                    border-radius: 30px;
+                }
+            }
+            img {
+                max-width: 100%;
+                height: 100%;
+                border-radius: 100%;
+                object-fit: cover;               
+            }
+        }
+        .bwd-author-profile {
+            position: absolute;
+            top: 130px;
+            left: 30px;
+            @include mq (xs) {
+                position: inherit;
+                top: 0;
+                left: 0;
+                text-align: center;
+                margin-bottom: 30px;
+            }
+            .bwd-author-name {
+                font-size: 33px;
+                font-weight: 600;
+                text-transform: capitalize;
+                line-height: 1.2;
+                color: #ff793f;
+                margin-bottom: 5px;
+                text-align: center;
+                letter-spacing: 1.5px;
+                @include mq (xs) {
+                    font-size: 24px;
+                }
+                @include mq (sm) {
+                    font-size: 30px;
+                }
+            }
+            .bwd-author-birthday {
+                font-size: 16px;
+                color: #2C3A47;
+                letter-spacing: 1px;
+                text-align: center;
+                margin-bottom: 0;
+                font-style: italic;
+                position: relative;
+                font-weight: 600;
+                &::before,
+                &:after {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: 0px;
+                    width: 15%;
+                    height: 2px;
+                    background-color: #2C3A47;
+                    @include mq (xs) {
+                        content: none;
+                    }
+                    @include mq (sm) {
+                        content: "";
+                        left: 70px;
+                    }
+                }
+                &::after {
+                    left: auto;
+                    right: 0px;
+                    @include mq (sm) {
+                        right: 70px;
+                    }
+                }
+            }
+        }
+        .bwd-author-bio-item {
+            flex-wrap: wrap;
+            @include mq (xs) {
+                flex-direction: column;
+            }
+            .bwd-author-bio-left-content {
+                padding-right: 20px;
+                @include mq (xs) {
+                    padding-right: 0;
+                    margin-bottom: 35px;
+                }
+                .bwd-author-book-name {
+                    color: #2C3A47;
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 1.5;
+                    letter-spacing: 1.5px;
+                    margin-bottom: 15px;
+                    .bwd-author-subtitle {
+                        display: block;
+                        color: #fff;
+                        text-transform: capitalize;
+                        text-align: center;
+                        font-weight: 700;
+                        font-size: 17px;
+                        line-height: 2;
+                        background: #ff793f;
+                        margin-left: -42px;
+                        padding: 8px 30px;
+                        margin-bottom: 15px;
+                        border-top-right-radius: 15px;
+                        border-bottom-right-radius: 15px;
+                        width: 90%;
+                        position: relative;
+                        @include mq (xs) {
+                            width: 115%;
+                        }
+                        @include mq (sm) {
+                            width: 110%;
+                        }
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            bottom: -25px;
+                            left: 0;
+                            width: 17px;
+                            height: 25px;
+                            background-color: #ff793f;
+                            clip-path: polygon(100% 60%, 100% 0, 0 0);
+                            z-index: -1;
+                        }
+                    }
+                }
+                .bwd-author-book-cat {
+                    font-size: 16px;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    margin: 15px 0;
+                    font-style: italic;
+                    line-height: 1.5;
+                    letter-spacing: 2px;
+                    .bwd-author-subtitle {
+                        display: block;
+                        color: #fff;
+                        text-transform: capitalize;
+                        text-align: center;
+                        font-weight: 700;
+                        font-size: 17px;
+                        line-height: 2;
+                        background: #ff793f;
+                        margin-left: -42px;
+                        padding: 8px 30px;
+                        margin-bottom: 15px;
+                        border-top-right-radius: 15px;
+                        border-bottom-right-radius: 15px;
+                        width: 90%;
+                        position: relative;
+                        @include mq (xs) {
+                            width: 115%;
+                        }
+                        @include mq (sm) {
+                            width: 110%;
+                        }
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            bottom: -25px;
+                            left: 0;
+                            width: 17px;
+                            height: 25px;
+                            background-color: #ff793f;
+                            clip-path: polygon(100% 60%, 100% 0, 0 0);
+                            z-index: -1;
+                        }
+                    }
+                }
+                .bwd-author-hobby {
+                    color: #2C3A47;
+                    font-size: 16px;
+                    text-transform: capitalize;
+                    font-weight: 500;
+                    letter-spacing: 1.5px;
+                    margin-bottom: 15px;
+                    .bwd-author-subtitle {
+                        display: block;
+                        color: #fff;
+                        text-transform: capitalize;
+                        text-align: center;
+                        font-weight: 700;
+                        font-size: 17px;
+                        line-height: 2;
+                        background: #ff793f;
+                        margin-left: -42px;
+                        padding: 8px 30px;
+                        margin-bottom: 15px;
+                        border-top-right-radius: 15px;
+                        border-bottom-right-radius: 15px;
+                        width: 90%;
+                        @include mq (xs) {
+                            width: 115%;
+                        }
+                        @include mq (sm) {
+                            width: 110%;
+                        }
+                        position: relative;
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            bottom: -25px;
+                            left: 0;
+                            width: 17px;
+                            height: 25px;
+                            background-color: #ff793f;
+                            clip-path: polygon(100% 60%, 100% 0, 0 0);
+                            z-index: -1;
+                        }
+                    }
+                }
+                .bwd-author-lang {
+                    color: #2C3A47;
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 1;
+                    letter-spacing: 1px;
+                    margin-bottom: 25px;
+                }
+                .bwd-author-social {
+                    color: #fff;
+                    background-color: #ff793f;
+                    font-size: 18px;
+                    line-height: 38px;
+                    height: 40px;
+                    width: 40px;
+                    border: 2px dotted transparent;
+                    border-radius: 50%;
+                    text-align: center;
+                    display: inline-block;
+                    transform: rotate(0);
+                    transition: .3s linear;
+                    margin-right: 12px;
+                    &:hover {
+                        color: #ff793f;
+                        background:#fff;
+                        border-color: #ff793f;
+                        transform: rotate(360deg);
+                    }
+                }
+            }
+            .bwd-author-bio-right-content {
+                padding-left: 15px;
+                @include mq (xs) {
+                    padding-left: 0;
+                }
+                .bwd-author-review {
+                    display: block;
+                    font-size: 16px;
+                    color: #2a3e3e;
+                }
+                .bwd-author-award {
+                    margin-top:0px;
+                    table {
+                        width: 100%;
+                        tbody {
+                            background: transparent;
+                            tr {
+                                transition: .3s linear;
+                                &:hover {
+                                    background-color: #838080;
+                                    td {
+                                        color: #fff;
+                                        letter-spacing: 1px;
+                                    }
+                                }
+                                th {
+                                    background-color: #ff793f;
+                                    color: #fff;
+                                    border: 1px solid #979797;
+                                    padding: 8px;
+                                    text-transform: capitalize;
+                                    font-weight: 600;
+                                    letter-spacing: 1px;
+                                    font-size: 18px;
+                                    padding-left: 25px;
+                                }
+                                td {
+                                    border: 1px solid #979797;
+                                    padding: 12px;
+                                    color: #333;
+                                    padding-left: 25px;
+                                    transition: .3s linear;
+                                    font-weight: 600;
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                        
+                    }
+                }
+                .bwd-author-best-book {
+                    margin: 20px 0;
+                    .bwd-author-subtitle {
+                        display: block;
+                        color: #fff;
+                        text-transform: capitalize;
+                        text-align: center;
+                        font-weight: 700;
+                        font-size: 17px;
+                        line-height: 2;
+                        background: #ff793f;
+                        margin-left: 42px;
+                        padding: 8px 30px;
+                        margin-bottom: 15px;
+                        border-top-left-radius: 15px;
+                        border-bottom-left-radius: 15px;
+                        width: 100%;
+                        position: relative;
+                        @include mq (xs) {
+                            margin-left: 0;
+                            border-radius: 0;
+                            padding: 10px;
+                        }
+                        @include mq (sm) {
+                            margin-left: 42px;
+                            border-top-left-radius: 15px;
+                            border-bottom-left-radius: 15px;
+                            padding: 8px 30px;
+                        }
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            bottom: -25px;
+                            right: 0;
+                            width: 17px;
+                            height: 25px;
+                            background-color: #ff793f;
+                            z-index: -1;
+                            clip-path: polygon(100% 0, 0 100%, 0 0);
+                            @include mq (xs) {
+                                content: none;
+                            }
+                            @include mq (sm) {
+                                content: "";
+                            }
+                        }
+                    }
+                    .bwd-author-book-img {
+                        display: flex;
+                        align-items: center;
+                        justify-content: start;
+                        flex-wrap: wrap;
+                        img {
+                            width: 85px;
+                            height: 140px;
+                            object-fit: contain;
+                            transition: .4s linear;
+                            transform: scale(.92);
+                            &:hover {
+                                transform: scale(1);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .bwd-author-dic {
+            color: #2a3e3e;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 24px;
+            letter-spacing: .6px;
+            margin-top: 25px;
+        }
+        .bwd-author-meta {
+            padding: 30px 25px;
+            background-color: #ff793f;
+            margin-left: -25px;
+            margin-right: -25px;
+            margin-bottom: -25px;
+            margin-top: 25px;
+            flex-wrap: wrap;
+            justify-content: center;
+            .bwd-author-signature {
+                width: 180px;
+                margin: 0 40px 0 0px;
+                @include mq (xs) {
+                    margin: 0 15px 0 0px;
+                }
+            }
+            .bwd-author-vedio {
+                cursor:pointer;
+                border:  1px solid #fff;
+                color: #fff;
+                height: 80px;
+                width: 80px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 25px;
+                transition: .3s linear;
+                border-radius: 100%;
+                margin-right: 40px;
+                &.ripple-white {
+                    animation: ripple-whites 1.2s linear infinite;
+                    transition: .9s;
+                    animation-direction: alternate;
+                }
+                @keyframes ripple-whites {
+                    from {
+                        box-shadow: 0 0 0 0 #ffffff87;
+                      }
+                      to {
+                        box-shadow: 0 0 0 10px #ffffff87;
+                    }
+                }
+                @include mq (xs) {
+                    margin-right: 15px;
+                }
+            }
+            .bwd-author-button{
+                color: #fff;
+                background: transparent;
+                font-size: 20px;
+                font-weight: 700;
+                text-transform: capitalize;
+                letter-spacing: 1px;
+                padding: 18px 36px;
+                overflow: hidden;
+                position: relative;
+                z-index: 1;
+                transition: .3s linear;
+                border: 1px solid #fff;
+                &::before {
+                    content: '';
+                    background-color: #ff793f;
+                    height: 200%;
+                    width: 100%;
+                    transform: skewY(17deg);
+                    position: absolute;
+                    left: 0;
+                    top: -300%;
+                    z-index: -1;
+                    transition: .5s linear;
+                }
+                &:hover{
+                    color: #ff793f;
+                    background: transparent;
+                    &::before  {
+                        top: -50%;
+                        background-color: #fff;
+                    }
+                }
+                @include mq (xs) {
+                    padding: 15px 28px;
+                    font-size: 14px;
+                    margin-top: 20px;
+                }
+                @include mq (sm) {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,504 @@
+/* XL Device :1200px. */
+@media (min-width: 1200px) and (max-width: 1500px) {
+
+  .working-process {
+    padding-left: 70px;
+    padding-right: 70px;
+}
+.single-process {
+  padding: 13px;
+  height: 180px;
+}
+.contact-information {
+  padding: 0 50px;
+}
+.bd-address.text-center {
+  padding: 5px;
+}
+.speed-optimization .pricing-table {
+  padding: 0!important;
+}
+}
+
+/* LG Device :992px. */
+@media (min-width: 992px) and (max-width: 1200px) {
+
+  .single-service {
+    padding: 8px;
+}
+.single-process {
+  height: 200px;
+  padding: 10px;
+}
+.working-process {
+  padding-left: 0px!important;
+  padding-right: 0px!important;
+}
+.hero-content h1 {
+  font-size: 50px;
+}
+.hero-content p {
+  font-size: 18px;
+}
+.single-process.four {
+  margin-top: 0px;
+}
+.single-process.five {
+  margin-top: 0px;
+}
+.single-process.six {
+  margin-top: 0px;
+}
+.footer-top .third-column {
+  margin-top: 0;
+}
+.footer-top .fourth-column {
+  margin-top: 0;
+}
+.contact-information {
+  padding: 0 10px!important;
+}
+.global-service {
+  padding: 0 10px!important;
+}
+.blog-date-category {
+  font-size: 14px;
+}
+.blog-body-area {
+  padding: 0 15px!important;
+}
+.blog-meta {
+  font-size: 14px;
+}
+.contact-information {
+  padding: 0 50px!important;
+}
+.contact-form {
+  height: 820px;
+}
+.speed-optimization .pricing-table {
+  padding: 0!important;
+}
+.contact-details {
+  padding: 0px 50px;
+}
+}
+
+ 
+/* MD Device :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+  .single-process {
+    padding: 11px;
+    height: 185px;
+}
+  .hero-content h1 {
+    font-size: 40px;
+  }
+  .hero-content p {
+    font-size: 18px;
+  }
+  .single-service {
+    padding: 9px;
+}
+.process-row::before {
+  height: 2px;
+  width: 71%;
+  top: 4%;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.single-process.four {
+  margin-top: 130px;
+}
+
+.single-process.five {
+  margin-top: 130px;
+}
+
+.single-process.six {
+  margin-top: 130px;
+}
+.process-row::after {
+  content: "";
+  position: absolute;
+  background: #000;
+  height: 2px;
+  width: 60%;
+  top: 56%;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.item-menu ul li {
+  margin: 0px 0px;
+}
+.single-process h3 {
+  font-size: 17px;
+}
+.working-process {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.footer-top .third-column {
+  margin-top: 20px;
+}
+.footer-top .fourth-column {
+  margin-top: 20px;
+}
+.right-content-two {
+  padding-top: 2rem;
+  padding-left: 2rem;
+}
+.right-content-four {
+  padding-top: 2rem;
+  padding-left: 2rem;
+}
+.left-content-five {
+  padding-top: 2rem;
+  padding-right: 2rem;
+}
+.left-content-seven {
+  padding-top: 2rem;
+  margin-bottom: 30px;
+  padding-right: 2rem;
+}
+.right-content-eight {
+  padding-top: 0rem;
+  padding-left: 2rem;
+}
+.left-content-three {
+  padding-top: 2rem;
+  padding-right: 2rem;
+}
+.right-content-six {
+  padding-top: 2rem;
+  padding-left: 2rem;
+}
+.left-content-nine {
+  padding-top: 2rem;
+  padding-right: 2rem;
+}
+.right-content-ten {
+  padding-top: 2rem;
+  padding-left: 3rem;
+}
+.left-content-eleven {
+  padding-right: 2rem;
+  padding-top: 2rem;
+}
+.right-content-twelve {
+  padding-left: 2rem;
+  padding-top: 2rem;
+}
+.right-content {
+  padding-top: 2rem;
+  padding-right: 2rem;
+}
+.service-main-content h1 {
+  font-size: 45px;
+}
+.contact-information {
+  padding: 0 10px!important;
+}
+.contact-form {
+  height: 620px;
+}
+.global-service {
+  padding: 0 10px!important;
+}
+.blog-body-area {
+  padding: 0 15px!important;
+}
+.contact-information {
+  padding: 0 50px!important;
+}
+.sub-btn {
+  margin: 4rem auto 0;
+}
+.contact-details {
+  padding: 0px 50px;
+}
+.mean-bar span::before {
+  content: "";
+  position: absolute;
+  background: #fff;
+  width: 46%;
+  height: 3px;
+  top: 12px;
+  left: 13px;
+}
+.mean-bar span::after {
+  content: "";
+  position: absolute;
+  background: #fff;
+  height: 3px;
+  width: 46%;
+  top: 32px;
+  left: 13px;
+}
+.mean-container a.meanmenu-reveal span {
+  margin-top: 9px;
+}
+.service-header-area {
+  background: #000!important;
+}
+.pricing-table .pricing-item.item1 {
+  margin-bottom: 50px!important;
+}
+.speed-optimization .pricing-table {
+  padding: 0 140px!important;
+}
+.pricing-item.item2 {
+  margin-top: 20px;
+}
+.pricing-item.item3 {
+  margin-top: 70px;
+}
+}
+
+
+ 
+/* Extra small Device. */
+@media (max-width: 767px) {
+  .hero-content h1 {
+    font-size: 30px;
+}
+.hero-content p {
+  font-size: 18px;
+}
+.item-menu ul li {
+  margin: 0px 6px;
+  font-size: 18px;
+  padding: 0;
+}
+.working-process {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.single-process.three {
+  margin-top: 110px;
+  
+}
+.single-process.four {
+  margin-top: 110px;
+}
+.single-process.five {
+  margin-top: 110px;
+}
+.single-process.six {
+  margin-top: 110px;
+}
+.process-row::before {
+  display: none;
+}
+.working-process {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.item-menu ul li:hover, .item-menu ul li.active {
+  background: #f1a34a;
+  padding: 2px 10px;
+}
+.container {
+  width: 90%;
+}
+.dual-button .button {
+  margin: 8px 0px;
+  display: inline-block;
+}
+.dual-button .btn1 {
+  padding: 10px 31px;
+}
+
+.dual-button .btn2 {
+  padding: 10px 20px;
+}
+.pt-100 {
+  padding-top: 47px;
+}
+.single-service {
+  padding: 0px;
+  min-height: 178px;
+}
+.single-service h3 {
+  font-size: 20px;
+}
+.single-process.two {
+  margin-top: 100px;
+}  
+.faq-area {
+  padding: 0;
+}
+.social-icon i {
+  font-size: 11px;
+  margin: 0 1px;
+}
+.copyright p {
+  font-size: 12px;
+}
+.column-title h3 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+}
+.address .phone {
+  font-size: 11px;
+}
+.address .email {
+  font-size: 11px;
+}
+.address .location {
+  font-size: 11px;
+}
+.address a {
+  font-size: 11px;
+}
+.address p span {
+  font-size: 11px;
+}
+.footer-top .third-column {
+  margin-top: 0;
+}
+.right-content {
+  margin-bottom: 30px;
+  padding-right: 0;
+}
+.service-image {
+  margin-bottom: 30px;
+}
+.right-content-two {
+    padding-left:0 ;
+    padding-top: 0;
+}
+.left-content-three {
+  margin-bottom: 30px;
+  padding-right: 0;
+  padding-top: 3rem;
+}
+.right-content-four {
+  padding-top: 0;
+  padding-left: 0;
+}
+.left-content-five {
+  padding-top: 3rem;
+  padding-right: 0;
+  margin-bottom: 30px;
+}
+.right-content-six {
+  padding-left: 0;
+  padding-top: 0;
+}
+.left-content-seven {
+  margin-bottom: 30px;
+  padding-top: 3rem;
+}
+.right-content-eight {
+  padding-left: 0;
+  padding-top: 0;
+}
+.left-content-nine {
+  margin-bottom: 30px;
+  padding-top: 3rem;
+}
+.right-content-ten {
+  padding-left: 0;
+  padding-top: 0;
+}
+.left-content-eleven {
+  padding-right: 0;
+  padding-top: 3rem;
+  margin-bottom: 30px;
+}
+.right-content-twelve {
+  padding-left: 0;
+  padding-top: 0;
+}
+.service-main-content h1 {
+  font-size: 40px;
+}
+.contact-information {
+  padding: 0 50px!important;
+}
+.contact-form {
+  height:640px;
+}
+.global-service {
+  padding: 0 10px!important;
+}
+.blog-body-area {
+  padding: 0 15px!important;
+}
+.blog-date-category .cate a {
+  padding: 4px 10px;
+}
+.blog-item {
+  padding: 10px;
+}
+.blog-date-category {
+  font-size: 12px;
+}
+.read-btn {
+  padding: 4px 17px;
+}
+.blog-title h2 {
+  font-size: 18px;
+}
+.contact-details {
+  padding: 0 20px;
+}
+.sub-btn {
+  margin: 4rem auto 0;
+}
+.blog-meta {
+  font-size: 12px;
+}
+.mean-bar span::after {
+  content: "";
+  position: absolute;
+  background: #fff;
+  height: 3px;
+  width: 46%;
+  top: 32px;
+  left: 13px;
+}
+.mean-bar span::before {
+  content: "";
+  position: absolute;
+  background: #fff;
+  width: 46%;
+  height: 3px;
+  top: 12px;
+  left: 13px;
+}
+.service-header-area {
+  background: #000!important;
+}
+.second-column-menu ul li a {
+  font-size: 12px;
+}
+.footer-top {
+  padding: 0 0!important;
+}
+.speed-optimization .pricing-table {
+  padding: 0!important;
+}
+.pricing-item.item1 {
+  box-shadow: none;
+  margin-bottom: 70px;
+}
+.pricing-item.item2 {
+  transform: scale(1.1);
+  z-index: 3;
+  position: relative;
+  margin-bottom: 70px;
+}
+}
+ 
+/* SM Small Device :550px. */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .single-process.two {
+    margin-top: 0!important;
+  }  
+
+}

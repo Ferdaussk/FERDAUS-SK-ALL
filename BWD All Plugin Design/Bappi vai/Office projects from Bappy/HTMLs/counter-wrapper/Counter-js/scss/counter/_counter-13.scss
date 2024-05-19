@@ -1,0 +1,128 @@
+.bwd-counter-13 {
+  padding: 30px 0;
+  .bwd-counter {
+    color: #f27f21;
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    height: 300px;
+    width: 100%;
+    padding: 15px;
+    margin: 30px auto;
+    border: 3px solid #f27f21;
+    border-radius: 20px 20px;
+    position: relative;
+    z-index: 1;
+    max-width: 280px;
+
+   
+    &::after {
+      content: "";
+      background: #f3f3f3;
+      border-radius: 20px;
+      box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.2);
+      position: absolute;
+      left: 15px;
+      top: 15px;
+      bottom: 15px;
+      right: 15px;
+      z-index: -1;
+    }
+    &::after {
+      width: 100px;
+      height: 100px;
+      border-top: none;
+      border-right: none;
+      border-radius: 0 0 0 20px;
+      box-shadow: none;
+      top: auto;
+      left: -3px;
+      bottom: 0px;
+      right: auto;
+      transition: 0.5s;
+      background: #f27f21;
+      z-index: -2;
+    }
+    .bwd-counter-content{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+      width: 100%;
+      padding: 10px;
+      background: #f3f3f3;
+      border-radius: 20px;
+      box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.2);
+      z-index: -1;
+
+      .bwd-counter-icon {
+        font-size: 50px;
+        line-height: 1;
+        transition: all 0.3s ease 0s;
+
+        @include mq(lg) {
+          font-size: 45px;
+        }
+      }
+  
+      .bwd-counter-heading {
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 1.2;
+  
+        @include mq(lg) {
+          font-size: 18px;
+        }
+      }
+  
+      .bwd-counter-value {
+        color: #555;
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 1;
+        margin: 15px 0;
+        display: block;
+        transition: all 0.3s ease 0s;
+  
+        @include mq(lg) {
+          font-size: 35px;
+          margin: 10px 0;
+        }
+      }
+    }
+
+ 
+  }
+
+  .row > * {
+    &:nth-child(2) {
+      .bwd-counter {
+        color: #4accdb;
+        border-color: #4accdb;
+        &::after {
+          background-color: #4accdb;
+        }
+      }
+    }
+
+    &:nth-child(3) {
+      .bwd-counter {
+        color: #ee436d;
+        border-color: #ee436d;
+        &::after {
+          background-color: #ee436d;
+        }
+      }
+    }
+
+    &:nth-child(4) {
+      .bwd-counter {
+        color: #9c52a1;
+        border-color: #9c52a1;
+        &::after {
+          background-color: #9c52a1;
+        }
+      }
+    }
+  }
+}

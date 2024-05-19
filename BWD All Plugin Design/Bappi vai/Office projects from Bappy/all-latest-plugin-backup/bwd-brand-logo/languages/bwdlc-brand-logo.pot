@@ -1,0 +1,838 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: BWD Brand Logo\n"
+"POT-Creation-Date: 2022-09-27 14:36+0600\n"
+"PO-Revision-Date: 2022-09-27 14:36+0600\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: bwd-brand-logo.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: bwd-brand-logo.php:68
+#, php-format
+msgid "\"%1$s\" requires \"%2$s\" to be installed and activated."
+msgstr ""
+
+#: bwd-brand-logo.php:69 bwd-brand-logo.php:83 bwd-brand-logo.php:98
+msgid "BWD Accordion"
+msgstr ""
+
+#: bwd-brand-logo.php:70 bwd-brand-logo.php:84
+msgid "Elementor"
+msgstr ""
+
+#: bwd-brand-logo.php:73 bwd-brand-logo.php:88 bwd-brand-logo.php:103
+#, php-format
+msgid "%1$s"
+msgstr ""
+
+#: bwd-brand-logo.php:82 bwd-brand-logo.php:97
+#, php-format
+msgid "\"%1$s\" requires \"%2$s\" version %3$s or greater."
+msgstr ""
+
+#: bwd-brand-logo.php:99
+msgid "PHP"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+#: bwdlc-brand-logo-boots.php:63
+msgid "BWD Brand Logo"
+msgstr ""
+
+#: page-settings/bwdlc-brand-logo-manager.php:21
+msgid "New Tab"
+msgstr ""
+
+#: page-settings/bwdlc-brand-logo-manager.php:32
+#: widgets/bwdlc-logo-carousel-widget.php:272
+msgid "Settings"
+msgstr ""
+
+#: page-settings/bwdlc-brand-logo-manager.php:40
+#: page-settings/bwdlc-brand-logo-manager.php:42
+msgid "Title"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:12
+msgid "Logo_Carousel"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:16
+msgid "BWD Logo Carousel"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:35
+#: widgets/bwdlc-logo-carousel-widget.php:486
+msgid "Logo Carousel"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:42
+msgid "Slider Designs"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:46
+#: widgets/bwdlc-logo-filter-widget.php:50
+#: widgets/bwdlc-logo-grid-widget.php:46
+msgid "Style 1"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:47
+#: widgets/bwdlc-logo-filter-widget.php:51
+#: widgets/bwdlc-logo-grid-widget.php:47
+msgid "Style 2"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:48
+#: widgets/bwdlc-logo-grid-widget.php:48
+msgid "Style 3"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:49
+#: widgets/bwdlc-logo-grid-widget.php:49
+msgid "Style 4"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:50
+#: widgets/bwdlc-logo-grid-widget.php:50
+msgid "Style 5"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:51
+#: widgets/bwdlc-logo-grid-widget.php:51
+msgid "Style 6"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:52
+#: widgets/bwdlc-logo-grid-widget.php:52
+msgid "Style 7"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:53
+msgid "Style 8"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:54
+msgid "Style 9"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:55
+msgid "Style 10"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:63
+msgid "Active Animation ?"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:65
+#: widgets/bwdlc-logo-carousel-widget.php:282
+#: widgets/bwdlc-logo-carousel-widget.php:390
+#: widgets/bwdlc-logo-carousel-widget.php:417
+#: widgets/bwdlc-logo-carousel-widget.php:432
+#: widgets/bwdlc-logo-carousel-widget.php:459
+msgid "Yes"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:66
+#: widgets/bwdlc-logo-carousel-widget.php:283
+#: widgets/bwdlc-logo-carousel-widget.php:391
+#: widgets/bwdlc-logo-carousel-widget.php:418
+#: widgets/bwdlc-logo-carousel-widget.php:433
+#: widgets/bwdlc-logo-carousel-widget.php:460
+msgid "No"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:76
+msgid "Animation Style"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:80
+msgid "Fade In"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:81
+msgid "Fade In Down"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:82
+msgid "Fade In Up"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:83
+msgid "Fade Out"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:84
+msgid "Fade Out Down"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:85
+msgid "Flip"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:86
+msgid "Flip In X"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:87
+msgid "Flip Out X"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:88
+msgid "Flip Out Y"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:89
+msgid "Rotate In"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:90
+msgid "Rotate InUp Right"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:91
+msgid "Rotate Out"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:92
+msgid "Zoom In"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:93
+msgid "Zoom In Down"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:94
+msgid "Zoom In Right"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:105
+#: widgets/bwdlc-logo-filter-widget.php:134
+#: widgets/bwdlc-logo-grid-widget.php:121
+msgid "Show Tooltip"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:107
+#: widgets/bwdlc-logo-filter-widget.php:124
+#: widgets/bwdlc-logo-filter-widget.php:136
+#: widgets/bwdlc-logo-grid-widget.php:123
+msgid "Show"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:108
+#: widgets/bwdlc-logo-filter-widget.php:125
+#: widgets/bwdlc-logo-filter-widget.php:137
+#: widgets/bwdlc-logo-grid-widget.php:124
+msgid "Hide"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:117
+#: widgets/bwdlc-logo-filter-widget.php:58
+#: widgets/bwdlc-logo-grid-widget.php:60
+msgid "Columns"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:119
+#: widgets/bwdlc-logo-filter-widget.php:60
+#: widgets/bwdlc-logo-grid-widget.php:62
+msgid "Default"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:120
+#: widgets/bwdlc-logo-filter-widget.php:61
+#: widgets/bwdlc-logo-grid-widget.php:63
+msgid "Custom"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:131
+#: widgets/bwdlc-logo-filter-widget.php:73
+#: widgets/bwdlc-logo-grid-widget.php:74
+msgid "Desktop"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:144
+#: widgets/bwdlc-logo-filter-widget.php:88
+#: widgets/bwdlc-logo-grid-widget.php:89
+msgid "Tablet"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:157
+#: widgets/bwdlc-logo-filter-widget.php:103
+#: widgets/bwdlc-logo-grid-widget.php:104
+msgid "Mobile"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:174
+#: widgets/bwdlc-logo-filter-widget.php:269
+#: widgets/bwdlc-logo-grid-widget.php:144
+msgid "Choose Logo"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:184
+#: widgets/bwdlc-logo-filter-widget.php:256
+#: widgets/bwdlc-logo-grid-widget.php:154
+msgid "Brand Name"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:186
+#: widgets/bwdlc-logo-carousel-widget.php:252
+#: widgets/bwdlc-logo-filter-widget.php:258
+#: widgets/bwdlc-logo-filter-widget.php:340
+#: widgets/bwdlc-logo-grid-widget.php:156
+#: widgets/bwdlc-logo-grid-widget.php:221
+msgid "Envato"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:193
+#: widgets/bwdlc-logo-filter-widget.php:280
+#: widgets/bwdlc-logo-grid-widget.php:163
+msgid "Brand Url"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:214
+#: widgets/bwdlc-logo-filter-widget.php:299
+#: widgets/bwdlc-logo-grid-widget.php:181
+msgid "Logo Size"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:232
+#: widgets/bwdlc-logo-grid-widget.php:199
+msgid "Logo"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:240
+#: widgets/bwdlc-logo-filter-widget.php:326
+#: widgets/bwdlc-logo-grid-widget.php:207
+msgid "Amazon"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:246
+#: widgets/bwdlc-logo-filter-widget.php:333
+#: widgets/bwdlc-logo-grid-widget.php:214
+msgid "WPML"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:258
+#: widgets/bwdlc-logo-grid-widget.php:228
+msgid "Slack"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:280
+msgid "Arrow Navigation?"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:292
+msgid "Arrow Type"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:296
+msgid "Icon"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:297
+msgid "Text"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:308
+msgid "Previous Icon"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:324
+msgid "Next Icon"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:340
+msgid "Previous Text"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:342
+msgid "Prev"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:356
+msgid "Next Text"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:358
+msgid "Next"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:372
+msgid "Pagination Type"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:376
+msgid "None"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:377
+msgid "Dots"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:378
+msgid "Numbers"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:388
+msgid "Autoplay"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:400
+msgid "Autoplay Timeout (ms)"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:415
+msgid "Autoplay Hover Pause"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:430
+msgid "Infinite Loop"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:445
+msgid "Slide Speed (ms)"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:457
+msgid "Center Mode"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:472
+msgid "Stage Padding"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:499
+#: widgets/bwdlc-logo-filter-widget.php:455
+msgid "Margin"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:513
+msgid "padding"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:525
+msgid "Height (px)"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:545
+#: widgets/bwdlc-logo-carousel-widget.php:779
+#: widgets/bwdlc-logo-carousel-widget.php:886
+#: widgets/bwdlc-logo-carousel-widget.php:1086
+#: widgets/bwdlc-logo-filter-widget.php:481
+#: widgets/bwdlc-logo-filter-widget.php:695
+msgid "Border Radius"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:558
+#: widgets/bwdlc-logo-filter-widget.php:686
+#: widgets/bwdlc-logo-grid-widget.php:369
+msgid "Background"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:569
+#: widgets/bwdlc-logo-carousel-widget.php:771
+#: widgets/bwdlc-logo-carousel-widget.php:878
+#: widgets/bwdlc-logo-filter-widget.php:708
+#: widgets/bwdlc-logo-grid-widget.php:380
+msgid "Border"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:579
+#: widgets/bwdlc-logo-filter-widget.php:717
+#: widgets/bwdlc-logo-grid-widget.php:404
+msgid "Box Shadow"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:590
+msgid "Navigation-Arrow"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:605
+#: widgets/bwdlc-logo-carousel-widget.php:937
+#: widgets/bwdlc-logo-filter-widget.php:399
+msgid "Normal"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:612
+msgid "Position"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:624
+msgid "Vertical (px)"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:651
+msgid "Horizontal (px)"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:679
+#: widgets/bwdlc-logo-carousel-widget.php:819
+msgid "Font-Size"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:713
+msgid "Arrow Box Size"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:747
+#: widgets/bwdlc-logo-carousel-widget.php:854
+#: widgets/bwdlc-logo-carousel-widget.php:1116
+#: widgets/bwdlc-logo-carousel-widget.php:1241
+#: widgets/bwdlc-logo-carousel-widget.php:1345
+#: widgets/bwdlc-logo-filter-widget.php:424
+#: widgets/bwdlc-logo-filter-widget.php:517
+msgid "Color"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:759
+#: widgets/bwdlc-logo-carousel-widget.php:866
+msgid "Background Color"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:812
+#: widgets/bwdlc-logo-carousel-widget.php:1145
+#: widgets/bwdlc-logo-filter-widget.php:494
+msgid "Hover"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:922
+msgid "Pagination-Dots"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:944
+msgid "Alignment"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:948
+#: widgets/bwdlc-logo-filter-widget.php:573
+#: widgets/bwdlc-logo-filter-widget.php:611
+#: widgets/bwdlc-logo-grid-widget.php:296
+msgid "Left"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:952
+#: widgets/bwdlc-logo-filter-widget.php:577
+#: widgets/bwdlc-logo-filter-widget.php:615
+#: widgets/bwdlc-logo-grid-widget.php:300
+msgid "Center"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:956
+#: widgets/bwdlc-logo-filter-widget.php:581
+#: widgets/bwdlc-logo-filter-widget.php:619
+#: widgets/bwdlc-logo-grid-widget.php:304
+msgid "Right"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:971
+msgid "Vertical Position (px)"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:997
+#: widgets/bwdlc-logo-carousel-widget.php:1152
+msgid "Spacing (px)"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:1018
+#: widgets/bwdlc-logo-carousel-widget.php:1173
+#: widgets/bwdlc-logo-carousel-widget.php:1277
+msgid "Size"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:1052
+#: widgets/bwdlc-logo-carousel-widget.php:1207
+#: widgets/bwdlc-logo-carousel-widget.php:1311
+msgid "Dot Size"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:1131
+#: widgets/bwdlc-logo-carousel-widget.php:1255
+#: widgets/bwdlc-logo-carousel-widget.php:1359
+msgid "Bg Color"
+msgstr ""
+
+#: widgets/bwdlc-logo-carousel-widget.php:1268
+msgid "Active"
+msgstr ""
+
+#: widgets/bwdlc-logo-filter-widget.php:14
+msgid "Bwd_logo_Filter"
+msgstr ""
+
+#: widgets/bwdlc-logo-filter-widget.php:18
+msgid "BWD Logo Filter"
+msgstr ""
+
+#: widgets/bwdlc-logo-filter-widget.php:39
+#: widgets/bwdlc-logo-grid-widget.php:35
+msgid "Presets"
+msgstr ""
+
+#: widgets/bwdlc-logo-filter-widget.php:46
+#: widgets/bwdlc-logo-grid-widget.php:42
+msgid "Designs"
+msgstr ""
+
+#: widgets/bwdlc-logo-filter-widget.php:77
+#: widgets/bwdlc-logo-filter-widget.php:92
+#: widgets/bwdlc-logo-filter-widget.php:108
+#: widgets/bwdlc-logo-grid-widget.php:81 widgets/bwdlc-logo-grid-widget.php:96
+#: widgets/bwdlc-logo-grid-widget.php:111
+msgid "Column 2"
+msgstr ""
+
+#: widgets/bwdlc-logo-filter-widget.php:78
+#: widgets/bwdlc-logo-filter-widget.php:93
+#: widgets/bwdlc-logo-filter-widget.php:109
+#: widgets/bwdlc-logo-grid-widget.php:80 widgets/bwdlc-logo-grid-widget.php:95
+#: widgets/bwdlc-logo-grid-widget.php:110
+msgid "Column 3"
+msgstr ""
+
+#: widgets/bwdlc-logo-filter-widget.php:79
+#: widgets/bwdlc-logo-filter-widget.php:94
+#: widgets/bwdlc-logo-filter-widget.php:110
+#: widgets/bwdlc-logo-grid-widget.php:79 widgets/bwdlc-logo-grid-widget.php:94
+#: widgets/bwdlc-logo-grid-widget.php:109
+msgid "Column 4"
+msgstr ""
+
+#: widgets/bwdlc-logo-filter-widget.php:80
+#: widgets/bwdlc-logo-filter-widget.php:95
+#: widgets/bwdlc-logo-filter-widget.php:111
+#: widgets/bwdlc-logo-grid-widget.php:78 widgets/bwdlc-logo-grid-widget.php:93
+#: widgets/bwdlc-logo-grid-widget.php:108
+msgid "Column 6"
+msgstr ""
+
+#: widgets/bwdlc-logo-filter-widget.php:107
+#: widgets/bwdlc-logo-grid-widget.php:112
+msgid "Column 1"
+msgstr ""
+
+#: widgets/bwdlc-logo-filter-widget.php:122
+msgid "Show Filter Menu"
+msgstr ""
+
+#: widgets/bwdlc-logo-filter-widget.php:149
+msgid "Filter Menu"
+msgstr ""
+
+#: widgets/bwdlc-logo-filter-widget.php:159
+msgid "All Item"
+msgstr ""
+
+#: widgets/bwdlc-logo-filter-widget.php:161
+msgid "All"
+msgstr ""
+
+#: widgets/bwdlc-logo-filter-widget.php:174
+msgid "Item Name"
+msgstr ""
+
+#: widgets/bwdlc-logo-filter-widget.php:176
+msgid "Development"
+msgstr ""
+
+#: widgets/bwdlc-logo-filter-widget.php:187
+#: widgets/bwdlc-logo-filter-widget.php:242
+msgid "Item ID"
+msgstr ""
+
+#: widgets/bwdlc-logo-filter-widget.php:189
+#: widgets/bwdlc-logo-filter-widget.php:206
+#: widgets/bwdlc-logo-filter-widget.php:244
+#: widgets/bwdlc-logo-filter-widget.php:325
+#: widgets/bwdlc-logo-filter-widget.php:339
+msgid "item1"
+msgstr ""
+
+#: widgets/bwdlc-logo-filter-widget.php:200
+msgid "Logo Filter Items"
+msgstr ""
+
+#: widgets/bwdlc-logo-filter-widget.php:205
+msgid "Marketing"
+msgstr ""
+
+#: widgets/bwdlc-logo-filter-widget.php:209
+msgid ""
+"Delivery Partner\n"
+"\t\t\t\t\t\t"
+msgstr ""
+
+#: widgets/bwdlc-logo-filter-widget.php:211
+#: widgets/bwdlc-logo-filter-widget.php:332
+msgid "item2"
+msgstr ""
+
+#: widgets/bwdlc-logo-filter-widget.php:214
+msgid "Financial "
+msgstr ""
+
+#: widgets/bwdlc-logo-filter-widget.php:215
+#: widgets/bwdlc-logo-filter-widget.php:360
+msgid "item3"
+msgstr ""
+
+#: widgets/bwdlc-logo-filter-widget.php:218
+msgid ""
+"Corporate\n"
+"\t\t\t\t\t\t"
+msgstr ""
+
+#: widgets/bwdlc-logo-filter-widget.php:220
+#: widgets/bwdlc-logo-filter-widget.php:346
+msgid "item4"
+msgstr ""
+
+#: widgets/bwdlc-logo-filter-widget.php:232
+msgid "Filterable Logo"
+msgstr ""
+
+#: widgets/bwdlc-logo-filter-widget.php:245
+msgid "Copy from Filterable Item"
+msgstr ""
+
+#: widgets/bwdlc-logo-filter-widget.php:317
+msgid "Filterable logo Boxes"
+msgstr ""
+
+#: widgets/bwdlc-logo-filter-widget.php:347
+msgid "SLACK"
+msgstr ""
+
+#: widgets/bwdlc-logo-filter-widget.php:353
+msgid "item5"
+msgstr ""
+
+#: widgets/bwdlc-logo-filter-widget.php:354
+msgid "In Vision"
+msgstr ""
+
+#: widgets/bwdlc-logo-filter-widget.php:361
+#: widgets/bwdlc-logo-grid-widget.php:240
+msgid "Airbnb"
+msgstr ""
+
+#: widgets/bwdlc-logo-filter-widget.php:367
+msgid "item6"
+msgstr ""
+
+#: widgets/bwdlc-logo-filter-widget.php:368
+#: widgets/bwdlc-logo-filter-widget.php:375
+#: widgets/bwdlc-logo-grid-widget.php:247
+#: widgets/bwdlc-logo-grid-widget.php:253
+msgid "Abstra"
+msgstr ""
+
+#: widgets/bwdlc-logo-filter-widget.php:374
+msgid "item7"
+msgstr ""
+
+#: widgets/bwdlc-logo-filter-widget.php:386
+msgid "Logo Menu"
+msgstr ""
+
+#: widgets/bwdlc-logo-filter-widget.php:414
+#: widgets/bwdlc-logo-filter-widget.php:507
+msgid "Active Color"
+msgstr ""
+
+#: widgets/bwdlc-logo-filter-widget.php:434
+#: widgets/bwdlc-logo-filter-widget.php:527
+msgid "Active Background"
+msgstr ""
+
+#: widgets/bwdlc-logo-filter-widget.php:445
+#: widgets/bwdlc-logo-filter-widget.php:538
+msgid "Background Type"
+msgstr ""
+
+#: widgets/bwdlc-logo-filter-widget.php:468
+msgid "Padding"
+msgstr ""
+
+#: widgets/bwdlc-logo-filter-widget.php:547
+msgid "Hover Border Radius"
+msgstr ""
+
+#: widgets/bwdlc-logo-filter-widget.php:569
+#: widgets/bwdlc-logo-filter-widget.php:607
+#: widgets/bwdlc-logo-grid-widget.php:292
+msgid "Items Alignment"
+msgstr ""
+
+#: widgets/bwdlc-logo-filter-widget.php:599
+msgid "Filter Logo"
+msgstr ""
+
+#: widgets/bwdlc-logo-filter-widget.php:634
+#: widgets/bwdlc-logo-grid-widget.php:274
+msgid "Logo Box Height"
+msgstr ""
+
+#: widgets/bwdlc-logo-filter-widget.php:651
+#: widgets/bwdlc-logo-grid-widget.php:344
+msgid "Horizontally Gap (px)"
+msgstr ""
+
+#: widgets/bwdlc-logo-filter-widget.php:668
+#: widgets/bwdlc-logo-grid-widget.php:320
+msgid "Vertically Gap (px)"
+msgstr ""
+
+#: widgets/bwdlc-logo-grid-widget.php:12
+msgid "Logo_Grid"
+msgstr ""
+
+#: widgets/bwdlc-logo-grid-widget.php:16
+msgid "BWD Logo Grid"
+msgstr ""
+
+#: widgets/bwdlc-logo-grid-widget.php:134
+msgid "Logo Grid"
+msgstr ""
+
+#: widgets/bwdlc-logo-grid-widget.php:234
+msgid "In vision"
+msgstr ""
+
+#: widgets/bwdlc-logo-grid-widget.php:266
+msgid "Grid Logo"
+msgstr ""
+
+#: widgets/bwdlc-logo-grid-widget.php:390
+msgid "Border-Radius"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://bestwpdeveloper.com/elementor-logo-carousel-for-brand-logo"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"BWD Brand Logo is beautiful responsive Brand Logo with Carousel, Grid & "
+"Filter design for elementor."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Best WP Developer"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://wppluginzone.com/"
+msgstr ""

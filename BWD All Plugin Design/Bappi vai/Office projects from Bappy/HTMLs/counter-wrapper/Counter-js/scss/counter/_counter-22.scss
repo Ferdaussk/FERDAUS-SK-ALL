@@ -1,0 +1,149 @@
+.bwd-counter-22 {
+  padding: 30px 0;
+  .bwd-counter {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #f39c12;
+    background-color: #fff;
+    text-align: center;
+    width: 100%;
+    min-height: 250px;
+    padding: 25px 10px;
+    margin: 30px auto;
+    border-radius: 20% 0;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+    position: relative;
+    z-index: 1;
+    max-width: 290px;
+    transition: border-radius .4s;
+
+    &::before,
+    &::after {
+      content: "";
+      height: 100%;
+      width: 100%;
+      border: 5px solid #f39c12;
+      border-right: none;
+      border-bottom: none;
+      border-radius: 10px;
+      position: absolute;
+      left: 0px;
+      top: -10px;
+      z-index: -1;
+    }
+
+    &::after {
+      transform: rotate(180deg);
+      left: auto;
+      top: auto;
+      bottom: -10px;
+    }
+
+    .bwd-counter-value {
+      font-size: 40px;
+      font-weight: 700;
+      display: block;
+      line-height: 1;
+      @include mq(lg) {
+        font-size: 35px;
+      }
+    }
+
+    .bwd-counter-icon {
+      color: #999;
+      font-size: 55px;
+      line-height: 1;
+      margin: 15px 0;
+      @include mq(lg) {
+        font-size: 50px;
+
+      }
+    }
+
+    .bwd-counter-heading {
+      font-size: 20px;
+      font-weight: 600;
+      text-transform: capitalize;
+      margin: 0;
+      line-height: 1.2;
+      @include mq(lg) {
+        font-size: 18px;
+      }
+    }
+
+    &:hover{
+        border-radius: 0 20%;
+    }
+    
+  }
+
+  .row > * {
+    &:nth-child(2) {
+      .bwd-counter {
+        color: #27ae60;
+        &::before,
+        &::after {
+          border-color: #27ae60;
+        }
+      }
+    }
+
+    &:nth-child(3) {
+      .bwd-counter {
+        color: #15788c;
+        &::before,
+        &::after {
+          border-color: #15788c;
+        }
+      }
+    }
+
+    &:nth-child(4) {
+      .bwd-counter {
+        color: #e02765;
+        &::before,
+        &::after {
+          border-color: #e02765;
+        }
+      }
+    }
+  }
+
+  .counter.darkblue {
+    color: #15788c;
+  }
+  .counter.darkblue:before,
+  .counter.darkblue:after {
+    border-color: #15788c;
+  }
+  .counter.blue {
+    color: #2b7ac4;
+  }
+  .counter.blue:before,
+  .counter.blue:after {
+    border-color: #2b7ac4;
+  }
+  @media screen and (max-width: 990px) {
+    .counter {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+
+.img-wrapper{
+  margin: 50px 0;
+  text-align: center;
+  img{
+    width: 200px;
+  }
+
+  button{
+    display: inline-block;
+    padding: 20px;
+    cursor: pointer;
+  }
+
+
+}

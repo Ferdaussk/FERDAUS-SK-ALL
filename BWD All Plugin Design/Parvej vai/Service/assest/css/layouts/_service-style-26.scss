@@ -1,0 +1,135 @@
+.bwd-service-style-26 {
+    .bwd-service-box{
+        padding: 25px 30px;
+        text-align: center;
+        background: #0a2d43;
+        border-top: 3px solid #eed956;
+        border-bottom: 3px solid #eed956;
+        position: relative;
+        margin-bottom: 40px;
+        @include mq (md) {
+            padding: 25px 15px 40px;
+        }
+        @include mq (xs) {
+            padding: 25px 15px 55px;
+        }
+        &::before {
+            content: "";
+            border-top: 0 solid #eed956;
+            border-right: 0 solid transparent;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 1;
+            transition: .3s linear;
+        }
+        &::after {
+            content: "";
+            border-bottom: 0 solid #eed956;
+            border-left: 0 solid transparent;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            z-index: 1;
+            transition: .3s linear;
+        }
+        &:hover {
+            &::before {
+                border-top-width: 78px;
+                border-right-width: 78px;
+            }
+            &:after {
+                border-bottom-width: 78px;
+                border-left-width: 78px;
+            }
+        }
+        .bwd-service-icon {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            border-radius: 20px;
+            border: 2px solid #eed956;
+            background: #0a2d43;
+            font-size: 40px;
+            color: #eed956;
+            margin-bottom: 20px;
+            position: relative;
+            transition: .3s linear;
+        }
+        &:hover {
+            .bwd-service-icon {
+                border-radius: 0;
+            }
+        }
+        .bwd-service-content {
+            .title {
+                font-size: 20px;
+                font-weight: 700;
+                color: #eed956;
+                letter-spacing: 1px;
+                margin-bottom: 10px;
+                text-transform: uppercase;
+                position: relative;
+                transition: .3s linear;
+            }
+            p {
+                font-size: 15px;
+                color: #fff;
+                letter-spacing: 1px;
+                line-height: 27px;
+                margin: 0;
+                @include mq (md) {
+                    letter-spacing: 0;
+                    line-height: 24px;
+                    font-size: 13px;
+                }
+                @include mq (sm) {
+                    letter-spacing: 0;
+                    line-height: 24px;
+                }
+            }
+        }
+        &:hover {
+            .bwd-service-content {
+                .title {
+                    letter-spacing: 3px;
+                }
+            }
+        }
+    }
+}
+
+
+
+.serviceBox .service-icon{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    border-radius: 20px;
+    border: 2px solid #eed956;
+    background: #0a2d43;
+    font-size: 40px;
+    color: #eed956;
+    margin-bottom: 20px;
+    position: relative;
+}
+.serviceBox .title{
+    font-size: 20px;
+    font-weight: 700;
+    color: #eed956;
+    letter-spacing: 1px;
+    margin: 0 0 12px 0;
+    text-transform: uppercase;
+    position: relative;
+    transition: all 0.3s ease 0s;
+}
+.serviceBox:hover .title{ letter-spacing: 3px; }
+.serviceBox .description{
+    font-size: 15px;
+    color: #fff;
+    letter-spacing: 1px;
+    line-height: 27px;
+    margin: 0;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download PDF Example</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="print-style.css" media="print">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.js"></script>
+</head>
+<body>
+
+    <h1>Hello, World!</h1>
+    <p>This is some content that you don't want to print.</p>
+
+    <div id="contentToPrint">
+        <h2 class="ferdaus-sk">Content to Print</h2>
+        <p>This is the specific content you want to print.</p>
+        <div class="invoice">
+            <div class="header">
+                <h1>Invoice</h1>
+                <p>Date: January 1, 2023</p>
+            </div>
+
+            <div class="bill-to">
+                <h2>Bill To:</h2>
+                <p>John Doe<br>
+                    123 Main Street<br>
+                    City, State, Zip<br>
+                    Email: john.doe@example.com</p>
+            </div>
+
+            <div class="items">
+                <h2>Items:</h2>
+                <table>
+                    <tr>
+                        <th>Description</th>
+                        <th>Quantity</th>
+                        <th>Unit Price</th>
+                        <th>Total</th>
+                    </tr>
+                    <tr>
+                        <td>Product A</td>
+                        <td>2</td>
+                        <td>$50.00</td>
+                        <td>$100.00</td>
+                    </tr>
+                    <tr>
+                        <td>Product B</td>
+                        <td>1</td>
+                        <td>$30.00</td>
+                        <td>$30.00</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="total">
+                <p><strong>Total:</strong> $130.00</p>
+            </div>
+        </div>
+    </div>
+
+    <button onclick="generatePDF();">Download PDF</button>
+
+    <script>
+        function generatePDF() {
+            var contentToPrint = document.getElementById('contentToPrint');
+
+            // Use html2pdf to generate the PDF
+            html2pdf(contentToPrint)
+                .toPdf()
+                .output('datauristring') // Change the output type to data URI string
+                .then(function (pdfDataUri) {
+                    // Create a link element to trigger the download
+                    var link = document.createElement('a');
+                    link.href = pdfDataUri;
+                    link.download = 'document.pdf';
+
+                    // Append the link to the document and trigger the download
+                    document.body.appendChild(link);
+                    link.click();
+
+                    // Remove the link from the document
+                    document.body.removeChild(link);
+                });
+        }
+    </script>
+</body>
+</html>

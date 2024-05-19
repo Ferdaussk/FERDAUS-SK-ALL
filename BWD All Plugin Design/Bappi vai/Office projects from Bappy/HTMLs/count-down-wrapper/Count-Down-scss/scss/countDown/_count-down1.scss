@@ -1,0 +1,82 @@
+// count down 1 start
+.bwd-count-down-1{
+    padding: 30px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        .bwd-count-down-item {
+            margin: 15px 8px;
+            text-align: center;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #eaeaea;
+            @include mq(xs){
+                margin: 15px 4px;
+            }
+            .bwd-count-down-title{
+                font-size: 20px;
+                color: #7512EE;
+                margin-bottom: 15px;
+                @include mq(md){
+                    font-size: 18px;
+                    padding: 15px;
+                    margin-bottom: 0;
+                }
+
+                @include mq(xs){
+                    font-size: 13px;
+                    padding: 2px;
+                }
+            }
+            .bwd-count-down-num {
+                position: relative;
+                font-size: 55px;
+                line-height: 1.2;
+                background: #7512EE;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 10px 10px 15px #27331b8c;
+                @include mq(md){
+                    font-size: 45px;
+                    padding: 15px;
+                }
+                @include mq(xs){
+                    font-size: 30px;
+                    padding: 7px;
+                }
+
+                &::before,
+                &::after{
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    transform: translateY(-50%);
+                    height: 20px;
+                    width: 4px;
+                    background: #fff;
+                    border-radius: 5px;
+                    @include mq(xs){
+                        height: 15px;
+                        width: 3px;
+                    }
+                }
+
+                &::after{
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    left: auto;
+                    right: 0;
+                    transform: translateY(-50%);
+                    height: 20px;
+                    width: 4px;
+                    background: #fff;
+                    border-radius: 5px;
+                }
+            }
+
+        }
+}
+// count down 1 end

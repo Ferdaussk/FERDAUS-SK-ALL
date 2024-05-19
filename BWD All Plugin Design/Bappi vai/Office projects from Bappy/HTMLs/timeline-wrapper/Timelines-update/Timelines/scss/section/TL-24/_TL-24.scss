@@ -1,0 +1,81 @@
+/*========================================*/
+/*TL-24*/
+.bwd-timeline-twenty-four{
+
+    padding: 60px 30px;
+    @include mq(xs){
+        padding: 50px 15px;
+    }
+    .bwd-timeline-item-container{
+        position: relative;
+        .bwd-progress-line {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 100%;
+            width: 15px;
+            background: #7a00b3;
+            border-radius: 5px;
+ 
+        }
+        .bwd-timeline-item {
+            
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+            width: 80%;
+            background: #33C4FE;
+            padding: 20px 30px;
+            border-radius: 50px;
+            margin: 45px auto;
+            text-align: center;
+            box-shadow: 0 0 10px #fff;
+            @include mq(xs){
+                width: 100%;
+                padding: 20px 15px;
+            }
+
+            &::before{
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                background: linear-gradient(166deg, #7a00b3 0%,  #fd089b 100%);
+                z-index: -1;
+                border-radius: 70px;
+                transform-origin: center;
+               transform:rotate(4deg) ;
+                transition: 1s;
+            }
+
+            &:hover{
+                &::before{
+                    transform:rotate(184deg) ;
+                }
+            }
+            .bwd-timeline-item-content{
+                .bwd-timeline-title {
+                    font-size: 22px;
+                    text-transform: capitalize;
+                    margin-bottom: 8px;
+                }
+                .bwd-timeline-dsc {
+                    max-width: 600px;
+                    margin: 0 auto;
+                    line-height: 24px;
+                    color: #444;
+                }
+            }
+
+            .bwd-year {
+                font-size: 35px;
+                font-weight: 600;
+                margin-bottom: 7px;
+                color: #333;
+            }
+        }
+    }
+}
+/*TL-24*/

@@ -1,0 +1,117 @@
+.bwd-counter-29{
+    padding: 30px 0;
+    .bwd-counter{
+        color: #269390;
+        background: #fff;
+        text-align: center;
+        width: 100%;
+        margin: 15px auto;
+        border-bottom: 15px solid transparent;
+        box-shadow: 0 0 8px rgba(0,0,0,0.1);
+        max-width: 290px;
+        position: relative;
+        &::before{
+          content: "";
+          position: absolute;
+          height: 15px;
+          width: 100%;
+          background: #269390;
+          left: 0;
+          z-index: 0;
+          bottom: -15px;
+        }
+
+      .bwd-counter-content{
+        display: flex;
+        width: 100%;
+        .bwd-counter-icon{
+          font-size: 55px;
+          line-height: 130px;
+          width: 50%;
+          display: inline-block;
+          @include mq(lg){
+           font-size: 50px;
+          }
+      }
+
+      .bwd-counter-value{
+          color: #fff;
+          background: linear-gradient(to top left,#269390 49%,#46AEAF 50%);
+          font-size: 40px;
+          font-weight: 400;
+          line-height: 130px;
+          width: 50%;
+          margin: 0 0 20px;
+          text-shadow: 0 0 5px rgba(0,0,0,0.25);
+          vertical-align: top;
+          display: inline-block;
+          transition: .3s;
+          @include mq(lg){
+            font-size: 35px;
+            line-height: 125px;
+          }
+      }
+      }
+      
+        .bwd-counter-heading{
+            font-size: 20px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-transform: capitalize;
+            margin: 25px 0 45px;
+            padding: 0 10px;
+
+            @include mq(lg){
+              font-size: 18px;
+              margin: 25px 0 40px;
+
+            }
+        }
+        &:hover{
+          .bwd-counter-value{
+            border-bottom-right-radius: 40px;
+          }
+        }
+    } 
+
+    .row > * {
+        &:nth-child(2) {
+          .bwd-counter {
+            color: #e23a58;
+            &::before{
+              background-color: #ca3258;
+            }
+            .bwd-counter-value {
+                background: linear-gradient(to top left,#cc3254 49%,#e23a59 50%);
+            }
+          }
+        }
+
+        &:nth-child(3) {
+            .bwd-counter {
+              color: #f6af23;
+              &::before{
+                background-color: #f6af23;
+              }
+              .bwd-counter-value {
+                background: linear-gradient(to top left,#f2b218 49%,#fcc82c 50%);
+              }
+            }
+          }
+
+
+          &:nth-child(4) {
+            .bwd-counter {
+              color: #39506a;
+              &::before{
+                background-color: #39506a;
+              }
+              .bwd-counter-value {
+                background: linear-gradient(to top left,#2f4154 49%,#3c506b 50%);
+              }
+            }
+          }
+      }
+   
+    
+}

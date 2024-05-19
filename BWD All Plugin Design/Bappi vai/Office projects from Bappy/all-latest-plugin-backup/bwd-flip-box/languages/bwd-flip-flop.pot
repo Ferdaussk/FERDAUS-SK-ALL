@@ -1,0 +1,676 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: BWD Flip Box\n"
+"POT-Creation-Date: 2022-09-10 10:57+0600\n"
+"PO-Revision-Date: 2022-09-10 10:57+0600\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: bwd-flip-box.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: bwd-flip-box.php:66 bwd-flip-box.php:81
+#, php-format
+msgid "\"%1$s\" requires \"%2$s\" version %3$s or greater."
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+#: bwd-flip-box.php:67 bwd-flip-box.php:82 bwdff_plugin_boots.php:57
+msgid "BWD Flip Box"
+msgstr ""
+
+#: bwd-flip-box.php:68
+msgid "Elementor"
+msgstr ""
+
+#: bwd-flip-box.php:72 bwd-flip-box.php:87
+#, php-format
+msgid "%1$s"
+msgstr ""
+
+#: bwd-flip-box.php:83
+msgid "PHP"
+msgstr ""
+
+#: page-settings/flip-flop-manager.php:21
+msgid "New Flip Flop"
+msgstr ""
+
+#: page-settings/flip-flop-manager.php:32
+msgid "Settings"
+msgstr ""
+
+#: page-settings/flip-flop-manager.php:40
+#: page-settings/flip-flop-manager.php:42
+#: widgets/bwdff-service-flip-box.php:114 widgets/bwdff-step-flip-box.php:188
+msgid "Title"
+msgstr ""
+
+#: widgets/bwdff-service-flip-box.php:12
+msgid "NameServiceFlipBox"
+msgstr ""
+
+#: widgets/bwdff-service-flip-box.php:16
+msgid "Service Flip Box"
+msgstr ""
+
+#: widgets/bwdff-service-flip-box.php:35
+msgid "Service Content"
+msgstr ""
+
+#: widgets/bwdff-service-flip-box.php:42
+msgid "Service Styles"
+msgstr ""
+
+#: widgets/bwdff-service-flip-box.php:46 widgets/bwdff-step-flip-box.php:46
+#: widgets/bwdff-team-flip-box.php:46
+msgid "Style 1"
+msgstr ""
+
+#: widgets/bwdff-service-flip-box.php:47 widgets/bwdff-step-flip-box.php:47
+#: widgets/bwdff-team-flip-box.php:47
+msgid "Style 2"
+msgstr ""
+
+#: widgets/bwdff-service-flip-box.php:48 widgets/bwdff-step-flip-box.php:48
+#: widgets/bwdff-team-flip-box.php:48
+msgid "Style 3"
+msgstr ""
+
+#: widgets/bwdff-service-flip-box.php:49 widgets/bwdff-step-flip-box.php:49
+#: widgets/bwdff-team-flip-box.php:49
+msgid "Style 4"
+msgstr ""
+
+#: widgets/bwdff-service-flip-box.php:50 widgets/bwdff-step-flip-box.php:50
+#: widgets/bwdff-team-flip-box.php:50
+msgid "Style 5"
+msgstr ""
+
+#: widgets/bwdff-service-flip-box.php:51 widgets/bwdff-step-flip-box.php:51
+#: widgets/bwdff-team-flip-box.php:51
+msgid "Style 6"
+msgstr ""
+
+#: widgets/bwdff-service-flip-box.php:52 widgets/bwdff-step-flip-box.php:52
+#: widgets/bwdff-team-flip-box.php:52
+msgid "Style 7"
+msgstr ""
+
+#: widgets/bwdff-service-flip-box.php:53 widgets/bwdff-step-flip-box.php:53
+#: widgets/bwdff-team-flip-box.php:53
+msgid "Style 8"
+msgstr ""
+
+#: widgets/bwdff-service-flip-box.php:54 widgets/bwdff-step-flip-box.php:54
+#: widgets/bwdff-team-flip-box.php:54
+msgid "Style 9"
+msgstr ""
+
+#: widgets/bwdff-service-flip-box.php:55 widgets/bwdff-team-flip-box.php:55
+msgid "Style 10"
+msgstr ""
+
+#: widgets/bwdff-service-flip-box.php:56
+msgid "Style 11"
+msgstr ""
+
+#: widgets/bwdff-service-flip-box.php:63 widgets/bwdff-step-flip-box.php:61
+#: widgets/bwdff-team-flip-box.php:62
+msgid "Column"
+msgstr ""
+
+#: widgets/bwdff-service-flip-box.php:67 widgets/bwdff-step-flip-box.php:65
+#: widgets/bwdff-team-flip-box.php:66
+msgid "4"
+msgstr ""
+
+#: widgets/bwdff-service-flip-box.php:68 widgets/bwdff-step-flip-box.php:66
+#: widgets/bwdff-team-flip-box.php:67
+msgid "3"
+msgstr ""
+
+#: widgets/bwdff-service-flip-box.php:69 widgets/bwdff-step-flip-box.php:67
+#: widgets/bwdff-team-flip-box.php:68
+msgid "2"
+msgstr ""
+
+#: widgets/bwdff-service-flip-box.php:70 widgets/bwdff-step-flip-box.php:68
+#: widgets/bwdff-step-flip-box.php:113 widgets/bwdff-team-flip-box.php:69
+msgid "1"
+msgstr ""
+
+#: widgets/bwdff-service-flip-box.php:72 widgets/bwdff-step-flip-box.php:70
+msgid "Use 3 columns which are circle."
+msgstr ""
+
+#: widgets/bwdff-service-flip-box.php:78 widgets/bwdff-step-flip-box.php:76
+#: widgets/bwdff-team-flip-box.php:76
+msgid "Alignment"
+msgstr ""
+
+#: widgets/bwdff-service-flip-box.php:82 widgets/bwdff-step-flip-box.php:80
+#: widgets/bwdff-team-flip-box.php:80
+msgid "Left"
+msgstr ""
+
+#: widgets/bwdff-service-flip-box.php:83 widgets/bwdff-step-flip-box.php:81
+#: widgets/bwdff-team-flip-box.php:81
+msgid "Center"
+msgstr ""
+
+#: widgets/bwdff-service-flip-box.php:84 widgets/bwdff-step-flip-box.php:82
+#: widgets/bwdff-team-flip-box.php:82
+msgid "Right"
+msgstr ""
+
+#: widgets/bwdff-service-flip-box.php:91 widgets/bwdff-step-flip-box.php:89
+#: widgets/bwdff-team-flip-box.php:89
+msgid "Content Width"
+msgstr ""
+
+#: widgets/bwdff-service-flip-box.php:95 widgets/bwdff-step-flip-box.php:93
+#: widgets/bwdff-team-flip-box.php:93
+msgid "Boxed"
+msgstr ""
+
+#: widgets/bwdff-service-flip-box.php:96 widgets/bwdff-step-flip-box.php:94
+#: widgets/bwdff-team-flip-box.php:94
+msgid "Full Width"
+msgstr ""
+
+#: widgets/bwdff-service-flip-box.php:106
+msgid "Service Boxes"
+msgstr ""
+
+#: widgets/bwdff-service-flip-box.php:116
+#: widgets/bwdff-service-flip-box.php:849
+msgid "Development"
+msgstr ""
+
+#: widgets/bwdff-service-flip-box.php:127
+#: widgets/bwdff-service-flip-box.php:204
+#: widgets/bwdff-service-flip-box.php:324
+#: widgets/bwdff-service-flip-box.php:413 widgets/bwdff-step-flip-box.php:124
+#: widgets/bwdff-step-flip-box.php:201 widgets/bwdff-step-flip-box.php:278
+#: widgets/bwdff-step-flip-box.php:401 widgets/bwdff-step-flip-box.php:467
+msgid "Normal"
+msgstr ""
+
+#: widgets/bwdff-service-flip-box.php:141
+#: widgets/bwdff-service-flip-box.php:211
+#: widgets/bwdff-service-flip-box.php:338
+#: widgets/bwdff-service-flip-box.php:427 widgets/bwdff-step-flip-box.php:138
+#: widgets/bwdff-step-flip-box.php:215 widgets/bwdff-step-flip-box.php:285
+#: widgets/bwdff-step-flip-box.php:415 widgets/bwdff-team-flip-box.php:403
+#: widgets/bwdff-team-flip-box.php:436 widgets/bwdff-team-flip-box.php:530
+#: widgets/bwdff-team-flip-box.php:563 widgets/bwdff-team-flip-box.php:657
+#: widgets/bwdff-team-flip-box.php:690 widgets/bwdff-team-flip-box.php:784
+#: widgets/bwdff-team-flip-box.php:817
+msgid "Color"
+msgstr ""
+
+#: widgets/bwdff-service-flip-box.php:153
+#: widgets/bwdff-service-flip-box.php:251
+#: widgets/bwdff-service-flip-box.php:350
+#: widgets/bwdff-service-flip-box.php:480 widgets/bwdff-step-flip-box.php:151
+#: widgets/bwdff-step-flip-box.php:227 widgets/bwdff-step-flip-box.php:330
+#: widgets/bwdff-step-flip-box.php:427 widgets/bwdff-step-flip-box.php:513
+msgid "Hover"
+msgstr ""
+
+#: widgets/bwdff-service-flip-box.php:167
+#: widgets/bwdff-service-flip-box.php:258
+#: widgets/bwdff-service-flip-box.php:364
+#: widgets/bwdff-service-flip-box.php:495 widgets/bwdff-step-flip-box.php:165
+#: widgets/bwdff-step-flip-box.php:241 widgets/bwdff-step-flip-box.php:337
+#: widgets/bwdff-step-flip-box.php:441 widgets/bwdff-team-flip-box.php:450
+#: widgets/bwdff-team-flip-box.php:577 widgets/bwdff-team-flip-box.php:704
+#: widgets/bwdff-team-flip-box.php:831
+msgid "Hover Color"
+msgstr ""
+
+#: widgets/bwdff-service-flip-box.php:189 widgets/bwdff-step-flip-box.php:263
+#: widgets/bwdff-team-flip-box.php:374 widgets/bwdff-team-flip-box.php:501
+#: widgets/bwdff-team-flip-box.php:628 widgets/bwdff-team-flip-box.php:755
+msgid "Icon"
+msgstr ""
+
+#: widgets/bwdff-service-flip-box.php:221 widgets/bwdff-step-flip-box.php:298
+#: widgets/bwdff-team-flip-box.php:273 widgets/bwdff-team-flip-box.php:327
+msgid "Background Color"
+msgstr ""
+
+#: widgets/bwdff-service-flip-box.php:232
+#: widgets/bwdff-service-flip-box.php:279 widgets/bwdff-step-flip-box.php:311
+#: widgets/bwdff-step-flip-box.php:358
+msgid "Icon Size"
+msgstr ""
+
+#: widgets/bwdff-service-flip-box.php:268 widgets/bwdff-step-flip-box.php:347
+#: widgets/bwdff-team-flip-box.php:901
+msgid "Hover Background"
+msgstr ""
+
+#: widgets/bwdff-service-flip-box.php:308 widgets/bwdff-step-flip-box.php:387
+msgid "Description"
+msgstr ""
+
+#: widgets/bwdff-service-flip-box.php:310
+msgid ""
+"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et\n"
+"\t\t\t\tea minus enim assumenda alias, sed error expedita ullam ab cum "
+"aliquid ex repellat\n"
+"\t\t\t\tvitae aspernatur."
+msgstr ""
+
+#: widgets/bwdff-service-flip-box.php:313 widgets/bwdff-step-flip-box.php:390
+msgid "Use 10 to 15 words only."
+msgstr ""
+
+#: widgets/bwdff-service-flip-box.php:386
+msgid "Button"
+msgstr ""
+
+#: widgets/bwdff-service-flip-box.php:388
+msgid "More"
+msgstr ""
+
+#: widgets/bwdff-service-flip-box.php:395 widgets/bwdff-team-flip-box.php:418
+#: widgets/bwdff-team-flip-box.php:464 widgets/bwdff-team-flip-box.php:545
+#: widgets/bwdff-team-flip-box.php:591 widgets/bwdff-team-flip-box.php:672
+#: widgets/bwdff-team-flip-box.php:718 widgets/bwdff-team-flip-box.php:799
+#: widgets/bwdff-team-flip-box.php:845
+msgid "Link"
+msgstr ""
+
+#: widgets/bwdff-service-flip-box.php:397
+msgid "https://www.your-link.com"
+msgstr ""
+
+#: widgets/bwdff-service-flip-box.php:438
+#: widgets/bwdff-service-flip-box.php:506
+#: widgets/bwdff-service-flip-box.php:570
+#: widgets/bwdff-service-flip-box.php:615
+#: widgets/bwdff-service-flip-box.php:877 widgets/bwdff-step-flip-box.php:475
+#: widgets/bwdff-step-flip-box.php:521 widgets/bwdff-step-flip-box.php:816
+#: widgets/bwdff-team-flip-box.php:238 widgets/bwdff-team-flip-box.php:1014
+#: widgets/bwdff-team-flip-box.php:1080
+msgid "Background"
+msgstr ""
+
+#: widgets/bwdff-service-flip-box.php:446
+msgid "BG Color"
+msgstr ""
+
+#: widgets/bwdff-service-flip-box.php:456
+msgid "Button Padding"
+msgstr ""
+
+#: widgets/bwdff-service-flip-box.php:467
+#: widgets/bwdff-service-flip-box.php:535
+#: widgets/bwdff-service-flip-box.php:703
+#: widgets/bwdff-service-flip-box.php:761 widgets/bwdff-step-flip-box.php:617
+#: widgets/bwdff-step-flip-box.php:675 widgets/bwdff-team-flip-box.php:180
+#: widgets/bwdff-team-flip-box.php:957
+msgid "Border Radius"
+msgstr ""
+
+#: widgets/bwdff-service-flip-box.php:514
+msgid "Hover BG Color"
+msgstr ""
+
+#: widgets/bwdff-service-flip-box.php:524
+#: widgets/bwdff-service-flip-box.php:896 widgets/bwdff-step-flip-box.php:835
+#: widgets/bwdff-team-flip-box.php:1099
+msgid "Padding"
+msgstr ""
+
+#: widgets/bwdff-service-flip-box.php:562
+msgid "Font Box"
+msgstr ""
+
+#: widgets/bwdff-service-flip-box.php:578 widgets/bwdff-step-flip-box.php:483
+#: widgets/bwdff-team-flip-box.php:215 widgets/bwdff-team-flip-box.php:992
+msgid "Shape Color"
+msgstr ""
+
+#: widgets/bwdff-service-flip-box.php:594 widgets/bwdff-step-flip-box.php:499
+msgid "Another Shape Color"
+msgstr ""
+
+#: widgets/bwdff-service-flip-box.php:607
+msgid "Back Box"
+msgstr ""
+
+#: widgets/bwdff-service-flip-box.php:623 widgets/bwdff-step-flip-box.php:529
+msgid "Back Shape"
+msgstr ""
+
+#: widgets/bwdff-service-flip-box.php:633 widgets/bwdff-step-flip-box.php:546
+msgid "Another Back Shape"
+msgstr ""
+
+#: widgets/bwdff-service-flip-box.php:659 widgets/bwdff-step-flip-box.php:573
+msgid "Font Border"
+msgstr ""
+
+#: widgets/bwdff-service-flip-box.php:666
+#: widgets/bwdff-service-flip-box.php:724 widgets/bwdff-step-flip-box.php:580
+#: widgets/bwdff-step-flip-box.php:638 widgets/bwdff-team-flip-box.php:142
+#: widgets/bwdff-team-flip-box.php:919
+msgid "Border"
+msgstr ""
+
+#: widgets/bwdff-service-flip-box.php:678
+#: widgets/bwdff-service-flip-box.php:736 widgets/bwdff-step-flip-box.php:592
+#: widgets/bwdff-step-flip-box.php:650 widgets/bwdff-team-flip-box.php:154
+#: widgets/bwdff-team-flip-box.php:931
+msgid "Border Color"
+msgstr ""
+
+#: widgets/bwdff-service-flip-box.php:688
+#: widgets/bwdff-service-flip-box.php:746 widgets/bwdff-step-flip-box.php:602
+#: widgets/bwdff-step-flip-box.php:660 widgets/bwdff-team-flip-box.php:165
+#: widgets/bwdff-team-flip-box.php:942
+msgid "Border Styles"
+msgstr ""
+
+#: widgets/bwdff-service-flip-box.php:692
+#: widgets/bwdff-service-flip-box.php:750 widgets/bwdff-step-flip-box.php:606
+#: widgets/bwdff-step-flip-box.php:664 widgets/bwdff-team-flip-box.php:169
+#: widgets/bwdff-team-flip-box.php:946
+msgid "Default"
+msgstr ""
+
+#: widgets/bwdff-service-flip-box.php:693
+#: widgets/bwdff-service-flip-box.php:751 widgets/bwdff-step-flip-box.php:607
+#: widgets/bwdff-step-flip-box.php:665 widgets/bwdff-team-flip-box.php:170
+#: widgets/bwdff-team-flip-box.php:947
+msgid "Solid"
+msgstr ""
+
+#: widgets/bwdff-service-flip-box.php:694
+#: widgets/bwdff-service-flip-box.php:752 widgets/bwdff-step-flip-box.php:608
+#: widgets/bwdff-step-flip-box.php:666 widgets/bwdff-team-flip-box.php:171
+#: widgets/bwdff-team-flip-box.php:948
+msgid "Dashed"
+msgstr ""
+
+#: widgets/bwdff-service-flip-box.php:695
+#: widgets/bwdff-service-flip-box.php:753 widgets/bwdff-step-flip-box.php:609
+#: widgets/bwdff-step-flip-box.php:667 widgets/bwdff-team-flip-box.php:172
+#: widgets/bwdff-team-flip-box.php:949
+msgid "Dotted"
+msgstr ""
+
+#: widgets/bwdff-service-flip-box.php:696
+#: widgets/bwdff-service-flip-box.php:754 widgets/bwdff-step-flip-box.php:610
+#: widgets/bwdff-step-flip-box.php:668 widgets/bwdff-team-flip-box.php:173
+#: widgets/bwdff-team-flip-box.php:950
+msgid "Double"
+msgstr ""
+
+#: widgets/bwdff-service-flip-box.php:717 widgets/bwdff-step-flip-box.php:631
+msgid "Back Border"
+msgstr ""
+
+#: widgets/bwdff-service-flip-box.php:789 widgets/bwdff-step-flip-box.php:703
+msgid "Font Box Shadow"
+msgstr ""
+
+#: widgets/bwdff-service-flip-box.php:797
+#: widgets/bwdff-service-flip-box.php:814 widgets/bwdff-step-flip-box.php:711
+#: widgets/bwdff-step-flip-box.php:728 widgets/bwdff-team-flip-box.php:200
+#: widgets/bwdff-team-flip-box.php:977
+msgid "Box Shadow"
+msgstr ""
+
+#: widgets/bwdff-service-flip-box.php:806 widgets/bwdff-step-flip-box.php:720
+msgid "Back Box Shadow"
+msgstr ""
+
+#: widgets/bwdff-service-flip-box.php:833 widgets/bwdff-step-flip-box.php:747
+#: widgets/bwdff-team-flip-box.php:1034
+msgid "Box Margin"
+msgstr ""
+
+#: widgets/bwdff-service-flip-box.php:844 widgets/bwdff-step-flip-box.php:759
+msgid "Flip Boxes"
+msgstr ""
+
+#: widgets/bwdff-service-flip-box.php:852
+msgid "Programming"
+msgstr ""
+
+#: widgets/bwdff-service-flip-box.php:855
+msgid "JavaScript"
+msgstr ""
+
+#: widgets/bwdff-service-flip-box.php:858
+msgid "PHP Expert"
+msgstr ""
+
+#: widgets/bwdff-service-flip-box.php:869
+msgid "Service Style"
+msgstr ""
+
+#: widgets/bwdff-service-flip-box.php:885 widgets/bwdff-step-flip-box.php:824
+#: widgets/bwdff-team-flip-box.php:1088
+msgid "Margin"
+msgstr ""
+
+#: widgets/bwdff-step-flip-box.php:12
+msgid "NameStepFlipBox"
+msgstr ""
+
+#: widgets/bwdff-step-flip-box.php:16
+msgid "Step Flip Box"
+msgstr ""
+
+#: widgets/bwdff-step-flip-box.php:35
+msgid "Step Content"
+msgstr ""
+
+#: widgets/bwdff-step-flip-box.php:42
+msgid "Step Styles"
+msgstr ""
+
+#: widgets/bwdff-step-flip-box.php:103 widgets/bwdff-team-flip-box.php:103
+msgid "Content Boxes"
+msgstr ""
+
+#: widgets/bwdff-step-flip-box.php:111
+msgid "Step"
+msgstr ""
+
+#: widgets/bwdff-step-flip-box.php:190
+msgid "LEARNING"
+msgstr ""
+
+#: widgets/bwdff-step-flip-box.php:389
+msgid "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Etea minus."
+msgstr ""
+
+#: widgets/bwdff-step-flip-box.php:764
+msgid "Flip Box #1"
+msgstr ""
+
+#: widgets/bwdff-step-flip-box.php:767
+msgid "Flip Box #2"
+msgstr ""
+
+#: widgets/bwdff-step-flip-box.php:770
+msgid "Flip Box #3"
+msgstr ""
+
+#: widgets/bwdff-step-flip-box.php:773
+msgid "Flip Box #4"
+msgstr ""
+
+#: widgets/bwdff-step-flip-box.php:784
+msgid "Step Style"
+msgstr ""
+
+#: widgets/bwdff-step-flip-box.php:791
+msgid "Section Shape"
+msgstr ""
+
+#: widgets/bwdff-step-flip-box.php:803
+msgid "Shape Background"
+msgstr ""
+
+#: widgets/bwdff-team-flip-box.php:12
+msgid "NameTeamFlipBox"
+msgstr ""
+
+#: widgets/bwdff-team-flip-box.php:16
+msgid "Team Flip Box"
+msgstr ""
+
+#: widgets/bwdff-team-flip-box.php:35
+msgid "Team Content"
+msgstr ""
+
+#: widgets/bwdff-team-flip-box.php:42
+msgid "Team Styles"
+msgstr ""
+
+#: widgets/bwdff-team-flip-box.php:117
+msgid "Font View"
+msgstr ""
+
+#: widgets/bwdff-team-flip-box.php:124
+msgid "Choose Image"
+msgstr ""
+
+#: widgets/bwdff-team-flip-box.php:226 widgets/bwdff-team-flip-box.php:1003
+msgid "Another Shape"
+msgstr ""
+
+#: widgets/bwdff-team-flip-box.php:248
+msgid "Back View"
+msgstr ""
+
+#: widgets/bwdff-team-flip-box.php:254
+msgid "Name"
+msgstr ""
+
+#: widgets/bwdff-team-flip-box.php:256
+msgid "JHON DOE"
+msgstr ""
+
+#: widgets/bwdff-team-flip-box.php:263 widgets/bwdff-team-flip-box.php:317
+msgid "Text Color"
+msgstr ""
+
+#: widgets/bwdff-team-flip-box.php:284 widgets/bwdff-team-flip-box.php:338
+msgid "Title Shadow"
+msgstr ""
+
+#: widgets/bwdff-team-flip-box.php:308
+msgid "Designation"
+msgstr ""
+
+#: widgets/bwdff-team-flip-box.php:310
+msgid "Web Developer"
+msgstr ""
+
+#: widgets/bwdff-team-flip-box.php:363 widgets/bwdff-team-flip-box.php:490
+#: widgets/bwdff-team-flip-box.php:617 widgets/bwdff-team-flip-box.php:744
+msgid "Hide This"
+msgstr ""
+
+#: widgets/bwdff-team-flip-box.php:365 widgets/bwdff-team-flip-box.php:492
+#: widgets/bwdff-team-flip-box.php:619 widgets/bwdff-team-flip-box.php:746
+msgid "Show"
+msgstr ""
+
+#: widgets/bwdff-team-flip-box.php:366 widgets/bwdff-team-flip-box.php:493
+#: widgets/bwdff-team-flip-box.php:620 widgets/bwdff-team-flip-box.php:747
+msgid "Hide"
+msgstr ""
+
+#: widgets/bwdff-team-flip-box.php:388 widgets/bwdff-team-flip-box.php:515
+#: widgets/bwdff-team-flip-box.php:642 widgets/bwdff-team-flip-box.php:769
+msgid "Color Type"
+msgstr ""
+
+#: widgets/bwdff-team-flip-box.php:392 widgets/bwdff-team-flip-box.php:519
+#: widgets/bwdff-team-flip-box.php:646 widgets/bwdff-team-flip-box.php:773
+msgid "Official"
+msgstr ""
+
+#: widgets/bwdff-team-flip-box.php:393 widgets/bwdff-team-flip-box.php:520
+#: widgets/bwdff-team-flip-box.php:647 widgets/bwdff-team-flip-box.php:774
+msgid "Custom"
+msgstr ""
+
+#: widgets/bwdff-team-flip-box.php:424 widgets/bwdff-team-flip-box.php:470
+#: widgets/bwdff-team-flip-box.php:551 widgets/bwdff-team-flip-box.php:597
+#: widgets/bwdff-team-flip-box.php:678 widgets/bwdff-team-flip-box.php:724
+#: widgets/bwdff-team-flip-box.php:805 widgets/bwdff-team-flip-box.php:851
+msgid "your-link.com"
+msgstr ""
+
+#: widgets/bwdff-team-flip-box.php:871
+msgid "Social Icon Size"
+msgstr ""
+
+#: widgets/bwdff-team-flip-box.php:891
+msgid "Icon Background"
+msgstr ""
+
+#: widgets/bwdff-team-flip-box.php:1046
+msgid "The Team"
+msgstr ""
+
+#: widgets/bwdff-team-flip-box.php:1051
+msgid "Jhon Doe"
+msgstr ""
+
+#: widgets/bwdff-team-flip-box.php:1054
+msgid "Zuckerberg"
+msgstr ""
+
+#: widgets/bwdff-team-flip-box.php:1057
+msgid "Donald Trump"
+msgstr ""
+
+#: widgets/bwdff-team-flip-box.php:1060
+msgid "Jhon Smith"
+msgstr ""
+
+#: widgets/bwdff-team-flip-box.php:1072
+msgid "Team Style"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://wppluginzone.com/flip-box-addon-for-elementor/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"BWD Flip Box plugin with 29+ types of flip box effects for Elementor with "
+"service step and team creator."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Best WP Developer"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://wppluginzone.com/"
+msgstr ""

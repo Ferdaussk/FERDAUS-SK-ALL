@@ -1,0 +1,166 @@
+.mtt-team-style-19-area {
+    .mtt-team-style-19-team {
+        text-align: center;
+        margin-bottom: 40px;
+        border-radius: 15px;
+        background: #333;
+        overflow: hidden;
+        position: relative;
+        padding: 10px 10px 40px;
+        // background-image: url(/assest/img/team/shape.svg);
+        // background-position: center;
+        // background-size: cover;
+        // background-repeat: no-repeat;
+        &.dark-blue {
+            &::before {
+                background: linear-gradient(to right, #00e9ff, #2dd0f8); 
+            }
+            &::after {
+                background: linear-gradient(to right, #00e9ff, #00a7cf); 
+            }
+            .mtt-team-content {
+                .mtt-social {
+                    a {
+                        color: #00e9ff;
+                        &:hover {
+                            color: #00e9ff;
+                            border-color: #00e9ff;
+                        }
+                    }
+                }
+            }
+        }
+        &.orange {
+            &::before {
+                 background: linear-gradient(to right, #fe8c00, #f83600);
+            }
+            &::after {
+                 background: linear-gradient(to right, #fe8c00, #f83600); 
+            }
+            .mtt-team-content {
+                .mtt-social {
+                    a {
+                        color: #f83600;
+                        &:hover {
+                            color: #f83600;
+                            border-color: #f83600;
+                        }
+                    }
+                }
+            }
+        }
+        &.yellow {
+            &::before {
+                background: linear-gradient(to right, #f7971e, #ffd200);
+            }
+            &::after {
+                background: linear-gradient(to right, #f7971e, #ffd200); 
+            }
+            .mtt-team-content {
+                .mtt-social {
+                    a {
+                        color: #ffd200;
+                        &:hover {
+                            color: #ffd200;
+                            border-color: #ffd200;
+                        }
+                    }
+                }
+            }
+        }
+        // &:before {
+        //     content: "";
+        //     position: absolute;
+        //     top: 0px;
+        //     width: 25%;
+        //     height: 25%;
+        //     right: -13px;
+        //     background-image: url(/assest/img/team/shape2.svg);
+        //     background-position: center;
+        //     background-size: cover;
+        // }
+        &::before {
+            content: "";
+            position: absolute;
+            top: -1px;
+            right: -1px;
+            width: 108%;
+            height: 100%;
+            background: linear-gradient(to right, #7f00ff, #e100ff);
+            clip-path: polygon(84% 0, 100% 0, 100% 20%, 100% 16%, 96% 13%, 96% 2%, 103% 7%, 92% 4%);
+            z-index: 1;
+        }
+        &::after {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to right, #7f00ff, #e100ff);
+            clip-path:  polygon(13% 28%, 22% 45%, 48% 56%, 102% 45%, 100% 100%, 50% 100%, 0 100%, 0% 70%, 0% 35%, 0 10%);
+        }
+        .mtt-team-content {
+            position: relative;
+            padding: 15px;
+            padding-top: 0px;
+            z-index: 9;
+            top: 8px;
+            .mtt-title {
+                color: #fff;
+                line-height: 22px;
+                font-size: 24px;
+                text-transform: capitalize;
+                letter-spacing: 1px;
+                margin-bottom: 5px;
+            }
+            .mtt-post {
+                font-size: 16px;
+                text-transform: capitalize;
+                color: #fff;
+                font-weight: 400;
+                margin-bottom: 30px;
+                display: block;
+            }
+            .mtt-social {
+                position: absolute;
+                left: 50%;
+                bottom: -45px;
+                transform: translateX(-50%);
+                overflow: hidden;
+                z-index: 1;
+                transition: all .5s ease-in-out;
+                display: flex;
+                opacity: 0;
+                a{
+                    color: #e100ff;
+                    background-color: #fff;
+                    font-size: 16px;
+                    line-height: 28px;
+                    height: 30px;
+                    width: 30px;
+                    border: 2px dotted transparent;
+                    border-radius: 50%;
+                    display: block;
+                    transform: rotate(0);
+                    transition: all 0.3s;
+                    margin: 0 4px;
+                    &:hover{
+                        color: #e100ff;
+                        background:#fff;
+                        border-color: #e100ff;
+                        transform: rotate(360deg);
+                    }
+                }
+            }
+        }
+        &:hover {
+            .mtt-team-content {
+                .mtt-social {
+                    opacity: 1;
+                    bottom: 0px;
+                }
+            }
+        }  
+    }
+}

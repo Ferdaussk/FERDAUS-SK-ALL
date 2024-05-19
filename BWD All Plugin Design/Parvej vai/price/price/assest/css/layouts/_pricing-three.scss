@@ -1,0 +1,108 @@
+.bwd-grid-container-three {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 20rem));
+    justify-content: center;
+    gap: 2rem;
+    background: #93bb90;
+    color: #fff;
+    .bwd-pricing-three-card {
+        padding: 25px;
+        color: #fff;
+        border: 1px solid #CBFFC8;
+        transition: background-color 0.7s, color 0.4s;
+        text-align: center;
+        &:hover {
+            color: #444;
+            background: #CBFFC8;
+        }
+        .bwd-title {
+            font-size: 30px;
+            text-transform: capitalize;
+            font-weight: 600;
+        }
+        .bwd-price {
+            font-size: 22px;
+            font-weight: bold;
+            line-height: 95px;
+            width: 100px;
+            height: 100px;
+            margin: 25px auto;
+            border-radius: 50%;
+            background: #ea716e;
+            transition: color 0.3s,  0.3s;
+            &.bg-1 {
+                background-color: #eac36e;
+            }
+            &.bg-2 {
+                background-color: #00b894;
+            }
+            span {
+                font-size: 20px;
+                font-weight: 400;
+                display: inline-block;
+                padding: 0;
+            }
+        }
+        &:hover {
+            .bwd-price {
+                background-color: #82C57E;
+                color: #fff;
+            }
+        }
+        .bwd-pricing-card-content {
+            padding: 0 10px;
+            span {
+                display: block;
+                margin-bottom: 10px;
+                font-size: 16px;
+                padding: 8px;
+                font-weight: 500;
+                float: left;
+                
+                i {
+                    font-weight: 900;
+                    width: 25px;
+                    height: 25px;
+                    line-height: 22px;
+                    border-radius: 50%;
+                    border: 2px solid #fff;
+                    color: #fff;
+                    text-align: center;
+                    display: inline-block;
+                    margin-right: 10px;
+                    font-size: 14px;
+                }
+           }
+        }
+        &:hover {
+            .bwd-pricing-card-content {
+                span {
+                    i {
+                        background-color: #93bb90;
+                    }
+                }
+            }
+        }
+        .bwd-pricing-signup {
+            a {
+                @include btn-one;
+                transform: translate3d(0, -15px, 0);
+                opacity: 0;
+               
+            }
+        }
+        
+        &:hover {
+            .bwd-pricing-signup {
+                a {
+                    transform: translate3d(0, 0, 0);
+                    opacity: 1;
+               }
+            }
+        }
+        &:hover {
+            box-shadow: 0 0 10px rgba(56, 75, 140, 0.58);
+        }
+    }
+
+}

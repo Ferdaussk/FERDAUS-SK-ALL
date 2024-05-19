@@ -1,0 +1,15 @@
+.bwd-brand-logo-4{
+    padding: 30px 0;
+    .bwd-brand-box-part {
+        display: flex;
+        align-items: center;
+        margin: 10px;
+        height: 110px;
+        justify-content: center;
+        transition: .4s;
+        &:hover{
+            box-shadow: 0 6px 27px -8px #ff33664f;
+        }
+    }
+}
+

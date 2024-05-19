@@ -1,0 +1,206 @@
+/*==============================================*/
+/*timeline 21*/ 
+
+.bwd-timeline-twenty-one{
+    padding: 60px 30px;
+    background: #D4D4D4;
+     .bwd-timeline-item-container{
+        width: 80%;
+        margin: 0 auto;
+        max-width: 900px;
+        background: #D4D4D4;
+        padding: 40px 0;
+        box-shadow: 4px 0 4px 0 #B0B0B0, -4px 0 4px 0 #B0B0B0;
+        .bwd-timeline-item {
+            position: relative;
+            width: calc(100% + 70px);
+            margin-left: -35px;
+            color: #fff;
+            margin-bottom: 80px;
+            @include mq(xs){
+                max-width: 600px;
+                margin-bottom: 120px;
+            }
+            &:nth-child(odd){
+                .bwd-timeline-item-inner{
+                    background: #1C7BD6;
+
+                    .bwd-year{
+                        border: 6px solid #1C7BD6;
+                        color: #1C7BD6;
+                        box-shadow: 0 0 10px #135695;
+                    }
+                }
+
+            }
+
+            &:nth-child(even){
+                .bwd-timeline-item-inner{
+                        background: #2e426b;
+
+                        .bwd-year{
+                            border: 6px solid #2e426b;
+                            color: #2e426b;
+                            box-shadow: 0 0 10px #10203f;
+                        }
+                         .bwd-timeline-content{
+                            .bwd-timeline-title {
+                                order: 1;
+                                padding-left: 100px;
+                                padding-right: 30px;
+                                text-align: left;
+                                @include mq(xs){
+                                   padding: 0 15px;
+                                   text-align: center;
+                                   margin-top: 18px;
+                                    
+                                }
+                            }
+                            .bwd-timeline-dsc{
+                                order: 0;
+                                padding-right: 100px;
+                                padding-left: 30px;
+                                @include mq(xs){
+                                    padding: 0 15px;
+                                }
+                            }
+                         }
+                }
+
+                .bwd-right-top-shape {
+                 
+                    border-left: 33px solid #122448;
+                }
+    
+                .bwd-right-bottom-shape {
+                
+                    border-top: 30px solid #122448;
+
+                }
+                .bwd-left-top-shape{
+
+                    border-right: 33px solid #122448;
+
+                }
+    
+                .bwd-left-bottom-shape {
+                    border-top: 30px solid #122448;
+                }
+
+            }
+            .bwd-timeline-item-inner{
+                position: relative;
+                padding: 15px 30px;
+               @include mq(xs){
+                   padding: 15px;
+               }
+                z-index: 3;
+
+                .bwd-year {
+                    height: 170px;
+                    width: 170px;
+                    border-radius: 50%;
+                    left: 50%;
+                    position: absolute;
+                    top: 50%;
+                    transform: translate(-50%,-50%);
+                    background: #eee;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 50px;
+                    font-weight: 700;
+                    @include mq(xs){
+                        top: 0;
+                    }
+                    
+                }
+
+                .bwd-timeline-content {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    @include mq(xs){
+                        flex-direction: column;
+                        margin-top: 100px;
+                    }
+
+                    .bwd-timeline-title {
+                        flex-basis: 50%;
+                        padding-right: 100px;
+                        text-align: right;
+                        font-size: 25px;
+                        text-transform: capitalize;
+                        font-weight: 600;
+                        @include mq(xs){
+                            flex-basis: 100%;
+                            padding:0 15px;
+                            text-align: center;
+                            margin-bottom: 15px;
+                        }
+    
+                    }
+
+                    .bwd-timeline-dsc {
+                        flex-basis: 50%;
+                        padding-left: 100px;
+                        text-align: left;
+                        line-height: 22px;
+                        @include mq(xs){
+                            flex-basis: 100%;
+                            padding:0 15px;
+                            text-align: center;
+                        }
+                    }
+
+                }
+            }
+
+            .bwd-right-top-shape {
+                height: 0;
+                width: 0;
+                border-left: 33px solid #145799;
+                border-right: 29px solid transparent;
+                border-top: 30px solid transparent;
+                position: absolute;
+                top: -30px;
+                right: -28px;
+            }
+
+            .bwd-right-bottom-shape {
+                height: 0;
+                width: 0;
+                border-bottom: 33px solid transparent;
+                border-right: 33px solid transparent;
+                border-top: 30px solid #145799;
+                position: absolute;
+                bottom: -63px;
+                right: 1px;
+            }
+            .bwd-left-top-shape{
+                height: 0;
+                width: 0;
+                border-right: 33px solid #145799;
+                border-left: 29px solid transparent;
+                border-top: 30px solid transparent;
+                position: absolute;
+                top: -30px;
+                left: -28px;
+            }
+
+            .bwd-left-bottom-shape {
+                height: 0;
+                width: 0;
+                border-bottom: 33px solid transparent;
+                border-left: 33px solid transparent;
+                border-top: 30px solid #145799;
+                position: absolute;
+                bottom: -63px;
+                left: 1px;
+            }
+
+         
+        }
+     }
+}
+/*timeline 21*/ 

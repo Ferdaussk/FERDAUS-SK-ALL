@@ -1,0 +1,25 @@
+.bwd-brand-logo-9{
+    padding: 30px 0;
+    .bwd-brand-box-part {
+        display: flex;
+        align-items: center;
+        height: 120px;
+        justify-content: center;
+        transition: .4s;
+        padding: 15px;
+        margin-bottom: 25px;
+        border: 1px solid #dadae3;
+        transition: .4s;
+        &:hover{
+            transform: scale(1.1);
+            box-shadow: 0 0 10px 0 #4444447d;
+        }
+        .bwd-logo-img{
+            a{
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

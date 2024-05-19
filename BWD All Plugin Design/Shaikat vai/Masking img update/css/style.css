@@ -1,0 +1,291 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.bwdme-masking{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: url(../img/2.jpg) no-repeat center / cover;
+    /* background: url(../img/2.jpg);
+    position: center center; */
+    /* position: center;
+    /* background-size: cover; */ 
+    /* background-size: contain; */
+    /* background-repeat: repeat; */
+    /* background-repeat: repeat-y; */
+    /* background-repeat: repeat-x; */
+    /* background-repeat: round; */
+    /* background-repeat: no-repeat; */
+}
+.bwdme-masking:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/splash.jpg);
+    background-position: center;
+    mix-blend-mode: screen;
+}
+.bwdme-splash6:before {
+    background: url(../img/mask/png5.jpg);
+}
+.bwdme-splash8:before {
+    background: url(../img/mask/png2.jpg);
+}
+.bwdme-splash10:before {
+    background: url(../img/mask/png6.jpg);
+}
+.bwdme-splash12:before {
+    background: url(../img/mask/jpg3.jpg);
+}
+.bwdme-splash13:before {
+    background: url(../img/mask/jpg6.jpg);
+}
+.bwdme-splash16:before {
+    background: url(../img/mask/png6.jpg);
+}
+.bwdme-splash20:before {
+    background: url(../img/mask3/24.jpg);
+}
+.bwdme-splash21:before {
+    background: url(../img/mask3/25.jpg);
+}
+.bwdme-splash23:before {
+    background: url(../img/mask/jpg9.png);
+}
+.bwdme-splash26:before {
+    background: url(../img/mask/jpg12.png);
+}
+.bwdme-splash27:before {
+    background: url(../img/mask/jpg13.png);
+}
+.bwdme-splash29:before {
+    background: url(../img/mask/png17.jpg);
+}
+.bwdme-splash30:before {
+    background: url(../img/mask/png15.jpg);
+}
+.bwdme-splash31:before {
+    background: url(../img/mask/png18.jpg);
+}
+.bwdme-splash33:before {
+    background: url(../img/mask/png23.jpg);
+}
+.bwdme-splash35:before {
+    background: url(../img/mask/png25.jpg);
+}
+.bwdme-splash36:before {
+    background: url(../img/mask/png26.jpg);
+}
+.bwdme-splash43:before {
+    background: url(../img/mask3/1.jpg);
+}
+.bwdme-splash45:before {
+    background: url(../img/mask3/3.jpg);
+}
+.bwdme-splash46:before {
+    background: url(../img/mask3/4.jpg);
+}
+.bwdme-splash47:before {
+    background: url(../img/mask3/5.jpg);
+}
+.bwdme-splash48:before {
+    background: url(../img/mask3/6.jpg);
+}
+.bwdme-splash49:before {
+    background: url(../img/mask3/7.jpg);
+}
+.bwdme-splash50:before {
+    background: url(../img/mask3/8.jpg);
+}
+.bwdme-splash51:before {
+    background: url(../img/mask3/9.jpg);
+}
+.bwdme-splash52:before {
+    background: url(../img/mask3/10.jpg);
+}
+.bwdme-splash53:before {
+    background: url(../img/mask3/11.jpg);
+}
+.bwdme-splash54:before {
+    background: url(../img/mask3/12.jpg);
+}
+.bwdme-splash55:before {
+    background: url(../img/mask3/13.jpg);
+}
+.bwdme-splash56:before {
+    background: url(../img/mask3/14.jpg);
+}
+.bwdme-splash59:before {
+    background: url(../img/mask3/17.jpg);
+}
+.bwdme-splash60:before {
+    background: url(../img/mask3/18.jpg);
+}
+.bwdme-splash61:before {
+    background: url(../img/mask3/19.jpg);
+}
+.bwdme-splash62:before {
+    background: url(../img/mask3/20.jpg);
+}
+.bwdme-splash63:before {
+    background: url(../img/mask3/21.jpg);
+}
+.bwdme-splash65:before {
+    background: url(../img/mask3/24.jpg);
+}
+.bwdme-splash66:before {
+    background: url(../img/mask3/25.jpg);
+}
+.bwdme-splash67:before {
+    background: url(../img/mask3/26.jpg);
+}
+.bwdme-splash68:before {
+    background: url(../img/mask3/27.jpg);
+}
+.bwdme-splash69:before {
+    background: url(../img/mask3/28.jpg);
+}
+.bwdme-splash69:before {
+    background: url(../img/mask3/30.jpg);
+}
+.bwdme-splash76:before {
+    background: url(../img/mask3/31.jpg);
+}
+.bwdme-splash77:before {
+    background: url(../img/mask3/32.jpg);
+}
+.bwdme-splash78:before {
+    background: url(../img/mask3/34.jpg);
+}
+.bwdme-splash79:before {
+    background: url(../img/mask3/35.jpg);
+}
+.bwdme-splash80:before {
+    background: url(../img/mask3/36.jpg);
+}
+.bwdme-splash81:before {
+    background: url(../img/mask3/37.jpg);
+}
+.bwdme-splash82:before {
+    background: url(../img/mask3/38.jpg);
+}
+.bwdme-splash83:before {
+    background: url(../img/mask3/39.jpg);
+}
+.bwdme-splash84:before {
+    background: url(../img/mask3/40.jpg);
+}
+.bwdme-splash86:before {
+    background: url(../img/mask3/42.jpg);
+}
+.bwdme-splash87:before {
+    background: url(../img/mask3/43.jpg);
+}
+.bwdme-splash88:before {
+    background: url(../img/mask3/44.jpg);
+}
+.bwdme-splash89:before {
+    background: url(../img/mask3/45.jpg);
+}
+.bwdme-splash90:before {
+    background: url(../img/mask3/46.jpg);
+}
+.bwdme-splash91:before {
+    background: url(../img/mask3/47.jpg);
+}
+.bwdme-splash92:before {
+    background: url(../img/mask3/48.jpg);
+}
+.bwdme-splash93:before {
+    background: url(../img/mask3/49.jpg);
+}
+.bwdme-splash94:before {
+    background: url(../img/mask3/50.jpg);
+}
+.bwdme-splash95:before {
+    background: url(../img/mask3/51.jpg);
+}
+.bwdme-splash96:before {
+    background: url(../img/mask3/52.jpg);
+}
+.bwdme-splash97:before {
+    background: url(../img/mask3/64.jpg);
+}
+.bwdme-splash98:before {
+    background: url(../img/mask3/54.jpg);
+}
+.bwdme-splash99:before {
+    background: url(../img/mask3/55.jpg);
+}
+.bwdme-splash100:before {
+    background: url(../img/mask3/56.jpg);
+}
+.bwdme-splash101:before {
+    background: url(../img/mask3/57.jpg);
+}
+.bwdme-splash102:before {
+    background: url(../img/mask3/58.jpg);
+}
+.bwdme-splash103:before {
+    background: url(../img/mask3/59.jpg);
+}
+.bwdme-splash104:before {
+    background: url(../img/mask3/60.jpg);
+}
+.bwdme-splash105:before {
+    background: url(../img/mask3/61.jpg);
+}
+.bwdme-splash106:before {
+    background: url(../img/mask3/62.jpg);
+}
+.bwdme-masking:before {
+    background-size: cover;
+    background-position: center;
+}
+/*----- Responsive --------*/
+
+/*--- lg-screen ---*/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/*---- md-screen ----*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+    
+}
+
+/*---- xs-screen ----*/
+
+@media (max-width: 767px) {
+    .bwdme-masking{
+        min-height: 270px;
+    }
+}
+
+/*---- sm-screen ----*/
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .bwdme-masking{
+        min-height: 550px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Fontselect Plugin Example</title>
+    <link rel="stylesheet" type="text/css" href="jquery.fontselect.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="jquery.fontselect.js"></script>
+    <script>
+        function applyFont(font) {
+            console.log('You selected font: ' + font);
+            font = font.replace(/\+/g, ' ');
+            font = font.split(':');
+            var fontFamily = font[0];
+            var fontWeight = font[1] || 400;
+            $('.ferdaus-fornt-test').css({fontFamily:"'"+fontFamily+"'", fontWeight:fontWeight});
+        }
+
+        $(document).ready(function() {
+            $('#font1')
+            .fontselect()
+            .on('change', function() {
+                applyFont(this.value);
+            });
+
+            $('#font2')
+            .fontselect()
+            .on('change', function() {
+                applyFont(this.value);
+            });
+        });
+    </script>
+</head>
+<body>
+    <p class="ferdaus-fornt-test">My name is Ferdaus.</p>
+    <input id="font1" type="text">
+    <p class="ferdaus2-fornt-test">My name is Ferdaus2.</p>
+    <input id="font2" type="text">
+</body>
+</html>
+
+
+in this invoice_details table has columns this
+id	
+invoice_no	
+pid	
+product_name	
+price	
+quantity
+
+
+
+
+ 

@@ -1,0 +1,210 @@
+.bwd-grid-container-eight {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 20rem));
+    justify-content: center;
+    gap: 2rem;
+    background: #e7e7e7;
+    .bwd-pricing-table-eight{
+        color: #B185E8;
+        background: #fff;
+        text-align: center;
+        padding: 28px 20px;
+        margin: 0 15px;
+        border-radius: 20px;
+        position: relative;
+        &:before{
+            content: '';
+            background: linear-gradient(#ebd3ff, transparent);
+            border-radius: 30% 30% 0 0;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 160px;
+            bottom: 0;
+        }
+        .bwd-title{
+            font-size: 30px;
+            font-weight: 600;
+            text-transform: capitalize;
+            margin-bottom: 35px;
+            @include mq (xs) {
+                font-size: 26px;
+            }
+            @include mq (sm) {
+                font-size: 28px;
+            }
+        }
+        .bwd-price {
+            position: relative;
+            background: #e2ccf3b5;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            text-align: center;
+            margin:  0 auto 60px;
+            .bwd-amount {
+                font-size: 40px;
+                line-height: 125px;
+                font-weight: 700;
+                margin: 0 0 5px;
+                display: block;
+            }
+            .bwd-duration{
+                font-size: 16px;
+                line-height: 16px;
+                font-weight: 400;
+                display: block;
+                margin-top: -35px;
+            }
+            .bwd-circle {
+                position: absolute;
+                top: 55%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                .bwd-span-circle {
+                    position: relative;
+                    display: block;
+                    background: transparent;
+                    width: 200px;
+                    height: 200px;
+                    border: 2px solid #B383EB;
+                    border-left-color: transparent;
+                    border-radius: 50%;
+                    animation: span 6s linear infinite;
+                    @keyframes span {
+                        form {
+                            transform: rotate(0deg);
+                        }
+                        to {
+                            transform: rotate(360deg);
+                        }
+                    }
+                }
+                
+            }
+            .bwd-circle-2 {
+                position: absolute;
+                top: 55%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                .bwd-span-circle-2{
+                    position: relative;
+                    display: block;
+                    background: transparent;
+                    width: 180px;
+                    height: 180px;
+                    border: 2px solid #B383EB;
+                    border-right-color: transparent;
+                    border-radius: 50%;
+                    animation: div 4s linear infinite;
+                    @keyframes div {
+                        form {
+                            transform: rotate(0deg);
+                        }
+                        to {
+                            transform: rotate(-360deg);
+                        }
+                    }
+                }
+            }
+            
+        }
+        .bwd-pricing-card-content{
+            margin-bottom: 20px;
+            text-align: left;
+            span {
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 25px;
+                padding: 0;
+                margin: 0 0 20px;
+                position: relative;
+                display: block;
+                svg {
+                    margin-right: 7px;
+                }
+            }
+        }
+        .bwd-pricing-signup  {
+            a{
+                color: #fff;
+                background-color: #B185E8;
+                font-size: 17px;
+                font-weight: 600;
+                text-transform: uppercase;
+                padding: 15px 22px;
+                margin: 0 auto;
+                border: none;
+                border-radius: 30px;
+                display: inline-block;
+                position: relative;
+                transition: all 0.3s ease 0s;
+                &:hover {
+                    color: #fff;
+                    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+                }
+                &::before {
+                    content: '';
+                    background-color: rgba(255,255,255,0.2);
+                    height: 100%;
+                    width: 0;
+                    border-radius: 20px;
+                    transform: scale(0.9,0.8);
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    transition: all 0.3s ease 0s;
+                }
+                &:hover {
+                    &::before {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        &.green {
+            color: #2982A4;
+            &::before {
+                background: linear-gradient(#d1f3ff, transparent);
+            }
+            .bwd-price {
+                background: #2982a414;
+                .bwd-span-circle {
+                    border-color: #2982A4;
+                    border-left-color: transparent;
+                }
+                .bwd-span-circle-2 {
+                    border-color: #2982A4;
+                    border-right-color: transparent;
+                }
+            }
+            .bwd-pricing-signup {
+                a {
+                    background-color: #2982A4;
+                }
+            }
+        }
+        &.pink {
+            color: #FF679C;
+            &::before {
+                background: linear-gradient(#ffc4da, transparent);
+            }
+            .bwd-price {
+                background: #ff679c21;
+                .bwd-span-circle {
+                    border-color: #FF679C;
+                    border-left-color: transparent;
+                }
+                .bwd-span-circle-2 {
+                    border-color: #FF679C;
+                    border-right-color: transparent;
+                }
+            }
+            .bwd-pricing-signup {
+                a {
+                    background-color: #FF679C;
+                }
+            }
+        }
+    }
+}

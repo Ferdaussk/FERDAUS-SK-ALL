@@ -1,0 +1,212 @@
+/*===================================*/ 
+/*timeline Twenty*/ 
+.bwd-timeline-twenty{
+    padding: 60px 30px;
+    .bwd-timeline-item-container{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .bwd-timeline-item{
+            display: inline-block;
+            position: relative;
+            margin: 30px;
+            background-color: #fff;
+            &:hover{
+                .bwd-timeline-content{
+                    box-shadow: 0 0 15px #ccc;
+                }
+            }
+
+
+            &::before{
+                content: "";
+                position: absolute;
+                height: 40px;
+                width: 5px;
+            
+                left: 50%;
+                top: 173px;
+                transform: translateX(-50%);
+                transition: .5s;
+            }
+
+            &::after{
+                content: "";
+                position: absolute;
+                left: -30px;
+                right: -30px;
+                top: 107px;
+                transform: translateY(-50%);
+                background: #00abff;
+                height: 5px;
+                z-index: -1;
+                transition: .6s;
+            }
+            .bwd-timeline-item-inner{
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 180px;
+                height: 180px;
+                background-color: #fff;
+                padding: 25px;
+                clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+
+ 
+                .bwd-year {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                  
+                    clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+                    height: 130px;
+                    width: 130px;
+                    font-weight: 700;
+                    font-size: 30px;
+                    color: #fff;
+                    text-align: center;
+                }
+            }
+            .bwd-timeline-content{
+                width: 220px;
+                position: absolute;
+                left: -20px;
+                padding: 20px 10px;
+                margin-top: 20px;
+                box-shadow: 0 0 15px #ddd;
+                background: #fff;
+                cursor: initial;
+                transition: .4s linear;
+             
+                .bwd-timeline-title {
+                    font-size: 22px;
+                    text-transform: capitalize;
+                    line-height: 30px;
+                    margin: 8px 0;
+                    color: #333;
+                    font-weight: 400;
+                }
+
+                .bwd-timeline-dsc {
+                    position: relative;
+                    line-height: 24px;
+                    margin-top: 6px;
+
+                    .bwd-timeline-item-bottom-bar {
+                        position: absolute;
+                        width: 230px;
+                        height: 10px;
+                        right: -15px;
+                        bottom: -20px;
+                        border-radius: 10px;
+
+                    }
+                }
+            }
+
+            &:nth-child(1){
+
+                &::before{
+                    background: #01C6B1;
+                }
+                .bwd-timeline-item-inner{
+                    background-color: #66dcd0;
+                   .bwd-year{
+                    background-color: #01C6B1;
+                   }
+
+                 
+                   
+                }
+                  .bwd-timeline-content{
+                    .bwd-timeline-dsc{
+                        .bwd-timeline-item-bottom-bar{
+                            background-color: #01C6B1;
+                            
+                        }
+                    }
+                   }
+
+            }
+               &:nth-child(2){
+                    &::before{
+                    background: #FE5C38;
+                }
+                .bwd-timeline-item-inner{
+                    background-color: #fe7c5f;
+                   .bwd-year{
+                    background-color: #FE5C38;
+                   }
+
+                 
+                   
+                }
+                  .bwd-timeline-content{
+                    .bwd-timeline-dsc{
+                        .bwd-timeline-item-bottom-bar{
+                            background-color: #FE5C38;
+                            
+                        }
+                    }
+                   }
+
+            }
+               &:nth-child(3){
+                   
+                &::before{
+                    background: #788900;
+                }
+
+
+                .bwd-timeline-item-inner{
+                    background-color: #abbc33;
+                   .bwd-year{
+                    background-color: #788900;
+                   }
+
+                  
+                   
+                }
+                 .bwd-timeline-content{
+                    .bwd-timeline-dsc{
+                        .bwd-timeline-item-bottom-bar{
+                            background-color: #788900;
+                            
+                        }
+                    }
+                   }
+
+            }
+               &:nth-child(4){
+
+                &::before{
+                    background: #145799;
+                }
+                .bwd-timeline-item-inner{
+                    background-color: #2291FF;
+                   .bwd-year{
+                    background-color: #145799;
+                   }
+
+                   
+                   
+                }
+
+                 .bwd-timeline-content{
+                    .bwd-timeline-dsc{
+                        .bwd-timeline-item-bottom-bar{
+                            background-color: #145799;
+                            
+                        }
+                    }
+                   }
+
+            }
+
+        
+        }
+    }
+}
+/*timeline Twenty*/ 

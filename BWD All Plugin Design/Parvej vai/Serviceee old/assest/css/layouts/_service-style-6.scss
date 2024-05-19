@@ -1,0 +1,149 @@
+.bwd-service-style-6 {
+    .bwd-service-box {
+        background: #f8f8f8;
+        padding: 25px;
+        position: relative;
+        border-radius: 10px;
+        transition: .3s linear;
+        border: 1px solid #ddd;
+        margin-bottom: 40px;
+        @include mq (md) {
+            padding: 25px 10px;
+            text-align: center;
+        }
+        @include mq (xs) {
+            padding: 25px 20px;
+        }
+        @include mq (sm) {
+            padding: 25px 10px;
+        }
+        &:hover {
+            box-shadow: 10px 12px 25px rgba(0, 0, 0, 0.32);
+            border-color: transparent;
+        }
+        &.blue {
+            .bwd-service-icon {
+                background-color: #379df1;
+            }
+            &:after {
+                border-color: transparent transparent #379df1 transparent;
+            }
+            &::before {
+                background-color: #379df1;
+            }
+            .bwd-service-content {
+                .title {
+                    color: #379df1;
+                }
+            }
+        }
+        &.purple {
+            .bwd-service-icon {
+                background-color: #8455D0;
+            }
+            &:after {
+                border-color: transparent transparent #8455D0 transparent;
+            }
+            &::before {
+                background-color: #8455D0;
+            }
+            .bwd-service-content {
+                .title {
+                    color: #8455D0;
+                }
+            }
+        }
+        &.red {
+            .bwd-service-icon {
+                background-color: #F84745;
+            }
+            &:after {
+                border-color: transparent transparent #F84745 transparent;
+            }
+            &::before {
+                background-color: #F84745;
+            }
+            .bwd-service-content {
+                .title {
+                    color: #F84745;
+                }
+            }
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 20%;
+            transform: translateY(-50%);
+            width: 20px;
+            height: 100px;
+            background-color: #49dbfd;
+            border-top-right-radius: 40px;
+            border-bottom-right-radius: 40px;
+            transition: .3s linear;
+        }
+        &:hover {
+            &::before {
+                width: 100.5%;
+                background-color: #33333330;
+                border-radius: 0;
+            }
+        }
+        &:after {
+            content: "";
+            position: absolute;
+            right: 25px;
+            top: -12px;
+            z-index: -1;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 40px 6px 40px;
+            border-color: transparent transparent #49dbfd transparent;
+        }
+        .bwd-service-icon {
+            position: absolute;
+            width: 80px;
+            height: 70px;
+            line-height: 75px;
+            text-align: center;
+            top: -6px;
+            right: 25px;
+            color: #fff;
+            font-size: 25px;
+            font-weight: 700;
+            background-color: #49dbfd;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            // &::before {
+            //     content: ("");
+            //     position: absolute;
+            //     left: -65px;
+            //     top: -30px;
+            //     width: 20px;
+            //     height: 100px;
+            //     background-color: #49dbfd;
+            //     border-top-right-radius: 40px;
+            //     border-bottom-right-radius: 40px;
+            // }
+        }
+        .bwd-service-content {
+            padding: 25px 0 0;
+            padding-right: 0;
+            margin-top: 60px;
+            .title {
+                margin-bottom: 10px;
+                color: #49dbfd;
+                text-transform: capitalize;
+            }
+            p {
+                color: #636e72;
+                font-size: 15px;
+                @include mq (md) {
+                    font-size: 14px;
+                }
+            }
+        }
+        
+    }
+}

@@ -1,0 +1,210 @@
+/*=====================================*/
+
+
+/*timeline eleven */
+.bwd-timeline-eleven{
+    position: relative;
+    overflow: hidden;
+    padding: 60px 30px;
+    margin: 80px 0;
+    background: #fdedef;
+    transition: min-height .3s;
+    
+    .bwd-progress-line-wrapper {
+        position: relative;
+        height: 10px;
+        z-index: 1;
+        background: #0652dd;
+        left: 0;
+        right: 0;
+
+        @include mq(md){
+            position: absolute;
+            bottom: 0;
+            margin: 7px;
+        }
+
+        .bwd-progress-line{
+            position: relative;
+            height: 100%;
+            width: 10px;
+            max-width: 100%;
+            background-color: #d63031;
+            transition: .5s;
+            &::before{
+                content: "";
+                position: absolute;
+                display: inline-block;
+                height: 20px;
+                width: 20px;
+                background-color: red;
+                border-radius: 50%;
+                right: 0;
+                top: -5px;
+            }
+            
+        }
+       
+    }
+    .bwd-timeline-item-container {
+        display: flex;
+        justify-content: space-between;
+        &.bwd-timeline-top-items {
+            padding-bottom: 30px;
+            align-items: flex-end;
+            
+            @include mq(md){
+                position: static;
+                height: 0;
+                padding-bottom: 0;
+               
+             }
+
+            .bwd-timeline-item {
+                .bwd-timeline-item-inner {
+                    &::before {
+                        top: 100%;
+                    }
+                }
+                transform-origin: left;
+                transform: rotateY(90deg);
+                transition: 1s;
+
+                &.active{
+                    transform: translate(0);
+                }
+            }
+        }
+        &.bwd-timeline-bottom-items {
+            align-items: flex-start;
+            padding-top: 38px;
+            @include mq(md){
+                overflow: hidden;
+                height: 0;
+                padding-top: 0;
+            }
+            .bwd-timeline-item {
+                .bwd-timeline-item-inner {
+                    &::before {
+                        bottom: 100%;
+                        right:20px;
+                        @include mq(md){
+                            top: 100%;
+                        }
+                    }
+                }
+                transform-origin: right;
+                transform: rotateY(90deg);
+                transition: 1s;
+
+                &.active{
+                    transform: translate(0);
+                }
+            }
+        }
+        .bwd-timeline-item {
+              flex-basis: 30%;
+              min-width: 230px;
+              max-width: 270px;
+            .bwd-timeline-item-inner {
+                position: relative;
+                text-align: left;
+                padding: 10px;
+                border-radius: 5px;
+                background: #3c40c6;
+                .bwd-year {
+                    font-size: 30px;
+                    font-weight: 600;
+                    color: #fff;
+                    margin-bottom: 10px;
+                    position: relative;
+                    width: 75%;
+                    background: #ED4C67;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    line-height: 44px;
+                    padding: 0 15px;
+                    text-align: center;
+                    border-bottom-left-radius: 20px;
+                    border-bottom-right-radius: 20px;
+                    margin-top: -35px;
+
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        border-bottom: 25px solid #bd3c52
+                        ;
+                        border-left: 10px solid transparent;
+                        right: 100%;
+                    }
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        border-bottom: 25px solid #bd3c52;
+                        border-right: 10px solid transparent;
+                        left: 100%;
+                    }
+                }
+                .bwd-timeline-content {
+                    padding: 10px;
+                    margin-bottom: 10px;
+                    border: 3px solid #9d9fe2;
+                    border-radius: 5px;
+                    .bwd-timeline-title {
+                        font-size: 25px;
+                        text-transform: capitalize;
+                        margin: 8px 0;
+                        color: #fff;
+                    }
+                    .bwd-timeline-desc {
+                        line-height: 24px;
+                        color: #eee;
+                    }
+                }
+
+            }
+            margin:0 15px;
+            &:nth-child(odd){
+                @include mq(md){
+                    position: absolute;
+                    top: -200px;
+                }
+                &.active{
+                    @include mq(md){
+                        position: absolute;
+                        left: 0;
+                    }
+
+                }
+                
+                
+          }
+
+          &:nth-child(even){
+          @include mq(md){
+            position: absolute;
+            top: -200px;
+          }
+            &.active{
+                @include mq(md){
+                    position: absolute;
+                    right: 0;
+                }
+            }
+       
+          }
+
+          &.active{
+             @include mq(md){
+                position: absolute;
+                top: 65px;
+        }
+          }
+          
+        }
+        
+    }
+}
+
+
+/*timeline eleven */

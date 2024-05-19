@@ -1,0 +1,168 @@
+/****************************************/
+/*TL-30*/
+.bwd-timeline-thirty{
+    position: relative;
+    padding: 60px 30px;
+    padding-bottom: 110px;
+    @include mq(xs){
+        padding: 60px 20px;
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        height: calc(100% - 100px);
+        width: 7px;
+        background: #fff;
+        border-radius: 5px;
+        z-index: 1;
+        box-shadow: 0 0 15px #aaa;
+        border-radius: 5px;
+        @include mq(xs){
+            left: 25px;
+        }
+        @include mq(sm){
+            left: 80px;
+        }
+
+    }
+    .bwd-progress-line {
+        top: 50px;
+        position: absolute;
+        left: 50%;
+        width: 8px;
+        background: #93197E;
+        height: 0;
+        max-height: calc(100% - 89px);
+        transform: translateX(-50%);
+        transition: .3s;
+        @include mq(xs){
+            left: 25px;
+            top: 40px;
+            max-height: calc(100% - 80px);
+        }
+        @include mq(sm){
+            left: 80px;
+            max-height: calc(100% - 75px);
+        }
+        border-radius: 5px;
+        z-index: 999;
+    }
+    .bwd-progress-helper-thirty {
+        height: 50vh;
+        background-color: transparent;
+        position: absolute;
+        bottom: 100%;
+    }
+   .bwd-timeline-item-container{
+    .bwd-timeline-item{
+        position: relative;
+        width: 50%;
+        @include mq(xs){
+            width: 100%;
+            margin-bottom: 135px;
+        }
+        .bwd-timeline-item-inner {
+            max-width: 350px;
+            text-align: center;
+            border: 10px solid #464F90;
+            border-top-right-radius: 90px;
+            border-top-left-radius: 90px;
+            background: #ECECEC;
+            @include mq(md){
+                max-width: 270px;
+            }
+          @media (max-width:340px) {
+              max-width: 200px;
+              
+          }
+            .bwd-timeline-header{
+                .bwd-timeline-title {
+                    font-size: 25px;
+                    text-transform: capitalize;
+                    margin-bottom: 10px;
+                    color: #464F90;
+                }
+                .bwd-year{
+                    font-size: 35px;
+                    font-weight: 600;
+                    line-height: 60px;
+                    padding-top: 15px;
+                    color: #464F90;
+                }
+              
+            }
+            .bwd-timeline-item-content {
+                padding: 15px 30px;
+                position: relative;
+                @include mq(xs){
+                    padding: 10px;
+                }
+                @include mq(sm){
+                    padding: 15px 30px;
+                }
+              
+              
+                &::before{
+                    content: "";
+                    position: absolute;
+                    border-top: 150px solid #ECECEC;
+                    border-left: 165px solid transparent;
+                    border-right: 165px solid transparent;
+                    top: 100%;
+                    left: 0;
+                    @include mq(md){
+                        border-top: 120px solid #ECECEC;
+                        border-left: 125px solid transparent;
+                        border-right: 125px solid transparent;
+                    }
+                }
+                @media (max-width:340px) {
+ 
+                    &::before{
+                        border-top: 90px solid #ECECEC;
+                        border-left: 90px solid transparent;
+                        border-right: 90px solid transparent;
+                    }
+                    
+                }
+                .bwd-timeline-dsc {
+                    color: #616161;
+                }
+     
+            }
+            
+        }
+  
+        &:nth-child(odd){
+            .bwd-timeline-item-inner{
+                margin-right: 40px;
+                margin-left: auto;
+                     @include mq(xs){
+                        margin-right: auto;
+                        margin-left: 25px;
+                    }
+                    @include mq(sm){
+                        margin-right: auto;
+                        margin-left: 150px;
+                    }
+            }
+        }
+        &:nth-child(even){
+            margin-left: auto;
+            .bwd-timeline-item-inner{
+                margin-left: 40px;
+                margin-right: auto;
+                      @include mq(xs){
+                        margin-left: 25px;
+                    }
+                        @include mq(sm){
+                            margin-left: 150px;
+                        }
+            }
+        }
+    }
+   }
+}
+/*TL-30*/
